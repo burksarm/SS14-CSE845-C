@@ -1,0 +1,127 @@
+# Sat Feb  1 20:56:02 2014
+# Filename........: archive/098-afkux.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 98566144.000000
+# Gestation Time..: 334
+# Fitness.........: 295108.215569
+# Errors..........: 3
+# Genome Size.....: 98
+# Copied Size.....: 98
+# Executed Size...: 94
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
+
+
+push
+shift-r
+nop-B
+swap
+set-flow
+nand
+h-alloc
+swap
+shift-r
+h-alloc
+get-head
+dec
+swap
+IO
+nand
+nop-C
+IO
+nand
+set-flow
+nop-A
+h-alloc
+push
+if-less
+nop-B
+mov-head
+nop-C
+set-flow
+nop-C
+swap-stk
+nop-A
+if-less
+push
+set-flow
+h-copy
+nand
+nop-C
+h-copy
+swap-stk
+IO
+nop-C
+nop-B
+if-less
+push
+nop-B
+nop-C
+inc
+if-n-equ
+if-label
+dec
+nop-B
+IO
+nop-C
+h-divide
+if-less
+sub
+IO
+if-less
+if-n-equ
+if-less
+push
+nop-A
+nand
+inc
+add
+shift-l
+h-alloc
+shift-r
+push
+IO
+push
+nand
+IO
+inc
+push
+h-search
+nand
+add
+nand
+add
+IO
+h-copy
+h-copy
+pop
+nand
+h-copy
+IO
+h-copy
+nand
+nop-C
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

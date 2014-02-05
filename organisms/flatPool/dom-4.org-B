@@ -1,0 +1,123 @@
+# Wed Feb  5 06:00:25 2014
+# Filename........: archive/094-aadpl.org
+# Update Output...: 2438
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5888.000000
+# Gestation Time..: 254
+# Fitness.........: 23.181102
+# Errors..........: 3
+# Genome Size.....: 94
+# Copied Size.....: 94
+# Executed Size...: 92
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 0 (0.000000)
+# nor 0 (0.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+dec
+nop-C
+shift-r
+push
+h-alloc
+if-n-equ
+IO
+nand
+jmp-head
+nop-B
+swap-stk
+if-label
+get-head
+h-alloc
+push
+IO
+shift-r
+swap
+set-flow
+nop-A
+shift-l
+h-divide
+h-alloc
+mov-head
+nop-C
+if-less
+if-label
+pop
+push
+if-label
+h-divide
+h-divide
+shift-l
+nop-A
+IO
+nop-C
+if-label
+nand
+nop-C
+push
+h-divide
+nand
+IO
+swap
+nop-B
+h-divide
+if-less
+add
+push
+nop-B
+swap-stk
+h-divide
+h-divide
+if-less
+nop-B
+nop-C
+if-n-equ
+h-divide
+set-flow
+h-alloc
+sub
+nop-C
+pop
+swap-stk
+sub
+IO
+IO
+nop-C
+pop
+sub
+if-label
+pop
+push
+swap
+h-copy
+nop-B
+get-head
+push
+nop-C
+shift-r
+inc
+h-search
+h-copy
+h-copy
+h-copy
+nand
+h-divide
+if-n-equ
+add
+h-copy
+h-copy
+mov-head
+if-label
+if-n-equ

@@ -1,0 +1,121 @@
+# Wed Feb  5 05:50:01 2014
+# Filename........: archive/092-aajkk.org
+# Update Output...: 3730
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 712704.000000
+# Gestation Time..: 342
+# Fitness.........: 2083.929825
+# Errors..........: 4
+# Genome Size.....: 92
+# Copied Size.....: 92
+# Executed Size...: 87
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+if-label
+set-flow
+nop-A
+mov-head
+nop-C
+swap
+swap
+push
+shift-l
+h-alloc
+set-flow
+IO
+jmp-head
+IO
+dec
+jmp-head
+jmp-head
+inc
+h-search
+nand
+nop-C
+set-flow
+swap-stk
+if-label
+h-copy
+dec
+inc
+h-divide
+IO
+set-flow
+if-n-equ
+set-flow
+nand
+nop-C
+nand
+IO
+nand
+nand
+nop-A
+if-less
+if-n-equ
+IO
+nop-A
+IO
+nop-C
+h-alloc
+sub
+nop-C
+IO
+nop-C
+IO
+nand
+swap-stk
+if-n-equ
+swap-stk
+IO
+nop-A
+inc
+push
+add
+if-n-equ
+get-head
+swap-stk
+nop-A
+IO
+h-divide
+nand
+nop-C
+nop-B
+h-copy
+add
+h-alloc
+if-label
+nop-A
+shift-r
+nop-A
+if-n-equ
+push
+if-less
+if-n-equ
+h-alloc
+push
+nop-A
+sub
+get-head
+h-search
+h-divide
+h-copy
+mov-head
+shift-r
+pop

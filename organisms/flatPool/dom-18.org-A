@@ -1,0 +1,114 @@
+# Wed Feb  5 01:09:25 2014
+# Filename........: archive/085-abgdo.org
+# Update Output...: 4907
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2684354560.000000
+# Gestation Time..: 199
+# Fitness.........: 13489218.894472
+# Errors..........: 1
+# Genome Size.....: 85
+# Copied Size.....: 85
+# Executed Size...: 80
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-search
+if-less
+nand
+if-label
+nand
+nop-A
+h-divide
+h-alloc
+nop-A
+nand
+IO
+nop-C
+nand
+nop-C
+IO
+nand
+swap
+add
+nop-C
+push
+sub
+dec
+sub
+nop-C
+IO
+IO
+nop-B
+nop-A
+nop-C
+add
+set-flow
+nop-A
+dec
+shift-r
+h-alloc
+nop-C
+IO
+sub
+pop
+nop-C
+inc
+IO
+nand
+IO
+push
+IO
+nop-C
+nand
+push
+mov-head
+nop-C
+nand
+nop-A
+swap
+pop
+nop-B
+h-copy
+nand
+IO
+nand
+if-less
+pop
+nand
+swap
+nop-C
+nand
+IO
+h-copy
+swap
+sub
+IO
+nand
+IO
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+if-n-equ
+nop-A
+nop-B

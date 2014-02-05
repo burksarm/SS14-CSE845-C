@@ -1,0 +1,136 @@
+# Tue Feb  4 23:27:59 2014
+# Filename........: archive/107-aczmx.org
+# Update Output...: 8061
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6750208.000000
+# Gestation Time..: 288
+# Fitness.........: 23438.222222
+# Errors..........: 1
+# Genome Size.....: 107
+# Copied Size.....: 107
+# Executed Size...: 103
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-divide
+dec
+if-label
+IO
+swap
+IO
+h-divide
+h-alloc
+shift-r
+IO
+nand
+nand
+swap
+inc
+set-flow
+add
+IO
+nand
+h-divide
+nop-C
+set-flow
+nop-A
+IO
+nop-C
+nop-A
+IO
+mov-head
+nop-C
+nand
+nop-C
+h-divide
+push
+add
+inc
+nop-B
+IO
+if-n-equ
+h-search
+dec
+push
+shift-l
+h-divide
+add
+set-flow
+nand
+if-n-equ
+inc
+inc
+get-head
+if-label
+h-copy
+pop
+inc
+h-divide
+push
+h-search
+shift-r
+nand
+dec
+shift-r
+set-flow
+nop-C
+nop-C
+shift-r
+IO
+nop-C
+sub
+if-label
+if-label
+h-alloc
+h-copy
+h-copy
+push
+IO
+inc
+sub
+nop-C
+if-less
+set-flow
+set-flow
+shift-r
+pop
+h-copy
+swap
+IO
+nand
+nand
+nop-C
+IO
+nop-C
+sub
+nop-B
+IO
+nop-B
+if-less
+if-label
+h-copy
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

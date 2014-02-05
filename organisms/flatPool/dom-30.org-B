@@ -1,0 +1,147 @@
+# Wed Feb  5 06:29:05 2014
+# Filename........: archive/118-aajlj.org
+# Update Output...: 4374
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 218103808.000000
+# Gestation Time..: 537
+# Fitness.........: 406152.342644
+# Errors..........: 3
+# Genome Size.....: 118
+# Copied Size.....: 118
+# Executed Size...: 104
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+inc
+nop-B
+swap-stk
+sub
+shift-r
+h-search
+swap-stk
+dec
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+h-copy
+swap
+nand
+nop-A
+pop
+if-n-equ
+IO
+swap
+inc
+nand
+IO
+nand
+nand
+nop-B
+h-copy
+h-alloc
+if-label
+nop-C
+shift-l
+h-copy
+IO
+h-alloc
+if-n-equ
+add
+nop-A
+nop-A
+swap-stk
+swap
+nand
+push
+h-alloc
+nand
+IO
+nop-C
+sub
+nand
+nop-C
+nand
+nop-C
+nand
+sub
+pop
+nand
+push
+swap
+set-flow
+IO
+pop
+nand
+IO
+nand
+inc
+add
+IO
+nop-C
+IO
+nand
+inc
+add
+set-flow
+swap-stk
+IO
+shift-l
+nop-A
+shift-l
+if-less
+pop
+swap
+if-n-equ
+pop
+dec
+nop-C
+nand
+IO
+nand
+nop-B
+shift-l
+swap
+inc
+sub
+nop-A
+swap
+nop-C
+h-copy
+get-head
+nand
+h-search
+h-copy
+h-divide
+shift-l
+mov-head
+nop-A
+IO
+nand
+set-flow
+h-search
+mov-head
+nop-B
+nop-A
+nop-C
+h-search
+shift-l
+inc
+add
+swap

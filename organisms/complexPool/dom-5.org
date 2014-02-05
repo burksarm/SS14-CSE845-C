@@ -1,0 +1,111 @@
+# Sat Feb  1 20:35:22 2014
+# Filename........: archive/082-abobd.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 159383552.000000
+# Gestation Time..: 274
+# Fitness.........: 581691.795620
+# Errors..........: 5
+# Genome Size.....: 82
+# Copied Size.....: 82
+# Executed Size...: 76
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+jmp-head
+nand
+IO
+pop
+if-label
+dec
+swap
+nop-B
+h-alloc
+set-flow
+nop-A
+shift-r
+pop
+add
+push
+swap-stk
+nop-C
+IO
+if-less
+shift-r
+nop-A
+push
+nand
+push
+pop
+nop-C
+if-label
+if-n-equ
+mov-head
+if-less
+mov-head
+IO
+swap
+if-n-equ
+nop-C
+h-alloc
+nop-B
+if-n-equ
+if-less
+mov-head
+nop-C
+swap-stk
+IO
+nop-C
+nop-C
+if-label
+swap
+nop-B
+nand
+nand
+nop-C
+pop
+nand
+IO
+h-divide
+nand
+add
+h-copy
+inc
+h-alloc
+if-less
+push
+swap
+nand
+if-less
+IO
+IO
+nop-C
+add
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+mov-head
+inc
+h-divide
+nop-A
+nop-B

@@ -1,0 +1,95 @@
+# Sat Feb  1 20:46:13 2014
+# Filename........: archive/066-abhfg.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 4325376.000000
+# Gestation Time..: 134
+# Fitness.........: 32278.925373
+# Errors..........: 1
+# Genome Size.....: 66
+# Copied Size.....: 66
+# Executed Size...: 66
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+push
+nand
+set-flow
+nop-A
+if-label
+sub
+mov-head
+nop-C
+h-search
+swap-stk
+if-label
+set-flow
+nop-C
+sub
+shift-r
+h-search
+inc
+sub
+nand
+IO
+nop-C
+nand
+IO
+nand
+IO
+nand
+nop-C
+pop
+nand
+h-alloc
+push
+sub
+IO
+inc
+add
+IO
+pop
+nop-C
+nand
+nop-C
+set-flow
+shift-r
+IO
+nand
+IO
+nand
+nand
+nop-C
+IO
+nop-C
+set-flow
+sub
+IO
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+nop-A

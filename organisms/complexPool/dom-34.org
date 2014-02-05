@@ -1,0 +1,120 @@
+# Sat Feb  1 20:41:56 2014
+# Filename........: archive/091-aaeoy.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2952790016.000000
+# Gestation Time..: 509
+# Fitness.........: 5801159.166994
+# Errors..........: 4
+# Genome Size.....: 91
+# Copied Size.....: 91
+# Executed Size...: 88
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+nand
+nop-A
+get-head
+if-n-equ
+shift-l
+pop
+h-search
+nop-C
+nop-A
+push
+sub
+mov-head
+nop-C
+if-n-equ
+nop-C
+get-head
+shift-l
+shift-l
+nop-B
+if-n-equ
+sub
+inc
+pop
+add
+if-n-equ
+add
+set-flow
+swap
+if-n-equ
+get-head
+h-search
+h-alloc
+push
+IO
+nop-A
+IO
+swap
+add
+swap
+if-label
+nand
+push
+if-n-equ
+nop-A
+swap
+pop
+sub
+h-copy
+if-n-equ
+IO
+nand
+nop-A
+nand
+if-label
+push
+IO
+nop-C
+pop
+nop-C
+nand
+swap
+push
+h-copy
+push
+nop-C
+IO
+nop-C
+sub
+nop-C
+swap-stk
+nand
+h-divide
+IO
+nop-C
+pop
+nop-C
+if-n-equ
+if-less
+h-search
+nop-B
+nop-A
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+sub
+mov-head
+nop-A
+nop-B

@@ -1,0 +1,121 @@
+# Wed Feb  5 03:13:30 2014
+# Filename........: archive/092-aaoko.org
+# Update Output...: 6043
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 679936.000000
+# Gestation Time..: 423
+# Fitness.........: 1607.413712
+# Errors..........: 12
+# Genome Size.....: 92
+# Copied Size.....: 92
+# Executed Size...: 83
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+jmp-head
+set-flow
+nop-A
+sub
+mov-head
+nop-C
+h-alloc
+jmp-head
+h-alloc
+if-n-equ
+push
+if-less
+nop-A
+shift-r
+nop-A
+add
+dec
+nop-C
+h-alloc
+IO
+nand
+nop-C
+pop
+IO
+if-less
+sub
+if-label
+nand
+nand
+nop-A
+nand
+add
+if-less
+jmp-head
+nop-C
+nop-A
+h-alloc
+inc
+IO
+nop-A
+IO
+IO
+nop-C
+set-flow
+swap-stk
+nop-B
+h-divide
+get-head
+h-alloc
+nop-C
+sub
+dec
+swap
+get-head
+swap
+shift-r
+swap-stk
+nop-A
+sub
+swap-stk
+inc
+sub
+swap
+IO
+shift-l
+h-alloc
+nop-C
+nop-A
+swap-stk
+h-divide
+if-less
+dec
+push
+h-alloc
+h-search
+h-search
+h-copy
+pop
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+IO
+pop
+mov-head
+if-less
+sub
+push
+nop-A
+nop-B

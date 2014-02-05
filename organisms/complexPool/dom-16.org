@@ -1,0 +1,134 @@
+# Sat Feb  1 20:41:16 2014
+# Filename........: archive/105-aayim.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6488064.000000
+# Gestation Time..: 218
+# Fitness.........: 29761.761468
+# Errors..........: 2
+# Genome Size.....: 105
+# Copied Size.....: 105
+# Executed Size...: 99
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+add
+set-flow
+nop-A
+nop-C
+h-divide
+swap
+swap
+inc
+if-label
+IO
+mov-head
+nop-C
+sub
+pop
+if-less
+set-flow
+dec
+IO
+nop-C
+swap-stk
+nand
+IO
+nand
+shift-r
+nop-A
+nop-A
+IO
+if-less
+nop-C
+h-search
+if-label
+nand
+swap
+if-less
+h-divide
+shift-r
+h-divide
+pop
+sub
+dec
+push
+nop-B
+nop-B
+IO
+h-copy
+nop-C
+sub
+nop-A
+push
+push
+pop
+nop-C
+nand
+nop-C
+inc
+push
+IO
+if-less
+nop-C
+nand
+nand
+nop-C
+nop-B
+set-flow
+if-label
+nop-B
+if-less
+nop-A
+set-flow
+push
+nop-C
+set-flow
+set-flow
+nop-C
+push
+IO
+IO
+nop-C
+nand
+add
+inc
+h-alloc
+IO
+h-alloc
+pop
+sub
+nop-C
+dec
+IO
+nop-C
+if-less
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

@@ -1,0 +1,130 @@
+# Sat Feb  1 20:37:34 2014
+# Filename........: archive/101-aafkm.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 203423744.000000
+# Gestation Time..: 233
+# Fitness.........: 873063.278970
+# Errors..........: 1
+# Genome Size.....: 101
+# Copied Size.....: 101
+# Executed Size...: 97
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+jmp-head
+h-alloc
+nop-C
+push
+set-flow
+nop-A
+if-label
+nop-B
+dec
+shift-r
+mov-head
+nop-C
+add
+IO
+sub
+jmp-head
+pop
+nop-A
+IO
+nand
+nop-C
+h-search
+IO
+nop-C
+push
+sub
+if-n-equ
+dec
+h-copy
+IO
+sub
+h-divide
+IO
+nand
+nop-C
+add
+nop-A
+pop
+nand
+sub
+IO
+IO
+nop-C
+h-alloc
+sub
+nop-A
+swap-stk
+nand
+h-divide
+inc
+nop-C
+add
+nop-A
+pop
+set-flow
+sub
+if-label
+h-divide
+swap-stk
+IO
+nop-A
+if-n-equ
+nop-A
+if-label
+IO
+nop-C
+nop-B
+nand
+nop-C
+nand
+if-less
+dec
+swap
+IO
+nop-C
+sub
+nop-C
+add
+nop-A
+h-copy
+IO
+nop-C
+get-head
+if-n-equ
+IO
+swap
+nop-C
+inc
+add
+IO
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

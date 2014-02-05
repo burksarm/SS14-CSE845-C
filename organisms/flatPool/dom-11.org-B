@@ -1,0 +1,143 @@
+# Wed Feb  5 01:28:36 2014
+# Filename........: archive/114-aalaq.org
+# Update Output...: 4920
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 56623104.000000
+# Gestation Time..: 486
+# Fitness.........: 116508.444444
+# Errors..........: 40
+# Genome Size.....: 114
+# Copied Size.....: 114
+# Executed Size...: 108
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 0 (0.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+add
+nand
+nop-B
+set-flow
+nop-A
+inc
+nop-A
+if-label
+if-less
+if-n-equ
+mov-head
+nop-C
+h-copy
+swap
+if-less
+h-copy
+h-divide
+if-label
+shift-r
+h-alloc
+IO
+set-flow
+sub
+sub
+pop
+sub
+if-n-equ
+push
+shift-l
+dec
+push
+shift-l
+sub
+sub
+add
+nop-C
+h-copy
+IO
+IO
+nop-C
+nand
+add
+nop-C
+h-alloc
+set-flow
+inc
+nop-C
+push
+push
+sub
+h-alloc
+nop-A
+IO
+nop-C
+push
+if-n-equ
+set-flow
+nand
+nop-C
+nand
+if-less
+h-search
+if-label
+IO
+nop-A
+set-flow
+if-label
+nop-A
+jmp-head
+IO
+nop-C
+sub
+nop-C
+if-n-equ
+IO
+sub
+IO
+inc
+pop
+sub
+sub
+nop-C
+h-copy
+IO
+if-less
+pop
+IO
+set-flow
+nop-B
+add
+IO
+if-n-equ
+pop
+nop-B
+nop-A
+nand
+h-divide
+h-search
+h-divide
+h-search
+add
+h-alloc
+h-copy
+h-copy
+dec
+h-copy
+add
+inc
+pop
+h-divide
+mov-head
+shift-r
+swap-stk

@@ -1,0 +1,134 @@
+# Tue Feb  4 22:55:26 2014
+# Filename........: archive/105-aalez.org
+# Update Output...: 3514
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 25690112.000000
+# Gestation Time..: 308
+# Fitness.........: 83409.454545
+# Errors..........: 3
+# Genome Size.....: 105
+# Copied Size.....: 105
+# Executed Size...: 98
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+add
+h-alloc
+h-search
+set-flow
+nop-A
+shift-l
+h-alloc
+pop
+nand
+swap
+shift-l
+mov-head
+nop-C
+h-divide
+if-n-equ
+h-alloc
+if-less
+shift-r
+pop
+if-less
+set-flow
+swap-stk
+nop-B
+swap
+nop-B
+add
+h-copy
+swap
+nop-C
+nop-A
+add
+nand
+inc
+swap-stk
+h-search
+h-copy
+pop
+nand
+IO
+if-label
+shift-l
+pop
+shift-r
+dec
+nop-B
+nand
+if-label
+IO
+nop-C
+sub
+nop-C
+inc
+shift-r
+add
+IO
+nop-C
+nop-B
+if-label
+swap
+nand
+IO
+shift-l
+nop-A
+set-flow
+h-divide
+h-divide
+nand
+nand
+nop-C
+IO
+nop-C
+sub
+push
+push
+IO
+h-alloc
+sub
+IO
+swap
+nand
+inc
+swap
+add
+IO
+pop
+sub
+add
+nop-C
+IO
+h-divide
+h-search
+h-copy
+h-copy
+h-copy
+shift-l
+push
+h-divide
+h-copy
+inc
+mov-head
+if-label
+pop
+swap-stk
+nop-B
+shift-r

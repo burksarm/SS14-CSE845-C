@@ -1,0 +1,116 @@
+# Sat Feb  1 21:00:35 2014
+# Filename........: archive/087-aadml.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2919235584.000000
+# Gestation Time..: 468
+# Fitness.........: 6237682.871795
+# Errors..........: 2
+# Genome Size.....: 87
+# Copied Size.....: 87
+# Executed Size...: 87
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+sub
+nop-B
+shift-l
+dec
+set-flow
+nop-A
+shift-l
+mov-head
+nop-C
+if-n-equ
+sub
+swap
+if-label
+if-n-equ
+dec
+shift-r
+nop-A
+inc
+swap
+if-label
+shift-r
+inc
+nop-B
+get-head
+shift-r
+sub
+if-n-equ
+h-alloc
+h-alloc
+nop-B
+shift-l
+swap
+get-head
+IO
+add
+if-n-equ
+nop-C
+push
+push
+IO
+nand
+pop
+shift-r
+IO
+push
+set-flow
+shift-l
+h-search
+pop
+sub
+nop-C
+if-label
+nand
+swap
+IO
+if-label
+if-label
+nand
+push
+nand
+push
+nand
+if-label
+swap
+IO
+pop
+h-copy
+inc
+add
+IO
+nand
+inc
+nop-C
+add
+nop-C
+h-copy
+if-n-equ
+if-label
+nop-B
+h-search
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+nop-A

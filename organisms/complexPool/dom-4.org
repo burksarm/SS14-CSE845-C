@@ -1,0 +1,123 @@
+# Sat Feb  1 20:43:02 2014
+# Filename........: archive/094-abosu.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5963776.000000
+# Gestation Time..: 198
+# Fitness.........: 30120.080808
+# Errors..........: 2
+# Genome Size.....: 94
+# Copied Size.....: 94
+# Executed Size...: 91
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+dec
+nop-C
+add
+IO
+h-alloc
+IO
+swap-stk
+nand
+if-less
+nop-B
+nop-A
+nop-A
+jmp-head
+nop-C
+push
+IO
+h-divide
+swap
+set-flow
+nop-A
+nop-C
+if-n-equ
+if-n-equ
+mov-head
+nop-C
+nop-C
+if-less
+pop
+if-less
+nop-A
+h-copy
+set-flow
+nand
+nop-C
+IO
+nop-C
+if-label
+nand
+nop-C
+push
+push
+nand
+IO
+swap
+if-label
+if-n-equ
+if-label
+h-copy
+if-n-equ
+if-n-equ
+swap-stk
+if-n-equ
+if-n-equ
+swap-stk
+add
+nop-A
+set-flow
+if-n-equ
+if-less
+if-label
+sub
+nop-C
+pop
+nop-B
+sub
+IO
+IO
+nop-C
+push
+nand
+IO
+pop
+h-alloc
+pop
+nand
+nop-B
+add
+inc
+h-alloc
+IO
+set-flow
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+h-copy
+mov-head
+nop-A
+nop-B

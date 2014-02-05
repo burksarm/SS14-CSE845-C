@@ -1,0 +1,138 @@
+# Tue Feb  4 22:34:35 2014
+# Filename........: archive/109-acjxk.org
+# Update Output...: 5952
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 98566144.000000
+# Gestation Time..: 224
+# Fitness.........: 440027.428571
+# Errors..........: 3
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 94
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
+
+
+IO
+if-label
+nand
+h-divide
+push
+IO
+nop-C
+nop-B
+if-less
+nop-A
+h-divide
+set-flow
+add
+dec
+if-less
+set-flow
+IO
+nand
+nop-C
+nop-B
+nop-B
+pop
+if-label
+h-divide
+nand
+set-flow
+if-n-equ
+nop-A
+IO
+nop-B
+dec
+pop
+h-alloc
+dec
+h-alloc
+IO
+nop-C
+nop-C
+if-label
+nop-B
+nop-A
+if-less
+nand
+h-alloc
+if-label
+push
+h-divide
+IO
+nand
+nop-C
+pop
+swap
+sub
+set-flow
+nop-A
+if-less
+nand
+mov-head
+nop-C
+IO
+h-divide
+h-alloc
+if-label
+nand
+nand
+nop-C
+push
+IO
+nop-C
+inc
+add
+pop
+push
+sub
+nop-C
+IO
+if-n-equ
+IO
+if-label
+sub
+nop-A
+add
+swap
+IO
+pop
+nand
+get-head
+IO
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+mov-head
+push
+nand
+shift-l
+h-copy
+IO
+push
+get-head
+nop-C
+add
+add
+nop-A

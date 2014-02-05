@@ -1,0 +1,110 @@
+# Sat Feb  1 20:42:21 2014
+# Filename........: archive/081-abelw.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5242880.000000
+# Gestation Time..: 169
+# Fitness.........: 31022.958580
+# Errors..........: 4
+# Genome Size.....: 81
+# Copied Size.....: 81
+# Executed Size...: 80
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+pop
+get-head
+h-alloc
+set-flow
+nop-A
+nand
+mov-head
+nop-C
+h-copy
+h-alloc
+shift-l
+h-alloc
+h-divide
+if-n-equ
+shift-l
+h-divide
+inc
+h-search
+shift-l
+inc
+pop
+jmp-head
+get-head
+nand
+IO
+nop-C
+shift-r
+push
+nand
+IO
+nop-C
+nand
+nop-C
+push
+h-copy
+nand
+IO
+swap
+h-alloc
+pop
+nop-C
+IO
+nop-C
+sub
+nop-C
+IO
+nop-C
+IO
+nand
+if-n-equ
+IO
+nand
+add
+if-label
+nop-B
+pop
+swap
+dec
+sub
+inc
+nop-C
+IO
+swap
+IO
+h-alloc
+inc
+add
+swap-stk
+h-search
+nop-A
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+mov-head
+nop-A

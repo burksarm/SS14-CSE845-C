@@ -1,0 +1,132 @@
+# Wed Feb  5 05:13:04 2014
+# Filename........: archive/103-abnwb.org
+# Update Output...: 7339
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3355443200.000000
+# Gestation Time..: 274
+# Fitness.........: 12246143.065693
+# Errors..........: 4
+# Genome Size.....: 103
+# Copied Size.....: 103
+# Executed Size...: 100
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+set-flow
+h-alloc
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+pop
+pop
+add
+nop-C
+h-copy
+set-flow
+jmp-head
+get-head
+nand
+get-head
+h-search
+dec
+nop-C
+if-label
+push
+IO
+swap-stk
+nand
+nop-A
+if-label
+nop-B
+h-alloc
+nop-A
+nop-A
+IO
+nop-C
+IO
+nop-A
+if-label
+nand
+if-n-equ
+push
+nand
+nop-C
+if-less
+nop-C
+inc
+nop-C
+h-alloc
+push
+if-label
+IO
+add
+nop-C
+sub
+nop-C
+add
+IO
+nop-C
+h-divide
+pop
+nop-C
+if-less
+inc
+swap
+nand
+IO
+if-n-equ
+h-copy
+pop
+inc
+add
+IO
+inc
+add
+pop
+if-n-equ
+nop-C
+sub
+h-divide
+if-n-equ
+dec
+IO
+sub
+swap-stk
+h-copy
+dec
+IO
+IO
+nop-C
+nop-A
+h-divide
+if-n-equ
+nop-A
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+h-copy
+mov-head
+nop-A
+nop-B

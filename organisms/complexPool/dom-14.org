@@ -1,0 +1,131 @@
+# Sat Feb  1 20:39:03 2014
+# Filename........: archive/102-aaeyu.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3321888768.000000
+# Gestation Time..: 243
+# Fitness.........: 13670324.148148
+# Errors..........: 2
+# Genome Size.....: 102
+# Copied Size.....: 102
+# Executed Size...: 99
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+shift-l
+inc
+h-divide
+h-alloc
+nop-A
+h-alloc
+h-search
+if-n-equ
+sub
+set-flow
+nop-A
+IO
+if-less
+sub
+if-n-equ
+IO
+nop-C
+mov-head
+nop-C
+pop
+sub
+get-head
+nop-A
+h-search
+nand
+nop-B
+IO
+nop-C
+if-less
+h-copy
+sub
+if-n-equ
+swap
+if-less
+IO
+nop-B
+h-alloc
+set-flow
+sub
+IO
+nand
+IO
+swap
+IO
+h-divide
+nand
+if-label
+push
+get-head
+push
+pop
+nop-C
+nand
+IO
+IO
+nand
+nop-B
+h-divide
+h-copy
+h-divide
+swap-stk
+h-copy
+IO
+nop-C
+if-less
+h-copy
+h-copy
+if-n-equ
+swap-stk
+sub
+nop-C
+h-copy
+nop-B
+nand
+IO
+pop
+sub
+nop-C
+push
+set-flow
+nand
+IO
+nand
+IO
+nop-C
+sub
+IO
+if-label
+nand
+inc
+add
+IO
+swap
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+if-less
+mov-head
+nop-A

@@ -1,0 +1,133 @@
+# Tue Feb  4 22:15:31 2014
+# Filename........: archive/104-adknp.org
+# Update Output...: 6015
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 1622016.000000
+# Gestation Time..: 232
+# Fitness.........: 6991.448276
+# Errors..........: 4
+# Genome Size.....: 104
+# Copied Size.....: 104
+# Executed Size...: 99
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+swap-stk
+h-alloc
+shift-l
+swap-stk
+jmp-head
+pop
+set-flow
+nop-A
+mov-head
+nop-C
+shift-l
+h-alloc
+push
+if-label
+push
+shift-r
+if-n-equ
+if-label
+nop-A
+jmp-head
+jmp-head
+if-n-equ
+set-flow
+if-label
+h-copy
+swap
+IO
+h-divide
+set-flow
+nand
+jmp-head
+IO
+nop-C
+set-flow
+h-copy
+nand
+nop-C
+h-copy
+nop-B
+add
+inc
+swap-stk
+h-divide
+swap
+IO
+push
+nand
+swap
+nop-B
+h-alloc
+nand
+nop-C
+swap-stk
+nand
+IO
+pop
+dec
+h-copy
+nand
+IO
+push
+nop-C
+IO
+nop-C
+pop
+sub
+IO
+if-n-equ
+swap-stk
+nand
+IO
+h-search
+h-alloc
+sub
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+if-label
+mov-head
+push
+inc
+nop-A
+h-divide
+swap
+if-label
+jmp-head
+h-alloc
+jmp-head
+if-less
+jmp-head
+nand
+nop-B
+inc
+nop-B
+jmp-head
+pop
+if-label
+h-divide
+mov-head
+nop-A

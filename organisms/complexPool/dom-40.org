@@ -1,0 +1,138 @@
+# Sat Feb  1 20:50:05 2014
+# Filename........: archive/109-abqlu.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3456106496.000000
+# Gestation Time..: 281
+# Fitness.........: 12299311.373665
+# Errors..........: 4
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 103
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-search
+set-flow
+set-flow
+jmp-head
+add
+nand
+h-alloc
+if-less
+pop
+swap
+dec
+h-alloc
+if-label
+h-alloc
+nand
+IO
+nop-C
+swap-stk
+IO
+set-flow
+h-divide
+pop
+inc
+sub
+dec
+if-n-equ
+dec
+IO
+nop-C
+if-n-equ
+nand
+nop-C
+inc
+nop-C
+add
+push
+add
+nop-C
+sub
+swap
+nop-C
+IO
+set-flow
+pop
+nop-C
+nop-B
+if-n-equ
+nop-A
+nop-C
+nand
+push
+nop-A
+shift-r
+mov-head
+nop-C
+nand
+IO
+if-label
+IO
+nop-C
+nop-B
+nand
+nand
+h-divide
+add
+sub
+nop-C
+nop-B
+sub
+nop-C
+inc
+if-label
+nop-B
+push
+if-n-equ
+if-n-equ
+swap-stk
+h-copy
+IO
+nand
+swap-stk
+nand
+if-n-equ
+IO
+pop
+h-divide
+add
+nop-B
+dec
+push
+inc
+push
+nand
+IO
+nand
+IO
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+h-copy
+mov-head
+h-copy
+nop-A
+nop-B
+nop-A

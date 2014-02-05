@@ -1,0 +1,118 @@
+# Wed Feb  5 07:17:05 2014
+# Filename........: archive/089-aambg.org
+# Update Output...: 3878
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 679936.000000
+# Gestation Time..: 767
+# Fitness.........: 886.487614
+# Errors..........: 4
+# Genome Size.....: 89
+# Copied Size.....: 89
+# Executed Size...: 83
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+set-flow
+nop-A
+nop-C
+mov-head
+nop-C
+push
+if-label
+h-alloc
+inc
+h-alloc
+nop-B
+h-search
+IO
+nop-C
+push
+swap-stk
+h-search
+if-less
+nand
+if-less
+shift-l
+h-copy
+inc
+h-alloc
+IO
+nop-C
+nop-A
+if-label
+set-flow
+dec
+shift-l
+if-label
+pop
+swap-stk
+nand
+nand
+nop-C
+swap-stk
+nop-A
+dec
+pop
+IO
+nand
+nand
+nop-C
+if-less
+nop-B
+IO
+if-label
+if-label
+h-alloc
+dec
+pop
+add
+push
+nand
+IO
+if-n-equ
+IO
+nop-B
+swap
+IO
+add
+set-flow
+pop
+sub
+IO
+nand
+swap-stk
+IO
+dec
+sub
+if-less
+swap-stk
+inc
+h-search
+h-copy
+if-less
+jmp-head
+IO
+h-divide
+nand
+if-n-equ
+mov-head
+set-flow
+sub
+get-head
+jmp-head

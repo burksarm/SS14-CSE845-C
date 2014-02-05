@@ -1,0 +1,134 @@
+# Tue Feb  4 22:50:36 2014
+# Filename........: archive/105-acvyr.org
+# Update Output...: 6284
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 205520896.000000
+# Gestation Time..: 256
+# Fitness.........: 802816.000000
+# Errors..........: 3
+# Genome Size.....: 105
+# Copied Size.....: 105
+# Executed Size...: 98
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+sub
+push
+set-flow
+nop-A
+h-divide
+get-head
+if-less
+push
+nop-C
+nop-A
+mov-head
+nop-C
+shift-l
+IO
+swap
+push
+IO
+nand
+nand
+add
+set-flow
+inc
+IO
+if-n-equ
+h-search
+h-copy
+nop-B
+nop-A
+dec
+nand
+swap-stk
+h-alloc
+nop-B
+dec
+h-copy
+inc
+nop-B
+h-alloc
+add
+set-flow
+if-less
+nop-B
+nop-B
+push
+nop-B
+nand
+IO
+nop-C
+sub
+nop-C
+inc
+nop-B
+add
+IO
+nop-C
+sub
+nop-A
+swap
+nand
+IO
+if-less
+push
+nop-C
+push
+if-label
+nand
+nand
+nop-C
+IO
+nop-C
+sub
+push
+if-label
+IO
+if-label
+nand
+IO
+h-alloc
+nand
+inc
+swap
+add
+IO
+pop
+sub
+IO
+shift-l
+nop-C
+nop-B
+h-search
+h-copy
+h-copy
+h-copy
+dec
+nop-C
+h-divide
+h-copy
+mov-head
+swap
+h-alloc
+set-flow
+swap
+if-n-equ
+nop-A

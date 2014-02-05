@@ -1,0 +1,120 @@
+# Wed Feb  5 00:59:13 2014
+# Filename........: archive/091-abubr.org
+# Update Output...: 11055
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2952790016.000000
+# Gestation Time..: 431
+# Fitness.........: 6851020.918794
+# Errors..........: 5
+# Genome Size.....: 91
+# Copied Size.....: 91
+# Executed Size...: 88
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-divide
+nop-A
+get-head
+if-label
+shift-l
+push
+h-search
+nop-C
+nop-A
+swap-stk
+get-head
+mov-head
+nop-C
+if-n-equ
+if-less
+set-flow
+sub
+add
+inc
+sub
+if-less
+nop-C
+if-label
+add
+if-label
+inc
+set-flow
+add
+h-divide
+nop-B
+h-search
+sub
+push
+IO
+nop-A
+IO
+swap
+add
+swap
+if-label
+nand
+push
+if-n-equ
+if-less
+swap
+pop
+dec
+h-copy
+h-divide
+IO
+nand
+nop-A
+nand
+if-label
+push
+IO
+nop-C
+pop
+nop-C
+nand
+swap
+push
+h-copy
+push
+nop-C
+IO
+nop-C
+sub
+nop-C
+swap-stk
+nand
+nop-B
+IO
+nop-C
+pop
+nop-C
+h-alloc
+if-less
+h-search
+nop-B
+nop-A
+h-copy
+if-label
+nop-C
+nop-A
+if-label
+mov-head
+pop
+nop-A
+nop-B

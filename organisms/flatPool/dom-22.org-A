@@ -1,0 +1,132 @@
+# Tue Feb  4 23:10:28 2014
+# Filename........: archive/103-abyjl.org
+# Update Output...: 7414
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 103809024.000000
+# Gestation Time..: 281
+# Fitness.........: 369427.131673
+# Errors..........: 0
+# Genome Size.....: 103
+# Copied Size.....: 103
+# Executed Size...: 99
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
+
+
+if-n-equ
+h-alloc
+h-alloc
+set-flow
+nop-A
+add
+nop-B
+swap-stk
+add
+IO
+mov-head
+nop-C
+IO
+nop-C
+sub
+push
+sub
+push
+if-less
+if-label
+IO
+push
+add
+nop-B
+sub
+nand
+if-less
+nop-C
+inc
+h-divide
+IO
+nop-B
+pop
+nop-C
+pop
+h-divide
+nand
+dec
+nop-A
+nop-C
+nop-A
+swap-stk
+h-copy
+nop-A
+sub
+pop
+nand
+swap
+IO
+nand
+nop-C
+dec
+if-n-equ
+shift-l
+h-divide
+inc
+inc
+add
+pop
+add
+IO
+if-label
+h-divide
+nand
+IO
+h-copy
+h-copy
+nop-A
+nop-A
+if-n-equ
+nand
+nand
+nop-C
+swap-stk
+if-label
+push
+IO
+nop-C
+sub
+IO
+h-search
+pop
+nop-C
+pop
+add
+push
+nand
+IO
+h-copy
+inc
+add
+IO
+h-copy
+h-copy
+h-copy
+if-label
+h-search
+h-divide
+h-copy
+h-copy
+mov-head
+get-head
+pop

@@ -1,0 +1,138 @@
+# Wed Feb  5 02:55:46 2014
+# Filename........: archive/109-aadtg.org
+# Update Output...: 3283
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6815744.000000
+# Gestation Time..: 876
+# Fitness.........: 7780.529680
+# Errors..........: 4
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 104
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 0 (0.000000)
+# or 0 (0.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+add
+nand
+add
+jmp-head
+nop-A
+nop-A
+if-label
+sub
+pop
+swap
+shift-l
+nop-A
+dec
+swap-stk
+nand
+IO
+nop-C
+nop-B
+IO
+if-label
+swap-stk
+pop
+inc
+sub
+dec
+h-alloc
+dec
+IO
+nop-C
+h-alloc
+nand
+nop-C
+inc
+nop-C
+add
+push
+add
+nop-C
+sub
+swap
+nop-C
+IO
+set-flow
+pop
+nop-C
+sub
+h-divide
+if-n-equ
+if-label
+nand
+push
+nop-A
+shift-r
+mov-head
+nop-C
+set-flow
+IO
+dec
+IO
+nop-C
+if-n-equ
+shift-r
+inc
+sub
+dec
+sub
+nop-C
+set-flow
+sub
+swap
+IO
+h-copy
+nop-C
+inc
+dec
+dec
+swap-stk
+nop-C
+add
+h-alloc
+swap-stk
+h-divide
+set-flow
+dec
+pop
+h-divide
+add
+set-flow
+dec
+if-label
+inc
+push
+nop-B
+if-less
+h-search
+IO
+dec
+shift-l
+dec
+if-label
+nop-C
+nop-A
+set-flow
+h-copy
+mov-head
+shift-r
+nop-A
+nop-B
+nand

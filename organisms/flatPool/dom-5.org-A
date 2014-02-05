@@ -1,0 +1,111 @@
+# Wed Feb  5 07:27:30 2014
+# Filename........: archive/082-aaxjb.org
+# Update Output...: 7899
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 161480704.000000
+# Gestation Time..: 275
+# Fitness.........: 587202.560000
+# Errors..........: 6
+# Genome Size.....: 82
+# Copied Size.....: 82
+# Executed Size...: 77
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+jmp-head
+nand
+IO
+pop
+if-label
+dec
+swap
+nop-B
+h-alloc
+set-flow
+nop-A
+shift-r
+pop
+add
+push
+swap-stk
+nop-C
+IO
+if-less
+shift-r
+nop-A
+push
+nand
+push
+pop
+nop-C
+if-label
+if-n-equ
+mov-head
+if-label
+if-label
+IO
+swap
+mov-head
+nop-C
+nop-A
+nop-B
+h-alloc
+h-alloc
+mov-head
+nop-C
+swap-stk
+IO
+nop-C
+if-n-equ
+if-label
+swap
+nop-B
+nand
+nand
+nop-C
+pop
+nand
+IO
+h-divide
+nand
+add
+h-copy
+inc
+h-alloc
+set-flow
+push
+set-flow
+nand
+if-less
+IO
+IO
+nop-B
+add
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+mov-head
+swap
+shift-r
+nop-A
+nop-B

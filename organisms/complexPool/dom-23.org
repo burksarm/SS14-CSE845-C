@@ -1,0 +1,122 @@
+# Sat Feb  1 21:03:03 2014
+# Filename........: archive/093-aersp.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 182452224.000000
+# Gestation Time..: 266
+# Fitness.........: 685910.616541
+# Errors..........: 4
+# Genome Size.....: 93
+# Copied Size.....: 93
+# Executed Size...: 87
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+h-alloc
+sub
+nand
+nop-A
+jmp-head
+if-n-equ
+IO
+nand
+shift-l
+nand
+add
+nand
+h-search
+swap-stk
+if-label
+pop
+set-flow
+nand
+nand
+h-search
+dec
+nop-C
+inc
+swap-stk
+IO
+nand
+get-head
+set-flow
+get-head
+nop-B
+push
+get-head
+IO
+pop
+nop-C
+nand
+nop-C
+IO
+nop-A
+h-copy
+inc
+add
+push
+IO
+nand
+nand
+h-copy
+if-label
+nop-A
+set-flow
+IO
+if-n-equ
+nop-A
+pop
+swap-stk
+h-copy
+h-divide
+push
+nop-B
+if-label
+swap
+nop-A
+swap-stk
+nand
+swap
+nop-C
+if-less
+sub
+if-n-equ
+IO
+IO
+nop-A
+h-divide
+h-alloc
+if-label
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

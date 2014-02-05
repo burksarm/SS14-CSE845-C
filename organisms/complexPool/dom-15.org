@@ -1,0 +1,127 @@
+# Sat Feb  1 20:26:08 2014
+# Filename........: archive/098-aakrg.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3154116608.000000
+# Gestation Time..: 505
+# Fitness.........: 6245775.461386
+# Errors..........: 8
+# Genome Size.....: 98
+# Copied Size.....: 98
+# Executed Size...: 94
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-divide
+push
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+jmp-head
+nop-B
+nand
+sub
+add
+shift-l
+push
+h-search
+h-search
+h-divide
+if-label
+nop-C
+shift-r
+h-alloc
+pop
+push
+nop-A
+nop-A
+if-n-equ
+nop-A
+IO
+jmp-head
+dec
+nop-C
+nand
+swap
+IO
+swap
+inc
+nop-A
+if-label
+if-n-equ
+shift-l
+nop-A
+swap-stk
+nand
+nop-C
+if-less
+pop
+if-less
+nop-C
+IO
+nop-C
+if-label
+add
+nop-A
+nand
+nop-C
+inc
+push
+nop-C
+add
+nand
+nop-C
+h-alloc
+nop-C
+nop-B
+swap
+push
+nop-C
+IO
+pop
+IO
+sub
+inc
+get-head
+nop-B
+nop-B
+if-less
+h-copy
+if-n-equ
+if-less
+swap-stk
+swap
+swap
+inc
+nop-A
+shift-r
+if-label
+nop-C
+h-search
+h-copy
+if-label
+nop-C
+nop-A
+if-less
+mov-head
+h-divide
+sub
+nop-A
+nop-B

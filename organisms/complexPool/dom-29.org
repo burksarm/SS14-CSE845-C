@@ -1,0 +1,121 @@
+# Sat Feb  1 20:45:35 2014
+# Filename........: archive/092-acsbx.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5767168.000000
+# Gestation Time..: 213
+# Fitness.........: 27075.906103
+# Errors..........: 0
+# Genome Size.....: 92
+# Copied Size.....: 92
+# Executed Size...: 88
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+nop-C
+set-flow
+nop-A
+mov-head
+nop-C
+nop-A
+nop-B
+set-flow
+dec
+nop-A
+if-n-equ
+swap-stk
+add
+get-head
+dec
+swap
+dec
+nop-C
+set-flow
+nand
+nop-C
+if-less
+nop-B
+sub
+add
+IO
+nop-C
+pop
+nop-A
+if-n-equ
+nop-A
+swap-stk
+nand
+nop-C
+if-label
+IO
+nand
+nand
+nop-A
+push
+set-flow
+IO
+nop-A
+IO
+nop-C
+nop-C
+sub
+nop-C
+IO
+nop-C
+IO
+nand
+swap
+if-n-equ
+push
+swap-stk
+h-copy
+inc
+push
+add
+push
+nop-C
+nop-B
+nop-A
+IO
+h-divide
+add
+pop
+set-flow
+swap
+h-copy
+nand
+IO
+swap
+IO
+push
+h-divide
+nop-C
+swap
+h-copy
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

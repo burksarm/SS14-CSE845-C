@@ -1,0 +1,138 @@
+# Wed Feb  5 02:42:52 2014
+# Filename........: archive/109-aaivx.org
+# Update Output...: 7133
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 1543503872.000000
+# Gestation Time..: 1202
+# Fitness.........: 1284113.038270
+# Errors..........: 74
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 92
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-divide
+nop-C
+inc
+nand
+shift-r
+if-n-equ
+shift-l
+add
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+inc
+push
+IO
+nop-B
+push
+sub
+nop-B
+if-less
+nop-C
+nop-B
+dec
+nop-C
+h-copy
+add
+set-flow
+IO
+nand
+nop-C
+h-alloc
+h-alloc
+inc
+nop-C
+IO
+dec
+nop-C
+swap-stk
+if-n-equ
+if-less
+swap-stk
+nop-A
+nand
+nand
+push
+push
+nop-B
+push
+h-copy
+IO
+set-flow
+nand
+h-search
+nand
+pop
+if-n-equ
+dec
+nop-C
+nand
+IO
+sub
+nop-C
+h-divide
+nop-B
+h-copy
+IO
+nop-C
+nand
+nop-C
+nop-A
+pop
+add
+swap
+inc
+nop-C
+if-less
+h-copy
+nand
+IO
+IO
+nop-C
+h-alloc
+h-alloc
+swap-stk
+push
+nand
+nand
+nop-B
+get-head
+h-copy
+nand
+mov-head
+shift-l
+dec
+set-flow
+if-label
+if-n-equ
+pop
+swap
+push
+push
+sub
+if-n-equ
+h-copy
+get-head
+set-flow
+shift-l
+push

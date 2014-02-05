@@ -1,0 +1,133 @@
+# Wed Feb  5 03:27:40 2014
+# Filename........: archive/104-aakkt.org
+# Update Output...: 4542
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 1458176.000000
+# Gestation Time..: 413
+# Fitness.........: 3530.692494
+# Errors..........: 2
+# Genome Size.....: 104
+# Copied Size.....: 104
+# Executed Size...: 89
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 0 (0.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+nop-C
+nop-B
+nand
+shift-l
+nop-C
+set-flow
+set-flow
+nop-A
+nand
+nand
+get-head
+add
+inc
+get-head
+h-alloc
+if-n-equ
+mov-head
+nop-C
+if-n-equ
+h-copy
+h-alloc
+add
+if-label
+nop-A
+swap-stk
+IO
+swap
+nand
+inc
+IO
+push
+shift-r
+get-head
+h-divide
+get-head
+inc
+swap-stk
+set-flow
+sub
+h-divide
+if-n-equ
+swap
+nop-A
+IO
+set-flow
+swap
+h-copy
+swap-stk
+pop
+shift-l
+shift-r
+nop-B
+nand
+add
+inc
+IO
+nand
+nand
+nop-C
+inc
+add
+push
+swap-stk
+IO
+nop-C
+nand
+nop-C
+nand
+nop-A
+if-label
+if-label
+swap
+if-label
+inc
+add
+IO
+nand
+h-divide
+IO
+if-label
+h-search
+h-copy
+get-head
+if-less
+h-divide
+h-copy
+h-copy
+inc
+mov-head
+jmp-head
+add
+nop-A
+nop-B
+swap-stk
+h-divide
+nop-C
+h-search
+nop-C
+get-head
+nop-B
+if-label
+IO
+sub

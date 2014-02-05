@@ -1,0 +1,137 @@
+# Sat Feb  1 20:39:37 2014
+# Filename........: archive/108-adjuc.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6684672.000000
+# Gestation Time..: 257
+# Fitness.........: 26010.396887
+# Errors..........: 3
+# Genome Size.....: 108
+# Copied Size.....: 108
+# Executed Size...: 102
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+dec
+jmp-head
+shift-l
+IO
+inc
+h-search
+h-search
+h-alloc
+add
+swap-stk
+IO
+jmp-head
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+inc
+nop-B
+shift-l
+if-label
+jmp-head
+if-label
+nop-C
+swap-stk
+nop-C
+add
+swap
+dec
+if-n-equ
+h-alloc
+inc
+nop-B
+h-search
+if-less
+push
+IO
+nop-C
+nand
+sub
+get-head
+nop-A
+push
+push
+h-alloc
+sub
+nop-A
+if-less
+if-n-equ
+push
+IO
+nop-C
+h-copy
+IO
+IO
+nand
+nop-C
+nand
+nop-C
+nop-A
+nand
+IO
+nop-C
+if-label
+add
+nop-C
+if-n-equ
+h-alloc
+h-divide
+h-divide
+IO
+shift-r
+add
+if-label
+inc
+nop-C
+IO
+add
+shift-l
+nop-A
+swap
+swap
+swap
+IO
+nop-C
+if-n-equ
+swap
+sub
+IO
+shift-l
+pop
+sub
+IO
+inc
+IO
+nop-C
+if-n-equ
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

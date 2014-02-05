@@ -1,0 +1,110 @@
+# Wed Feb  5 03:36:38 2014
+# Filename........: archive/081-aaevx.org
+# Update Output...: 2022
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 163840.000000
+# Gestation Time..: 235
+# Fitness.........: 697.191489
+# Errors..........: 1
+# Genome Size.....: 81
+# Copied Size.....: 81
+# Executed Size...: 80
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 0 (0.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-divide
+jmp-head
+IO
+nop-C
+get-head
+nop-C
+sub
+set-flow
+add
+h-search
+h-divide
+h-divide
+shift-r
+nop-C
+swap
+h-alloc
+jmp-head
+set-flow
+nop-A
+sub
+jmp-head
+push
+IO
+if-label
+push
+swap
+shift-r
+shift-l
+h-divide
+IO
+if-label
+nand
+nop-C
+nand
+if-label
+mov-head
+nop-C
+shift-r
+nop-A
+IO
+nop-C
+nop-B
+if-label
+h-alloc
+nand
+nop-C
+if-label
+pop
+nop-C
+dec
+dec
+nop-C
+set-flow
+sub
+nop-C
+dec
+inc
+nand
+IO
+nop-C
+sub
+nop-C
+h-divide
+h-copy
+IO
+sub
+IO
+nop-C
+inc
+h-divide
+h-search
+h-copy
+h-copy
+swap
+h-copy
+nop-C
+h-copy
+add
+h-divide
+mov-head
+get-head

@@ -1,0 +1,118 @@
+# Tue Feb  4 21:46:22 2014
+# Filename........: archive/089-abbxc.org
+# Update Output...: 6495
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2885681152.000000
+# Gestation Time..: 242
+# Fitness.........: 11924302.280992
+# Errors..........: 0
+# Genome Size.....: 89
+# Copied Size.....: 89
+# Executed Size...: 86
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+h-search
+IO
+h-copy
+h-copy
+if-label
+nand
+nop-C
+sub
+nop-A
+h-divide
+h-divide
+if-n-equ
+nop-C
+h-copy
+nand
+push
+nop-C
+IO
+nop-C
+if-label
+nand
+IO
+swap
+nand
+pop
+nop-C
+if-less
+nop-B
+nand
+nop-A
+IO
+nop-A
+swap-stk
+swap-stk
+add
+swap-stk
+inc
+if-less
+IO
+if-label
+nop-B
+nand
+swap-stk
+IO
+nop-C
+push
+nop-B
+nand
+nop-C
+nand
+nop-C
+push
+nop-C
+sub
+nop-A
+h-copy
+add
+nop-B
+IO
+pop
+nand
+IO
+nop-B
+IO
+nand
+inc
+if-less
+if-label
+shift-r
+shift-r
+if-less
+mov-head
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

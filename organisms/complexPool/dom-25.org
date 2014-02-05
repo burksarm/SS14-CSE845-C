@@ -1,0 +1,138 @@
+# Sat Feb  1 20:48:48 2014
+# Filename........: archive/109-aakpe.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 99614720.000000
+# Gestation Time..: 227
+# Fitness.........: 438831.365639
+# Errors..........: 0
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 95
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
+
+
+if-less
+pop
+nand
+get-head
+push
+IO
+nop-C
+shift-r
+if-less
+nop-A
+IO
+set-flow
+if-less
+dec
+h-divide
+set-flow
+IO
+nand
+nop-C
+h-divide
+IO
+pop
+if-label
+h-divide
+nand
+set-flow
+if-n-equ
+h-alloc
+IO
+sub
+swap-stk
+pop
+set-flow
+dec
+if-label
+IO
+nop-C
+nop-A
+push
+nop-A
+swap-stk
+if-less
+nand
+h-divide
+if-label
+push
+if-less
+IO
+nand
+nop-C
+pop
+swap
+sub
+set-flow
+nop-A
+if-less
+pop
+mov-head
+nop-C
+IO
+swap-stk
+set-flow
+h-divide
+nand
+nand
+nop-C
+push
+IO
+nop-C
+if-label
+add
+pop
+push
+sub
+nop-C
+IO
+sub
+IO
+if-label
+sub
+nop-A
+add
+swap
+IO
+pop
+nand
+swap-stk
+IO
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+mov-head
+swap
+if-less
+pop
+nand
+get-head
+push
+IO
+nop-C
+shift-r
+if-less
+nop-A

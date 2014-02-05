@@ -1,0 +1,110 @@
+# Wed Feb  5 05:25:44 2014
+# Filename........: archive/081-aagrd.org
+# Update Output...: 2606
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 323584.000000
+# Gestation Time..: 457
+# Fitness.........: 708.061269
+# Errors..........: 3
+# Genome Size.....: 81
+# Copied Size.....: 81
+# Executed Size...: 79
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+swap-stk
+swap
+h-alloc
+set-flow
+nop-A
+IO
+mov-head
+nop-C
+h-copy
+inc
+if-less
+nand
+swap-stk
+IO
+sub
+pop
+add
+push
+set-flow
+h-alloc
+h-search
+dec
+swap
+nand
+IO
+h-alloc
+nop-A
+nop-B
+nand
+IO
+nop-C
+nand
+nop-C
+if-n-equ
+set-flow
+nand
+IO
+swap
+h-alloc
+if-n-equ
+get-head
+IO
+nop-C
+sub
+nop-C
+IO
+nop-C
+IO
+if-n-equ
+if-label
+h-divide
+nand
+add
+nop-B
+push
+nop-A
+swap
+dec
+sub
+inc
+nop-C
+IO
+nop-C
+h-copy
+get-head
+nand
+h-search
+nop-C
+nop-A
+if-n-equ
+nop-C
+inc
+nop-B
+IO
+swap-stk
+h-search
+nand
+h-divide
+h-copy
+nop-C
+mov-head

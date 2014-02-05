@@ -1,0 +1,118 @@
+# Tue Feb  4 22:01:50 2014
+# Filename........: archive/089-aagpn.org
+# Update Output...: 9122
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2583691264.000000
+# Gestation Time..: 1072
+# Fitness.........: 2410159.761194
+# Errors..........: 58
+# Genome Size.....: 89
+# Copied Size.....: 89
+# Executed Size...: 77
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+h-search
+IO
+h-copy
+h-copy
+if-label
+nand
+nop-C
+inc
+nop-A
+shift-l
+dec
+swap-stk
+nop-C
+h-copy
+if-less
+push
+nop-C
+IO
+nop-C
+nop-C
+nop-C
+IO
+h-alloc
+nand
+pop
+nop-C
+push
+nop-B
+nand
+nop-A
+IO
+nop-A
+nop-C
+push
+add
+nop-B
+inc
+if-less
+IO
+if-label
+mov-head
+nand
+h-alloc
+IO
+nop-C
+h-alloc
+h-divide
+nand
+nop-C
+nand
+swap
+push
+nop-C
+inc
+inc
+h-copy
+h-divide
+nop-B
+IO
+pop
+nand
+IO
+nop-A
+IO
+h-divide
+nop-C
+dec
+sub
+nop-A
+h-alloc
+if-less
+mov-head
+push
+add
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+nand
+mov-head
+nop-A
+nop-B

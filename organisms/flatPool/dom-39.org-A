@@ -1,0 +1,145 @@
+# Wed Feb  5 06:57:07 2014
+# Filename........: archive/116-acmpt.org
+# Update Output...: 16281
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3791650816.000000
+# Gestation Time..: 818
+# Fitness.........: 4635269.946210
+# Errors..........: 24
+# Genome Size.....: 116
+# Copied Size.....: 116
+# Executed Size...: 113
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+dec
+shift-r
+h-alloc
+nand
+push
+sub
+h-search
+dec
+sub
+if-n-equ
+dec
+if-label
+shift-r
+shift-l
+nand
+nop-C
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+swap-stk
+nop-C
+swap-stk
+if-less
+get-head
+get-head
+nop-C
+h-search
+inc
+sub
+set-flow
+swap
+dec
+if-label
+h-search
+inc
+nop-C
+if-label
+IO
+add
+nop-C
+nand
+nop-C
+h-copy
+IO
+nop-C
+h-alloc
+IO
+nop-A
+nop-A
+if-label
+nand
+nand
+nop-C
+h-copy
+shift-l
+if-label
+h-copy
+h-divide
+h-alloc
+shift-l
+shift-l
+shift-l
+pop
+nop-B
+dec
+sub
+IO
+if-n-equ
+h-divide
+nop-C
+if-label
+push
+nop-C
+if-n-equ
+nop-C
+if-label
+nand
+swap
+nand
+nop-C
+h-copy
+sub
+dec
+swap
+h-divide
+IO
+add
+if-label
+inc
+IO
+shift-r
+h-copy
+pop
+IO
+nop-C
+sub
+IO
+nand
+swap-stk
+nop-B
+IO
+h-copy
+swap-stk
+h-copy
+h-copy
+nop-C
+if-n-equ
+h-divide
+nop-C
+h-copy
+h-copy
+mov-head
+nop-A
+nop-B

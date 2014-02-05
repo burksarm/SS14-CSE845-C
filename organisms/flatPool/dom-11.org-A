@@ -1,0 +1,143 @@
+# Wed Feb  5 01:23:32 2014
+# Filename........: archive/114-aczkr.org
+# Update Output...: 6953
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 230686720.000000
+# Gestation Time..: 253
+# Fitness.........: 911805.217391
+# Errors..........: 6
+# Genome Size.....: 114
+# Copied Size.....: 114
+# Executed Size...: 110
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+shift-r
+if-label
+push
+h-alloc
+set-flow
+nop-A
+shift-r
+nop-C
+IO
+h-alloc
+if-label
+mov-head
+nop-C
+if-n-equ
+swap-stk
+nand
+inc
+set-flow
+h-alloc
+pop
+h-alloc
+nand
+h-copy
+add
+nand
+h-alloc
+pop
+jmp-head
+jmp-head
+nop-B
+h-divide
+if-n-equ
+nop-C
+nop-A
+h-divide
+nop-B
+if-n-equ
+jmp-head
+IO
+IO
+nop-C
+nand
+add
+nop-C
+nop-A
+nop-A
+inc
+nop-C
+h-alloc
+push
+sub
+swap-stk
+push
+IO
+nop-C
+nop-A
+set-flow
+push
+nand
+nop-C
+nand
+if-less
+nand
+h-alloc
+IO
+nop-A
+nand
+nop-A
+nop-A
+if-label
+IO
+nop-C
+sub
+nop-C
+if-label
+IO
+sub
+IO
+if-label
+pop
+sub
+sub
+nop-C
+h-copy
+IO
+if-label
+pop
+IO
+swap-stk
+nop-B
+add
+IO
+pop
+nop-B
+nop-A
+IO
+get-head
+swap-stk
+if-label
+set-flow
+set-flow
+swap
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

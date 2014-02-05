@@ -1,0 +1,136 @@
+# Sat Feb  1 20:54:32 2014
+# Filename........: archive/107-aaxuk.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6815744.000000
+# Gestation Time..: 292
+# Fitness.........: 23341.589041
+# Errors..........: 2
+# Genome Size.....: 107
+# Copied Size.....: 107
+# Executed Size...: 104
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+shift-l
+shift-l
+if-label
+IO
+swap
+IO
+inc
+h-alloc
+shift-r
+IO
+nand
+nand
+swap
+inc
+set-flow
+add
+IO
+nand
+IO
+nop-C
+set-flow
+nop-A
+IO
+swap
+nop-A
+IO
+mov-head
+nop-C
+nand
+h-divide
+h-divide
+nop-C
+add
+inc
+push
+IO
+h-alloc
+set-flow
+dec
+nop-A
+nop-A
+nand
+if-label
+IO
+if-less
+inc
+IO
+shift-l
+h-divide
+swap
+h-copy
+push
+inc
+if-n-equ
+push
+h-search
+dec
+set-flow
+if-label
+shift-r
+push
+get-head
+if-less
+shift-r
+IO
+nop-C
+sub
+if-label
+if-label
+get-head
+h-copy
+h-copy
+push
+IO
+h-alloc
+sub
+add
+inc
+get-head
+dec
+add
+pop
+h-copy
+swap
+IO
+nand
+nand
+nop-C
+IO
+nop-C
+sub
+if-less
+IO
+set-flow
+nop-C
+if-n-equ
+h-copy
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

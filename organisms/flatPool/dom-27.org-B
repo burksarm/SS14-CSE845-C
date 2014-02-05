@@ -1,0 +1,132 @@
+# Wed Feb  5 05:15:38 2014
+# Filename........: archive/103-aaenj.org
+# Update Output...: 3140
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6291456.000000
+# Gestation Time..: 940
+# Fitness.........: 6693.038298
+# Errors..........: 5
+# Genome Size.....: 103
+# Copied Size.....: 103
+# Executed Size...: 96
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 0 (0.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 0 (0.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nop-A
+h-alloc
+h-search
+set-flow
+nop-A
+mov-head
+nop-C
+set-flow
+h-search
+shift-r
+if-less
+h-copy
+set-flow
+h-search
+h-copy
+push
+dec
+if-less
+nop-B
+shift-l
+if-n-equ
+add
+IO
+if-label
+pop
+nop-C
+if-label
+nop-B
+if-n-equ
+if-label
+if-label
+IO
+nop-C
+IO
+nop-A
+if-n-equ
+nand
+swap-stk
+push
+nand
+nop-C
+if-less
+h-alloc
+inc
+nop-C
+h-alloc
+push
+h-divide
+IO
+add
+nop-C
+sub
+nop-C
+add
+IO
+nop-C
+nop-B
+pop
+nop-C
+h-alloc
+h-alloc
+swap
+nand
+IO
+nand
+shift-l
+pop
+inc
+add
+nop-A
+add
+IO
+h-divide
+pop
+h-alloc
+dec
+h-alloc
+IO
+shift-l
+nop-B
+if-n-equ
+h-divide
+h-copy
+h-divide
+swap-stk
+swap
+nop-B
+IO
+sub
+add
+swap
+h-search
+h-copy
+nop-C
+nop-C
+shift-r
+if-label
+h-divide
+if-label
+shift-l
+mov-head
+swap
+swap-stk

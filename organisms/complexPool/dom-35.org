@@ -1,0 +1,121 @@
+# Sat Feb  1 20:47:29 2014
+# Filename........: archive/092-aaloi.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2818572288.000000
+# Gestation Time..: 348
+# Fitness.........: 8099345.655172
+# Errors..........: 13
+# Genome Size.....: 92
+# Copied Size.....: 92
+# Executed Size...: 84
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+inc
+h-alloc
+set-flow
+nop-A
+if-label
+mov-head
+nop-C
+h-alloc
+nop-B
+swap-stk
+swap-stk
+if-label
+pop
+h-alloc
+h-alloc
+pop
+push
+dec
+nop-C
+nand
+IO
+nand
+nop-C
+pop
+IO
+h-alloc
+nop-C
+if-label
+nand
+nand
+nop-A
+nand
+add
+h-alloc
+IO
+nop-C
+swap
+nop-C
+inc
+sub
+nop-A
+IO
+IO
+nop-C
+nand
+nop-C
+IO
+nop-C
+swap-stk
+set-flow
+push
+nop-B
+if-less
+nop-A
+nand
+nand
+nop-C
+inc
+nop-C
+swap-stk
+if-label
+h-divide
+nop-A
+if-label
+sub
+pop
+nop-C
+inc
+swap
+sub
+IO
+add
+push
+shift-l
+h-alloc
+h-divide
+h-search
+h-copy
+shift-r
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+mov-head
+pop
+nop-A
+if-n-equ
+nop-C
+swap
+nop-A
+nop-B

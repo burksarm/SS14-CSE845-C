@@ -1,0 +1,138 @@
+# Sat Feb  1 20:49:04 2014
+# Filename........: archive/109-abgaq.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3556769792.000000
+# Gestation Time..: 298
+# Fitness.........: 11935469.100671
+# Errors..........: 10
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 106
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+IO
+h-divide
+nop-C
+nand
+if-n-equ
+set-flow
+shift-l
+h-divide
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+inc
+push
+if-n-equ
+nop-C
+sub
+swap
+nop-A
+swap-stk
+h-alloc
+nop-B
+dec
+nop-C
+pop
+pop
+inc
+IO
+nand
+nop-C
+h-copy
+nand
+inc
+nop-C
+IO
+dec
+nop-C
+swap-stk
+push
+if-less
+if-label
+push
+nand
+nand
+push
+if-n-equ
+push
+push
+h-copy
+IO
+sub
+nop-C
+h-search
+nand
+pop
+nop-B
+dec
+nop-C
+nand
+IO
+nand
+nop-C
+h-divide
+h-copy
+h-copy
+IO
+nop-C
+nand
+nop-C
+h-alloc
+pop
+add
+swap
+inc
+nop-C
+if-label
+h-copy
+nand
+IO
+IO
+nop-C
+nand
+sub
+h-divide
+h-copy
+inc
+h-alloc
+h-copy
+h-alloc
+sub
+if-label
+mov-head
+swap
+nop-A
+nop-C
+set-flow
+swap
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

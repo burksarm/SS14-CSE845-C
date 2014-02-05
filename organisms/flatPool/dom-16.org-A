@@ -1,0 +1,134 @@
+# Wed Feb  5 01:39:19 2014
+# Filename........: archive/105-acmam.org
+# Update Output...: 5921
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6553600.000000
+# Gestation Time..: 220
+# Fitness.........: 29789.090909
+# Errors..........: 6
+# Genome Size.....: 105
+# Copied Size.....: 105
+# Executed Size...: 100
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+nop-B
+h-search
+nop-A
+nop-C
+nop-A
+swap
+nop-C
+nop-A
+set-flow
+push
+mov-head
+nop-C
+sub
+pop
+swap-stk
+h-alloc
+dec
+IO
+nop-C
+swap-stk
+nand
+IO
+nand
+inc
+nop-A
+h-divide
+IO
+if-label
+nop-C
+get-head
+if-label
+nand
+swap
+swap-stk
+if-label
+dec
+nop-A
+pop
+sub
+dec
+push
+if-n-equ
+nop-A
+IO
+h-copy
+nop-B
+set-flow
+nop-A
+push
+push
+pop
+nop-C
+nand
+swap
+h-alloc
+inc
+IO
+if-less
+nop-C
+nand
+nand
+nop-C
+set-flow
+nop-C
+h-alloc
+nop-B
+h-alloc
+nop-A
+nop-A
+h-divide
+nop-C
+h-alloc
+if-less
+if-n-equ
+push
+IO
+IO
+nop-C
+nand
+add
+inc
+h-alloc
+IO
+shift-r
+pop
+sub
+nop-C
+nop-C
+IO
+nop-C
+if-less
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

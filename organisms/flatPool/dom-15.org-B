@@ -1,0 +1,127 @@
+# Wed Feb  5 04:52:03 2014
+# Filename........: archive/098-aagnx.org
+# Update Output...: 6028
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 1490944.000000
+# Gestation Time..: 935
+# Fitness.........: 1594.592513
+# Errors..........: 70
+# Genome Size.....: 98
+# Copied Size.....: 98
+# Executed Size...: 91
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+add
+shift-r
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+if-label
+swap-stk
+if-n-equ
+nop-A
+nop-A
+h-alloc
+if-n-equ
+h-alloc
+h-search
+h-alloc
+shift-l
+h-alloc
+if-label
+inc
+pop
+IO
+h-copy
+if-n-equ
+h-divide
+h-copy
+IO
+jmp-head
+swap-stk
+if-label
+sub
+nop-A
+push
+nop-A
+inc
+dec
+if-label
+h-alloc
+if-label
+add
+if-n-equ
+dec
+nop-C
+swap-stk
+nop-C
+nand
+h-alloc
+IO
+nop-C
+push
+nand
+nop-A
+swap
+nop-C
+inc
+push
+nop-C
+add
+nand
+nop-C
+pop
+nop-A
+h-copy
+swap
+push
+nop-C
+IO
+nop-A
+IO
+if-n-equ
+dec
+get-head
+nop-B
+get-head
+nop-B
+nop-A
+if-n-equ
+h-divide
+IO
+swap
+swap
+nop-B
+nand
+dec
+nop-C
+nop-C
+if-n-equ
+h-copy
+shift-l
+sub
+mov-head
+if-less
+get-head
+swap
+nop-C
+h-search
+if-less

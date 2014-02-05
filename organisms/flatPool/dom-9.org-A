@@ -1,0 +1,131 @@
+# Wed Feb  5 02:20:46 2014
+# Filename........: archive/102-abvle.org
+# Update Output...: 6290
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3321888768.000000
+# Gestation Time..: 245
+# Fitness.........: 13558729.665306
+# Errors..........: 2
+# Genome Size.....: 102
+# Copied Size.....: 102
+# Executed Size...: 99
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-alloc
+set-flow
+nop-A
+sub
+add
+nand
+mov-head
+nop-C
+shift-r
+IO
+if-n-equ
+if-label
+swap
+nand
+nand
+IO
+nand
+nop-C
+nand
+nop-B
+sub
+swap
+add
+nop-A
+inc
+if-label
+push
+if-label
+dec
+IO
+nop-A
+IO
+sub
+h-copy
+push
+swap
+IO
+if-n-equ
+nand
+set-flow
+add
+set-flow
+set-flow
+if-n-equ
+if-less
+inc
+IO
+if-less
+if-n-equ
+nop-A
+h-alloc
+IO
+pop
+push
+nand
+nop-A
+nand
+nop-C
+IO
+h-divide
+nand
+h-divide
+nand
+swap
+swap-stk
+h-copy
+inc
+add
+h-copy
+IO
+pop
+dec
+sub
+if-label
+IO
+nop-B
+swap
+IO
+nop-B
+nop-B
+nand
+if-n-equ
+IO
+sub
+h-divide
+h-divide
+nand
+nand
+IO
+nop-A
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

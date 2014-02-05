@@ -1,0 +1,134 @@
+# Sat Feb  1 20:59:33 2014
+# Filename........: archive/105-acuyy.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6553600.000000
+# Gestation Time..: 222
+# Fitness.........: 29520.720721
+# Errors..........: 2
+# Genome Size.....: 105
+# Copied Size.....: 105
+# Executed Size...: 100
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+nop-C
+dec
+h-copy
+IO
+IO
+nop-C
+nand
+push
+h-copy
+swap-stk
+h-divide
+shift-r
+dec
+get-head
+shift-r
+if-label
+if-less
+h-search
+swap-stk
+nop-B
+sub
+add
+pop
+nand
+nop-C
+nand
+IO
+nand
+push
+if-label
+nop-B
+mov-head
+sub
+nop-A
+IO
+inc
+shift-l
+shift-l
+nand
+if-n-equ
+h-alloc
+IO
+swap
+h-copy
+if-n-equ
+sub
+nop-C
+pop
+h-divide
+set-flow
+nand
+nop-C
+nand
+IO
+swap
+nand
+nop-C
+h-alloc
+IO
+set-flow
+h-divide
+nand
+add
+inc
+if-label
+nop-A
+set-flow
+push
+swap-stk
+swap
+sub
+IO
+nop-C
+IO
+nand
+IO
+swap-stk
+nop-A
+inc
+nop-A
+if-less
+swap-stk
+if-less
+h-search
+if-label
+pop
+inc
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+h-copy
+h-copy
+mov-head
+nop-A
+nop-B

@@ -1,0 +1,110 @@
+# Wed Feb  5 03:34:51 2014
+# Filename........: archive/081-abnnl.org
+# Update Output...: 4199
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5177344.000000
+# Gestation Time..: 161
+# Fitness.........: 32157.416149
+# Errors..........: 0
+# Genome Size.....: 81
+# Copied Size.....: 81
+# Executed Size...: 79
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+add
+nop-C
+IO
+nop-C
+sub
+nop-C
+swap-stk
+if-label
+if-n-equ
+nop-A
+nop-C
+nop-C
+dec
+nop-C
+swap
+h-alloc
+swap-stk
+set-flow
+nop-A
+h-divide
+sub
+nop-C
+IO
+swap-stk
+push
+swap
+jmp-head
+nop-C
+nand
+IO
+h-divide
+nand
+nop-C
+nand
+if-label
+mov-head
+nop-C
+if-less
+nop-C
+IO
+nop-C
+if-label
+nop-C
+if-n-equ
+inc
+nop-C
+set-flow
+pop
+nop-C
+dec
+dec
+nop-C
+swap-stk
+sub
+nop-C
+push
+inc
+nand
+IO
+nop-C
+sub
+nop-C
+swap-stk
+h-copy
+IO
+sub
+IO
+nop-C
+IO
+shift-r
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+nop-A

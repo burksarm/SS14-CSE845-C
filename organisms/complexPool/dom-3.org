@@ -1,0 +1,110 @@
+# Sat Feb  1 20:42:32 2014
+# Filename........: archive/081-aaaqy.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5111808.000000
+# Gestation Time..: 172
+# Fitness.........: 29719.813953
+# Errors..........: 2
+# Genome Size.....: 81
+# Copied Size.....: 81
+# Executed Size...: 78
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+nop-A
+h-alloc
+shift-l
+shift-l
+set-flow
+nop-A
+h-alloc
+mov-head
+nop-C
+get-head
+add
+h-copy
+nop-C
+push
+shift-l
+nand
+push
+h-divide
+get-head
+dec
+sub
+IO
+swap
+IO
+nand
+nand
+IO
+nand
+IO
+nand
+nop-C
+nop-C
+nop-B
+IO
+nop-A
+push
+h-divide
+h-divide
+nop-C
+IO
+nop-C
+if-n-equ
+if-label
+if-label
+if-n-equ
+set-flow
+nand
+swap
+add
+nop-C
+inc
+nop-C
+sub
+h-alloc
+nop-C
+h-copy
+set-flow
+IO
+add
+IO
+IO
+h-copy
+h-divide
+nand
+IO
+nop-C
+sub
+IO
+if-n-equ
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+h-copy
+mov-head
+set-flow
+nop-A

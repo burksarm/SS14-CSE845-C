@@ -1,0 +1,138 @@
+# Wed Feb  5 02:35:16 2014
+# Filename........: archive/109-abzrj.org
+# Update Output...: 7689
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3523215360.000000
+# Gestation Time..: 297
+# Fitness.........: 11862677.979798
+# Errors..........: 3
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 105
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+swap-stk
+push
+inc
+nand
+if-n-equ
+nop-A
+shift-l
+set-flow
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+inc
+push
+add
+nop-C
+set-flow
+nand
+if-n-equ
+swap-stk
+set-flow
+if-less
+dec
+nop-C
+IO
+pop
+IO
+if-label
+nand
+nop-C
+h-copy
+set-flow
+inc
+nop-C
+IO
+dec
+nop-C
+swap-stk
+push
+if-less
+h-alloc
+push
+nand
+nand
+push
+h-divide
+push
+push
+h-copy
+IO
+h-divide
+inc
+nop-C
+h-search
+pop
+nop-B
+dec
+nop-C
+nand
+IO
+nand
+nop-C
+h-divide
+h-copy
+h-copy
+IO
+nop-C
+nand
+nop-C
+dec
+pop
+add
+swap
+inc
+nop-C
+h-divide
+h-copy
+nand
+IO
+IO
+nop-C
+shift-l
+get-head
+inc
+h-copy
+inc
+shift-l
+h-copy
+h-alloc
+if-n-equ
+if-label
+mov-head
+swap
+if-n-equ
+add
+nand
+swap
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

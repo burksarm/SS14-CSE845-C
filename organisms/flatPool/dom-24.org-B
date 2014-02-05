@@ -1,0 +1,91 @@
+# Wed Feb  5 02:11:38 2014
+# Filename........: archive/062-aafcc.org
+# Update Output...: 2734
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 950272.000000
+# Gestation Time..: 434
+# Fitness.........: 2189.566820
+# Errors..........: 2
+# Genome Size.....: 62
+# Copied Size.....: 62
+# Executed Size...: 58
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+nop-A
+nop-A
+sub
+h-alloc
+h-search
+nop-C
+nop-C
+if-n-equ
+nand
+swap-stk
+if-n-equ
+IO
+nop-C
+IO
+nop-A
+push
+nop-C
+nand
+IO
+nand
+nop-C
+nand
+if-less
+IO
+nop-C
+pop
+nop-C
+mov-head
+nop-C
+if-label
+sub
+dec
+nop-C
+pop
+nop-C
+nop-B
+sub
+if-label
+h-alloc
+jmp-head
+swap-stk
+h-copy
+sub
+nop-C
+nand
+if-n-equ
+IO
+inc
+IO
+nop-C
+get-head
+nop-A
+if-label
+h-search
+h-copy
+h-divide
+if-less
+if-n-equ
+pop
+mov-head
+if-label
+h-search

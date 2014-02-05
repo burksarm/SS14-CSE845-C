@@ -1,0 +1,133 @@
+# Sat Feb  1 20:40:18 2014
+# Filename........: archive/104-aantt.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5832704.000000
+# Gestation Time..: 260
+# Fitness.........: 22433.476923
+# Errors..........: 0
+# Genome Size.....: 104
+# Copied Size.....: 104
+# Executed Size...: 89
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+nop-B
+if-n-equ
+jmp-head
+push
+nop-B
+swap-stk
+set-flow
+nop-A
+swap
+swap-stk
+nop-B
+shift-l
+nop-A
+shift-l
+h-divide
+jmp-head
+mov-head
+nop-C
+add
+h-copy
+nop-B
+shift-l
+shift-l
+pop
+swap
+if-label
+add
+sub
+dec
+IO
+push
+swap
+IO
+nand
+nop-A
+nop-B
+swap-stk
+add
+h-search
+pop
+inc
+swap
+nop-A
+IO
+if-n-equ
+swap
+h-copy
+swap-stk
+pop
+shift-l
+shift-r
+nand
+nand
+add
+inc
+IO
+nand
+nand
+nop-C
+inc
+add
+push
+swap-stk
+IO
+nop-C
+nand
+nop-C
+nand
+nop-A
+if-label
+if-less
+if-less
+if-label
+inc
+add
+IO
+nand
+IO
+dec
+if-label
+h-search
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+h-copy
+h-copy
+mov-head
+set-flow
+h-copy
+h-search
+h-copy
+nop-A
+h-alloc
+nop-B
+if-n-equ
+sub
+push
+nop-B
+swap-stk
+set-flow
+nop-A

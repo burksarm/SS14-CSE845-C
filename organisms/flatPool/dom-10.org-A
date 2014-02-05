@@ -1,0 +1,124 @@
+# Tue Feb  4 23:48:33 2014
+# Filename........: archive/095-abtpu.org
+# Update Output...: 7266
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2986344448.000000
+# Gestation Time..: 286
+# Fitness.........: 10441763.804196
+# Errors..........: 6
+# Genome Size.....: 95
+# Copied Size.....: 95
+# Executed Size...: 89
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+dec
+set-flow
+nop-A
+jmp-head
+nop-A
+nand
+IO
+nop-C
+sub
+nop-C
+inc
+add
+IO
+IO
+mov-head
+nop-C
+nand
+nand
+nop-C
+if-less
+if-label
+h-divide
+push
+IO
+IO
+nop-C
+h-alloc
+IO
+shift-r
+nand
+shift-l
+h-search
+if-n-equ
+h-copy
+inc
+add
+inc
+if-label
+h-search
+pop
+if-label
+add
+nop-C
+nand
+nop-C
+push
+if-label
+h-alloc
+shift-r
+nop-A
+IO
+nop-C
+push
+sub
+swap-stk
+IO
+if-label
+push
+push
+h-divide
+nand
+IO
+nand
+h-copy
+swap-stk
+h-divide
+if-label
+nop-B
+set-flow
+nand
+h-alloc
+if-label
+swap
+if-less
+nop-C
+pop
+add
+inc
+IO
+if-label
+nop-B
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+mov-head
+if-n-equ
+IO
+jmp-head
+dec
+nop-A

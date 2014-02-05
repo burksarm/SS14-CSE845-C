@@ -1,0 +1,118 @@
+# Wed Feb  5 07:12:21 2014
+# Filename........: archive/089-adirk.org
+# Update Output...: 5550
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 1409024.000000
+# Gestation Time..: 201
+# Fitness.........: 7010.069652
+# Errors..........: 0
+# Genome Size.....: 89
+# Copied Size.....: 89
+# Executed Size...: 86
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+set-flow
+nop-A
+nop-C
+mov-head
+nop-C
+add
+IO
+jmp-head
+dec
+push
+if-label
+pop
+shift-r
+sub
+swap
+nop-C
+shift-l
+if-n-equ
+shift-l
+h-copy
+h-search
+shift-l
+nop-C
+get-head
+IO
+nop-C
+pop
+pop
+h-divide
+if-less
+shift-l
+nand
+pop
+shift-l
+nand
+nand
+nop-C
+nop-A
+shift-l
+set-flow
+pop
+IO
+nand
+nand
+nop-C
+IO
+set-flow
+IO
+IO
+if-less
+nand
+IO
+pop
+add
+push
+nand
+IO
+shift-r
+IO
+nop-B
+swap
+IO
+nand
+IO
+pop
+sub
+IO
+swap-stk
+nop-C
+nop-C
+nop-A
+set-flow
+dec
+if-less
+shift-l
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+nop-A
+set-flow
+set-flow
+nop-A

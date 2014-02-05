@@ -1,0 +1,114 @@
+# Wed Feb  5 01:14:35 2014
+# Filename........: archive/085-aajcz.org
+# Update Output...: 4594
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2523136.000000
+# Gestation Time..: 844
+# Fitness.........: 2989.497630
+# Errors..........: 0
+# Genome Size.....: 85
+# Copied Size.....: 85
+# Executed Size...: 77
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 0 (0.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+set-flow
+sub
+nand
+pop
+set-flow
+jmp-head
+swap
+jmp-head
+add
+nand
+IO
+nop-C
+nand
+nop-C
+IO
+nand
+swap
+add
+nop-C
+set-flow
+sub
+dec
+sub
+nop-C
+IO
+IO
+h-divide
+h-divide
+sub
+shift-r
+swap-stk
+nop-A
+push
+add
+h-alloc
+nand
+IO
+sub
+get-head
+nop-C
+inc
+nop-B
+IO
+set-flow
+nop-A
+shift-l
+nop-B
+add
+IO
+mov-head
+nop-C
+push
+if-n-equ
+if-label
+nop-C
+h-divide
+h-copy
+get-head
+mov-head
+shift-l
+set-flow
+nop-A
+nand
+h-copy
+nop-A
+h-copy
+sub
+nop-A
+h-copy
+shift-l
+IO
+IO
+h-search
+if-label
+IO
+h-copy
+nand
+if-label
+push
+h-divide
+swap
+mov-head
+nand
+nop-B
+push

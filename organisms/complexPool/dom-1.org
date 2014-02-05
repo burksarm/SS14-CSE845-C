@@ -1,0 +1,118 @@
+# Sat Feb  1 20:55:14 2014
+# Filename........: archive/089-aepoe.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2885681152.000000
+# Gestation Time..: 246
+# Fitness.........: 11730411.186992
+# Errors..........: 4
+# Genome Size.....: 89
+# Copied Size.....: 89
+# Executed Size...: 86
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+h-search
+IO
+h-copy
+h-copy
+if-label
+nand
+nop-C
+sub
+nop-A
+h-divide
+h-divide
+swap-stk
+nop-C
+h-copy
+nand
+push
+nop-C
+IO
+nop-C
+if-label
+nand
+IO
+h-alloc
+nand
+pop
+nop-C
+push
+nop-B
+nand
+nop-A
+IO
+nop-A
+swap-stk
+swap-stk
+add
+swap-stk
+inc
+if-less
+IO
+if-label
+nop-B
+nand
+swap-stk
+IO
+nop-C
+h-alloc
+nop-A
+nand
+nop-C
+nand
+nop-C
+push
+nop-C
+sub
+nop-B
+h-copy
+dec
+nop-B
+IO
+pop
+nand
+IO
+nop-A
+IO
+h-divide
+shift-l
+dec
+if-label
+shift-r
+shift-r
+if-less
+mov-head
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B
