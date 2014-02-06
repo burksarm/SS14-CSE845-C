@@ -1,0 +1,146 @@
+# Wed Feb  5 21:17:45 2014
+# Filename........: archive/117-aadum.org
+# Update Output...: 3373
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 7405568.000000
+# Gestation Time..: 551
+# Fitness.........: 13440.232305
+# Errors..........: 42
+# Genome Size.....: 117
+# Copied Size.....: 117
+# Executed Size...: 113
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 0 (0.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 0 (0.000000)
+# andn 1 (1.000000)
+# nor 0 (0.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+mov-head
+nop-C
+nop-B
+sub
+h-divide
+jmp-head
+swap
+h-alloc
+dec
+IO
+nop-C
+shift-r
+inc
+nop-B
+shift-r
+add
+IO
+set-flow
+nop-A
+mov-head
+nop-C
+shift-l
+IO
+swap
+nand
+push
+h-alloc
+nand
+push
+nand
+nop-C
+swap-stk
+inc
+push
+swap
+add
+nop-A
+nop-A
+set-flow
+swap
+nop-C
+if-label
+set-flow
+nop-B
+mov-head
+nop-B
+set-flow
+nop-B
+swap
+push
+get-head
+dec
+nop-A
+nop-B
+h-alloc
+h-alloc
+shift-r
+IO
+nop-C
+shift-r
+pop
+if-n-equ
+nand
+nop-C
+sub
+nand
+IO
+swap-stk
+pop
+inc
+if-n-equ
+IO
+nop-A
+push
+add
+IO
+if-n-equ
+set-flow
+if-label
+inc
+add
+push
+IO
+if-label
+sub
+pop
+nop-C
+IO
+push
+nop-B
+sub
+nop-B
+sub
+nop-C
+IO
+add
+IO
+h-divide
+dec
+dec
+h-search
+h-divide
+pop
+if-n-equ
+h-alloc
+push
+push
+h-copy
+h-copy
+h-copy
+nop-B
+dec
+mov-head
+dec
+nop-C
+nop-A
+jmp-head

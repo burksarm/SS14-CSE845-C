@@ -1,14 +1,14 @@
-# Wed Feb  5 02:09:46 2014
-# Filename........: archive/062-aatrk.org
-# Update Output...: 6569
+# Wed Feb  5 21:53:23 2014
+# Filename........: archive/062-aapxu.org
+# Update Output...: 6558
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
 # Merit...........: 61865984.000000
-# Gestation Time..: 257
-# Fitness.........: 240723.673152
+# Gestation Time..: 254
+# Fitness.........: 243566.866142
 # Errors..........: 1
 # Genome Size.....: 62
 # Copied Size.....: 62
@@ -29,8 +29,8 @@
 
 nop-A
 nop-A
-swap
 h-alloc
+nand
 h-search
 nop-C
 nop-C
@@ -62,14 +62,14 @@ IO
 nop-C
 pop
 nop-C
-set-flow
-swap-stk
+if-n-equ
+nop-A
 add
 set-flow
-if-label
-if-n-equ
-h-copy
 sub
+nop-A
+h-copy
+dec
 nop-C
 nand
 nop-C

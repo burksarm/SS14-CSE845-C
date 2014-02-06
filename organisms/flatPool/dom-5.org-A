@@ -1,18 +1,18 @@
-# Wed Feb  5 07:27:30 2014
-# Filename........: archive/082-aaxjb.org
-# Update Output...: 7899
+# Wed Feb  5 21:53:59 2014
+# Filename........: archive/082-aavvd.org
+# Update Output...: 7836
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 161480704.000000
-# Gestation Time..: 275
-# Fitness.........: 587202.560000
-# Errors..........: 6
+# Merit...........: 159383552.000000
+# Gestation Time..: 276
+# Fitness.........: 577476.637681
+# Errors..........: 3
 # Genome Size.....: 82
 # Copied Size.....: 82
-# Executed Size...: 77
+# Executed Size...: 76
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -34,7 +34,7 @@ pop
 if-label
 dec
 swap
-nop-B
+sub
 h-alloc
 set-flow
 nop-A
@@ -56,22 +56,22 @@ nop-C
 if-label
 if-n-equ
 mov-head
-if-label
-if-label
+if-less
+nop-C
 IO
 swap
-mov-head
-nop-C
-nop-A
+if-n-equ
+if-n-equ
+if-label
 nop-B
-h-alloc
-h-alloc
+dec
+push
 mov-head
 nop-C
 swap-stk
 IO
 nop-C
-if-n-equ
+nop-C
 if-label
 swap
 nop-B
@@ -86,16 +86,16 @@ nand
 add
 h-copy
 inc
-h-alloc
-set-flow
+nop-B
+if-less
 push
 set-flow
 nand
 if-less
 IO
 IO
-nop-B
-add
+nop-C
+h-search
 h-search
 h-copy
 h-copy
@@ -105,7 +105,7 @@ nop-C
 nop-A
 set-flow
 mov-head
-swap
-shift-r
+inc
+h-divide
 nop-A
 nop-B

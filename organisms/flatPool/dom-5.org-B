@@ -1,51 +1,51 @@
-# Wed Feb  5 07:28:29 2014
-# Filename........: archive/082-aablw.org
-# Update Output...: 2517
+# Wed Feb  5 21:07:30 2014
+# Filename........: archive/082-aabji.org
+# Update Output...: 2305
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 647168.000000
-# Gestation Time..: 308
-# Fitness.........: 2101.194805
-# Errors..........: 4
+# Merit...........: 614400.000000
+# Gestation Time..: 499
+# Fitness.........: 1231.262525
+# Errors..........: 3
 # Genome Size.....: 82
 # Copied Size.....: 82
-# Executed Size...: 79
+# Executed Size...: 75
 # Offspring.......: SELF
 # 
 # Tasks Performed:
 # not 1 (1.000000)
-# nand 1 (1.000000)
-# and 1 (1.000000)
-# orn 0 (0.000000)
-# or 0 (0.000000)
-# andn 0 (0.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
 # nor 1 (1.000000)
 # xor 0 (0.000000)
-# equ 1 (1.000000)
+# equ 0 (0.000000)
 
 
 jmp-head
-nand
+if-label
 IO
 pop
 if-label
 dec
 swap
-inc
+nand
 h-alloc
 set-flow
 nop-A
-dec
+nop-C
 pop
 add
 push
 swap-stk
-shift-l
+h-alloc
 IO
-if-less
+push
 shift-r
 nop-A
 push
@@ -55,23 +55,23 @@ pop
 nop-C
 if-label
 if-n-equ
-if-less
-if-less
 mov-head
+if-less
+h-divide
 IO
 swap
-if-less
-if-label
+if-n-equ
+push
+get-head
 mov-head
 nop-C
-if-n-equ
-if-less
-mov-head
+get-head
+nop-B
 nop-C
 swap-stk
 IO
 nop-C
-nop-C
+if-n-equ
 if-label
 swap
 nop-B
@@ -86,26 +86,26 @@ nand
 add
 h-copy
 inc
-h-alloc
 if-label
+if-less
 push
-add
+set-flow
 if-less
 swap
 IO
-IO
-inc
-get-head
+if-less
+set-flow
+sub
 h-search
+add
 h-copy
-h-copy
-h-copy
+swap
 if-label
 nop-C
 nop-A
 set-flow
-sub
-nop-B
 mov-head
+h-alloc
+swap-stk
 nop-A
 nop-B

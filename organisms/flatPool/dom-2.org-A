@@ -1,0 +1,137 @@
+# Wed Feb  5 22:01:30 2014
+# Filename........: archive/108-acgme.org
+# Update Output...: 10120
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 216006656.000000
+# Gestation Time..: 342
+# Fitness.........: 631598.409357
+# Errors..........: 10
+# Genome Size.....: 108
+# Copied Size.....: 108
+# Executed Size...: 103
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+h-search
+h-search
+nop-B
+IO
+inc
+sub
+h-search
+h-alloc
+push
+add
+h-divide
+jmp-head
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+if-less
+nand
+inc
+nop-B
+set-flow
+if-less
+mov-head
+shift-l
+add
+swap-stk
+dec
+dec
+if-n-equ
+pop
+if-n-equ
+push
+h-search
+swap-stk
+h-divide
+IO
+nop-C
+nand
+nand
+dec
+nop-A
+push
+push
+h-alloc
+push
+swap
+h-alloc
+if-less
+if-n-equ
+IO
+nop-C
+h-copy
+IO
+IO
+nand
+nop-C
+nand
+nop-C
+nop-A
+nand
+IO
+nop-C
+nop-A
+add
+nop-C
+if-n-equ
+h-alloc
+h-alloc
+nop-A
+IO
+if-less
+add
+pop
+inc
+nop-C
+IO
+add
+shift-l
+nop-A
+swap
+swap
+swap
+IO
+nop-C
+if-n-equ
+swap
+sub
+IO
+inc
+pop
+sub
+IO
+h-alloc
+IO
+nop-C
+if-n-equ
+push
+h-copy
+h-copy
+if-label
+h-search
+h-divide
+h-copy
+h-copy
+mov-head
+nop-A
+nop-B

@@ -1,18 +1,18 @@
-# Wed Feb  5 21:51:32 2014
-# Filename........: archive/105-acinc.org
-# Update Output...: 5898
+# Wed Feb  5 21:50:58 2014
+# Filename........: archive/105-aboay.org
+# Update Output...: 5487
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 6619136.000000
-# Gestation Time..: 221
-# Fitness.........: 29950.841629
-# Errors..........: 3
+# Merit...........: 3422552064.000000
+# Gestation Time..: 258
+# Fitness.........: 13265705.674419
+# Errors..........: 2
 # Genome Size.....: 105
 # Copied Size.....: 105
-# Executed Size...: 101
+# Executed Size...: 102
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -23,111 +23,111 @@
 # or 1 (1.000000)
 # andn 1 (1.000000)
 # nor 1 (1.000000)
-# xor 0 (0.000000)
-# equ 0 (0.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
 
 
 h-alloc
-nop-B
-set-flow
+h-search
 nop-A
-dec
-h-divide
-swap
-dec
-nop-A
-if-label
-IO
 mov-head
 nop-C
+swap
 nop-A
-pop
-if-less
-h-alloc
-dec
+h-copy
+IO
 IO
 nop-C
+nand
+push
+h-copy
 swap-stk
+h-alloc
 nand
-IO
-nand
+if-n-equ
+add
 shift-r
 nop-A
 if-less
+h-search
+swap-stk
+if-less
 IO
+nand
+pop
+nand
+nop-C
+nand
+IO
+nand
+push
+if-label
+if-less
+mov-head
+sub
+nop-A
+IO
+nand
+shift-l
+h-divide
+inc
+shift-r
+h-alloc
+IO
+swap
+h-copy
+h-divide
+sub
+nop-C
+pop
 if-less
 nop-C
-IO
-if-label
 nand
+nop-C
+nand
+IO
 swap
 nand
+nop-C
+nand
+IO
+set-flow
 h-divide
-shift-r
-nop-B
-pop
-sub
-dec
-push
-set-flow
-nop-B
-IO
-h-copy
-if-n-equ
-nop-C
-nop-A
-push
-push
-pop
-nop-C
-nand
-nop-C
-nop-C
-shift-l
-IO
-swap-stk
-nop-C
-nand
-nand
-nop-C
-h-divide
-h-alloc
-push
-h-alloc
-if-less
-if-n-equ
-set-flow
-set-flow
-inc
-pop
-set-flow
-nop-C
-push
-IO
-IO
-nop-C
 nand
 add
 inc
-h-alloc
+push
+nop-A
+if-less
+push
+swap-stk
+swap
+sub
+IO
+nop-C
+IO
+nand
+pop
+swap
+nop-A
+h-divide
+add
+if-less
+jmp-head
+dec
+nop-C
 IO
 shift-r
-pop
-sub
-nop-C
-dec
-IO
-nop-C
-if-less
+shift-l
 h-search
-h-copy
-h-copy
 h-copy
 h-copy
 if-label
 nop-C
 nop-A
 h-divide
+h-copy
+h-copy
 h-copy
 mov-head
 nop-A

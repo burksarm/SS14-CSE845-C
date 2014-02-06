@@ -1,18 +1,18 @@
-# Wed Feb  5 03:22:59 2014
-# Filename........: archive/104-adbdk.org
-# Update Output...: 7136
+# Wed Feb  5 21:55:06 2014
+# Filename........: archive/104-addne.org
+# Update Output...: 7180
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 5898240.000000
-# Gestation Time..: 257
-# Fitness.........: 22950.350195
+# Merit...........: 5832704.000000
+# Gestation Time..: 260
+# Fitness.........: 22433.476923
 # Errors..........: 2
 # Genome Size.....: 104
 # Copied Size.....: 104
-# Executed Size...: 90
+# Executed Size...: 89
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -29,57 +29,57 @@
 
 h-alloc
 nop-B
-if-n-equ
-mov-head
-push
-swap-stk
-jmp-head
 set-flow
-nop-A
 jmp-head
-jmp-head
-nop-B
-shift-l
-pop
-nop-A
-swap
-jmp-head
-mov-head
-nop-C
-nop-A
-h-copy
-add
-IO
-if-n-equ
-nop-A
-inc
-set-flow
-add
-sub
-nand
-IO
-push
-swap
-IO
-nand
-nop-A
-nop-B
-swap-stk
-nand
-h-search
-if-n-equ
-inc
-swap
-nop-A
-IO
-if-label
-swap
-h-copy
-swap-stk
-pop
-shift-l
-nop-A
 h-alloc
+sub
+swap-stk
+set-flow
+nop-A
+get-head
+nop-B
+jmp-head
+shift-l
+sub
+shift-l
+h-divide
+h-alloc
+mov-head
+nop-C
+inc
+h-copy
+if-label
+if-less
+shift-l
+shift-r
+if-label
+push
+add
+shift-r
+swap
+IO
+push
+swap
+IO
+nand
+nop-A
+nop-B
+swap-stk
+set-flow
+h-search
+shift-l
+add
+swap
+nop-A
+IO
+if-n-equ
+swap
+h-copy
+swap-stk
+pop
+shift-l
+shift-r
+nand
 nand
 add
 inc
@@ -97,16 +97,16 @@ nand
 nop-C
 nand
 nop-A
-h-divide
+if-label
 if-less
-h-divide
+nop-C
 if-label
 inc
 add
 IO
 nand
 IO
-h-divide
+get-head
 if-label
 h-search
 h-copy
@@ -117,17 +117,17 @@ h-copy
 h-copy
 h-copy
 mov-head
-nop-A
-swap
-nop-C
-if-n-equ
 nand
-get-head
-nop-B
-get-head
-h-copy
-push
-inc
+h-search
+add
+swap
+set-flow
 jmp-head
-h-divide
+nop-B
+mov-head
+nop-C
+h-search
+if-n-equ
+pop
+set-flow
 nop-A

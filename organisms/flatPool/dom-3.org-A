@@ -1,18 +1,18 @@
-# Wed Feb  5 05:34:10 2014
-# Filename........: archive/081-acisb.org
-# Update Output...: 4555
+# Wed Feb  5 21:52:08 2014
+# Filename........: archive/081-achyb.org
+# Update Output...: 4569
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 5111808.000000
-# Gestation Time..: 169
-# Fitness.........: 30247.384615
-# Errors..........: 3
+# Merit...........: 5177344.000000
+# Gestation Time..: 171
+# Fitness.........: 30276.865497
+# Errors..........: 2
 # Genome Size.....: 81
 # Copied Size.....: 81
-# Executed Size...: 78
+# Executed Size...: 79
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -27,27 +27,27 @@
 # equ 0 (0.000000)
 
 
-swap-stk
 shift-r
 h-alloc
-if-label
+shift-l
+h-search
 set-flow
 nop-A
-swap
+nop-A
 mov-head
 nop-C
-shift-l
-add
+inc
+nop-B
 h-copy
-shift-r
 IO
-shift-l
-if-n-equ
+jmp-head
+swap
+nand
 dec
-h-copy
+h-divide
+swap
 dec
-nop-C
-sub
+nop-A
 IO
 swap
 IO
@@ -58,18 +58,18 @@ nand
 IO
 nand
 nop-C
-if-n-equ
+nop-C
 nop-B
 IO
-nop-A
 nop-C
-h-divide
-set-flow
-nop-A
+push
+shift-r
+nop-C
+nop-C
 IO
 nop-C
 h-alloc
-if-less
+nop-A
 if-label
 if-n-equ
 set-flow
@@ -81,9 +81,9 @@ inc
 nop-C
 sub
 h-alloc
-h-alloc
-nop-B
-push
+if-n-equ
+h-copy
+set-flow
 IO
 add
 IO
@@ -106,5 +106,5 @@ h-divide
 h-copy
 h-copy
 mov-head
-set-flow
+if-label
 nop-A

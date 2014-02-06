@@ -1,18 +1,18 @@
-# Wed Feb  5 03:58:43 2014
-# Filename........: archive/100-aafae.org
-# Update Output...: 4827
+# Wed Feb  5 21:31:09 2014
+# Filename........: archive/100-aafwq.org
+# Update Output...: 4925
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 2852126720.000000
-# Gestation Time..: 1999
-# Fitness.........: 1426776.748374
-# Errors..........: 4
+# Merit...........: 171966464.000000
+# Gestation Time..: 1255
+# Fitness.........: 137025.070916
+# Errors..........: 40
 # Genome Size.....: 100
 # Copied Size.....: 100
-# Executed Size...: 85
+# Executed Size...: 82
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -23,51 +23,51 @@
 # or 1 (1.000000)
 # andn 1 (1.000000)
 # nor 1 (1.000000)
-# xor 1 (1.000000)
+# xor 0 (0.000000)
 # equ 1 (1.000000)
 
 
-jmp-head
 h-alloc
-swap-stk
+jmp-head
+pop
 set-flow
 nop-A
 mov-head
 nop-C
-dec
-set-flow
-swap
-h-alloc
-IO
-nop-C
+h-search
+h-divide
 add
-h-copy
-swap
-swap-stk
-h-alloc
-inc
-if-label
-h-alloc
-nop-C
-h-alloc
-IO
-if-n-equ
-pop
-nand
-IO
-IO
-pop
-swap-stk
-swap
-nand
-swap-stk
-nop-B
-nand
-if-n-equ
 nop-A
+nand
+dec
+h-alloc
+if-n-equ
+sub
+nand
+h-copy
+sub
+nop-A
+sub
+IO
 if-less
+sub
+nand
+IO
+IO
 if-label
+IO
+push
+inc
+shift-l
 pop
+h-copy
+swap-stk
+push
+if-label
+nand
+if-less
+sub
+h-copy
 IO
 nop-C
 nand
@@ -81,49 +81,49 @@ swap
 nand
 nand
 nop-C
-nop-C
-push
+if-n-equ
+h-alloc
 nop-B
+nop-B
+push
+nop-C
 h-copy
-push
-nop-C
-nop-B
 nand
-swap
+nop-C
 inc
 add
 swap
 sub
 IO
-swap-stk
-IO
-IO
-h-divide
-nand
 nop-C
-pop
+IO
+IO
+if-n-equ
 nand
 swap
+pop
+nand
+IO
 h-copy
-if-label
-h-search
+nop-B
+shift-r
 nop-A
-IO
-if-label
-push
-mov-head
-jmp-head
-jmp-head
-IO
+shift-l
 mov-head
 shift-r
-shift-l
-shift-l
-sub
+nop-C
+jmp-head
+h-copy
+swap
 add
-inc
-h-divide
 nop-A
+swap
+add
+swap
+h-search
+IO
 nop-B
-inc
-swap-stk
+nand
+push
+push
+h-search

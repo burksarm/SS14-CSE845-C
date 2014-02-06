@@ -1,138 +1,138 @@
-# Tue Feb  4 22:38:52 2014
-# Filename........: archive/109-aambq.org
-# Update Output...: 3703
+# Wed Feb  5 21:19:08 2014
+# Filename........: archive/109-aajdu.org
+# Update Output...: 2957
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 6094848.000000
-# Gestation Time..: 270
-# Fitness.........: 22573.511111
-# Errors..........: 3
+# Merit...........: 753664.000000
+# Gestation Time..: 247
+# Fitness.........: 3051.271255
+# Errors..........: 0
 # Genome Size.....: 109
 # Copied Size.....: 109
-# Executed Size...: 93
+# Executed Size...: 92
 # Offspring.......: SELF
 # 
 # Tasks Performed:
-# not 0 (0.000000)
+# not 1 (1.000000)
 # nand 0 (0.000000)
 # and 0 (0.000000)
 # orn 1 (1.000000)
 # or 1 (1.000000)
 # andn 1 (1.000000)
 # nor 1 (1.000000)
-# xor 1 (1.000000)
+# xor 0 (0.000000)
 # equ 0 (0.000000)
 
 
-shift-l
-swap-stk
-dec
-inc
-dec
-swap-stk
-nop-C
-jmp-head
-if-less
-shift-l
-h-divide
-pop
-nop-C
-h-divide
-swap-stk
-pop
-set-flow
-inc
-if-less
 swap
-inc
+if-less
+h-search
+add
 dec
+if-less
+if-label
+swap-stk
+swap-stk
+inc
+h-divide
+if-label
+set-flow
+if-n-equ
+nop-C
+set-flow
+get-head
+swap
+if-n-equ
+h-divide
+set-flow
 sub
-IO
+add
 sub
 if-n-equ
-if-label
-h-alloc
+nop-B
+nop-B
 if-less
-nop-A
 if-label
-set-flow
+if-less
+inc
+nop-C
+swap
+swap
 nand
-push
-if-less
 IO
 nop-C
-h-alloc
-set-flow
 nop-A
-h-divide
 if-less
+nop-A
+h-search
+h-alloc
 nand
+h-divide
+if-label
+push
 nop-B
-push
-push
-add
 IO
 nand
-swap
+nop-C
 pop
 swap
 sub
-if-less
-if-label
-if-less
 set-flow
+nop-A
+h-divide
+if-n-equ
 mov-head
 nop-C
 IO
-h-alloc
-if-less
-add
+swap-stk
+if-label
+swap-stk
 nand
 nand
-nop-C
-set-flow
-IO
 nop-C
 push
-set-flow
-nop-B
-nop-A
+IO
+nop-C
+pop
+if-less
+push
+push
 sub
 nop-C
 IO
-h-alloc
+push
 IO
-if-less
-sub
-nop-A
+if-n-equ
+set-flow
+h-divide
 add
 swap
 IO
 pop
 nand
-if-label
+set-flow
 IO
 h-search
 h-copy
 h-copy
 h-copy
 h-copy
-nand
-jmp-head
+if-less
+IO
 h-divide
 h-copy
 mov-head
-jmp-head
-nop-B
-if-n-equ
-mov-head
-mov-head
-h-divide
-dec
+if-label
+shift-r
 IO
-get-head
-nop-A
-nop-B
+nop-C
+shift-r
+nop-C
+shift-l
+swap-stk
+set-flow
+jmp-head
+dec

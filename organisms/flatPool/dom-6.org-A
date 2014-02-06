@@ -1,18 +1,18 @@
-# Tue Feb  4 22:15:31 2014
-# Filename........: archive/104-adknp.org
-# Update Output...: 6015
+# Wed Feb  5 21:50:58 2014
+# Filename........: archive/104-adrdy.org
+# Update Output...: 6129
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 1622016.000000
-# Gestation Time..: 232
-# Fitness.........: 6991.448276
-# Errors..........: 4
+# Merit...........: 1327104.000000
+# Gestation Time..: 213
+# Fitness.........: 6230.535211
+# Errors..........: 2
 # Genome Size.....: 104
 # Copied Size.....: 104
-# Executed Size...: 99
+# Executed Size...: 81
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -27,65 +27,65 @@
 # equ 0 (0.000000)
 
 
-swap-stk
 h-alloc
-shift-l
-swap-stk
+h-alloc
+nop-A
+get-head
 jmp-head
-pop
+nop-C
 set-flow
 nop-A
 mov-head
 nop-C
-shift-l
 h-alloc
-push
-if-label
-push
-shift-r
-if-n-equ
-if-label
-nop-A
-jmp-head
-jmp-head
-if-n-equ
-set-flow
-if-label
-h-copy
-swap
-IO
-h-divide
-set-flow
-nand
-jmp-head
-IO
 nop-C
-set-flow
-h-copy
-nand
-nop-C
-h-copy
 nop-B
+nop-C
+nand
+set-flow
+IO
+swap-stk
+if-less
+set-flow
+nop-C
+set-flow
+nand
+h-divide
+h-copy
+h-search
+pop
+nop-B
+dec
+nand
+set-flow
+IO
+nop-C
+if-n-equ
+h-copy
+sub
+nop-C
+h-copy
+h-divide
 add
 inc
 swap-stk
+if-label
 h-divide
-swap
 IO
-push
+nop-B
 nand
 swap
 nop-B
-h-alloc
+set-flow
 nand
 nop-C
 swap-stk
 nand
 IO
 pop
-dec
-h-copy
 nand
+h-copy
+sub
 IO
 push
 nop-C
@@ -94,40 +94,40 @@ nop-C
 pop
 sub
 IO
-if-n-equ
-swap-stk
-nand
-IO
-h-search
-h-alloc
-sub
-h-search
-h-copy
-h-copy
-h-copy
-h-copy
-if-label
-nop-C
-if-label
-mov-head
-push
-inc
-nop-A
-h-divide
 swap
-if-label
-jmp-head
-h-alloc
-jmp-head
+h-divide
+nand
 if-less
-jmp-head
-nand
-nop-B
-inc
-nop-B
-jmp-head
-pop
+IO
+swap
+shift-r
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
 if-label
+nop-C
 h-divide
 mov-head
+shift-r
+nop-B
+shift-l
+nop-C
+swap
+push
+IO
+mov-head
+if-less
+push
+h-copy
+h-divide
+h-alloc
+nop-C
+h-alloc
+sub
+IO
+swap-stk
+pop
+inc
 nop-A

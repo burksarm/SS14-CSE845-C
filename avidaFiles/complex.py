@@ -4,7 +4,7 @@ import sys
 from subprocess import call
 
 #Figure out the directory name to save to
-baseDir = "/mnt/home/burksarm/Documents/CSE845/20140201/complex/"
+baseDir = "../organisms/complex/"
 
 #Don't cause an endless loop if we mess with the dirs
 if os.path.isdir(baseDir):

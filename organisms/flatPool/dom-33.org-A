@@ -1,15 +1,15 @@
-# Wed Feb  5 00:38:20 2014
-# Filename........: archive/107-abzxp.org
-# Update Output...: 13318
+# Wed Feb  5 22:06:24 2014
+# Filename........: archive/107-abyvl.org
+# Update Output...: 13950
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
 # Merit...........: 3254779904.000000
-# Gestation Time..: 404
-# Fitness.........: 8056385.900990
-# Errors..........: 3
+# Gestation Time..: 392
+# Fitness.........: 8303009.959184
+# Errors..........: 2
 # Genome Size.....: 107
 # Copied Size.....: 107
 # Executed Size...: 97
@@ -27,92 +27,92 @@
 # equ 1 (1.000000)
 
 
-if-label
+nop-A
 h-alloc
-get-head
+pop
 nop-C
 if-n-equ
-nand
+add
 set-flow
 nop-A
-shift-l
-shift-r
-inc
+IO
+pop
+nand
 mov-head
 nop-C
-shift-l
-h-alloc
-nop-C
-nand
-IO
-nop-C
-sub
-nop-C
-IO
-nand
-push
-push
-h-alloc
-nand
-h-copy
-h-copy
-push
-push
-swap-stk
-IO
-swap-stk
-nand
-nop-C
-swap-stk
-inc
-nop-C
-h-divide
-if-n-equ
-add
-add
-nop-C
-IO
-sub
-h-alloc
-h-divide
-IO
-push
-swap
-dec
-if-n-equ
-if-less
-IO
-h-divide
-sub
-IO
-nand
-swap
-shift-r
-IO
-nop-C
+set-flow
+if-label
 if-label
 nand
 IO
+nop-C
+sub
+nop-C
+IO
+nand
+push
+if-less
+nop-C
+nand
+set-flow
+h-copy
+push
+push
+swap-stk
+IO
+swap-stk
+nand
+nop-C
+swap-stk
+inc
+nop-C
+h-divide
+if-n-equ
+add
+add
+nop-C
+IO
+sub
+h-alloc
+h-divide
+IO
+push
+swap
+h-copy
+swap
+shift-l
+IO
+nop-A
+h-alloc
+IO
+nop-C
+swap
+push
+IO
+swap
+pop
+nand
+IO
 nand
 nand
 IO
-if-n-equ
+h-divide
 nop-B
 swap-stk
 nand
 nop-C
+h-copy
 nop-C
-shift-l
-sub
+h-divide
 h-copy
-h-copy
-h-copy
+inc
+nop-B
 pop
 add
 nop-B
-IO
 nop-A
-set-flow
+h-copy
+if-n-equ
 inc
 nand
 IO
@@ -125,12 +125,12 @@ h-copy
 h-copy
 h-divide
 mov-head
-mov-head
-jmp-head
+IO
+IO
+nop-C
+IO
+swap-stk
 add
-add
-dec
-push
-set-flow
-set-flow
-pop
+nop-A
+swap-stk
+swap

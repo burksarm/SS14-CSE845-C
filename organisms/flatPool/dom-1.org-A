@@ -1,15 +1,15 @@
-# Tue Feb  4 21:46:22 2014
-# Filename........: archive/089-abbxc.org
-# Update Output...: 6495
+# Wed Feb  5 21:55:37 2014
+# Filename........: archive/089-abdls.org
+# Update Output...: 6575
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
 # Merit...........: 2885681152.000000
-# Gestation Time..: 242
-# Fitness.........: 11924302.280992
-# Errors..........: 0
+# Gestation Time..: 247
+# Fitness.........: 11682919.643725
+# Errors..........: 8
 # Genome Size.....: 89
 # Copied Size.....: 89
 # Executed Size...: 86
@@ -40,11 +40,11 @@ h-copy
 if-label
 nand
 nop-C
-sub
+inc
 nop-A
-h-divide
-h-divide
-if-n-equ
+h-alloc
+nop-A
+swap-stk
 nop-C
 h-copy
 nand
@@ -55,20 +55,20 @@ nop-C
 if-label
 nand
 IO
-swap
+nop-B
 nand
 pop
 nop-C
-if-less
+push
 nop-B
 nand
 nop-A
 IO
 nop-A
-swap-stk
+nop-C
 swap-stk
 add
-swap-stk
+h-alloc
 inc
 if-less
 IO
@@ -78,29 +78,29 @@ nand
 swap-stk
 IO
 nop-C
-push
-nop-B
-nand
-nop-C
-nand
-nop-C
-push
-nop-C
-sub
+shift-r
 nop-A
+nand
+nop-C
+nand
+nop-C
+push
+nop-C
+h-alloc
+h-alloc
 h-copy
-add
+nop-C
 nop-B
 IO
 pop
 nand
 IO
-nop-B
+pop
 IO
-nand
-inc
-if-less
-if-label
+nop-B
+add
+dec
+pop
 shift-r
 shift-r
 if-less

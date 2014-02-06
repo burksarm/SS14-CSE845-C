@@ -1,15 +1,15 @@
-# Tue Feb  4 23:52:25 2014
-# Filename........: archive/095-aadwa.org
-# Update Output...: 4427
+# Wed Feb  5 21:15:46 2014
+# Filename........: archive/095-aadmc.org
+# Update Output...: 3316
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
 # Merit...........: 2986344448.000000
-# Gestation Time..: 1129
-# Fitness.........: 2645123.514615
-# Errors..........: 47
+# Gestation Time..: 1066
+# Fitness.........: 2801448.825516
+# Errors..........: 53
 # Genome Size.....: 95
 # Copied Size.....: 95
 # Executed Size...: 89
@@ -28,55 +28,55 @@
 
 
 h-alloc
-set-flow
+nop-A
 set-flow
 nop-A
+if-n-equ
+h-search
 nand
-swap-stk
-nop-B
 IO
 nop-C
 sub
 nop-C
-swap-stk
 push
+add
 IO
-nop-B
+IO
 mov-head
 nop-C
 nand
 nand
 nop-C
-push
-dec
-shift-l
-if-less
-nand
-IO
-nop-C
-dec
-nand
-if-less
-if-less
-h-search
-inc
-if-less
-inc
-IO
-shift-r
-h-divide
-swap
-swap
-pop
-if-n-equ
-if-n-equ
-nop-C
-nand
-nop-C
-push
+set-flow
+h-alloc
 nop-B
-h-alloc
+nop-B
+if-n-equ
+IO
+nop-C
+push
+IO
+if-label
+set-flow
+dec
+if-label
+get-head
+h-search
 h-copy
+inc
+if-label
+nand
+h-search
+pop
+if-label
+add
+nop-C
+nand
+nop-C
+push
+h-alloc
+nop-C
+shift-l
 nop-A
 IO
 nop-C
@@ -85,40 +85,40 @@ sub
 swap-stk
 IO
 if-label
-swap
-h-copy
-if-label
-sub
-IO
-nand
-h-copy
-h-divide
-swap-stk
-inc
 nop-A
+shift-l
 if-n-equ
 nand
+IO
+nand
 h-alloc
+swap-stk
+h-divide
+nop-C
+nop-B
+if-label
+nand
+if-less
 if-label
 swap
-if-less
-IO
+swap
+nop-A
 pop
 add
 inc
 IO
-if-n-equ
-nop-B
-shift-r
-nop-B
-nop-C
 if-label
-nop-C
-swap
+nop-B
+if-n-equ
+h-copy
+h-copy
+shift-r
+h-copy
+IO
 h-copy
 mov-head
-dec
-if-less
-shift-r
+h-divide
+mov-head
+nand
 inc
-dec
+push

@@ -1,26 +1,26 @@
-# Wed Feb  5 02:24:36 2014
-# Filename........: archive/102-aahbl.org
-# Update Output...: 4171
+# Wed Feb  5 21:14:50 2014
+# Filename........: archive/102-aafmb.org
+# Update Output...: 3374
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 12976128.000000
-# Gestation Time..: 481
-# Fitness.........: 26977.397089
-# Errors..........: 4
+# Merit...........: 25690112.000000
+# Gestation Time..: 1054
+# Fitness.........: 24373.920304
+# Errors..........: 2
 # Genome Size.....: 102
 # Copied Size.....: 102
-# Executed Size...: 99
+# Executed Size...: 98
 # Offspring.......: SELF
 # 
 # Tasks Performed:
 # not 0 (0.000000)
 # nand 1 (1.000000)
-# and 0 (0.000000)
-# orn 0 (0.000000)
-# or 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 0 (0.000000)
 # andn 0 (0.000000)
 # nor 1 (1.000000)
 # xor 1 (1.000000)
@@ -31,101 +31,101 @@ swap
 h-alloc
 set-flow
 nop-A
-nop-C
-IO
-dec
+add
+add
+jmp-head
 mov-head
 nop-C
-jmp-head
-IO
-if-less
-add
-swap
 nand
-if-less
-IO
-nand
-nop-C
-nand
-h-alloc
-sub
-swap
-swap
-nop-A
-nop-A
-if-less
-swap
-if-label
-push
-IO
-nop-A
-IO
-sub
-h-copy
-if-n-equ
-swap
-IO
-pop
-set-flow
-inc
-nand
-sub
-nand
-inc
-h-alloc
-nop-B
-IO
-h-alloc
-nop-B
-push
-nop-C
-nop-A
-pop
-if-label
-nand
-nop-A
-nand
-swap
-h-copy
-IO
-nand
-h-alloc
-nand
-swap
-if-n-equ
-if-n-equ
-set-flow
-h-divide
-if-less
-nand
-pop
-dec
-sub
-IO
-IO
-nop-A
-if-less
-swap-stk
-shift-l
-inc
-h-divide
-nop-A
-IO
-dec
-swap
-IO
-pop
-sub
 shift-r
-add
-h-search
-jmp-head
-h-copy
-nop-B
-h-copy
+IO
+swap-stk
+swap
+pop
+h-alloc
+IO
+nand
+nop-C
+nand
+push
 sub
+swap
+add
+nop-B
+nop-C
+push
+shift-r
+nop-B
+pop
+IO
+dec
+IO
+sub
+h-divide
+h-copy
+swap
+IO
+h-divide
+add
+add
+nand
+nop-A
+h-copy
+pop
+h-divide
+shift-r
+IO
+inc
+h-copy
+push
+nop-C
+h-alloc
+pop
+h-copy
+nand
+nop-A
+nand
+nop-C
+nop-C
+IO
+nand
+if-label
+add
+swap
+swap-stk
+add
+inc
+IO
+if-less
+dec
+pop
+dec
+sub
+IO
+IO
+shift-l
+swap
+IO
+nop-B
 swap-stk
 h-divide
-mov-head
+h-divide
+IO
 nop-A
-shift-l
+dec
+set-flow
+swap
+get-head
+set-flow
+sub
+nop-A
+h-copy
+swap-stk
+sub
+swap
+nop-C
+nand
+h-divide
+mov-head
+set-flow
+add

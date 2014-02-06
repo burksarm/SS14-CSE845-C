@@ -1,23 +1,23 @@
-# Tue Feb  4 23:35:42 2014
-# Filename........: archive/107-aakab.org
-# Update Output...: 5393
+# Wed Feb  5 21:29:10 2014
+# Filename........: archive/107-aajai.org
+# Update Output...: 4203
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 6815744.000000
-# Gestation Time..: 443
-# Fitness.........: 15385.426637
-# Errors..........: 2
+# Merit...........: 3375104.000000
+# Gestation Time..: 502
+# Fitness.........: 6723.314741
+# Errors..........: 0
 # Genome Size.....: 107
 # Copied Size.....: 107
-# Executed Size...: 104
+# Executed Size...: 103
 # Offspring.......: SELF
 # 
 # Tasks Performed:
 # not 1 (1.000000)
-# nand 1 (1.000000)
+# nand 0 (0.000000)
 # and 1 (1.000000)
 # orn 1 (1.000000)
 # or 1 (1.000000)
@@ -27,89 +27,89 @@
 # equ 0 (0.000000)
 
 
-set-flow
-nand
+if-label
 shift-r
+nop-A
 IO
 swap
-if-label
-if-n-equ
-shift-l
-pop
+dec
+dec
+h-alloc
+push
 IO
 nand
 nand
 swap
 inc
-h-alloc
+push
 add
 IO
-inc
+nand
 IO
 nop-C
+if-label
+nop-A
+IO
 set-flow
 nop-A
-dec
-nand
-push
 IO
 mov-head
 nop-C
+nand
+swap
+if-less
+if-n-equ
 add
-h-divide
+inc
+IO
+h-search
+nop-A
 dec
-pop
-add
-inc
-if-n-equ
-IO
-h-copy
-nop-B
-h-search
-sub
-IO
-sub
-nop-B
-if-label
-nop-B
-get-head
-swap-stk
-inc
-set-flow
-h-copy
-h-search
-h-copy
-nop-A
-pop
-IO
-h-search
-swap
-swap
-nand
-h-search
-shift-r
-nand
-set-flow
-get-head
-IO
-nop-C
-sub
-nop-B
-if-label
-h-divide
-h-alloc
+dec
 push
-h-copy
-IO
-set-flow
-set-flow
-nop-B
-h-copy
-get-head
-shift-l
-add
 pop
-swap-stk
+h-search
+h-copy
+inc
+if-n-equ
+h-search
+h-divide
+shift-l
+dec
+shift-l
+shift-r
+shift-r
+shift-r
+if-less
+set-flow
+h-divide
+if-less
+nand
+if-n-equ
+if-less
+h-copy
+nop-B
+if-less
+shift-r
+IO
+nop-C
+sub
+if-less
+if-label
+if-n-equ
+if-less
+h-copy
+push
+IO
+sub
+nop-A
+shift-l
+nand
+nop-B
+dec
+if-n-equ
+pop
+h-divide
 swap
 IO
 nand
@@ -118,19 +118,19 @@ nop-C
 IO
 nop-C
 sub
-IO
-h-divide
-h-alloc
-if-label
 swap-stk
-nop-A
+IO
+shift-r
+swap
+push
+nop-B
+pop
+swap-stk
+shift-r
 h-search
+IO
 h-copy
-h-copy
-nand
-if-n-equ
-get-head
 h-divide
 mov-head
-add
-add
+h-copy
+set-flow

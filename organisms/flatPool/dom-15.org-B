@@ -1,127 +1,127 @@
-# Wed Feb  5 04:52:03 2014
-# Filename........: archive/098-aagnx.org
-# Update Output...: 6028
+# Wed Feb  5 21:10:57 2014
+# Filename........: archive/098-aacjo.org
+# Update Output...: 3141
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 1490944.000000
-# Gestation Time..: 935
-# Fitness.........: 1594.592513
-# Errors..........: 70
+# Merit...........: 3120562176.000000
+# Gestation Time..: 517
+# Fitness.........: 6035903.628627
+# Errors..........: 13
 # Genome Size.....: 98
 # Copied Size.....: 98
-# Executed Size...: 91
+# Executed Size...: 93
 # Offspring.......: SELF
 # 
 # Tasks Performed:
 # not 1 (1.000000)
 # nand 1 (1.000000)
-# and 0 (0.000000)
+# and 1 (1.000000)
 # orn 1 (1.000000)
 # or 1 (1.000000)
 # andn 1 (1.000000)
 # nor 1 (1.000000)
-# xor 0 (0.000000)
-# equ 0 (0.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
 
 
-add
-shift-r
+set-flow
+push
 h-alloc
 set-flow
 nop-A
 mov-head
 nop-C
-if-label
+dec
 swap-stk
+h-divide
+if-label
+if-less
 if-n-equ
-nop-A
-nop-A
-h-alloc
-if-n-equ
+if-less
 h-alloc
 h-search
+shift-r
 h-alloc
 shift-l
-h-alloc
-if-label
-inc
+dec
+shift-r
 pop
-IO
-h-copy
-if-n-equ
+h-alloc
+nop-A
 h-divide
-h-copy
+h-divide
+nop-A
 IO
 jmp-head
-swap-stk
-if-label
 sub
-nop-A
+nop-C
+nand
+swap
+IO
+swap
 push
 nop-A
-inc
-dec
 if-label
 h-alloc
-if-label
-add
-if-n-equ
-dec
-nop-C
-swap-stk
-nop-C
-nand
-h-alloc
-IO
-nop-C
-push
-nand
-nop-A
-swap
-nop-C
-inc
-push
-nop-C
-add
-nand
-nop-C
-pop
-nop-A
-h-copy
-swap
-push
-nop-C
-IO
-nop-A
-IO
-if-n-equ
-dec
-get-head
-nop-B
-get-head
-nop-B
-nop-A
-if-n-equ
-h-divide
-IO
-swap
-swap
-nop-B
-nand
-dec
-nop-C
-nop-C
-if-n-equ
-h-copy
 shift-l
-sub
-mov-head
+nop-A
+swap-stk
+nand
+nop-C
 if-less
-get-head
+pop
+if-less
+nop-C
+IO
+nop-C
+if-label
+add
+nop-A
+nand
+nop-C
+inc
+push
+nop-C
+add
+nand
+nop-C
+if-less
+nop-C
+IO
 swap
+push
+nop-C
+IO
+pop
+IO
+nop-C
+dec
+get-head
+nop-B
+nop-B
+if-less
+h-copy
+nop-C
+if-less
+swap-stk
+swap
+swap
+inc
+nop-A
+nop-A
+if-label
 nop-C
 h-search
-if-less
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+mov-head
+nop-A
+shift-l
+nop-A
+nop-B

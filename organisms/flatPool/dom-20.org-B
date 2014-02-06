@@ -1,18 +1,18 @@
-# Wed Feb  5 05:25:44 2014
-# Filename........: archive/081-aagrd.org
-# Update Output...: 2606
+# Wed Feb  5 21:17:13 2014
+# Filename........: archive/081-aahtw.org
+# Update Output...: 2483
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 323584.000000
-# Gestation Time..: 457
-# Fitness.........: 708.061269
-# Errors..........: 3
+# Merit...........: 39936.000000
+# Gestation Time..: 312
+# Fitness.........: 128.000000
+# Errors..........: 2
 # Genome Size.....: 81
 # Copied Size.....: 81
-# Executed Size...: 79
+# Executed Size...: 78
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -21,90 +21,90 @@
 # and 0 (0.000000)
 # orn 1 (1.000000)
 # or 1 (1.000000)
-# andn 1 (1.000000)
+# andn 0 (0.000000)
 # nor 1 (1.000000)
 # xor 0 (0.000000)
 # equ 0 (0.000000)
 
 
-swap-stk
-swap
+if-n-equ
+h-search
 h-alloc
 set-flow
 nop-A
-IO
+swap
 mov-head
 nop-C
-h-copy
-inc
-if-less
-nand
-swap-stk
-IO
-sub
-pop
 add
-push
-set-flow
-h-alloc
+nand
+if-label
 h-search
-dec
-swap
-nand
-IO
-h-alloc
-nop-A
-nop-B
-nand
-IO
-nop-C
-nand
-nop-C
-if-n-equ
 set-flow
-nand
-IO
-swap
-h-alloc
-if-n-equ
-get-head
-IO
-nop-C
 sub
-nop-C
-IO
-nop-C
-IO
-if-n-equ
+inc
 if-label
 h-divide
-nand
-add
-nop-B
-push
 nop-A
-swap
-dec
-sub
-inc
-nop-C
 IO
-nop-C
-h-copy
-get-head
-nand
-h-search
-nop-C
-nop-A
-if-n-equ
-nop-C
 inc
-nop-B
-IO
 swap-stk
-h-search
+if-label
+if-label
 nand
+IO
+nop-C
+if-less
+push
+nand
+IO
+nop-C
+nand
+nop-C
+nop-C
+h-alloc
+nand
+IO
+swap
+set-flow
+h-divide
+nop-A
+IO
+nop-C
+sub
+swap
+IO
+swap
+IO
+nand
+nand
+IO
+if-less
+h-alloc
+nop-C
+shift-l
+shift-r
+dec
+set-flow
+nop-C
+inc
+if-label
+swap-stk
+nop-C
+shift-l
+if-label
+if-label
+swap
+h-search
+if-label
+if-less
+h-search
+jmp-head
+dec
+if-label
+add
+jmp-head
+h-search
 h-divide
 h-copy
-nop-C
 mov-head
+h-copy

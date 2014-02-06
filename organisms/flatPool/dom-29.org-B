@@ -1,18 +1,18 @@
-# Wed Feb  5 05:50:01 2014
-# Filename........: archive/092-aajkk.org
-# Update Output...: 3730
+# Wed Feb  5 21:30:06 2014
+# Filename........: archive/092-aakak.org
+# Update Output...: 4069
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 712704.000000
-# Gestation Time..: 342
-# Fitness.........: 2083.929825
-# Errors..........: 4
+# Merit...........: 720896.000000
+# Gestation Time..: 338
+# Fitness.........: 2132.828402
+# Errors..........: 0
 # Genome Size.....: 92
 # Copied Size.....: 92
-# Executed Size...: 87
+# Executed Size...: 88
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -28,94 +28,94 @@
 
 
 h-alloc
-if-label
+shift-r
 set-flow
 nop-A
 mov-head
 nop-C
-swap
-swap
-push
-shift-l
-h-alloc
-set-flow
-IO
-jmp-head
-IO
-dec
-jmp-head
-jmp-head
-inc
-h-search
 nand
-nop-C
-set-flow
-swap-stk
-if-label
-h-copy
-dec
-inc
-h-divide
-IO
-set-flow
-if-n-equ
-set-flow
-nand
-nop-C
-nand
-IO
-nand
-nand
-nop-A
-if-less
-if-n-equ
-IO
-nop-A
-IO
-nop-C
-h-alloc
 sub
-nop-C
-IO
-nop-C
-IO
-nand
-swap-stk
-if-n-equ
-swap-stk
-IO
-nop-A
 inc
-push
+if-label
+sub
+shift-l
+nop-A
+h-divide
+shift-l
+if-label
+pop
+nop-C
 add
+add
+dec
 if-n-equ
-get-head
+swap
+shift-l
+if-n-equ
+add
+IO
+if-less
+mov-head
+IO
 swap-stk
 nop-A
-IO
-h-divide
+nop-C
 nand
+nop-C
+if-label
+IO
+nand
+nand
+nop-A
+h-copy
+nop-C
+IO
+nop-A
+IO
 nop-C
 nop-B
-h-copy
-add
-h-alloc
-if-label
-nop-A
-shift-r
-nop-A
-if-n-equ
-push
-if-less
-if-n-equ
-h-alloc
-push
-nop-A
 sub
+nop-C
+IO
+nop-C
+IO
+nand
+swap
+swap-stk
+if-less
+if-label
+if-n-equ
+inc
+h-divide
+add
+h-copy
+nop-C
 get-head
+IO
+IO
+dec
+dec
+set-flow
+add
+nop-B
+if-label
+swap
+IO
+nop-A
+h-copy
+h-copy
+swap-stk
+shift-r
+swap-stk
+h-divide
+pop
+IO
+sub
+swap
+add
 h-search
 h-divide
 h-copy
 mov-head
-shift-r
-pop
+if-less
+nop-B

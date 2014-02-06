@@ -1,22 +1,22 @@
-# Wed Feb  5 01:28:36 2014
-# Filename........: archive/114-aalaq.org
-# Update Output...: 4920
+# Wed Feb  5 21:22:43 2014
+# Filename........: archive/114-aaken.org
+# Update Output...: 3949
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 56623104.000000
-# Gestation Time..: 486
-# Fitness.........: 116508.444444
-# Errors..........: 40
+# Merit...........: 117440512.000000
+# Gestation Time..: 554
+# Fitness.........: 211986.483755
+# Errors..........: 5
 # Genome Size.....: 114
 # Copied Size.....: 114
-# Executed Size...: 108
+# Executed Size...: 112
 # Offspring.......: SELF
 # 
 # Tasks Performed:
-# not 0 (0.000000)
+# not 1 (1.000000)
 # nand 0 (0.000000)
 # and 1 (1.000000)
 # orn 1 (1.000000)
@@ -28,116 +28,116 @@
 
 
 h-alloc
-add
-nand
-nop-B
+h-divide
+pop
+h-divide
 set-flow
 nop-A
-inc
-nop-A
+push
+h-alloc
+dec
 if-label
-if-less
-if-n-equ
+pop
 mov-head
 nop-C
-h-copy
-swap
 if-less
-h-copy
-h-divide
-if-label
-shift-r
-h-alloc
-IO
-set-flow
-sub
-sub
-pop
-sub
-if-n-equ
-push
-shift-l
 dec
-push
-shift-l
-sub
-sub
-add
-nop-C
-h-copy
-IO
-IO
-nop-C
-nand
-add
-nop-C
-h-alloc
-set-flow
-inc
-nop-C
-push
-push
-sub
-h-alloc
-nop-A
-IO
-nop-C
-push
-if-n-equ
-set-flow
-nand
-nop-C
-nand
-if-less
-h-search
-if-label
-IO
-nop-A
-set-flow
-if-label
-nop-A
 jmp-head
+if-label
+h-divide
 IO
-nop-C
-sub
-nop-C
-if-n-equ
-IO
-sub
-IO
+h-search
+add
+nand
+nop-A
+pop
+h-search
+nand
+pop
+h-alloc
+push
+pop
 inc
-pop
-sub
-sub
-nop-C
-h-copy
-IO
-if-less
-pop
-IO
+nop-B
+dec
+set-flow
+nand
+if-label
 set-flow
 nop-B
+IO
+IO
+nop-C
+nand
 add
+nop-C
+pop
+nop-A
+inc
+nop-C
+nop-C
+push
+sub
+nop-B
+push
+IO
+nop-C
+set-flow
+if-n-equ
+push
+nand
+nop-C
+nand
+set-flow
+nop-C
+h-alloc
+IO
+nop-A
+h-alloc
+nop-C
+nop-A
+h-copy
+IO
+nop-C
+sub
+nop-C
+h-alloc
+IO
+sub
 IO
 if-n-equ
 pop
-nop-B
-nop-A
-nand
-h-divide
-h-search
-h-divide
-h-search
-add
-h-alloc
+sub
+sub
+nop-C
 h-copy
-h-copy
-dec
-h-copy
-add
-inc
+IO
+set-flow
 pop
+IO
+swap-stk
+push
+add
+IO
+if-n-equ
+h-copy
+pop
+dec
+nand
+dec
+IO
+get-head
+if-label
+push
+set-flow
+h-copy
+h-copy
+swap-stk
+h-copy
+shift-l
+add
+add
 h-divide
 mov-head
-shift-r
-swap-stk
+nop-A
+h-search

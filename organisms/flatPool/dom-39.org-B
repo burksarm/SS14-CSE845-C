@@ -1,15 +1,15 @@
-# Wed Feb  5 07:03:12 2014
-# Filename........: archive/116-aafsf.org
-# Update Output...: 5120
+# Wed Feb  5 21:56:01 2014
+# Filename........: archive/116-aalhy.org
+# Update Output...: 8455
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
 # Merit...........: 3623878656.000000
-# Gestation Time..: 1581
-# Fitness.........: 2292143.362429
-# Errors..........: 24
+# Gestation Time..: 1208
+# Fitness.........: 2999899.549669
+# Errors..........: 1
 # Genome Size.....: 116
 # Copied Size.....: 116
 # Executed Size...: 108
@@ -27,119 +27,119 @@
 # equ 1 (1.000000)
 
 
-sub
-add
-shift-r
-IO
-if-less
-swap
-if-less
-IO
-mov-head
-nop-B
-sub
-set-flow
-jmp-head
-h-search
-swap
-h-alloc
-h-search
-nop-C
-nop-A
-mov-head
-nop-C
-h-divide
-h-divide
-add
-shift-r
-if-less
-pop
-dec
-if-label
-pop
-nop-B
-add
-nop-C
-h-search
-sub
 push
-swap
-add
-if-label
-IO
+nop-C
+jmp-head
+set-flow
+if-less
+shift-l
+nop-B
 pop
-nop-C
-swap-stk
-h-divide
-h-copy
-IO
-nop-C
 h-alloc
-IO
-nop-A
-nop-A
-if-label
-nand
-nand
-nop-C
-h-divide
+if-n-equ
 shift-r
-pop
-if-label
-h-divide
-swap-stk
-sub
-swap-stk
-nop-B
-nop-A
-if-less
-sub
+dec
+h-search
 dec
 IO
+nop-C
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+add
 if-less
-sub
-swap-stk
+nand
+shift-l
+h-search
+h-alloc
+if-n-equ
+IO
+dec
 nop-A
 h-divide
-nop-B
-if-less
-mov-head
+nop-C
+set-flow
+sub
+shift-r
+h-copy
+IO
+push
+swap-stk
+if-label
+if-label
+if-label
+set-flow
+h-search
+IO
+nop-C
+if-n-equ
+IO
+nop-A
+nop-A
 if-label
 nand
-swap
 nand
 nop-C
-nop-B
+h-divide
+if-less
+swap-stk
 sub
-dec
-swap
-h-divide
-IO
-add
-nop-B
-inc
-IO
-swap
-h-copy
-h-divide
-IO
-if-label
-h-divide
 h-divide
 nand
-nop-B
-h-copy
-IO
+sub
+add
+swap-stk
 pop
-swap
-h-copy
+push
 dec
+sub
+IO
+if-less
+h-search
+if-n-equ
+if-label
 shift-l
 nop-A
-jmp-head
-nop-A
-pop
+push
+nop-C
+if-label
+nand
+swap
+nand
+nop-C
 h-copy
+sub
+dec
+swap
+h-divide
+IO
+add
+h-copy
+inc
+IO
+h-copy
+IO
+pop
+IO
+inc
+swap-stk
+sub
+if-n-equ
+swap
+swap-stk
+sub
+if-less
+if-n-equ
+h-copy
+h-copy
+shift-l
+if-label
+if-label
+h-divide
+h-copy
+IO
 mov-head
 nop-A
 nop-B

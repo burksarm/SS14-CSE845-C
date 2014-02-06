@@ -1,6 +1,6 @@
-# Wed Feb  5 04:58:33 2014
-# Filename........: archive/066-abtph.org
-# Update Output...: 3526
+# Wed Feb  5 21:46:17 2014
+# Filename........: archive/066-abxth.org
+# Update Output...: 3524
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
@@ -9,7 +9,7 @@
 # Merit...........: 4325376.000000
 # Gestation Time..: 133
 # Fitness.........: 32521.624060
-# Errors..........: 3
+# Errors..........: 0
 # Genome Size.....: 66
 # Copied Size.....: 66
 # Executed Size...: 66
@@ -28,24 +28,24 @@
 
 
 h-alloc
-h-alloc
-if-label
+nop-A
+nand
 set-flow
 nop-A
-push
-shift-l
+nop-C
+jmp-head
 mov-head
 nop-C
-dec
-swap-stk
-h-alloc
+inc
+jmp-head
+IO
 nop-B
-sub
-shift-r
-nop-B
-shift-l
-nop-B
-nand
+inc
+jmp-head
+nop-C
+nop-C
+inc
+add
 nand
 IO
 nop-C
@@ -57,7 +57,7 @@ nand
 nop-C
 pop
 nand
-set-flow
+if-n-equ
 push
 sub
 IO
@@ -68,8 +68,8 @@ pop
 nop-C
 nand
 nop-C
-add
-dec
+push
+sub
 IO
 nand
 IO
@@ -78,7 +78,7 @@ nand
 nop-C
 IO
 nop-C
-h-alloc
+nop-C
 sub
 IO
 h-search

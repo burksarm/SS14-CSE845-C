@@ -1,18 +1,18 @@
-# Wed Feb  5 04:45:41 2014
-# Filename........: archive/098-abize.org
-# Update Output...: 12432
+# Wed Feb  5 21:58:59 2014
+# Filename........: archive/098-abgry.org
+# Update Output...: 12495
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 3187671040.000000
-# Gestation Time..: 498
-# Fitness.........: 6400945.863454
-# Errors..........: 4
+# Merit...........: 3221225472.000000
+# Gestation Time..: 512
+# Fitness.........: 6291456.000000
+# Errors..........: 9
 # Genome Size.....: 98
 # Copied Size.....: 98
-# Executed Size...: 95
+# Executed Size...: 96
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -27,27 +27,27 @@
 # equ 1 (1.000000)
 
 
-h-divide
-swap
+jmp-head
+push
 h-alloc
 set-flow
 nop-A
 mov-head
 nop-C
+h-divide
 if-label
-nop-B
-nand
-sub
+set-flow
 if-less
-sub
-shift-r
-sub
-swap
-push
-if-label
-swap-stk
+pop
 shift-l
+nop-B
 h-search
+if-less
+h-divide
+if-label
+nop-C
+nand
+h-alloc
 pop
 push
 nop-A
@@ -62,10 +62,10 @@ nand
 swap
 IO
 swap
-push
+inc
 nop-A
 if-label
-if-label
+if-n-equ
 shift-l
 nop-A
 swap-stk
@@ -77,7 +77,7 @@ if-less
 nop-C
 IO
 nop-C
-if-label
+if-less
 add
 nop-A
 nand
@@ -88,9 +88,9 @@ nop-C
 add
 nand
 nop-C
-h-alloc
-h-divide
-nop-B
+nop-A
+swap
+if-label
 swap
 push
 nop-C
@@ -98,13 +98,13 @@ IO
 pop
 IO
 sub
-get-head
+h-alloc
 get-head
 nop-B
-nop-B
+sub
 if-less
 h-copy
-if-n-equ
+if-label
 if-less
 swap-stk
 swap
@@ -119,9 +119,9 @@ h-copy
 if-label
 nop-C
 nop-A
-if-less
+if-label
 mov-head
 swap-stk
-sub
+set-flow
 nop-A
 nop-B

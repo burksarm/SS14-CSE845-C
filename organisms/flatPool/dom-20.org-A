@@ -1,6 +1,6 @@
-# Wed Feb  5 05:23:04 2014
-# Filename........: archive/081-aclcs.org
-# Update Output...: 4491
+# Wed Feb  5 21:50:04 2014
+# Filename........: archive/081-acmms.org
+# Update Output...: 4513
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
@@ -9,7 +9,7 @@
 # Merit...........: 5308416.000000
 # Gestation Time..: 170
 # Fitness.........: 31225.976471
-# Errors..........: 2
+# Errors..........: 3
 # Genome Size.....: 81
 # Copied Size.....: 81
 # Executed Size...: 81
@@ -27,35 +27,35 @@
 # equ 0 (0.000000)
 
 
-h-divide
-get-head
+push
+swap
 h-alloc
 set-flow
 nop-A
-if-less
+add
 mov-head
 nop-C
 h-copy
+nop-B
+if-n-equ
+nop-C
 h-search
 push
-if-label
+dec
 sub
-set-flow
-if-label
-get-head
-nop-B
-h-search
+pop
 shift-l
-inc
-h-alloc
-jmp-head
-get-head
+IO
+nand
+pop
+shift-r
+push
 nand
 IO
 nop-C
-shift-r
-nop-A
-sub
+h-alloc
+push
+nand
 IO
 nop-C
 nand
@@ -76,13 +76,13 @@ IO
 nop-C
 IO
 nand
-if-n-equ
+h-divide
 IO
 nand
+pop
+nop-A
+nop-B
 add
-if-label
-set-flow
-if-n-equ
 swap
 dec
 sub
@@ -91,12 +91,12 @@ nop-C
 IO
 swap
 IO
-push
-h-search
+h-alloc
+get-head
+add
 swap-stk
-pop
-pop
-swap-stk
+swap
+dec
 h-search
 h-copy
 h-copy

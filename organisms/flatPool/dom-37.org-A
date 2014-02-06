@@ -1,18 +1,18 @@
-# Wed Feb  5 06:10:11 2014
-# Filename........: archive/103-acjho.org
-# Update Output...: 6046
+# Wed Feb  5 21:52:43 2014
+# Filename........: archive/103-aciqd.org
+# Update Output...: 6052
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 6619136.000000
-# Gestation Time..: 227
-# Fitness.........: 29159.189427
+# Merit...........: 6488064.000000
+# Gestation Time..: 246
+# Fitness.........: 26374.243902
 # Errors..........: 3
 # Genome Size.....: 103
 # Copied Size.....: 103
-# Executed Size...: 101
+# Executed Size...: 99
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -27,35 +27,35 @@
 # equ 0 (0.000000)
 
 
-nand
+h-search
+inc
+nop-B
 pop
-swap
 add
-nand
-push
-h-divide
-if-label
-nand
+nop-C
+nop-C
+pop
 h-alloc
-add
+nop-A
+dec
 h-alloc
-swap
-sub
-swap
+inc
+jmp-head
+h-search
 set-flow
 nop-A
-h-divide
+push
 IO
 get-head
 mov-head
 nop-C
-pop
-nop-A
-set-flow
+push
+dec
+nop-C
 IO
 nop-C
 nand
-if-n-equ
+nop-B
 h-alloc
 get-head
 nop-B
@@ -65,38 +65,38 @@ nand
 IO
 h-copy
 nand
-nop-C
-IO
-h-divide
-push
+swap
 if-label
 pop
+nop-A
+if-less
+inc
 IO
 nand
 nand
+IO
 set-flow
-swap-stk
-push
+h-divide
 IO
 IO
 nop-C
 add
-push
-nop-B
-if-label
-sub
-h-divide
-nand
-if-less
-h-copy
-h-copy
 set-flow
+nop-C
+if-n-equ
+sub
+if-n-equ
+nand
+if-n-equ
+h-copy
+h-copy
+nop-C
 if-less
 add
 if-less
-nop-A
-if-less
-if-n-equ
+if-label
+nop-B
+set-flow
 inc
 IO
 nand
@@ -105,8 +105,8 @@ nand
 h-alloc
 IO
 nop-C
-push
-nop-C
+if-n-equ
+nop-B
 h-copy
 push
 pop
@@ -114,17 +114,17 @@ nop-C
 IO
 swap
 sub
-if-less
+h-divide
 IO
-sub
-IO
+inc
+dec
 h-search
 h-copy
 h-copy
 h-copy
 if-label
 nop-C
-nop-A
+h-alloc
 h-divide
 h-copy
 mov-head

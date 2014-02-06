@@ -1,15 +1,15 @@
-# Wed Feb  5 03:07:53 2014
-# Filename........: archive/092-abhea.org
-# Update Output...: 8672
+# Wed Feb  5 21:55:17 2014
+# Filename........: archive/092-abkop.org
+# Update Output...: 8608
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
 # Merit...........: 2818572288.000000
-# Gestation Time..: 350
-# Fitness.........: 8053063.680000
-# Errors..........: 3
+# Gestation Time..: 348
+# Fitness.........: 8099345.655172
+# Errors..........: 5
 # Genome Size.....: 92
 # Copied Size.....: 92
 # Executed Size...: 84
@@ -27,32 +27,32 @@
 # equ 1 (1.000000)
 
 
-nop-A
+nop-B
 h-alloc
 set-flow
 nop-A
-IO
+shift-r
 mov-head
 nop-C
-nop-B
-IO
-swap-stk
-swap-stk
-if-label
-shift-l
-inc
-sub
-pop
-push
-dec
-nop-C
-nand
-IO
-nand
-nop-C
-pop
-IO
+add
 h-alloc
+swap-stk
+swap-stk
+h-alloc
+dec
+inc
+IO
+pop
+push
+dec
+nop-C
+nand
+IO
+nand
+swap
+pop
+IO
+if-n-equ
 nop-C
 if-label
 nand
@@ -60,13 +60,13 @@ nand
 nop-A
 nand
 add
-if-label
+set-flow
 IO
 nop-C
 swap
 nop-C
 inc
-sub
+nand
 nop-A
 IO
 IO
@@ -76,10 +76,10 @@ nop-C
 IO
 nop-C
 swap-stk
-set-flow
+if-label
 push
-if-n-equ
-dec
+nop-B
+inc
 nop-A
 nand
 nand
@@ -88,7 +88,7 @@ inc
 nop-C
 swap-stk
 if-label
-h-divide
+if-n-equ
 nop-A
 if-label
 sub
@@ -100,12 +100,12 @@ sub
 IO
 add
 push
-set-flow
-add
+dec
+sub
 h-divide
 h-search
 h-copy
-shift-r
+nop-C
 h-copy
 if-label
 nop-C
@@ -113,9 +113,9 @@ nop-A
 set-flow
 mov-head
 shift-l
-if-label
-shift-l
+h-search
+if-n-equ
+nop-C
 add
-swap
 nop-A
 nop-B

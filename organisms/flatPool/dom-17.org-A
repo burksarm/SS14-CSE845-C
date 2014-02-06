@@ -1,18 +1,18 @@
-# Tue Feb  4 23:27:59 2014
-# Filename........: archive/107-aczmx.org
-# Update Output...: 8061
+# Wed Feb  5 21:56:23 2014
+# Filename........: archive/107-acxti.org
+# Update Output...: 8063
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 6750208.000000
-# Gestation Time..: 288
-# Fitness.........: 23438.222222
-# Errors..........: 1
+# Merit...........: 6815744.000000
+# Gestation Time..: 289
+# Fitness.........: 23583.889273
+# Errors..........: 2
 # Genome Size.....: 107
 # Copied Size.....: 107
-# Executed Size...: 103
+# Executed Size...: 104
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -27,13 +27,13 @@
 # equ 0 (0.000000)
 
 
-h-divide
-dec
-if-label
+nand
+push
+if-less
 IO
 swap
 IO
-h-divide
+nop-A
 h-alloc
 shift-r
 IO
@@ -41,73 +41,73 @@ nand
 nand
 swap
 inc
-set-flow
+h-divide
 add
 IO
 nand
-h-divide
+IO
 nop-C
 set-flow
 nop-A
 IO
-nop-C
-nop-A
+shift-r
+shift-r
 IO
 mov-head
 nop-C
 nand
+h-divide
+mov-head
 nop-C
-h-divide
-push
 add
 inc
-nop-B
-IO
-if-n-equ
-h-search
-dec
-push
-shift-l
-h-divide
-add
-set-flow
-nand
-if-n-equ
-inc
-inc
-get-head
-if-label
 h-copy
-pop
-inc
-h-divide
-push
-h-search
-shift-r
-nand
-dec
-shift-r
-set-flow
-nop-C
-nop-C
-shift-r
-IO
-nop-C
-sub
-if-label
-if-label
 h-alloc
+get-head
+IO
+dec
+h-divide
+shift-r
+h-search
+h-divide
+add
+inc
+inc
+IO
+push
+get-head
+nand
 h-copy
+h-search
+h-divide
+shift-r
+nop-C
+if-label
+dec
+nop-B
+jmp-head
+jmp-head
+sub
+h-divide
+swap-stk
+swap-stk
+IO
+nop-C
+sub
+h-alloc
+set-flow
+get-head
+h-divide
 h-copy
 push
 IO
+if-label
+nop-B
+add
+nand
 inc
-sub
-nop-C
-if-less
-set-flow
-set-flow
-shift-r
+inc
+dec
 pop
 h-copy
 swap
@@ -118,11 +118,11 @@ nop-C
 IO
 nop-C
 sub
-nop-B
+get-head
 IO
-nop-B
-if-less
-if-label
+nand
+nop-C
+if-n-equ
 h-copy
 h-search
 h-copy

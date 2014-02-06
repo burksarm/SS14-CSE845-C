@@ -1,15 +1,15 @@
-# Wed Feb  5 05:00:30 2014
-# Filename........: archive/066-aaeat.org
-# Update Output...: 1932
+# Wed Feb  5 21:17:22 2014
+# Filename........: archive/066-aakfi.org
+# Update Output...: 2719
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 16128.000000
-# Gestation Time..: 376
-# Fitness.........: 42.893617
-# Errors..........: 1
+# Merit...........: 129024.000000
+# Gestation Time..: 394
+# Fitness.........: 327.472081
+# Errors..........: 29
 # Genome Size.....: 66
 # Copied Size.....: 66
 # Executed Size...: 63
@@ -17,79 +17,79 @@
 # 
 # Tasks Performed:
 # not 1 (1.000000)
-# nand 0 (0.000000)
-# and 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
 # orn 1 (1.000000)
-# or 0 (0.000000)
-# andn 1 (1.000000)
-# nor 0 (0.000000)
+# or 1 (1.000000)
+# andn 0 (0.000000)
+# nor 1 (1.000000)
 # xor 0 (0.000000)
 # equ 0 (0.000000)
 
 
 h-alloc
-pop
-swap-stk
+if-n-equ
+shift-l
 set-flow
 nop-A
-if-less
-nand
+if-n-equ
+dec
 mov-head
 nop-C
-shift-l
-swap-stk
-pop
-swap
-h-copy
-swap
-nand
-shift-r
-add
-swap
-pop
-IO
-swap
-set-flow
-IO
-pop
-IO
-nand
-nop-C
-pop
-nand
-if-label
-push
-sub
-IO
-inc
-add
-IO
-pop
-nop-C
-nand
-swap
-sub
-sub
-IO
-nand
-IO
-nand
-h-alloc
-add
-IO
 nop-C
 if-less
-sub
-IO
-shift-r
-if-label
-set-flow
-set-flow
-h-search
+nop-C
+h-alloc
+pop
+add
 h-copy
-inc
 h-divide
+nop-A
+h-search
+swap-stk
+h-alloc
+shift-l
+shift-l
+nop-C
+IO
+add
+swap
+nop-B
+shift-l
+nop-A
+add
+push
+h-search
+IO
+nand
+nop-C
+nop-C
+swap
+h-alloc
+nand
+nop-C
+if-label
+h-divide
+IO
+nand
+IO
+nand
+nand
+nop-C
+IO
+nop-C
+nop-A
+sub
+IO
+h-alloc
+h-copy
+inc
+h-copy
+h-copy
+h-copy
+h-copy
+nand
+inc
 add
 mov-head
-if-less
-h-alloc
+inc

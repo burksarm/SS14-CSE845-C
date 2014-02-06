@@ -1,22 +1,22 @@
-# Wed Feb  5 03:27:40 2014
-# Filename........: archive/104-aakkt.org
-# Update Output...: 4542
+# Wed Feb  5 21:22:18 2014
+# Filename........: archive/104-aakbo.org
+# Update Output...: 3725
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 1458176.000000
-# Gestation Time..: 413
-# Fitness.........: 3530.692494
-# Errors..........: 2
+# Merit...........: 2850816.000000
+# Gestation Time..: 365
+# Fitness.........: 7810.454795
+# Errors..........: 7
 # Genome Size.....: 104
 # Copied Size.....: 104
-# Executed Size...: 89
+# Executed Size...: 87
 # Offspring.......: SELF
 # 
 # Tasks Performed:
-# not 0 (0.000000)
+# not 1 (1.000000)
 # nand 0 (0.000000)
 # and 1 (1.000000)
 # orn 1 (1.000000)
@@ -28,106 +28,106 @@
 
 
 h-alloc
-nop-C
 nop-B
-nand
-shift-l
-nop-C
-set-flow
+add
+if-less
+inc
+nop-B
+add
 set-flow
 nop-A
-nand
-nand
-get-head
-add
-inc
-get-head
-h-alloc
-if-n-equ
-mov-head
-nop-C
-if-n-equ
-h-copy
-h-alloc
-add
-if-label
-nop-A
-swap-stk
-IO
-swap
-nand
-inc
-IO
-push
 shift-r
-get-head
-h-divide
-get-head
-inc
-swap-stk
-set-flow
+pop
 sub
-h-divide
 if-n-equ
-swap
-nop-A
-IO
-set-flow
-swap
-h-copy
-swap-stk
+if-less
+if-less
 pop
 shift-l
-shift-r
-nop-B
-nand
-add
-inc
-IO
-nand
-nand
+mov-head
 nop-C
-inc
-add
-push
-swap-stk
-IO
-nop-C
-nand
-nop-C
-nand
 nop-A
-if-label
+h-copy
+IO
+jmp-head
+nand
+swap-stk
+swap
+if-n-equ
+get-head
+sub
+pop
+h-alloc
+get-head
+h-alloc
+nop-A
+IO
+nop-C
+nop-A
+nop-B
+inc
+IO
+h-search
+if-n-equ
+nop-B
+h-alloc
+IO
 if-label
 swap
+h-copy
+add
+nop-A
 if-label
+nand
+nand
+push
+add
+inc
+IO
+nand
+nand
+nop-C
+inc
+add
+h-alloc
+swap-stk
+IO
+nop-C
+nand
+nop-C
+nand
+nop-A
+push
+nop-A
+shift-l
+shift-r
 inc
 add
 IO
 nand
-h-divide
 IO
+dec
 if-label
 h-search
-h-copy
-get-head
-if-less
-h-divide
-h-copy
 h-copy
 inc
-mov-head
-jmp-head
-add
-nop-A
 nop-B
-swap-stk
 h-divide
-nop-C
-h-search
-nop-C
-get-head
-nop-B
-if-label
+h-copy
+h-copy
+nop-A
+mov-head
+h-alloc
+if-n-equ
+set-flow
+nand
+nop-A
+if-n-equ
+sub
+dec
+IO
+h-copy
 IO
 sub
+nop-C
+dec

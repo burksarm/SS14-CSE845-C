@@ -1,18 +1,18 @@
-# Wed Feb  5 04:29:46 2014
-# Filename........: archive/087-aatpp.org
-# Update Output...: 9583
+# Wed Feb  5 21:54:46 2014
+# Filename........: archive/087-aapta.org
+# Update Output...: 8368
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 2415919104.000000
-# Gestation Time..: 438
-# Fitness.........: 5515797.041096
-# Errors..........: 1
+# Merit...........: 2852126720.000000
+# Gestation Time..: 613
+# Fitness.........: 4652735.269168
+# Errors..........: 67
 # Genome Size.....: 87
 # Copied Size.....: 87
-# Executed Size...: 72
+# Executed Size...: 85
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -28,53 +28,53 @@
 
 
 h-alloc
-add
-swap-stk
+sub
+nop-B
+shift-r
 nop-C
-h-divide
 set-flow
 nop-A
-pop
-mov-head
-nop-C
-add
-if-label
-nop-C
-if-n-equ
-nop-A
-nand
-h-search
-dec
-h-search
-nop-B
-shift-r
-shift-r
-IO
-nop-A
-sub
-nop-B
-sub
-push
-swap
 jmp-head
-swap
-get-head
-h-search
-h-alloc
-h-search
-add
-pop
-set-flow
-IO
-swap
+mov-head
 nop-C
-add
-IO
+sub
+set-flow
+h-search
 h-copy
-IO
+nop-C
 push
+if-n-equ
+set-flow
+shift-l
+sub
+push
+inc
+pop
+shift-l
 nop-B
-nop-B
+get-head
+swap-stk
+IO
+h-search
+h-search
+sub
+dec
+swap-stk
+set-flow
+sub
+if-less
+nand
+set-flow
+jmp-head
+h-divide
+h-divide
+add
+sub
+shift-l
+IO
+if-label
+push
+nand
 h-search
 pop
 sub
@@ -84,7 +84,7 @@ nand
 swap
 IO
 if-label
-if-label
+push
 nand
 push
 nand
@@ -103,14 +103,14 @@ inc
 nop-C
 add
 nop-C
-if-label
+h-copy
 if-n-equ
 mov-head
-h-alloc
+nand
 h-search
+h-copy
+if-less
+inc
 h-divide
-h-copy
-h-copy
-dec
+h-alloc
 mov-head
-if-n-equ

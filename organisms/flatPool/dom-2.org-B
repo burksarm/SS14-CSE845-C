@@ -1,0 +1,137 @@
+# Wed Feb  5 21:19:34 2014
+# Filename........: archive/108-aahxf.org
+# Update Output...: 4258
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 425984.000000
+# Gestation Time..: 935
+# Fitness.........: 455.597861
+# Errors..........: 2
+# Genome Size.....: 108
+# Copied Size.....: 108
+# Executed Size...: 104
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 0 (0.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+IO
+swap
+add
+set-flow
+sub
+pop
+shift-r
+if-n-equ
+nop-C
+if-label
+h-alloc
+shift-r
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+shift-l
+push
+push
+if-less
+nand
+h-search
+inc
+shift-r
+sub
+swap
+h-search
+sub
+shift-r
+shift-l
+swap-stk
+nop-A
+add
+if-less
+dec
+shift-l
+nop-C
+nand
+sub
+if-label
+get-head
+push
+nop-B
+push
+push
+swap-stk
+swap
+nop-C
+nop-A
+IO
+nop-C
+if-label
+IO
+IO
+nand
+nop-C
+nand
+nop-C
+nop-C
+nand
+IO
+nop-C
+set-flow
+add
+nop-C
+if-less
+push
+IO
+shift-r
+inc
+h-divide
+h-alloc
+set-flow
+inc
+nop-C
+IO
+add
+h-copy
+set-flow
+swap
+swap
+swap
+IO
+nop-C
+h-alloc
+swap
+sub
+IO
+dec
+pop
+sub
+h-divide
+nop-B
+IO
+nop-C
+IO
+h-search
+h-copy
+nop-C
+add
+shift-r
+dec
+h-divide
+swap-stk
+mov-head
+nop-A
+nop-B

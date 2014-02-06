@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for ((i=$1; i <=$2; i++))
+for ((i=$1; i <=$40; i++))
 do
-	cp -v data-$i/archive/*.org ancestorPool/dom-$i.org
+	cp -v data-$i/archive/*.org ../organisms/complexPool/dom-$i.org
 done

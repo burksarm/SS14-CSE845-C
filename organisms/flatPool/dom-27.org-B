@@ -1,80 +1,80 @@
-# Wed Feb  5 05:15:38 2014
-# Filename........: archive/103-aaenj.org
-# Update Output...: 3140
+# Wed Feb  5 21:14:22 2014
+# Filename........: archive/103-aadwh.org
+# Update Output...: 2800
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 6291456.000000
-# Gestation Time..: 940
-# Fitness.........: 6693.038298
-# Errors..........: 5
+# Merit...........: 415236096.000000
+# Gestation Time..: 873
+# Fitness.........: 475642.721649
+# Errors..........: 4
 # Genome Size.....: 103
 # Copied Size.....: 103
-# Executed Size...: 96
+# Executed Size...: 99
 # Offspring.......: SELF
 # 
 # Tasks Performed:
-# not 0 (0.000000)
-# nand 1 (1.000000)
+# not 1 (1.000000)
+# nand 0 (0.000000)
 # and 0 (0.000000)
-# orn 0 (0.000000)
+# orn 1 (1.000000)
 # or 1 (1.000000)
 # andn 1 (1.000000)
-# nor 0 (0.000000)
+# nor 1 (1.000000)
 # xor 1 (1.000000)
 # equ 1 (1.000000)
 
 
-nop-A
+sub
 h-alloc
-h-search
+nand
 set-flow
 nop-A
 mov-head
 nop-C
-set-flow
-h-search
 shift-r
+add
+nand
+get-head
+shift-l
 if-less
 h-copy
+if-n-equ
+if-n-equ
+nop-C
+h-search
+dec
+h-divide
+if-n-equ
+h-search
+jmp-head
 set-flow
 h-search
-h-copy
-push
-dec
-if-less
-nop-B
-shift-l
-if-n-equ
-add
 IO
-if-label
-pop
-nop-C
-if-label
-nop-B
+IO
+IO
+h-alloc
+swap-stk
 if-n-equ
-if-label
-if-label
 IO
 nop-C
 IO
 nop-A
-if-n-equ
+nop-A
 nand
-swap-stk
+if-label
 push
 nand
 nop-C
-if-less
-h-alloc
+if-n-equ
+nop-C
 inc
 nop-C
 h-alloc
 push
-h-divide
+add
 IO
 add
 nop-C
@@ -83,50 +83,50 @@ nop-C
 add
 IO
 nop-C
-nop-B
+h-divide
 pop
 nop-C
-h-alloc
+nop-C
 h-alloc
 swap
 nand
 IO
-nand
-shift-l
+h-alloc
+h-copy
 pop
 inc
 add
-nop-A
+IO
 add
-IO
-h-divide
-pop
-h-alloc
-dec
-h-alloc
-IO
 shift-l
-nop-B
+pop
+h-divide
+nop-C
+dec
 if-n-equ
-h-divide
-h-copy
-h-divide
-swap-stk
-swap
-nop-B
+set-flow
+sub
 IO
 sub
-add
-swap
-h-search
+if-less
 h-copy
+dec
+IO
+IO
 nop-C
-nop-C
-shift-r
-if-label
+h-search
+h-search
+pop
+nop-A
+nand
+nop-A
+h-copy
+dec
 h-divide
-if-label
-shift-l
+swap
+add
 mov-head
 swap
-swap-stk
+pop
+h-copy
+nop-B

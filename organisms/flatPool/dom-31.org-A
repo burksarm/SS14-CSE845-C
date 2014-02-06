@@ -1,90 +1,90 @@
-# Wed Feb  5 03:53:49 2014
-# Filename........: archive/100-abvqo.org
-# Update Output...: 8459
+# Wed Feb  5 22:05:34 2014
+# Filename........: archive/100-acfxb.org
+# Update Output...: 11295
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 704643072.000000
-# Gestation Time..: 293
-# Fitness.........: 2404925.160410
-# Errors..........: 2
+# Merit...........: 182452224.000000
+# Gestation Time..: 435
+# Fitness.........: 419430.400000
+# Errors..........: 5
 # Genome Size.....: 100
 # Copied Size.....: 100
-# Executed Size...: 84
+# Executed Size...: 87
 # Offspring.......: SELF
 # 
 # Tasks Performed:
 # not 1 (1.000000)
 # nand 1 (1.000000)
-# and 0 (0.000000)
+# and 1 (1.000000)
 # orn 1 (1.000000)
 # or 1 (1.000000)
 # andn 1 (1.000000)
 # nor 1 (1.000000)
-# xor 1 (1.000000)
+# xor 0 (0.000000)
 # equ 1 (1.000000)
 
 
 h-alloc
-sub
-add
+jmp-head
+h-search
 set-flow
 nop-A
 mov-head
 nop-C
-swap
+pop
+if-n-equ
 if-less
+sub
+nop-C
 dec
-sub
-sub
-h-divide
-h-alloc
 h-search
-h-search
-nop-A
+nand
+sub
+dec
 get-head
 IO
+if-n-equ
 h-alloc
-nop-C
 swap
 IO
 nand
 nand
 IO
 nand
-if-n-equ
+h-alloc
 IO
 push
-if-label
-h-divide
+pop
+h-alloc
 push
 h-copy
 h-divide
 nand
-if-less
+h-alloc
 if-n-equ
-push
-push
-get-head
-IO
-nop-C
-shift-r
-nop-C
-h-copy
-sub
-nop-C
-IO
-nop-C
-swap
-nand
-nand
-nop-C
-push
-if-label
+if-n-equ
+dec
 nop-A
+IO
+nop-C
+nand
+nop-C
+nop-A
+nand
+nop-C
+IO
+nop-C
 swap
+nand
+nand
+nop-C
+h-divide
+h-alloc
+nop-B
+h-copy
 push
 nop-C
 h-copy
@@ -106,24 +106,24 @@ nand
 IO
 h-copy
 if-label
-nop-C
+h-search
 nop-A
 if-label
-h-copy
+nop-C
 h-divide
 h-copy
 h-copy
 h-copy
 mov-head
-if-n-equ
-nand
-jmp-head
-if-n-equ
-if-n-equ
+shift-r
+if-label
+push
 h-search
-if-less
-add
-nand
-IO
-pop
-if-less
+inc
+inc
+inc
+h-alloc
+mov-head
+swap-stk
+inc
+nop-A

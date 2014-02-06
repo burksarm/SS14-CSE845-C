@@ -1,121 +1,121 @@
-# Wed Feb  5 03:13:30 2014
-# Filename........: archive/092-aaoko.org
-# Update Output...: 6043
+# Wed Feb  5 21:07:24 2014
+# Filename........: archive/092-aabio.org
+# Update Output...: 1638
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 679936.000000
-# Gestation Time..: 423
-# Fitness.........: 1607.413712
-# Errors..........: 12
+# Merit...........: 10878976.000000
+# Gestation Time..: 555
+# Fitness.........: 19601.758559
+# Errors..........: 3
 # Genome Size.....: 92
 # Copied Size.....: 92
 # Executed Size...: 83
 # Offspring.......: SELF
 # 
 # Tasks Performed:
-# not 1 (1.000000)
-# nand 0 (0.000000)
+# not 0 (0.000000)
+# nand 1 (1.000000)
 # and 0 (0.000000)
 # orn 1 (1.000000)
 # or 1 (1.000000)
 # andn 1 (1.000000)
 # nor 1 (1.000000)
-# xor 0 (0.000000)
+# xor 1 (1.000000)
 # equ 0 (0.000000)
 
 
+push
 h-alloc
-jmp-head
 set-flow
 nop-A
-sub
+if-n-equ
+if-n-equ
+nop-C
 mov-head
 nop-C
-h-alloc
-jmp-head
-h-alloc
+swap-stk
+swap-stk
+if-label
+pop
+nand
+sub
 if-n-equ
 push
-if-less
-nop-A
-shift-r
-nop-A
-add
 dec
 nop-C
-h-alloc
+nand
 IO
 nand
 nop-C
 pop
 IO
-if-less
-sub
+h-alloc
+nop-C
 if-label
 nand
 nand
 nop-A
 nand
 add
-if-less
-jmp-head
-nop-C
-nop-A
-h-alloc
-inc
-IO
-nop-A
-IO
-IO
-nop-C
 set-flow
+swap-stk
+nop-C
+swap
+nop-C
+inc
+sub
+nop-A
+IO
+IO
+nop-C
+nand
+nop-C
+IO
+nop-C
+nop-A
+set-flow
+push
+nop-B
+push
+pop
+nand
+nand
+nop-C
+inc
+nop-C
 swap-stk
 nop-B
-h-divide
-get-head
-h-alloc
-nop-C
-sub
-dec
-swap
-get-head
-swap
-shift-r
-swap-stk
+if-n-equ
+nop-A
 nop-A
 sub
-swap-stk
+add
+nop-C
 inc
-sub
 swap
+swap-stk
+IO
+add
+push
 IO
 shift-l
-h-alloc
-nop-C
-nop-A
-swap-stk
 h-divide
-if-less
-dec
-push
-h-alloc
-h-search
 h-search
 h-copy
-pop
-h-copy
+if-label
+swap
 if-label
 nop-C
 nop-A
 set-flow
-IO
-pop
 mov-head
-if-less
-sub
+push
+IO
+h-divide
+pop
 push
 nop-A
 nop-B

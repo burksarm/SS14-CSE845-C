@@ -1,18 +1,18 @@
-# Tue Feb  4 23:48:33 2014
-# Filename........: archive/095-abtpu.org
-# Update Output...: 7266
+# Wed Feb  5 21:54:41 2014
+# Filename........: archive/095-abtih.org
+# Update Output...: 7272
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 2986344448.000000
-# Gestation Time..: 286
-# Fitness.........: 10441763.804196
-# Errors..........: 6
+# Merit...........: 3019898880.000000
+# Gestation Time..: 284
+# Fitness.........: 10633446.760563
+# Errors..........: 10
 # Genome Size.....: 95
 # Copied Size.....: 95
-# Executed Size...: 89
+# Executed Size...: 90
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -28,11 +28,11 @@
 
 
 h-alloc
-dec
+shift-r
 set-flow
 nop-A
-jmp-head
-nop-A
+dec
+if-n-equ
 nand
 IO
 nop-C
@@ -47,25 +47,25 @@ nop-C
 nand
 nand
 nop-C
-if-less
-if-label
-h-divide
 push
+if-label
+nop-C
+dec
 IO
 IO
 nop-C
-h-alloc
-IO
-shift-r
-nand
-shift-l
-h-search
 if-n-equ
-h-copy
+IO
 inc
-add
+nop-A
+nand
 inc
-if-label
+nop-B
+nop-B
+h-alloc
+set-flow
+get-head
+shift-l
 h-search
 pop
 if-label
@@ -74,7 +74,7 @@ nop-C
 nand
 nop-C
 push
-if-label
+nop-B
 h-alloc
 shift-r
 nop-A
@@ -85,9 +85,9 @@ sub
 swap-stk
 IO
 if-label
-push
-push
-h-divide
+if-label
+h-alloc
+nop-A
 nand
 IO
 nand
@@ -96,13 +96,13 @@ swap-stk
 h-divide
 if-label
 nop-B
-set-flow
+h-divide
 nand
 h-alloc
 if-label
 swap
 if-less
-nop-C
+set-flow
 pop
 add
 inc
@@ -117,8 +117,8 @@ nop-C
 h-divide
 h-copy
 mov-head
-if-n-equ
-IO
-jmp-head
-dec
+nop-A
+if-less
+push
+h-divide
 nop-A

@@ -1,48 +1,48 @@
-# Wed Feb  5 00:43:17 2014
-# Filename........: archive/107-aafeu.org
-# Update Output...: 5541
+# Wed Feb  5 21:20:27 2014
+# Filename........: archive/107-aaejx.org
+# Update Output...: 5091
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 394264576.000000
-# Gestation Time..: 1115
-# Fitness.........: 353600.516592
-# Errors..........: 49
+# Merit...........: 25427968.000000
+# Gestation Time..: 1323
+# Fitness.........: 19219.930461
+# Errors..........: 102
 # Genome Size.....: 107
 # Copied Size.....: 107
-# Executed Size...: 94
+# Executed Size...: 97
 # Offspring.......: SELF
 # 
 # Tasks Performed:
 # not 1 (1.000000)
-# nand 0 (0.000000)
+# nand 1 (1.000000)
 # and 1 (1.000000)
 # orn 0 (0.000000)
 # or 1 (1.000000)
 # andn 1 (1.000000)
 # nor 1 (1.000000)
 # xor 1 (1.000000)
-# equ 1 (1.000000)
+# equ 0 (0.000000)
 
 
-shift-l
+nop-B
 h-alloc
-if-n-equ
-mov-head
-shift-r
-shift-r
+pop
+push
+if-less
+h-divide
 set-flow
 nop-A
-pop
-nand
-h-alloc
+IO
+add
+shift-r
 mov-head
 nop-C
-add
+nand
 h-alloc
-h-search
+nand
 nand
 IO
 nop-C
@@ -50,87 +50,87 @@ sub
 nop-C
 IO
 nand
-if-n-equ
+push
 set-flow
 push
 nand
+swap-stk
 h-alloc
-h-copy
 push
-if-less
-nand
+push
+swap-stk
 IO
-if-n-equ
+swap-stk
 nand
 nop-C
 swap-stk
 inc
-nop-C
-push
-h-alloc
+pop
+nop-A
+if-n-equ
 add
 add
 nop-C
 IO
 sub
-if-n-equ
-push
+dec
+h-divide
 IO
-swap
-nop-A
+push
+dec
+h-copy
+if-n-equ
 dec
 IO
-push
-pop
-h-copy
+nop-C
+dec
 IO
-if-less
-mov-head
-swap
-push
-IO
-if-less
-shift-l
-push
-if-less
-nand
+swap-stk
+if-n-equ
 inc
 IO
-push
-nop-B
-if-n-equ
-nand
 nop-C
+sub
 nop-A
-h-copy
-nop-C
-h-copy
-add
-if-less
-pop
-add
-h-divide
+IO
+h-alloc
+push
+IO
+nand
 nop-B
 swap-stk
-h-alloc
+nand
+swap
+dec
 sub
+h-alloc
+h-copy
+h-divide
+inc
+pop
+add
+nop-B
+nop-A
+if-label
+h-alloc
+inc
 nand
 IO
 h-search
 nop-A
-h-divide
-if-n-equ
-if-label
-if-less
-nop-A
+inc
 h-copy
-mov-head
-nop-A
-h-copy
-swap
-h-copy
-swap-stk
+shift-r
 nop-C
-if-less
-nand
+nop-A
+h-divide
+mov-head
+mov-head
+mov-head
+push
+h-divide
+nop-C
+h-alloc
+shift-l
+swap-stk
 nop-A

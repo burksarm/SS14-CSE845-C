@@ -1,6 +1,6 @@
-# Wed Feb  5 05:13:04 2014
-# Filename........: archive/103-abnwb.org
-# Update Output...: 7339
+# Wed Feb  5 21:56:36 2014
+# Filename........: archive/103-abnlo.org
+# Update Output...: 7353
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
@@ -9,7 +9,7 @@
 # Merit...........: 3355443200.000000
 # Gestation Time..: 274
 # Fitness.........: 12246143.065693
-# Errors..........: 4
+# Errors..........: 5
 # Genome Size.....: 103
 # Copied Size.....: 103
 # Executed Size...: 100
@@ -27,44 +27,44 @@
 # equ 1 (1.000000)
 
 
-set-flow
+h-divide
 h-alloc
-h-alloc
+get-head
 set-flow
 nop-A
 mov-head
 nop-C
 pop
-pop
 add
-nop-C
-h-copy
-set-flow
-jmp-head
-get-head
+nop-B
 nand
-get-head
+h-copy
+if-less
+h-alloc
+nop-C
+swap
+IO
 h-search
 dec
 nop-C
 if-label
-push
+shift-l
 IO
-swap-stk
+push
 nand
 nop-A
-if-label
+nop-C
 nop-B
 h-alloc
-nop-A
-nop-A
+h-alloc
+swap-stk
 IO
 nop-C
 IO
 nop-A
 if-label
 nand
-if-n-equ
+if-less
 push
 nand
 nop-C
@@ -72,7 +72,7 @@ if-less
 nop-C
 inc
 nop-C
-h-alloc
+nop-C
 push
 if-label
 IO
@@ -87,7 +87,7 @@ h-divide
 pop
 nop-C
 if-less
-inc
+nand
 swap
 nand
 IO
@@ -98,12 +98,12 @@ inc
 add
 IO
 inc
-add
+nand
 pop
-if-n-equ
+swap-stk
 nop-C
 sub
-h-divide
+nop-B
 if-n-equ
 dec
 IO
@@ -114,8 +114,8 @@ dec
 IO
 IO
 nop-C
-nop-A
-h-divide
+get-head
+nop-B
 if-n-equ
 nop-A
 h-search

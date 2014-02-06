@@ -1,98 +1,98 @@
-# Wed Feb  5 01:01:01 2014
-# Filename........: archive/091-aadax.org
-# Update Output...: 2967
+# Wed Feb  5 21:46:47 2014
+# Filename........: archive/091-aagmx.org
+# Update Output...: 5999
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 1476395008.000000
-# Gestation Time..: 674
-# Fitness.........: 2190497.044510
-# Errors..........: 10
+# Merit...........: 167772160.000000
+# Gestation Time..: 1231
+# Fitness.........: 136289.325751
+# Errors..........: 1
 # Genome Size.....: 91
 # Copied Size.....: 91
-# Executed Size...: 88
+# Executed Size...: 80
 # Offspring.......: SELF
 # 
 # Tasks Performed:
 # not 1 (1.000000)
-# nand 0 (0.000000)
+# nand 1 (1.000000)
 # and 1 (1.000000)
 # orn 1 (1.000000)
 # or 1 (1.000000)
 # andn 1 (1.000000)
 # nor 1 (1.000000)
-# xor 1 (1.000000)
+# xor 0 (0.000000)
 # equ 1 (1.000000)
 
 
 h-alloc
-h-alloc
-nop-A
-swap
-dec
-dec
 if-less
-h-search
-nop-C
-nop-A
-swap
-dec
-mov-head
-nop-C
-if-less
-swap
-pop
-nop-A
-if-less
-dec
-h-divide
-nand
-if-n-equ
+push
 nop-B
-h-alloc
 swap-stk
+nop-C
+push
 h-search
 nop-C
-h-divide
+nop-A
 inc
-nop-A
+pop
+mov-head
+nop-C
+if-n-equ
+pop
 h-search
 h-divide
+if-label
+if-less
+h-search
+get-head
+push
+inc
+h-copy
+swap-stk
+shift-r
 h-alloc
+add
+if-n-equ
+h-alloc
+h-search
+if-n-equ
+push
 IO
-nop-B
+nop-A
 IO
 swap
-add
+dec
 swap
 if-label
 nand
 push
-pop
-if-less
-swap
-h-divide
 nand
+nop-A
+swap
 h-copy
-h-alloc
+sub
+h-copy
+pop
 IO
-add
+nop-B
 nop-A
 nand
 if-label
 push
 IO
-nop-C
+nop-A
 pop
 nop-C
 nand
-swap
-if-n-equ
+nop-A
+push
 h-copy
 push
-nop-C
+nop-A
 IO
 nop-C
 sub
@@ -104,17 +104,17 @@ IO
 nop-C
 pop
 nop-C
-push
+nop-B
 if-less
-h-search
-if-n-equ
-h-divide
-h-copy
-if-less
-nop-C
-if-n-equ
-h-divide
+swap-stk
 sub
+jmp-head
+swap-stk
+h-divide
 mov-head
+if-label
+if-less
+nop-A
+dec
 nop-A
 nop-B

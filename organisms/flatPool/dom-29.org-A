@@ -1,18 +1,18 @@
-# Wed Feb  5 05:45:24 2014
-# Filename........: archive/092-acpbz.org
-# Update Output...: 5779
+# Wed Feb  5 21:49:51 2014
+# Filename........: archive/092-acovn.org
+# Update Output...: 5774
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 5898240.000000
-# Gestation Time..: 216
-# Fitness.........: 27306.666667
-# Errors..........: 1
+# Merit...........: 5767168.000000
+# Gestation Time..: 215
+# Fitness.........: 26824.037209
+# Errors..........: 0
 # Genome Size.....: 92
 # Copied Size.....: 92
-# Executed Size...: 90
+# Executed Size...: 88
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -28,52 +28,52 @@
 
 
 h-alloc
-IO
+get-head
 set-flow
 nop-A
 mov-head
 nop-C
-swap
-swap-stk
+h-divide
 nop-B
-shift-l
-nop-A
-shift-l
-nand
-add
 shift-r
-swap
-shift-l
-add
-nop-C
-h-search
+dec
+sub
 nand
-if-n-equ
+jmp-head
 if-less
-if-n-equ
-if-label
-swap-stk
-IO
-nop-C
+nand
 set-flow
+swap
+nop-B
 nop-A
+if-label
+h-divide
+shift-l
+sub
+if-label
+sub
+inc
+IO
+nop-C
+pop
 add
-nop-A
-nop-C
-nand
-nop-C
-nop-A
-IO
-nand
-nand
-nop-A
-swap-stk
-push
-IO
-nop-A
-IO
-nop-C
 if-n-equ
+dec
+swap-stk
+nand
+nop-C
+if-label
+IO
+nand
+nand
+nop-A
+h-divide
+nop-C
+IO
+nop-A
+IO
+nop-C
+nop-C
 sub
 nop-C
 IO
@@ -81,31 +81,31 @@ nop-C
 IO
 nand
 swap
-swap-stk
+push
 push
 swap-stk
 h-copy
 inc
-nop-B
+if-n-equ
 add
 push
 nop-C
-nop-B
+shift-r
 nop-A
 IO
-h-alloc
-dec
+h-divide
+set-flow
 pop
-swap
-if-label
+push
+nop-A
 h-copy
 nand
 IO
 swap
 IO
-push
-nand
-shift-l
+set-flow
+pop
+nop-B
 swap
 h-copy
 h-search

@@ -1,18 +1,18 @@
-# Wed Feb  5 06:00:25 2014
-# Filename........: archive/094-aadpl.org
-# Update Output...: 2438
+# Wed Feb  5 21:14:59 2014
+# Filename........: archive/094-aahmr.org
+# Update Output...: 2561
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 5888.000000
-# Gestation Time..: 254
-# Fitness.........: 23.181102
-# Errors..........: 3
+# Merit...........: 84992.000000
+# Gestation Time..: 277
+# Fitness.........: 306.830325
+# Errors..........: 0
 # Genome Size.....: 94
 # Copied Size.....: 94
-# Executed Size...: 92
+# Executed Size...: 83
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -22,102 +22,102 @@
 # orn 1 (1.000000)
 # or 1 (1.000000)
 # andn 0 (0.000000)
-# nor 0 (0.000000)
+# nor 1 (1.000000)
 # xor 0 (0.000000)
 # equ 0 (0.000000)
 
 
 dec
 nop-C
-shift-r
-push
-h-alloc
-if-n-equ
+sub
 IO
-nand
-jmp-head
-nop-B
-swap-stk
+h-alloc
+set-flow
 if-label
-get-head
-h-alloc
+nand
+if-label
+nop-C
+nop-A
+inc
+add
+nop-C
 push
 IO
-shift-r
+h-divide
 swap
 set-flow
 nop-A
-shift-l
-h-divide
-h-alloc
 mov-head
 nop-C
-if-less
-if-label
-pop
-push
-if-label
-h-divide
-h-divide
-shift-l
-nop-A
-IO
-nop-C
-if-label
-nand
-nop-C
-push
-h-divide
-nand
-IO
-swap
-nop-B
-h-divide
-if-less
-add
-push
-nop-B
-swap-stk
-h-divide
-h-divide
-if-less
-nop-B
-nop-C
 if-n-equ
-h-divide
-set-flow
-h-alloc
-sub
-nop-C
-pop
-swap-stk
-sub
-IO
-IO
-nop-C
-pop
-sub
-if-label
-pop
-push
-swap
-h-copy
-nop-B
-get-head
-push
-nop-C
-shift-r
+nop-A
+nop-A
 inc
+if-less
+pop
+if-label
+nop-A
+swap-stk
+nop-C
+nand
+nop-C
+IO
+nop-C
+swap-stk
+nand
+nop-C
+push
+push
+nand
+IO
+swap
+sub
+h-divide
+IO
+h-copy
+shift-r
+nop-A
+inc
+swap
+if-less
+h-divide
+shift-r
+h-divide
+if-n-equ
+nop-B
+push
+IO
+h-search
+shift-r
+h-divide
+if-label
+nop-B
+nop-B
+push
+nop-B
+swap
+nand
+swap-stk
+shift-l
+if-n-equ
+get-head
+inc
+nop-B
+if-less
+nop-A
+get-head
+inc
+if-n-equ
 h-search
 h-copy
 h-copy
 h-copy
-nand
+swap
+if-n-equ
+swap-stk
 h-divide
-if-n-equ
-add
-h-copy
-h-copy
 mov-head
-if-label
-if-n-equ
+shift-l
+add
+push
+dec

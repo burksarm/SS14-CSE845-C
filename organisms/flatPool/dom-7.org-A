@@ -1,18 +1,18 @@
-# Wed Feb  5 02:35:16 2014
-# Filename........: archive/109-abzrj.org
-# Update Output...: 7689
+# Wed Feb  5 21:56:10 2014
+# Filename........: archive/109-abvps.org
+# Update Output...: 7619
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 3523215360.000000
-# Gestation Time..: 297
-# Fitness.........: 11862677.979798
-# Errors..........: 3
+# Merit...........: 3590324224.000000
+# Gestation Time..: 295
+# Fitness.........: 12170590.589831
+# Errors..........: 6
 # Genome Size.....: 109
 # Copied Size.....: 109
-# Executed Size...: 105
+# Executed Size...: 107
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -27,14 +27,14 @@
 # equ 1 (1.000000)
 
 
-swap-stk
-push
 inc
+h-divide
+nop-C
 nand
 if-n-equ
-nop-A
-shift-l
 set-flow
+shift-l
+if-label
 h-alloc
 set-flow
 nop-A
@@ -42,24 +42,24 @@ mov-head
 nop-C
 inc
 push
-add
-nop-C
-set-flow
-nand
 if-n-equ
+h-divide
+sub
+jmp-head
+nop-A
 swap-stk
-set-flow
-if-less
+h-divide
+shift-r
 dec
 nop-C
-IO
 pop
+nop-B
+shift-l
 IO
-if-label
 nand
 nop-C
 h-copy
-set-flow
+inc
 inc
 nop-C
 IO
@@ -67,21 +67,21 @@ dec
 nop-C
 swap-stk
 push
-if-less
-h-alloc
+if-n-equ
+if-label
 push
 nand
 nand
 push
-h-divide
+if-n-equ
 push
 push
 h-copy
 IO
-h-divide
-inc
-nop-C
+sub
+set-flow
 h-search
+nand
 pop
 nop-B
 dec
@@ -90,40 +90,40 @@ nand
 IO
 nand
 nop-C
-h-divide
+nop-C
 h-copy
 h-copy
 IO
 nop-C
 nand
 nop-C
-dec
+h-divide
 pop
 add
 swap
 inc
 nop-C
-h-divide
+h-alloc
 h-copy
 nand
 IO
 IO
 nop-C
-shift-l
-get-head
-inc
+add
+sub
+h-divide
 h-copy
 inc
-shift-l
-h-copy
 h-alloc
-if-n-equ
+h-copy
+h-copy
+sub
 if-label
 mov-head
 swap
-if-n-equ
-add
-nand
+nop-B
+nop-C
+nop-B
 swap
 h-search
 h-copy

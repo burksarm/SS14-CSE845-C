@@ -1,18 +1,18 @@
-# Wed Feb  5 06:57:07 2014
-# Filename........: archive/116-acmpt.org
-# Update Output...: 16281
+# Wed Feb  5 22:02:48 2014
+# Filename........: archive/116-acexa.org
+# Update Output...: 10888
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 3791650816.000000
-# Gestation Time..: 818
-# Fitness.........: 4635269.946210
-# Errors..........: 24
+# Merit...........: 3758096384.000000
+# Gestation Time..: 400
+# Fitness.........: 9395240.960000
+# Errors..........: 10
 # Genome Size.....: 116
 # Copied Size.....: 116
-# Executed Size...: 113
+# Executed Size...: 112
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -27,84 +27,84 @@
 # equ 1 (1.000000)
 
 
-dec
-shift-r
-h-alloc
-nand
-push
-sub
-h-search
-dec
-sub
-if-n-equ
-dec
+nop-A
 if-label
-shift-r
+push
+IO
+jmp-head
+nop-A
+if-label
+dec
+get-head
+swap-stk
+pop
 shift-l
-nand
-nop-C
+h-alloc
+if-less
+pop
+nop-A
 h-search
 nop-C
 nop-A
 mov-head
 nop-C
-swap-stk
-nop-C
-swap-stk
-if-less
-get-head
-get-head
-nop-C
-h-search
-inc
-sub
-set-flow
-swap
-dec
 if-label
-h-search
+get-head
 inc
-nop-C
-if-label
-IO
-add
-nop-C
-nand
-nop-C
-h-copy
-IO
-nop-C
 h-alloc
-IO
-nop-A
-nop-A
-if-label
-nand
-nand
-nop-C
-h-copy
-shift-l
-if-label
-h-copy
 h-divide
-h-alloc
-shift-l
-shift-l
-shift-l
-pop
-nop-B
-dec
-sub
-IO
 if-n-equ
-h-divide
+pop
+h-search
+nop-C
+h-search
+nop-B
+sub
+nop-B
+nop-A
+dec
+sub
+h-search
+if-label
+IO
+pop
+nop-C
+sub
+nop-C
+h-copy
+IO
+nop-C
+h-alloc
+IO
+nop-A
+nop-A
+if-label
+nand
+nand
+nop-C
 nop-C
 if-label
+nop-C
+nop-C
+if-less
+h-alloc
+sub
+swap-stk
+nop-A
+pop
+h-divide
+dec
+sub
+IO
+inc
+nop-A
+h-divide
+if-label
+if-less
+nand
 push
 nop-C
-if-n-equ
 nop-C
-if-label
 nand
 swap
 nand
@@ -113,31 +113,31 @@ h-copy
 sub
 dec
 swap
-h-divide
+if-n-equ
 IO
 add
-if-label
+if-n-equ
 inc
 IO
-shift-r
-h-copy
-pop
-IO
-nop-C
-sub
-IO
 nand
-swap-stk
-nop-B
+nop-C
+pop
+if-less
+nop-C
+h-alloc
 IO
+shift-r
+nand
+nop-A
+IO
+nop-B
+pop
 h-copy
-swap-stk
 h-copy
-h-copy
+if-label
 nop-C
-if-n-equ
+h-search
 h-divide
-nop-C
 h-copy
 h-copy
 mov-head

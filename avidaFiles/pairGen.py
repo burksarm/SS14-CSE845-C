@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import os
 import re
-from subprocess import call
+import subprocess
 
 #Go through each dominant ancestor, figure out the genome-wide mutation rates for both 0.5 and 2.0
 for dirname, dirs, files in os.walk("../complex/pool"):
@@ -21,11 +21,11 @@ for dirname, dirs, files in os.walk("../complex/pool"):
 				startOrg = "../complex/pool/%s" %fname
 
 				#Run Avida with both the low and high mutation rate
-				call(["avida", "-c", "avida_flat.cfg", "-set", "DATA_DIR", "../flat/%s-A" %fname, 
+				subprocess.Popen(["avida", "-c", "avida_flat.cfg", "-set", "DATA_DIR", "../flat/%s-A" %fname, 
 					"-set", "COPY_MUT_PROB", "%s" %low, "-set", "START_ORGANISM", 
 					startOrg])
 
-                                call(["avida", "-c", "avida_flat.cfg", "-set", "DATA_DIR", "../flat/%s-B" %fname,
+                                subprocess.Popen(["avida", "-c", "avida_flat.cfg", "-set", "DATA_DIR", "../flat/%s-B" %fname,
                                         "-set", "COPY_MUT_PROB", "%s" %high, "-set", "START_ORGANISM",
                                         startOrg])
 

@@ -1,22 +1,22 @@
-# Wed Feb  5 02:11:38 2014
-# Filename........: archive/062-aafcc.org
-# Update Output...: 2734
+# Wed Feb  5 21:17:56 2014
+# Filename........: archive/062-aagwt.org
+# Update Output...: 3745
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 950272.000000
-# Gestation Time..: 434
-# Fitness.........: 2189.566820
-# Errors..........: 2
+# Merit...........: 466944.000000
+# Gestation Time..: 323
+# Fitness.........: 1445.647059
+# Errors..........: 3
 # Genome Size.....: 62
 # Copied Size.....: 62
-# Executed Size...: 58
+# Executed Size...: 57
 # Offspring.......: SELF
 # 
 # Tasks Performed:
-# not 1 (1.000000)
+# not 0 (0.000000)
 # nand 1 (1.000000)
 # and 0 (0.000000)
 # orn 1 (1.000000)
@@ -29,63 +29,63 @@
 
 nop-A
 nop-A
-sub
+h-divide
 h-alloc
 h-search
 nop-C
 nop-C
-if-n-equ
-nand
-swap-stk
-if-n-equ
+inc
 IO
 nop-C
-IO
-nop-A
-push
-nop-C
-nand
+shift-r
 IO
 nand
-nop-C
-nand
+h-divide
+shift-l
+sub
+if-less
 if-less
 IO
+nand
 nop-C
-pop
+nand
+if-label
+IO
 nop-C
+swap-stk
+h-alloc
 mov-head
 nop-C
 if-label
 sub
 dec
-nop-C
+inc
 pop
 nop-C
-nop-B
-sub
+push
+if-n-equ
+push
+nop-C
 if-label
-h-alloc
-jmp-head
 swap-stk
 h-copy
 sub
 nop-C
 nand
-if-n-equ
 IO
 inc
+set-flow
 IO
 nop-C
-get-head
-nop-A
+nop-C
+swap-stk
 if-label
 h-search
 h-copy
 h-divide
-if-less
-if-n-equ
-pop
+inc
 mov-head
-if-label
+nand
+sub
+swap-stk
 h-search

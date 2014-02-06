@@ -1,18 +1,18 @@
-# Wed Feb  5 21:52:43 2014
-# Filename........: archive/102-abwvf.org
-# Update Output...: 6298
+# Wed Feb  5 21:53:22 2014
+# Filename........: archive/102-abzny.org
+# Update Output...: 6500
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 3288334336.000000
-# Gestation Time..: 240
-# Fitness.........: 13701393.066667
-# Errors..........: 1
+# Merit...........: 3422552064.000000
+# Gestation Time..: 239
+# Fitness.........: 14320301.523013
+# Errors..........: 2
 # Genome Size.....: 102
 # Copied Size.....: 102
-# Executed Size...: 98
+# Executed Size...: 102
 # Offspring.......: SELF
 # 
 # Tasks Performed:
@@ -27,105 +27,105 @@
 # equ 1 (1.000000)
 
 
-set-flow
+sub
+inc
+add
+get-head
+nop-A
 h-alloc
+h-search
+h-alloc
+nand
 set-flow
 nop-A
-push
+if-label
+nand
 nop-B
+if-n-equ
 IO
+nop-A
 mov-head
 nop-C
-pop
-IO
-swap-stk
-h-alloc
-swap
-nand
-nand
-IO
-nand
-nop-C
-nand
-h-divide
-sub
-swap
-add
-nop-A
-inc
-if-label
-nop-B
-shift-l
-dec
-IO
-nop-A
-IO
-sub
-h-copy
-if-label
-swap
-IO
-h-divide
-nand
-set-flow
-add
-set-flow
-h-divide
-dec
-nop-A
-inc
-IO
-push
-IO
-push
-nop-C
-nop-C
-pop
-push
-nand
-nop-A
-nand
-nop-C
-IO
-nop-B
-nand
-if-label
-nand
-swap
-swap-stk
-h-copy
-inc
-add
-h-copy
-IO
-pop
 dec
 sub
-IO
-IO
-nop-A
-swap
-IO
-swap
 inc
-nand
-set-flow
-IO
-sub
 h-search
+sub
+nand
 nop-B
-dec
+IO
+nop-C
 if-less
-h-search
-nop-C
+h-copy
+nand
+h-divide
+swap
+push
 nop-B
+nop-B
+push
+add
+sub
+IO
+nand
+IO
+swap
+IO
+h-alloc
+nand
+if-label
+push
+get-head
+push
+pop
+nop-C
+nand
+IO
+IO
+nand
+nop-B
+h-divide
+h-copy
+nop-C
+swap-stk
+h-copy
+IO
+nop-C
+nop-C
+h-copy
+h-copy
+if-n-equ
+swap-stk
+sub
+nop-C
+h-copy
+set-flow
+nand
+IO
+pop
+sub
+nop-C
+push
+push
+nand
+IO
+nand
+IO
+nop-C
+sub
+IO
+nop-B
+nand
+inc
+add
+IO
+pop
+h-search
 h-copy
 h-copy
 h-copy
 if-label
 nop-C
-nop-A
 h-divide
 mov-head
 nop-A
-nop-B

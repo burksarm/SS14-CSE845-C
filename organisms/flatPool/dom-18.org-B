@@ -1,114 +1,114 @@
-# Wed Feb  5 01:14:35 2014
-# Filename........: archive/085-aajcz.org
-# Update Output...: 4594
+# Wed Feb  5 21:15:32 2014
+# Filename........: archive/085-aaflu.org
+# Update Output...: 2935
 # Is Viable.......: 1
 # Repro Cycle Size: 0
 # Depth to Viable.: 0
 # 
 # Generation: 0
-# Merit...........: 2523136.000000
-# Gestation Time..: 844
-# Fitness.........: 2989.497630
-# Errors..........: 0
+# Merit...........: 163840.000000
+# Gestation Time..: 481
+# Fitness.........: 340.623701
+# Errors..........: 4
 # Genome Size.....: 85
 # Copied Size.....: 85
-# Executed Size...: 77
+# Executed Size...: 80
 # Offspring.......: SELF
 # 
 # Tasks Performed:
-# not 1 (1.000000)
+# not 0 (0.000000)
 # nand 1 (1.000000)
-# and 0 (0.000000)
-# orn 1 (1.000000)
-# or 1 (1.000000)
-# andn 1 (1.000000)
-# nor 0 (0.000000)
-# xor 0 (0.000000)
-# equ 1 (1.000000)
+# and 1 (1.000000)
+# orn 0 (0.000000)
+# or 0 (0.000000)
+# andn 0 (0.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
 
 
-set-flow
-sub
+nop-B
+h-alloc
+h-alloc
+h-search
+nop-C
 nand
-pop
-set-flow
 jmp-head
-swap
-jmp-head
-add
-nand
-IO
-nop-C
-nand
-nop-C
-IO
-nand
-swap
-add
-nop-C
-set-flow
 sub
-dec
+h-alloc
 sub
-nop-C
-IO
-IO
-h-divide
-h-divide
-sub
-shift-r
-swap-stk
-nop-A
-push
-add
 h-alloc
 nand
-IO
-sub
-get-head
-nop-C
-inc
-nop-B
-IO
-set-flow
-nop-A
+nand
 shift-l
-nop-B
 add
-IO
-mov-head
+nand
+inc
+shift-l
 nop-C
 push
-if-n-equ
-if-label
-nop-C
-h-divide
-h-copy
 get-head
-mov-head
-shift-l
+pop
+sub
+h-search
+sub
+nop-B
+if-less
+dec
+swap-stk
+pop
 set-flow
 nop-A
-nand
-h-copy
-nop-A
-h-copy
-sub
-nop-A
-h-copy
-shift-l
-IO
-IO
-h-search
-if-label
-IO
-h-copy
-nand
-if-label
 push
-h-divide
+set-flow
+nop-A
+get-head
+IO
+nop-A
+if-less
 swap
-mov-head
-nand
-nop-B
+inc
+swap
+swap
+IO
 push
+IO
+nop-C
+nand
+push
+mov-head
+nop-C
+nand
+nop-A
+swap
+pop
+nop-B
+h-copy
+nand
+IO
+dec
+set-flow
+pop
+nand
+swap
+nop-C
+nand
+IO
+h-copy
+swap
+sub
+IO
+nand
+IO
+if-n-equ
+h-alloc
+h-search
+shift-r
+add
+nop-A
+h-divide
+h-copy
+mov-head
+swap-stk
+if-label
+h-search
