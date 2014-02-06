@@ -8,22 +8,30 @@ import re
 for i in range(1, 41):
 	aFitness = float(0)
 	bFitness = float(0)
+	aViable = "0"
+	bViable = "0"
 	
 	aFile = open("../organisms/flatPool/dom-%s.org-A" %i, "r")
 	bFile = open("../organisms/flatPool/dom-%s.org-B" %i, "r")
 	
-	#Find the fitnesses
+	#Find the fitnesses and make sure they're both viable
 	for line in aFile:
+		if line.startswith("# Is Viable"):
+			aViable = line.split()[-1]
+		
 		if line.startswith("# Fitness"):
 			aFitness = float(line.split()[2])
 			break
 	
 	for line in bFile:
+		if line.startswith("# Is Viable"):
+			bViable = line.split()[-1]
+		
 		if line.startswith("# Fitness"):
 			bFitness = float(line.split()[2])
 			break
 		
 	#Now compare them
-	if aFitness/bFitness >= 1.5:
+	if aViable == "1" and bViable == "1" and aFitness/bFitness > 1.5:
 		print aFile.name
 		print bFile.name
