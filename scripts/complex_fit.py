@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 %pylab inline
 
-fit_list = []
+fit_comp = []
 for i in range(1, 41):
     fitness = float(0)
     
@@ -17,18 +17,47 @@ for i in range(1, 41):
             if line.startswith('# Fitness'):
                 fitness = float(line.split()[2])
                 
-                fit_list.append(fitness)
+                fit_comp.append(fitness)
 
-print fitness
-fit_list.sort()
-fit_list.reverse()
+fit_comp.sort()
+fit_comp.reverse()
+
+fit_low = []
+for i in range(1, 41):
+    fitness = float(0)
+    
+    with open('reproduction/pairs/dom-%s.org-A' %i, 'r') as org:
+    
+        for line in org:
+            if line.startswith('# Fitness'):
+                fitness = float(line.split()[2])
+                
+                fit_low.append(fitness)
+
+fit_low.sort()
+fit_low.reverse()
+
+fit_high = []
+for i in range(1, 41):
+    fitness = float(0)
+    
+    with open('reproduction/pairs/dom-%s.org-B' %i, 'r') as org:
+    
+        for line in org:
+            if line.startswith('# Fitness'):
+                fitness = float(line.split()[2])
+                
+                fit_high.append(fitness)
+
+fit_high.sort()
+fit_high.reverse()
 
 
-myfile = open('output.csv', 'wb')
-wr = csv.writer(myfile)
-wr.writerow("F")
-for value in fit_list:
-    wr.writerow([value])
+with open('fitness.csv', 'wb') as f:
+    w = csv.writer(f,delimiter=',', quoting = csv.QUOTE_ALL)
+    w.writerow('CLH')
+    for row in zip(fit_comp, fit_low, fit_high):
+        w.writerow(row)
     
 # must specify that blank space " " is NaN  
 experimentDF = read_csv("output.csv", na_values=[" "])  
@@ -36,4 +65,4 @@ print experimentDF
 
 sns.set_color_palette("hls")
 mpl.rc("figure", figsize=(16, 8))
-sns.distplot(experimentDF)
+experimentDF.dropna().plot(kind='kde')
