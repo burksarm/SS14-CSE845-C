@@ -60,7 +60,7 @@ with open('fitness.csv', 'wb') as f:
         w.writerow(row)
     
 # must specify that blank space " " is NaN  
-experimentDF = read_csv("output.csv", na_values=[" "])  
+experimentDF = read_csv("fitness.csv", na_values=[" "])  
 print experimentDF
 
 sns.set_color_palette("hls")
