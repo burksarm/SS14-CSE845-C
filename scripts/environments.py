@@ -44,8 +44,5 @@ def generate(aFile, bFile):
 	for task in allTasks:
 		outFile.write(allResources[task] + "\n")
 	
-	if len(allTasks) < 9:
-		print domName
-	
 
 
