@@ -59,9 +59,9 @@ for i in range(1, 41):
 		eventsFile.write("#Fill half the pop with organism B and give it a marker of 1\n")
 		eventsFile.write("u begin InjectRange %s 1800 3599 %s 1\n\n" %(bFile.name, bMerit))
 		
-		#Save the population after 50 generations
-		eventsFile.write("#Save the population after 50 generations\n")
-		eventsFile.write("g 50 SavePopulation\n\n")
+		#Save the population every 5 generations
+		eventsFile.write("#Save the population every 5 generations\n")
+		eventsFile.write("g 5:5 SavePopulation\n\n")
 		
 		#Stop after 50 generations
 		eventsFile.write("#Stop after 50 generations\n")
