@@ -30,12 +30,12 @@ for dirname, dirs, files in os.walk("./"):
 				copyMutRate = calcMutRate(orgFiles[0], targetMutRate)
 				
 				#Get the output directory name, based on the competition and the mutation rate
-				outDir = "../competitions/%s-comp-%s" %(baseOrg, targetMutRate)
+				outDir = "../organisms/competitions/%s-comp-%s" %(baseOrg, targetMutRate)
 				
 				#Run the competition
 				subprocess.call(["avida", "-c", "avida_flat.cfg", "-set", "EVENT_FILE", 
-					"events_%s_comp.cfg", %baseOrg, "-set", "ENVIRONMENT_FILE", filename,
-					"DATA_DIR", outDir, "-set", "COPY_MUT_PROB", "%s" %copyMutRate])
+					"events_%s_comp.cfg" %baseOrg, "-set", "ENVIRONMENT_FILE", filename,
+					"-set", "DATA_DIR", outDir, "-set", "COPY_MUT_PROB", "%s" %copyMutRate])
 				
 				targetMutRate += 0.5
 			
