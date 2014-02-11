@@ -41,5 +41,7 @@ def rename():
 
 
 if __name__ == "__main__":
+	if len(sys.argv) != 2:
+		print "Incorrect arguments. Please specify the path to the competition results directory."
 	rename()
 
