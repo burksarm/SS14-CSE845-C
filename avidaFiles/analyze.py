@@ -7,6 +7,7 @@ import sys
 import os
 import subprocess
 
+
 def generateAndRun():
 	#Top-level competition directory passed into the script
 	compDir = sys.argv[1]
@@ -17,6 +18,7 @@ def generateAndRun():
 	for dirname, dirs, filenames in os.walk(compDir):
 		#For each competition subdirectory, create an analyze file and run it
 		for competitionDir in dirs:
+
 			#Create the analyze file
 			analyzeFile = open("../avidaFiles/analyze_%s.cfg" %competitionDir, "w")
 
@@ -31,7 +33,7 @@ def generateAndRun():
 
 			#Now run Avida in analyze mode with the file
 			subprocess.call(["avida", "-c", "avida_flat.cfg", "-set", "ANALYZE_FILE", analyzeFile.name, "-a"])
-			
+
 
 
 if __name__ == "__main__":
