@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 #mutRates = ["0.5", "1.0", "1.5", "2.0", "2.5", "3.0"]
 
 #TESTING use the above when finished developing.
-mutRates = ["2.0"]
+mutRates = ["0.5"]
 
 #Plots the results of all the competitions for the given org.
 def plotCompetitions(org, resultsDir):
@@ -49,14 +49,15 @@ def plotCompetitions(org, resultsDir):
 		
 		#Sanity Check
 		print aProportions
+		print bProportions
 		print popSizes
 		
 		#Now we have the proportions tallied up for the current mutation rate. Plot the data.
 		plt.xlabel("Generation")
 		plt.ylabel("Proportion")
 		
-		plt.plot(generations, [aProportions[gen]/popSize for gen in generations], label="A")
-		plt.plot(generations, [bProportions[gen]/popSize for gen in generations], label="B")
+		plt.plot(generations, [aProportions[gen]/popSizes[gen] for gen in generations], label="A")
+		plt.plot(generations, [bProportions[gen]/popSizes[gen] for gen in generations], label="B")
 		plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 		
 		#Save the plot to a png.
