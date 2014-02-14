@@ -41,5 +41,8 @@ def rename():
 
 
 if __name__ == "__main__":
+	if len(sys.argv) != 2:
+		print "Usage: python renameComPopulations.py <COMPETITION_RESULTS_DIRECTORY>"
+		quit()
 	rename()
 

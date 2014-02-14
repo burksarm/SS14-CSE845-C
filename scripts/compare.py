@@ -1,10 +1,10 @@
 #!/usr/bin/python
-import re
 import environments 
 #Handles generating environments for the competitions
 
 #Compares each A/B pair to find pairs which A has a replication rate of at least 1.5 greater than B.
 #A is from the low mutation rate, B is from the high mutation rate.
+#For those pairs meeting the criteria, we'll generate an events and environment file for the competition
 
 #Go through all the pairs and get their fitness
 for i in range(1, 41):
@@ -27,6 +27,7 @@ for i in range(1, 41):
 		if line.startswith("# Merit"):
 			aMerit = line.split()[-1]
 		
+		#Get the fitness
 		if line.startswith("# Fitness"):
 			aFitness = float(line.split()[2])
 			break
@@ -39,25 +40,26 @@ for i in range(1, 41):
 		if line.startswith("# Merit"):
 			bMerit = line.split()[-1]
 		
+		#Get the fitness
 		if line.startswith("# Fitness"):
 			bFitness = float(line.split()[2])
 			break
 		
 	#Now compare them and if they meet the criteria, generate an events file for their competition
 	if aViable == "1" and bViable == "1" and aFitness/bFitness > 1.5:
-		#print aFile.name
-		#print bFile.name
-		
 		#Create the events file
 		eventsFile = open("../avidaFiles/events_dom-%s_comp.cfg" %i, "w")
 		
 		#Fill half the pop with organism A and give it a marker of 0
 		eventsFile.write("#Fill half the pop with organism A and give it a marker of 0\n")
-		eventsFile.write("u begin InjectRange %s 0 1799 %s 0\n\n" %(aFile.name, aMerit))
+
+		for i in range(1800):
+			eventsFile.write("u begin Inject %s %s %s 0\n\n" %(aFile.name, i, aMerit))
 		
 		#Fill half the pop with organism B and give it a marker of 1
 		eventsFile.write("#Fill half the pop with organism B and give it a marker of 1\n")
-		eventsFile.write("u begin InjectRange %s 1800 3599 %s 1\n\n" %(bFile.name, bMerit))
+		for i in range(1800, 3600):
+			eventsFile.write("u begin Inject %s %s %s 1\n\n" %(bFile.name, i, bMerit))
 		
 		#Save the population every 5 generations
 		eventsFile.write("#Save the population every 5 generations\n")

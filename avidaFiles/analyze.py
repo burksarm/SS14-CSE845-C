@@ -1,7 +1,7 @@
 #!/usr//bin/python
 
-#Simply generates an analyze file for each competition. Then runs avida with it.
-#This is probably more work than needed, but hey, it beats searching for the quick way.
+#Simply generates an analyze file for each competition then runs avida with it.
+#This is probably more work than needed, but hey, it beats searching for a quicker way.
 #Run this from the avidaFiles directory.
 import sys
 import os
@@ -14,8 +14,8 @@ def generateAndRun():
 
 	#Make sure the resulting output directory exists for the competition
 	outDir = sys.argv[2]
-	if not os.path.isfile(outDir):
-		os.mkdir(outDir)
+	if not os.path.exists(outDir):
+		os.makedirs(outDir)
 
 
 	#Html or dat format for results?
@@ -30,9 +30,9 @@ def generateAndRun():
 			#Now write the commands to the analyze file
 			analyzeFile.write("FORRANGE i 5 50 5\n")
 			analyzeFile.write("\tPURGE_BATCH\n")
-        		analyzeFile.write("\tLOAD %s/detail-$i.spop\n" %os.path.abspath(os.path.join(compDir, competitionDir)))
-        		analyzeFile.write("\tRECALCULATE\n")
-        		analyzeFile.write("\tDETAIL %s/%s-$i.%s lineage id fitness total_task_count total_task_performance_count viable\n" %(outDir, competitionDir, format))
+			analyzeFile.write("\tLOAD %s/detail-$i.spop\n" %os.path.abspath(os.path.join(compDir, competitionDir)))
+			analyzeFile.write("\tRECALCULATE\n")
+			analyzeFile.write("\tDETAIL %s/%s-$i.%s lineage num_cpus id fitness total_task_count total_task_performance_count viable\n" %(outDir, competitionDir, format))
 			analyzeFile.write("END\n")
 			analyzeFile.close()
 			

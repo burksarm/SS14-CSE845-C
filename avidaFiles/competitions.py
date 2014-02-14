@@ -15,7 +15,11 @@ def calcMutRate(fName, mutRate):
 				return mutRate/genomeLength
 
 def runComps(outputDir):
-	#Use the environment file names to know which pair to run.
+	#Make sure the output directory exists
+	if not os.path.exists(outputDir):
+		os.makedirs(outputDir)
+
+	#Use the environment file names to know which pair to compete.
 	for dirname, dirs, files in os.walk("./"):
 		for filename in files:
 			m = re.match("environment_(dom-[\d]+)_comp", filename)
@@ -23,7 +27,7 @@ def runComps(outputDir):
 				baseOrg = m.group(1)
 			
 				#Get the file names
-				orgFiles = ("../organisms/flatPool/%s.org-A" %baseOrg, "../organisms/flatPool/%s-B" %baseOrg)
+				orgFiles = ("../organisms/flatPool/%s.org-A" %baseOrg, "../organisms/flatPool/%s.org-B" %baseOrg)
 			
 				#Now do the experiments for each mutation rate
 				targetMutRate = 0.5

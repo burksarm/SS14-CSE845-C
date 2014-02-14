@@ -6,23 +6,9 @@ import sys
 import os
 import re
 import matplotlib.pyplot as plt
+import compOrgs
 
 mutRates = ["0.5", "1.0", "1.5", "2.0", "2.5", "3.0"]
-
-#Gets a list of competition organism names, based on the generated environment files.
-def getCompOrgs():
-	compOrgs = []
-	#Use the environment file names to know which pair was run.
-	for dirname, dirs, files in os.walk("../avidaFiles"):
-		for filename in files:
-			#If it's one of the environment_dom*_comp files, we know it is a competiton environment.
-			m = re.match("environment_(dom-[\d]+)_comp", filename)
-			if m != None:
-				baseOrg = m.group(1)
-				compOrgs.append(baseOrg)
-	
-	#We got 'em all.
-	return compOrgs
 
 #Plots the results of all the mutation rates for the given org, for one competition.
 def plotCompetitions(org, resultsDir, mutRate, doLabel, clearPlot=False):
@@ -30,38 +16,48 @@ def plotCompetitions(org, resultsDir, mutRate, doLabel, clearPlot=False):
 	bProportions = {} #generation -> total number of B descendants
 	popSizes = {} #Holds the population size at each generation (we get this by counting the lines)
 	
+	#Add the initial generation 0 proportions that we seeded
+	aProportions[0] = 1800.0
+	bProportions[0] = 1800.0
+	popSizes[0] = 3600.0
+	
 	#Files are saved by population snapshots from generation 5-50 in increments of 5
-	generations = [gen for gen in range(5, 55, 5)]
+	generations = [gen for gen in range(0, 55, 5)]
 	for gen in generations:
-		#Open the result file for this mutation rate, for the current generation
-		resultFile = open(os.path.join(resultsDir, "%s-comp-%s-%s.dat" %(org, mutRate, gen)))
-		
-		popSize = 0.0
-		for line in resultFile:
-			#Ignore comment lines and blank lines
-			if not(len(line.strip()) == 0 or line.startswith("#")):
-				#Get the space-delimited columns of data
-				items = line.split()
-				
-				#A descendants have a label of 0, B descendants have a label of 1
-				if items[0] == "0":
-					popSize += 1.0
+		if gen > 0: #Skip the initial. We already have those numbers
+			#Open the result file for this mutation rate, for the current generation
+			resultFile = open(os.path.join(resultsDir, "%s-comp-%s-%s.dat" %(org, mutRate, gen)))
+			
+			popSize = 0.0
+			for line in resultFile:
+				#Ignore comment lines and blank lines
+				if not(len(line.strip()) == 0 or line.startswith("#")):
+					#Get the space-delimited columns of data
+					items = line.split()
 					
-					#We got an A descendant. Increment its count
-					if gen not in aProportions:
-						aProportions[gen] = 0.0
-					aProportions[gen] += 1.0
+					#How many organisms are there with this genotype?
+					numCpus = float(items[1])
 					
-				elif items[0] == "1":
-					popSize += 1.0
-					
-					#We got a B descendant. Increment its count
-					if gen not in bProportions:
-						bProportions[gen] = 0.0
-					bProportions[gen] += 1.0
-		
-		#Get the population size, which can be less than 3600				
-		popSizes[gen] = popSize
+					#Only count genotypes that have num_cpus > 0
+					if numCpus > 0.0:
+						#Increment the population size
+						popSize += numCpus
+						
+						#A descendants have a label of 0, B descendants have a label of 1
+						if items[0] == "0":
+							#We got an A descendant. Increment its count
+							if gen not in aProportions:
+								aProportions[gen] = 0.0
+							aProportions[gen] += numCpus
+							
+						elif items[0] == "1":
+							#We got a B descendant. Increment its count
+							if gen not in bProportions:
+								bProportions[gen] = 0.0
+							bProportions[gen] += numCpus
+			
+			#Get the population size, which can be less than 3600				
+			popSizes[gen] = popSize
 	
 	#Now we have the proportions tallied up for the current mutation rate. Plot the data.
 	if doLabel == True: #Since we have 10 lines for each ancestor, only add the legend label once.
@@ -77,6 +73,10 @@ def plotCompetitions(org, resultsDir, mutRate, doLabel, clearPlot=False):
 		
 #Plots all 10 competition lines for the given ancestor organism
 def plotAllCompetitionLines(org, resultsDir, outputDir):
+	#Make sure the output directory exists
+	if not os.path.exists(outputDir):
+		os.makedirs(outputDir)
+		
 	for mutRate in mutRates:
 		for i in range(1, 11):
 			plotCompetitions(org, "%s/comp%s" %(resultsDir, i), mutRate, doLabel=True if i == 1 else False)
@@ -84,6 +84,7 @@ def plotAllCompetitionLines(org, resultsDir, outputDir):
 		#Save the plot to a png.
 		plt.xlabel("Generation")
 		plt.ylabel("Proportion")
+		plt.ylim(0.0, 1.0)
 		plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 		plt.savefig(os.path.join(outputDir, "%s-%s.png" %(org, mutRate)), bbox_inches = "tight")
 		
@@ -98,5 +99,12 @@ if __name__ == "__main__":
 		quit()
 	
 	#For all of the competitions, generate the plots.
-	for compOrg in getCompOrgs():
+	for compOrg in compOrgs.getCompOrgs():
 		plotAllCompetitionLines(compOrg, sys.argv[1], sys.argv[2])
+
+	
+	
+	
+	
+	
+	
