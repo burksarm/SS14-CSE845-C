@@ -16,48 +16,42 @@ def plotCompetitions(org, resultsDir, mutRate, doLabel, clearPlot=False):
 	bProportions = {} #generation -> total number of B descendants
 	popSizes = {} #Holds the population size at each generation (we get this by counting the lines)
 	
-	#Add the initial generation 0 proportions that we seeded
-	aProportions[0] = 1800.0
-	bProportions[0] = 1800.0
-	popSizes[0] = 3600.0
-	
 	#Files are saved by population snapshots from generation 5-50 in increments of 5
 	generations = [gen for gen in range(0, 55, 5)]
 	for gen in generations:
-		if gen > 0: #Skip the initial. We already have those numbers
-			#Open the result file for this mutation rate, for the current generation
-			resultFile = open(os.path.join(resultsDir, "%s-comp-%s-%s.dat" %(org, mutRate, gen)))
-			
-			popSize = 0.0
-			for line in resultFile:
-				#Ignore comment lines and blank lines
-				if not(len(line.strip()) == 0 or line.startswith("#")):
-					#Get the space-delimited columns of data
-					items = line.split()
+		#Open the result file for this mutation rate, for the current generation
+		resultFile = open(os.path.join(resultsDir, "%s-comp-%s-%s.dat" %(org, mutRate, gen)))
+		
+		#Initialize everything to zero, as some proportions will be zero
+		popSize = 0.0
+		aProportions[gen] = 0.0
+		bProportions[gen] = 0.0
+
+		for line in resultFile:
+			#Ignore comment lines and blank lines
+			if not(len(line.strip()) == 0 or line.startswith("#")):
+				#Get the space-delimited columns of data
+				items = line.split()
+				
+				#How many organisms are there with this genotype?
+				numCpus = float(items[1])
+				
+				#Only count genotypes that have num_cpus > 0
+				if numCpus > 0.0:
+					#Increment the population size
+					popSize += numCpus
 					
-					#How many organisms are there with this genotype?
-					numCpus = float(items[1])
-					
-					#Only count genotypes that have num_cpus > 0
-					if numCpus > 0.0:
-						#Increment the population size
-						popSize += numCpus
+					#A descendants have a label of 0, B descendants have a label of 1
+					if items[0] == "0":
+						#We got an A descendant. Increment its count
+						aProportions[gen] += numCpus
 						
-						#A descendants have a label of 0, B descendants have a label of 1
-						if items[0] == "0":
-							#We got an A descendant. Increment its count
-							if gen not in aProportions:
-								aProportions[gen] = 0.0
-							aProportions[gen] += numCpus
-							
-						elif items[0] == "1":
-							#We got a B descendant. Increment its count
-							if gen not in bProportions:
-								bProportions[gen] = 0.0
-							bProportions[gen] += numCpus
-			
-			#Get the population size, which can be less than 3600				
-			popSizes[gen] = popSize
+					elif items[0] == "1":
+						#We got a B descendant. Increment its count
+						bProportions[gen] += numCpus
+		
+		#Get the population size, which can be less than 3600				
+		popSizes[gen] = popSize
 	
 	#Now we have the proportions tallied up for the current mutation rate. Plot the data.
 	if doLabel == True: #Since we have 10 lines for each ancestor, only add the legend label once.
@@ -78,8 +72,9 @@ def plotAllCompetitionLines(org, resultsDir, outputDir):
 		os.makedirs(outputDir)
 		
 	for mutRate in mutRates:
-		for i in range(1, 11):
-			plotCompetitions(org, "%s/comp%s" %(resultsDir, i), mutRate, doLabel=True if i == 1 else False)
+		#for i in range(1, 11):
+		i = 1
+		plotCompetitions(org, "%s/comp%s" %(resultsDir, i), mutRate, doLabel=True if i == 1 else False)
 		
 		#Save the plot to a png.
 		plt.xlabel("Generation")

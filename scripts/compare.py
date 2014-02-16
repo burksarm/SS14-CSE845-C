@@ -1,6 +1,6 @@
 #!/usr/bin/python
-import environments 
-#Handles generating environments for the competitions
+import environments  #Handles generating environments for the competitions
+import random
 
 #Compares each A/B pair to find pairs which A has a replication rate of at least 1.5 greater than B.
 #A is from the low mutation rate, B is from the high mutation rate.
@@ -15,8 +15,8 @@ for i in range(1, 41):
 	aMerit  =  None     #Holds organism A's merit
 	bMeriit =  None     #Holds organism B's merit
 	
-	aFile = open("../organisms/flatPool/dom-%s.org-A" %i, "r")
-	bFile = open("../organisms/flatPool/dom-%s.org-B" %i, "r")
+	aFile = open("../organisms/flatPool2/dom-%s.org-A" %i, "r")
+	bFile = open("../organisms/flatPool2/dom-%s.org-B" %i, "r")
 	
 	#Find the fitnesses and make sure they're both viable
 	for line in aFile:
@@ -53,13 +53,21 @@ for i in range(1, 41):
 		#Fill half the pop with organism A and give it a marker of 0
 		eventsFile.write("#Fill half the pop with organism A and give it a marker of 0\n")
 
-		for i in range(1800):
-			eventsFile.write("u begin Inject %s %s %s 0\n\n" %(aFile.name, i, aMerit))
+		#We'll uniformly mix the initial population
+		cells = [index for index in range(3600)]
+		random.shuffle(cells)
+
+		for cell in range(1800):
+			eventsFile.write("u begin Inject %s %s %s 0\n" %(aFile.name, cells[cell], aMerit))
 		
 		#Fill half the pop with organism B and give it a marker of 1
-		eventsFile.write("#Fill half the pop with organism B and give it a marker of 1\n")
-		for i in range(1800, 3600):
-			eventsFile.write("u begin Inject %s %s %s 1\n\n" %(bFile.name, i, bMerit))
+		eventsFile.write("\n#Fill half the pop with organism B and give it a marker of 1\n")
+		for cell in range(1800, 3600):
+			eventsFile.write("u begin Inject %s %s %s 1\n" %(bFile.name, cells[cell], bMerit))
+
+		#Save the initial population
+		eventsFile.write("#Save the initial population\n")
+		eventsFile.write("u begin SavePopulation\n\n")
 		
 		#Save the population every 5 generations
 		eventsFile.write("#Save the population every 5 generations\n")
@@ -69,6 +77,8 @@ for i in range(1, 41):
 		eventsFile.write("#Stop after 50 generations\n")
 		eventsFile.write("g 50 Exit\n")
 		
-		#Now we need to generate an environment file to only reward tasks either A or B performs
+		#Now we need to generate an environment file to only reward tasks that the common ancestor performs
 		environments.generate(aFile.name, bFile.name)
 	
+
+		print "dom-%s" %i

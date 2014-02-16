@@ -30,18 +30,16 @@ def generate(aFile, bFile):
 		if line.startswith("REACTION"):
 			items = line.split()
 			allResources[items[2]] = line.strip()
-
-
-	#Get the set of tasks performed by both A and B
-	allTasks = getTasks(open(aFile, "r"))
-	allTasks.union(getTasks(open(bFile, "r")))
 	
 	#Get the dominant ancestor name that A and B are based on
 	domName = aFile[aFile.rfind("/")+1:aFile.rfind(".")]
+
+	#Get the set of tasks performed by the common ancestor
+	ancestorTasks = getTasks(open("../organisms/complexPool/%s.org" %domName, "r"))
 	
 	#Now write the environment file
 	outFile = open("../avidaFiles/environment_%s_comp.cfg" %domName, "w")
-	for task in allTasks:
+	for task in ancestorTasks:
 		outFile.write(allResources[task] + "\n")
 	
 

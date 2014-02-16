@@ -19,12 +19,13 @@ def rename():
 				pops = {} #Holds the update number extracted from the file name mapped to the filename
 
 				for file in popFiles:
+					#Extract the update number and hash it to the filename
 					update = int(file[file.find("-")+1:file.rfind(".")])
 					pops[update] = file
 
 				
 				#Now rename the files, replacing the update number with the generation, by 5's
-				generation = 5
+				generation = 0
 				for update in sorted(pops.keys()):
 					oldName = os.path.join(os.path.join(compDir, dir), "detail-%s.spop" %update)
 					newName = os.path.join(os.path.join(compDir, dir), "detail-%s.spop" %generation)
