@@ -25,14 +25,15 @@ def generateAndRun():
 		#For each competition subdirectory, create an analyze file and run it
 		for competitionDir in dirs:
 			#Create the analyze file
-			analyzeFile = open("../avidaFiles/analyze_%s.cfg" %competitionDir, "w")
+			analyzeFile = open("analyze_%s.cfg" %competitionDir, "w")
 
 			#Now write the commands to the analyze file
-			analyzeFile.write("FORRANGE i 5 50 5\n")
+			analyzeFile.write("FORRANGE i 0 50 5\n")
 			analyzeFile.write("\tPURGE_BATCH\n")
 			analyzeFile.write("\tLOAD %s/detail-$i.spop\n" %os.path.abspath(os.path.join(compDir, competitionDir)))
-			analyzeFile.write("\tRECALCULATE\n")
-			analyzeFile.write("\tDETAIL %s/%s-$i.%s lineage num_cpus id fitness total_task_count total_task_performance_count viable\n" %(outDir, competitionDir, format))
+			analyzeFile.write("\tFILTER num_cpus > 0\n")
+			#analyzeFile.write("\tRECALCULATE\n")
+			analyzeFile.write("\tDETAIL %s/%s-$i.%s lineage num_cpus\n" %(outDir, competitionDir, format))
 			analyzeFile.write("END\n")
 			analyzeFile.close()
 			

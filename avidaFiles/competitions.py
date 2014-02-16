@@ -27,7 +27,7 @@ def runComps(outputDir):
 				baseOrg = m.group(1)
 			
 				#Get the file names
-				orgFiles = ("../organisms/flatPool/%s.org-A" %baseOrg, "../organisms/flatPool/%s.org-B" %baseOrg)
+				orgFiles = ("../organisms/flatPool2/%s.org-A" %baseOrg, "../organisms/flatPool2/%s.org-B" %baseOrg)
 			
 				#Now do the experiments for each mutation rate
 				targetMutRate = 0.5
@@ -39,7 +39,7 @@ def runComps(outputDir):
 					outDir = "%s/%s-comp-%s" %(outputDir, baseOrg, targetMutRate)
 				
 					#Run the competition
-					subprocess.call(["avida", "-v0", "-c", "avida_flat.cfg", "-set", "EVENT_FILE", 
+					subprocess.call(["avida", "-v0", "-c", "avida_comp.cfg", "-set", "EVENT_FILE", 
 						"events_%s_comp.cfg" %baseOrg, "-set", "ENVIRONMENT_FILE", filename,
 						"-set", "DATA_DIR", outDir, "-set", "COPY_MUT_PROB", "%s" %copyMutRate])
 				
