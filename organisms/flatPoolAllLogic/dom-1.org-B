@@ -1,0 +1,140 @@
+# Wed Feb 19 08:10:32 2014
+# Filename........: archive/111-aarud.org
+# Update Output...: 21802
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3657433088.000000
+# Gestation Time..: 632
+# Fitness.........: 5787077.670886
+# Errors..........: 23
+# Genome Size.....: 111
+# Copied Size.....: 111
+# Executed Size...: 109
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-divide
+set-flow
+nop-A
+nop-B
+mov-head
+nop-C
+h-copy
+get-head
+swap-stk
+nop-A
+h-copy
+set-flow
+pop
+swap-stk
+shift-l
+swap
+IO
+set-flow
+nand
+h-divide
+h-divide
+nop-C
+jmp-head
+set-flow
+pop
+if-n-equ
+nop-C
+get-head
+h-alloc
+sub
+h-search
+IO
+inc
+if-n-equ
+nop-B
+IO
+sub
+h-alloc
+nop-A
+h-copy
+dec
+set-flow
+set-flow
+if-n-equ
+h-search
+IO
+pop
+swap
+nand
+swap
+nop-C
+inc
+add
+if-n-equ
+nop-B
+IO
+push
+nand
+if-label
+nand
+h-copy
+IO
+nop-C
+if-label
+if-label
+nop-B
+h-divide
+h-copy
+h-copy
+h-copy
+h-alloc
+h-copy
+push
+push
+push
+nop-A
+IO
+h-copy
+shift-r
+IO
+nand
+swap
+h-copy
+h-copy
+pop
+nand
+swap
+IO
+pop
+swap-stk
+nand
+h-divide
+IO
+swap-stk
+nand
+IO
+nop-C
+h-alloc
+IO
+h-copy
+sub
+h-copy
+if-n-equ
+if-label
+nop-A
+h-copy
+h-divide
+nand
+mov-head
+jmp-head

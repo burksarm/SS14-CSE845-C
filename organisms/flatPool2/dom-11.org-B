@@ -1,0 +1,143 @@
+# Sat Feb 15 12:03:00 2014
+# Filename........: archive/114-aalty.org
+# Update Output...: 4282
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 115343360.000000
+# Gestation Time..: 306
+# Fitness.........: 376939.084967
+# Errors..........: 2
+# Genome Size.....: 114
+# Copied Size.....: 114
+# Executed Size...: 110
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 0 (0.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+sub
+h-alloc
+nop-A
+h-divide
+set-flow
+nop-A
+nop-C
+get-head
+if-label
+get-head
+if-n-equ
+mov-head
+nop-C
+h-search
+get-head
+add
+nop-B
+nand
+nop-A
+push
+shift-r
+get-head
+h-copy
+swap-stk
+nop-B
+IO
+h-search
+inc
+shift-r
+nop-C
+h-divide
+nand
+h-search
+add
+nop-C
+nand
+nop-C
+sub
+IO
+IO
+nop-C
+nand
+add
+nop-C
+if-label
+push
+inc
+nop-C
+h-alloc
+push
+sub
+swap-stk
+push
+IO
+nop-C
+set-flow
+if-less
+push
+nand
+nop-C
+nand
+if-less
+jmp-head
+h-divide
+IO
+nop-C
+set-flow
+h-alloc
+if-label
+set-flow
+IO
+nop-C
+sub
+nop-C
+if-n-equ
+IO
+sub
+IO
+if-n-equ
+pop
+sub
+sub
+nop-C
+h-copy
+IO
+set-flow
+pop
+IO
+swap-stk
+nop-A
+add
+IO
+shift-l
+get-head
+pop
+swap-stk
+nand
+get-head
+nop-B
+shift-l
+shift-r
+inc
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+h-divide
+if-n-equ
+swap
+shift-l
+mov-head
+nand
+sub

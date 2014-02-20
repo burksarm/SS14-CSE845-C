@@ -1,0 +1,124 @@
+# Sat Feb 15 12:06:41 2014
+# Filename........: archive/095-abwau.org
+# Update Output...: 7264
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2986344448.000000
+# Gestation Time..: 284
+# Fitness.........: 10515297.352113
+# Errors..........: 6
+# Genome Size.....: 95
+# Copied Size.....: 95
+# Executed Size...: 89
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+nop-C
+set-flow
+nop-A
+shift-r
+shift-l
+nand
+IO
+nop-C
+sub
+nop-C
+pop
+add
+IO
+IO
+mov-head
+nop-C
+nand
+nand
+nop-C
+push
+if-label
+nop-A
+if-less
+IO
+IO
+nop-C
+shift-l
+IO
+nop-B
+nand
+get-head
+inc
+if-label
+add
+h-divide
+set-flow
+shift-l
+if-label
+h-search
+pop
+if-label
+add
+nop-C
+nand
+nop-C
+push
+h-alloc
+nop-A
+shift-r
+nop-A
+IO
+nop-C
+push
+sub
+swap-stk
+IO
+if-less
+nop-C
+h-alloc
+push
+nand
+IO
+nand
+h-copy
+swap-stk
+h-divide
+if-label
+nop-B
+shift-r
+nand
+h-alloc
+if-label
+swap
+if-less
+IO
+pop
+add
+inc
+IO
+if-label
+nop-B
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+mov-head
+nop-A
+sub
+set-flow
+if-n-equ
+nop-A

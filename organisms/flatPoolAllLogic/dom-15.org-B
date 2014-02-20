@@ -1,0 +1,135 @@
+# Wed Feb 19 07:56:37 2014
+# Filename........: archive/106-aartu.org
+# Update Output...: 4630
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 52428800.000000
+# Gestation Time..: 251
+# Fitness.........: 208879.681275
+# Errors..........: 3
+# Genome Size.....: 106
+# Copied Size.....: 106
+# Executed Size...: 100
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+get-head
+h-alloc
+shift-r
+set-flow
+nop-A
+h-alloc
+add
+nop-B
+if-label
+IO
+if-n-equ
+shift-r
+dec
+nop-A
+mov-head
+nop-C
+IO
+IO
+if-label
+h-search
+inc
+add
+h-alloc
+shift-l
+nop-C
+set-flow
+swap
+swap-stk
+IO
+nop-C
+IO
+nand
+nop-C
+set-flow
+add
+h-copy
+inc
+IO
+nand
+IO
+nop-C
+push
+swap-stk
+set-flow
+swap
+nand
+set-flow
+add
+nop-A
+nand
+push
+dec
+nop-C
+IO
+sub
+shift-r
+pop
+swap
+IO
+nand
+IO
+dec
+sub
+IO
+inc
+add
+IO
+sub
+swap
+nop-C
+nop-B
+swap
+nop-B
+h-copy
+if-label
+inc
+h-divide
+h-copy
+add
+nop-C
+h-alloc
+h-divide
+IO
+swap
+add
+IO
+dec
+h-copy
+shift-r
+sub
+set-flow
+nand
+if-label
+set-flow
+h-search
+h-copy
+h-copy
+h-copy
+h-divide
+mov-head
+mov-head
+h-divide
+if-less
+get-head
+nop-C
+pop

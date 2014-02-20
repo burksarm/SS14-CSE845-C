@@ -1,0 +1,110 @@
+# Sat Feb 15 11:59:41 2014
+# Filename........: archive/081-acndi.org
+# Update Output...: 4509
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5242880.000000
+# Gestation Time..: 170
+# Fitness.........: 30840.470588
+# Errors..........: 0
+# Genome Size.....: 81
+# Copied Size.....: 81
+# Executed Size...: 80
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+nop-A
+nop-A
+set-flow
+nop-A
+nand
+mov-head
+nop-C
+h-copy
+IO
+swap-stk
+shift-l
+if-less
+if-n-equ
+if-n-equ
+nand
+shift-r
+if-label
+push
+sub
+if-less
+inc
+add
+nand
+IO
+nop-C
+nop-A
+push
+nand
+IO
+nop-C
+nand
+nop-C
+push
+h-copy
+nand
+IO
+swap
+set-flow
+pop
+nop-C
+IO
+nop-C
+sub
+nop-C
+IO
+nop-C
+IO
+nand
+if-n-equ
+IO
+nand
+add
+swap-stk
+nop-B
+if-less
+swap
+dec
+sub
+inc
+nop-C
+IO
+swap
+IO
+nop-B
+if-n-equ
+IO
+set-flow
+shift-l
+add
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+mov-head
+nop-A

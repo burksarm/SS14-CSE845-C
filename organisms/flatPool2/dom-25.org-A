@@ -1,0 +1,138 @@
+# Sat Feb 15 12:04:36 2014
+# Filename........: archive/109-acllz.org
+# Update Output...: 5983
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 100663296.000000
+# Gestation Time..: 229
+# Fitness.........: 439577.711790
+# Errors..........: 1
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 96
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
+
+
+if-less
+jmp-head
+nand
+if-label
+if-label
+IO
+nop-C
+push
+if-less
+if-label
+push
+inc
+IO
+shift-l
+nop-B
+shift-r
+IO
+nand
+nop-C
+shift-l
+dec
+pop
+h-divide
+h-divide
+nand
+h-alloc
+if-n-equ
+set-flow
+IO
+shift-r
+swap-stk
+pop
+shift-r
+dec
+if-label
+IO
+nop-C
+nop-A
+set-flow
+h-alloc
+set-flow
+if-less
+nand
+set-flow
+if-label
+push
+if-less
+IO
+nand
+nop-C
+pop
+swap
+sub
+set-flow
+nop-A
+nop-A
+nop-C
+mov-head
+nop-C
+IO
+swap-stk
+if-less
+h-divide
+nand
+nand
+nop-C
+push
+IO
+nop-C
+if-label
+shift-l
+pop
+push
+sub
+nop-C
+IO
+shift-l
+IO
+if-label
+inc
+nop-A
+add
+swap
+IO
+pop
+nand
+get-head
+IO
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+mov-head
+if-label
+shift-r
+pop
+mov-head
+pop
+nop-B
+h-search
+pop
+dec
+dec
+nop-A

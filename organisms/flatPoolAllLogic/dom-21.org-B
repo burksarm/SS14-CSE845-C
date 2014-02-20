@@ -1,0 +1,178 @@
+# Wed Feb 19 08:17:32 2014
+# Filename........: archive/149-abeqk.org
+# Update Output...: 26497
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 4664066048.000000
+# Gestation Time..: 864
+# Fitness.........: 5398224.592593
+# Errors..........: 4
+# Genome Size.....: 149
+# Copied Size.....: 149
+# Executed Size...: 139
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-search
+shift-l
+dec
+IO
+h-search
+if-label
+set-flow
+IO
+nop-B
+jmp-head
+nop-A
+dec
+jmp-head
+nop-C
+if-label
+sub
+if-n-equ
+nop-A
+set-flow
+dec
+nop-B
+IO
+jmp-head
+nop-A
+IO
+if-label
+h-search
+h-alloc
+dec
+swap
+if-less
+if-label
+nop-A
+nop-C
+if-label
+add
+if-n-equ
+mov-head
+dec
+h-divide
+h-alloc
+swap
+sub
+if-label
+nop-A
+if-label
+shift-r
+if-n-equ
+h-search
+h-alloc
+h-search
+nop-C
+nop-A
+nand
+shift-l
+h-divide
+if-label
+if-less
+mov-head
+nop-C
+inc
+get-head
+get-head
+nop-B
+pop
+mov-head
+nop-C
+nand
+IO
+sub
+get-head
+inc
+if-less
+shift-r
+nand
+sub
+set-flow
+h-divide
+swap
+nop-A
+dec
+dec
+add
+nop-A
+add
+shift-r
+shift-l
+h-divide
+h-copy
+h-divide
+shift-r
+push
+shift-l
+h-search
+nand
+pop
+h-alloc
+shift-l
+h-alloc
+set-flow
+get-head
+dec
+nand
+shift-r
+nand
+push
+nop-A
+add
+nop-C
+shift-r
+h-search
+jmp-head
+IO
+shift-r
+pop
+dec
+nop-B
+if-label
+nop-A
+h-divide
+get-head
+h-copy
+h-divide
+set-flow
+h-copy
+pop
+nop-C
+nop-C
+nand
+push
+push
+nop-C
+IO
+IO
+h-copy
+swap-stk
+pop
+if-label
+IO
+nand
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+jmp-head
+nop-A
+nop-B

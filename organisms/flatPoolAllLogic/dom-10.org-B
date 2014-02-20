@@ -1,0 +1,153 @@
+# Wed Feb 19 07:38:06 2014
+# Filename........: archive/124-aarjt.org
+# Update Output...: 13467
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3523215360.000000
+# Gestation Time..: 607
+# Fitness.........: 5804308.665568
+# Errors..........: 9
+# Genome Size.....: 124
+# Copied Size.....: 124
+# Executed Size...: 105
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+pop
+swap-stk
+h-divide
+if-n-equ
+if-less
+nop-A
+push
+set-flow
+nop-A
+IO
+nand
+nop-A
+pop
+mov-head
+nop-C
+push
+nand
+nop-A
+sub
+h-divide
+h-alloc
+add
+IO
+shift-r
+IO
+swap
+nop-C
+h-divide
+nand
+nop-C
+IO
+if-less
+swap-stk
+nand
+add
+nop-A
+nop-C
+push
+shift-r
+if-less
+h-divide
+dec
+pop
+push
+nand
+IO
+pop
+nop-B
+nand
+nand
+push
+IO
+h-copy
+IO
+inc
+set-flow
+sub
+nop-B
+h-search
+if-label
+nand
+h-divide
+inc
+nop-A
+h-divide
+set-flow
+nop-B
+inc
+h-search
+shift-l
+pop
+swap
+shift-r
+if-n-equ
+IO
+nop-A
+dec
+h-alloc
+if-label
+sub
+IO
+if-label
+pop
+nand
+push
+push
+IO
+push
+nop-B
+h-copy
+dec
+nop-A
+pop
+nand
+get-head
+shift-r
+nop-C
+push
+if-label
+nop-B
+h-search
+h-copy
+if-label
+nop-C
+nop-B
+h-divide
+mov-head
+nop-A
+h-search
+h-copy
+inc
+sub
+if-label
+swap-stk
+nand
+dec
+shift-l
+IO
+mov-head
+nop-A
+h-search
+nop-A
+nop-C

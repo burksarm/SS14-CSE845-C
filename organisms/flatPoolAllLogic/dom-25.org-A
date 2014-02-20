@@ -1,0 +1,134 @@
+# Wed Feb 19 07:33:51 2014
+# Filename........: archive/105-acjpj.org
+# Update Output...: 6600
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 830472192.000000
+# Gestation Time..: 255
+# Fitness.........: 3256753.694118
+# Errors..........: 2
+# Genome Size.....: 105
+# Copied Size.....: 105
+# Executed Size...: 99
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nop-B
+if-n-equ
+nop-B
+nop-B
+get-head
+nop-B
+pop
+shift-l
+h-alloc
+get-head
+inc
+h-search
+h-search
+sub
+set-flow
+nop-A
+sub
+h-divide
+swap
+nop-A
+sub
+swap-stk
+if-n-equ
+sub
+shift-l
+IO
+get-head
+nop-B
+if-less
+push
+if-n-equ
+nand
+mov-head
+nop-C
+IO
+nop-C
+nand
+push
+nop-B
+IO
+nand
+IO
+swap
+add
+sub
+pop
+h-alloc
+nand
+nop-C
+nand
+push
+set-flow
+swap-stk
+set-flow
+IO
+nop-B
+pop
+pop
+pop
+nand
+push
+IO
+nop-A
+nand
+if-label
+IO
+nand
+swap-stk
+inc
+nop-A
+swap
+IO
+sub
+pop
+swap
+nand
+if-n-equ
+push
+set-flow
+h-alloc
+nand
+add
+inc
+IO
+pop
+IO
+inc
+swap-stk
+pop
+swap-stk
+sub
+IO
+if-n-equ
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+IO
+nop-A
+nop-B

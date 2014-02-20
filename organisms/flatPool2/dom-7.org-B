@@ -1,0 +1,138 @@
+# Sat Feb 15 12:01:57 2014
+# Filename........: archive/109-aagzf.org
+# Update Output...: 4050
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2751463424.000000
+# Gestation Time..: 1245
+# Fitness.........: 2210010.782329
+# Errors..........: 2
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 82
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+swap-stk
+jmp-head
+get-head
+swap
+if-label
+IO
+swap
+shift-r
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+if-n-equ
+swap
+if-n-equ
+nop-B
+pop
+swap
+nop-A
+inc
+h-alloc
+nop-B
+dec
+nop-C
+h-divide
+if-n-equ
+add
+IO
+nand
+nop-C
+swap-stk
+nop-A
+inc
+nop-C
+IO
+dec
+nop-C
+h-alloc
+push
+if-less
+IO
+IO
+nand
+nand
+push
+if-n-equ
+push
+push
+h-divide
+IO
+shift-r
+if-n-equ
+h-search
+nand
+pop
+h-divide
+dec
+nop-C
+nand
+IO
+nand
+nop-C
+if-n-equ
+nop-B
+h-copy
+IO
+nop-C
+nand
+nop-C
+h-divide
+pop
+add
+swap
+inc
+nop-C
+push
+h-copy
+nand
+IO
+IO
+nop-C
+mov-head
+swap
+inc
+set-flow
+add
+pop
+dec
+swap
+sub
+set-flow
+swap
+inc
+nop-B
+nop-B
+h-divide
+add
+dec
+nop-B
+nop-A
+nand
+h-copy
+inc
+dec
+swap
+shift-r
+inc
+if-label

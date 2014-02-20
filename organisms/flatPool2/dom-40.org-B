@@ -1,0 +1,138 @@
+# Sat Feb 15 12:00:58 2014
+# Filename........: archive/109-aagwo.org
+# Update Output...: 2647
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6750208.000000
+# Gestation Time..: 559
+# Fitness.........: 12075.506261
+# Errors..........: 58
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 103
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 0 (0.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+IO
+inc
+h-search
+if-n-equ
+if-n-equ
+shift-l
+sub
+shift-r
+add
+jmp-head
+swap
+nand
+h-divide
+h-alloc
+set-flow
+IO
+nop-C
+sub
+IO
+swap
+swap
+pop
+inc
+sub
+dec
+swap-stk
+dec
+IO
+nop-C
+nop-C
+nand
+nop-C
+inc
+nop-C
+add
+push
+add
+nop-C
+sub
+swap
+nop-C
+IO
+set-flow
+pop
+nop-C
+pop
+if-less
+jmp-head
+nop-A
+nand
+push
+nop-A
+nop-C
+mov-head
+nop-C
+nand
+IO
+pop
+IO
+nop-C
+set-flow
+h-alloc
+add
+IO
+pop
+nop-A
+nop-A
+set-flow
+sub
+h-alloc
+swap
+pop
+if-n-equ
+h-alloc
+if-label
+if-n-equ
+h-search
+pop
+if-label
+dec
+push
+h-alloc
+nop-B
+jmp-head
+jmp-head
+swap
+dec
+shift-r
+if-n-equ
+h-alloc
+h-divide
+inc
+h-search
+IO
+if-less
+dec
+h-search
+h-copy
+h-divide
+if-label
+sub
+h-alloc
+nop-C
+h-copy
+h-divide
+mov-head
+nop-A
+nop-B
+if-label

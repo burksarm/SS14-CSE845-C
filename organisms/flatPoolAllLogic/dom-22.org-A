@@ -1,0 +1,130 @@
+# Wed Feb 19 07:36:49 2014
+# Filename........: archive/101-abvnq.org
+# Update Output...: 9455
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3321888768.000000
+# Gestation Time..: 354
+# Fitness.........: 9383866.576271
+# Errors..........: 2
+# Genome Size.....: 101
+# Copied Size.....: 101
+# Executed Size...: 99
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nand
+pop
+get-head
+sub
+pop
+nop-B
+h-alloc
+h-divide
+h-search
+inc
+nand
+set-flow
+nop-A
+push
+h-alloc
+IO
+IO
+nop-C
+swap
+nand
+nand
+nop-C
+push
+nand
+pop
+nop-A
+push
+nop-A
+swap
+nand
+mov-head
+nop-C
+push
+h-alloc
+pop
+nand
+nop-C
+swap-stk
+IO
+if-label
+nand
+swap-stk
+h-divide
+push
+IO
+shift-r
+if-label
+push
+nop-C
+IO
+sub
+nand
+nop-C
+nop-C
+shift-l
+nop-C
+dec
+swap
+nop-C
+nand
+nop-C
+push
+nop-C
+IO
+nop-C
+push
+IO
+nop-A
+nop-B
+set-flow
+nop-A
+IO
+get-head
+dec
+nop-C
+h-divide
+h-search
+pop
+nand
+nop-C
+swap
+sub
+nop-B
+swap-stk
+IO
+nand
+nop-A
+IO
+nop-A
+if-label
+nop-B
+h-search
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

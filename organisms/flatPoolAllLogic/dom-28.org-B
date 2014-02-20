@@ -1,0 +1,177 @@
+# Wed Feb 19 08:05:51 2014
+# Filename........: archive/148-abasd.org
+# Update Output...: 14037
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 9240576.000000
+# Gestation Time..: 601
+# Fitness.........: 15375.334443
+# Errors..........: 5
+# Genome Size.....: 148
+# Copied Size.....: 148
+# Executed Size...: 141
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+nop-A
+IO
+if-n-equ
+set-flow
+h-search
+h-alloc
+shift-r
+pop
+nop-A
+if-less
+nop-C
+shift-r
+nop-A
+nop-B
+add
+h-alloc
+push
+h-search
+get-head
+sub
+h-divide
+set-flow
+if-n-equ
+h-search
+get-head
+shift-r
+shift-r
+get-head
+nop-B
+nop-B
+nand
+inc
+set-flow
+h-divide
+sub
+if-label
+add
+push
+inc
+pop
+swap
+nop-C
+nop-B
+set-flow
+shift-r
+sub
+h-search
+h-search
+h-search
+dec
+if-label
+set-flow
+h-divide
+if-label
+shift-r
+set-flow
+if-label
+h-copy
+nop-A
+if-n-equ
+if-n-equ
+h-search
+nop-A
+nop-C
+if-label
+jmp-head
+IO
+dec
+nop-B
+h-alloc
+mov-head
+nop-C
+inc
+shift-l
+dec
+h-copy
+nand
+if-n-equ
+h-copy
+h-copy
+nop-A
+shift-l
+h-copy
+swap-stk
+nand
+dec
+shift-r
+add
+h-copy
+shift-r
+push
+swap-stk
+dec
+shift-r
+h-search
+h-divide
+pop
+if-n-equ
+if-n-equ
+sub
+nop-C
+if-less
+IO
+nop-C
+nand
+nop-C
+IO
+nop-C
+nand
+nand
+nop-C
+IO
+nand
+add
+nop-C
+if-n-equ
+h-alloc
+h-divide
+h-copy
+IO
+if-n-equ
+nop-C
+inc
+nop-C
+IO
+if-label
+IO
+add
+inc
+swap
+IO
+IO
+add
+IO
+if-label
+push
+if-label
+nop-B
+h-search
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+push
+nop-A
+nop-B

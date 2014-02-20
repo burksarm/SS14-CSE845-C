@@ -1,0 +1,134 @@
+# Sat Feb 15 12:06:17 2014
+# Filename........: archive/105-acmff.org
+# Update Output...: 5917
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6619136.000000
+# Gestation Time..: 221
+# Fitness.........: 29950.841629
+# Errors..........: 0
+# Genome Size.....: 105
+# Copied Size.....: 105
+# Executed Size...: 101
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+inc
+set-flow
+nop-A
+nop-C
+if-label
+sub
+shift-l
+if-label
+if-less
+h-divide
+mov-head
+nop-C
+jmp-head
+pop
+shift-l
+push
+dec
+IO
+nop-C
+nop-A
+nand
+IO
+nand
+shift-r
+nop-A
+nop-A
+IO
+h-divide
+nop-C
+swap-stk
+set-flow
+nand
+swap
+if-label
+swap
+nop-A
+h-divide
+pop
+sub
+dec
+jmp-head
+nop-B
+nop-B
+IO
+h-copy
+nop-C
+get-head
+nand
+nop-A
+push
+pop
+nop-C
+nand
+nop-C
+sub
+h-divide
+IO
+h-divide
+h-divide
+nand
+nand
+nop-C
+nop-B
+if-n-equ
+if-label
+nop-C
+sub
+nop-A
+nop-C
+push
+if-less
+if-n-equ
+set-flow
+nop-C
+push
+IO
+IO
+nop-C
+nand
+add
+inc
+nop-B
+IO
+h-divide
+pop
+sub
+nop-C
+nand
+IO
+nop-C
+inc
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

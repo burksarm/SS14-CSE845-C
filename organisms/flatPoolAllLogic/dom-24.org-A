@@ -1,0 +1,229 @@
+# Wed Feb 19 07:55:56 2014
+# Filename........: archive/200-acyzv.org
+# Update Output...: 33098
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6308233216.000000
+# Gestation Time..: 1117
+# Fitness.........: 5647478.259624
+# Errors..........: 9
+# Genome Size.....: 200
+# Copied Size.....: 200
+# Executed Size...: 188
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nop-B
+nand
+swap-stk
+h-divide
+push
+nop-B
+swap-stk
+if-less
+nop-C
+pop
+nand
+get-head
+IO
+nop-C
+nop-A
+h-alloc
+sub
+nop-C
+push
+swap-stk
+nop-A
+nop-A
+get-head
+pop
+nop-C
+if-n-equ
+push
+if-less
+if-label
+nop-B
+nop-C
+nop-A
+if-n-equ
+IO
+nand
+if-label
+nop-A
+nop-A
+swap-stk
+nop-A
+IO
+nop-B
+if-less
+pop
+nand
+push
+if-less
+mov-head
+shift-r
+h-search
+push
+IO
+add
+pop
+if-label
+if-n-equ
+inc
+IO
+nand
+if-less
+set-flow
+nop-C
+get-head
+nand
+get-head
+nop-A
+inc
+if-n-equ
+swap
+nop-C
+h-alloc
+nop-B
+inc
+nop-B
+if-n-equ
+nop-A
+nop-C
+set-flow
+pop
+h-divide
+dec
+pop
+if-n-equ
+shift-r
+mov-head
+nop-C
+nand
+pop
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+if-less
+mov-head
+if-label
+if-less
+h-search
+if-n-equ
+swap-stk
+if-label
+nop-A
+h-alloc
+swap-stk
+if-less
+nop-C
+nand
+nop-C
+nop-C
+IO
+nop-C
+if-label
+if-less
+push
+nop-C
+push
+swap-stk
+if-label
+pop
+nop-A
+pop
+nop-C
+nop-A
+nop-A
+if-less
+if-label
+mov-head
+shift-l
+nop-A
+nand
+IO
+if-n-equ
+nop-B
+dec
+nop-B
+add
+if-n-equ
+h-divide
+pop
+if-less
+pop
+nand
+push
+if-less
+mov-head
+dec
+h-search
+inc
+IO
+shift-l
+dec
+swap
+set-flow
+set-flow
+nop-A
+push
+pop
+IO
+swap
+nop-B
+get-head
+h-search
+IO
+h-copy
+push
+pop
+IO
+if-less
+add
+inc
+pop
+IO
+shift-l
+dec
+dec
+set-flow
+nand
+nop-A
+pop
+nop-C
+shift-l
+if-n-equ
+sub
+set-flow
+IO
+push
+nop-C
+if-label
+if-less
+h-divide
+pop
+h-copy
+h-search
+if-label
+nop-A
+nop-B
+set-flow
+if-less

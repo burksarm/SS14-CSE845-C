@@ -1,0 +1,125 @@
+# Wed Feb 19 07:58:23 2014
+# Filename........: archive/096-ablih.org
+# Update Output...: 6264
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 377487360.000000
+# Gestation Time..: 245
+# Fitness.........: 1540764.734694
+# Errors..........: 2
+# Genome Size.....: 96
+# Copied Size.....: 96
+# Executed Size...: 90
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 0 (0.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+if-label
+inc
+if-label
+nop-A
+nop-A
+swap
+h-alloc
+set-flow
+nand
+swap
+nop-C
+nop-C
+set-flow
+swap
+pop
+nand
+IO
+h-divide
+nand
+get-head
+swap
+inc
+shift-l
+nop-A
+shift-l
+add
+push
+IO
+nand
+mov-head
+nop-C
+nop-B
+nand
+dec
+nop-A
+h-alloc
+push
+nop-B
+push
+swap
+IO
+nand
+nand
+h-divide
+nop-B
+push
+nand
+if-n-equ
+if-n-equ
+nop-A
+IO
+nop-C
+nop-C
+nand
+inc
+swap
+add
+add
+nop-C
+IO
+pop
+IO
+sub
+IO
+set-flow
+if-less
+jmp-head
+push
+IO
+nop-C
+IO
+pop
+nand
+push
+nop-B
+IO
+pop
+nop-C
+nand
+IO
+pop
+nand
+IO
+h-divide
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+h-copy
+mov-head
+nop-A
+nop-B
+push

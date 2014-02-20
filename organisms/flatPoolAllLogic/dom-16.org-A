@@ -1,0 +1,236 @@
+# Wed Feb 19 08:32:57 2014
+# Filename........: archive/207-adqia.org
+# Update Output...: 71035
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3590324224.000000
+# Gestation Time..: 2405
+# Fitness.........: 1492858.305198
+# Errors..........: 48
+# Genome Size.....: 207
+# Copied Size.....: 207
+# Executed Size...: 107
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nop-A
+get-head
+if-n-equ
+h-alloc
+set-flow
+h-divide
+pop
+nand
+shift-l
+h-divide
+nop-C
+sub
+set-flow
+nop-A
+mov-head
+nop-C
+add
+nop-B
+nop-B
+add
+nop-C
+if-label
+set-flow
+if-label
+IO
+shift-l
+get-head
+IO
+swap
+if-label
+swap-stk
+h-divide
+h-search
+push
+shift-l
+nop-B
+shift-l
+sub
+shift-l
+jmp-head
+dec
+swap-stk
+h-search
+nand
+if-label
+if-n-equ
+IO
+nop-C
+h-copy
+if-label
+IO
+if-less
+nop-C
+h-alloc
+if-less
+nand
+nop-C
+nop-B
+nand
+IO
+nop-C
+h-copy
+h-alloc
+if-label
+nand
+nop-B
+nand
+nop-C
+swap
+push
+if-less
+h-copy
+IO
+nop-B
+nand
+nand
+IO
+nand
+if-less
+swap
+dec
+IO
+pop
+if-label
+nop-B
+shift-l
+swap-stk
+if-label
+swap
+pop
+nand
+add
+inc
+h-copy
+push
+IO
+add
+if-less
+nop-B
+nop-B
+sub
+if-n-equ
+nop-A
+if-n-equ
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+h-copy
+mov-head
+if-label
+h-alloc
+sub
+shift-r
+h-alloc
+if-less
+h-divide
+jmp-head
+nop-C
+nop-C
+h-search
+get-head
+get-head
+nand
+push
+nop-C
+push
+sub
+mov-head
+get-head
+swap-stk
+dec
+nop-B
+sub
+nop-B
+nop-A
+swap
+set-flow
+nop-A
+h-search
+nand
+dec
+inc
+nand
+if-less
+push
+if-n-equ
+inc
+get-head
+nop-A
+set-flow
+if-less
+pop
+if-less
+IO
+pop
+h-divide
+nop-B
+if-less
+nop-C
+sub
+nop-C
+mov-head
+IO
+jmp-head
+h-alloc
+h-copy
+nop-B
+nop-B
+IO
+pop
+swap
+h-copy
+inc
+mov-head
+h-divide
+h-search
+nop-A
+sub
+swap
+pop
+IO
+h-alloc
+if-n-equ
+mov-head
+nop-B
+sub
+shift-l
+pop
+h-alloc
+get-head
+dec
+nop-A
+nop-C
+h-divide
+h-divide
+IO
+h-divide
+h-divide
+set-flow
+nop-B
+jmp-head
+if-label
+inc
+h-divide
+nop-A

@@ -1,0 +1,127 @@
+# Wed Feb 19 07:52:24 2014
+# Filename........: archive/098-abzun.org
+# Update Output...: 10209
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3221225472.000000
+# Gestation Time..: 397
+# Fitness.........: 8113918.065491
+# Errors..........: 1
+# Genome Size.....: 98
+# Copied Size.....: 98
+# Executed Size...: 96
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nop-B
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+jmp-head
+sub
+shift-r
+jmp-head
+get-head
+if-less
+get-head
+shift-l
+pop
+inc
+get-head
+sub
+get-head
+nop-B
+nop-A
+sub
+nop-A
+inc
+sub
+h-alloc
+h-divide
+h-divide
+nop-B
+IO
+IO
+swap
+nand
+nop-B
+nand
+IO
+swap
+swap-stk
+nand
+swap
+nop-B
+if-n-equ
+nand
+IO
+nop-C
+push
+nand
+nop-C
+IO
+nand
+nop-A
+inc
+nop-A
+IO
+nand
+push
+IO
+swap
+h-copy
+nop-A
+set-flow
+set-flow
+IO
+h-divide
+nand
+inc
+add
+push
+IO
+h-copy
+push
+h-search
+h-copy
+IO
+h-copy
+h-copy
+pop
+inc
+h-copy
+swap
+push
+nop-A
+sub
+if-label
+IO
+nop-A
+IO
+add
+if-less
+pop
+nop-C
+nop-B
+h-copy
+h-copy
+h-divide
+mov-head
+if-less
+nop-B

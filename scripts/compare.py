@@ -15,8 +15,8 @@ for i in range(1, 41):
 	aMerit  =  None     #Holds organism A's merit
 	bMeriit =  None     #Holds organism B's merit
 	
-	aFile = open("../organisms/flatPool2/dom-%s.org-A" %i, "r")
-	bFile = open("../organisms/flatPool2/dom-%s.org-B" %i, "r")
+	aFile = open("../organisms/flatPoolAllLogic/dom-%s.org-A" %i, "r")
+	bFile = open("../organisms/flatPoolAllLogic/dom-%s.org-B" %i, "r")
 	
 	#Find the fitnesses and make sure they're both viable
 	for line in aFile:
@@ -49,14 +49,13 @@ for i in range(1, 41):
 	if aViable == "1" and bViable == "1" and aFitness/bFitness > 1.5:
 		#Create the events file
 		eventsFile = open("../avidaFiles/events_dom-%s_comp.cfg" %i, "w")
-		
-		#Fill half the pop with organism A and give it a marker of 0
-		eventsFile.write("#Fill half the pop with organism A and give it a marker of 0\n")
 
 		#We'll uniformly mix the initial population
 		cells = [index for index in range(3600)]
-		random.shuffle(cells)
+		#random.shuffle(cells)
 
+		#Fill half the pop with organism A and give it a marker of 0
+		eventsFile.write("#Fill half the pop with organism A and give it a marker of 0\n")
 		for cell in range(1800):
 			eventsFile.write("u begin Inject %s %s %s 0\n" %(aFile.name, cells[cell], aMerit))
 		

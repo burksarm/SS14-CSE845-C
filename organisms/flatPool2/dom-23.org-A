@@ -1,0 +1,122 @@
+# Sat Feb 15 12:06:05 2014
+# Filename........: archive/093-abwrn.org
+# Update Output...: 6545
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3053453312.000000
+# Gestation Time..: 296
+# Fitness.........: 10315720.648649
+# Errors..........: 1
+# Genome Size.....: 93
+# Copied Size.....: 93
+# Executed Size...: 91
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+if-label
+pop
+if-n-equ
+nop-A
+nop-A
+get-head
+nop-B
+dec
+nop-A
+shift-r
+jmp-head
+h-alloc
+shift-r
+dec
+if-label
+pop
+pop
+shift-l
+shift-r
+h-search
+dec
+nop-C
+nop-B
+swap-stk
+IO
+nand
+get-head
+set-flow
+get-head
+push
+push
+get-head
+IO
+pop
+nop-C
+nand
+nop-C
+IO
+nop-A
+h-copy
+inc
+add
+push
+IO
+nand
+nand
+h-copy
+pop
+nop-A
+nop-C
+IO
+if-n-equ
+inc
+pop
+swap-stk
+h-copy
+if-n-equ
+push
+nop-B
+if-label
+swap
+nop-A
+swap-stk
+nand
+swap
+nop-C
+if-n-equ
+sub
+if-n-equ
+get-head
+IO
+nop-A
+IO
+swap-stk
+if-label
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+dec
+h-divide
+mov-head
+nop-A
+nop-B

@@ -1,0 +1,137 @@
+# Wed Feb 19 08:06:54 2014
+# Filename........: archive/108-aanjx.org
+# Update Output...: 27013
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2818572288.000000
+# Gestation Time..: 1352
+# Fitness.........: 2084742.816568
+# Errors..........: 1
+# Genome Size.....: 108
+# Copied Size.....: 108
+# Executed Size...: 84
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+sub
+h-alloc
+h-search
+nop-C
+nop-A
+h-alloc
+mov-head
+nop-C
+IO
+if-label
+nop-C
+inc
+h-search
+IO
+nand
+nop-B
+swap
+pop
+if-label
+nand
+IO
+nand
+nand
+IO
+nop-C
+if-label
+h-copy
+nop-A
+push
+if-less
+nand
+get-head
+swap-stk
+IO
+nop-C
+nand
+nop-C
+if-less
+nop-A
+IO
+nand
+nop-A
+swap-stk
+nand
+if-less
+inc
+swap-stk
+add
+h-copy
+IO
+nop-A
+if-label
+IO
+inc
+IO
+h-copy
+nand
+h-copy
+pop
+dec
+sub
+push
+IO
+IO
+swap
+pop
+swap
+sub
+swap-stk
+if-label
+mov-head
+swap-stk
+push
+push
+add
+if-n-equ
+nop-A
+swap
+add
+sub
+h-divide
+swap-stk
+nop-C
+h-copy
+shift-l
+mov-head
+set-flow
+set-flow
+shift-l
+if-label
+mov-head
+jmp-head
+h-search
+nop-C
+mov-head
+inc
+shift-r
+sub
+h-copy
+mov-head
+if-less
+swap
+mov-head
+nand
+inc
+push
+nop-A
+nop-B

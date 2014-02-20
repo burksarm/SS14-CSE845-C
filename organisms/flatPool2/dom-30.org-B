@@ -1,0 +1,147 @@
+# Sat Feb 15 12:00:47 2014
+# Filename........: archive/118-aakkc.org
+# Update Output...: 4117
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 461373440.000000
+# Gestation Time..: 556
+# Fitness.........: 829808.345324
+# Errors..........: 1
+# Genome Size.....: 118
+# Copied Size.....: 118
+# Executed Size...: 110
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+if-n-equ
+sub
+h-alloc
+pop
+dec
+IO
+shift-l
+h-divide
+get-head
+set-flow
+nop-A
+mov-head
+nop-C
+h-search
+set-flow
+dec
+nop-A
+get-head
+dec
+IO
+swap
+shift-l
+if-n-equ
+IO
+nand
+nand
+if-n-equ
+push
+nop-A
+h-divide
+if-label
+push
+nop-B
+IO
+h-divide
+nop-C
+nop-C
+if-label
+if-label
+h-divide
+swap
+nand
+push
+swap
+nand
+IO
+nop-C
+if-n-equ
+nand
+nop-C
+nand
+nop-C
+h-copy
+if-label
+pop
+nand
+push
+swap
+IO
+IO
+pop
+nand
+IO
+nand
+inc
+add
+IO
+nop-C
+IO
+nand
+inc
+add
+h-divide
+IO
+nand
+add
+h-copy
+inc
+nop-C
+nop-B
+nop-A
+if-label
+h-divide
+inc
+set-flow
+nand
+h-alloc
+shift-l
+set-flow
+nand
+get-head
+nop-A
+if-label
+if-n-equ
+set-flow
+nand
+swap
+h-divide
+IO
+h-copy
+IO
+dec
+shift-l
+h-search
+push
+if-n-equ
+shift-l
+h-search
+h-divide
+h-copy
+shift-r
+mov-head
+h-alloc
+inc
+mov-head
+if-label
+nop-B
+nop-C

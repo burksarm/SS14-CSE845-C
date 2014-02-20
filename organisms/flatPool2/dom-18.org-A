@@ -1,0 +1,114 @@
+# Sat Feb 15 12:04:58 2014
+# Filename........: archive/085-abhyf.org
+# Update Output...: 4923
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2684354560.000000
+# Gestation Time..: 201
+# Fitness.........: 13354997.810945
+# Errors..........: 2
+# Genome Size.....: 85
+# Copied Size.....: 85
+# Executed Size...: 80
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-divide
+if-label
+dec
+set-flow
+if-label
+nop-A
+nand
+h-divide
+if-n-equ
+add
+IO
+nop-C
+nand
+swap
+IO
+nand
+swap
+add
+nop-C
+push
+sub
+dec
+sub
+nop-C
+IO
+IO
+h-alloc
+if-less
+if-n-equ
+add
+set-flow
+nop-A
+dec
+shift-r
+h-alloc
+nop-C
+IO
+sub
+pop
+nop-C
+inc
+IO
+nand
+IO
+push
+IO
+nop-C
+nand
+push
+mov-head
+nop-C
+nand
+nop-A
+swap
+pop
+nop-B
+h-copy
+nand
+IO
+h-alloc
+add
+pop
+nand
+swap
+nop-C
+nand
+IO
+h-copy
+swap
+sub
+IO
+nand
+IO
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+jmp-head
+nop-A
+nop-B

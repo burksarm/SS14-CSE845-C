@@ -1,0 +1,129 @@
+# Wed Feb 19 07:56:21 2014
+# Filename........: archive/100-aapvo.org
+# Update Output...: 12668
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3254779904.000000
+# Gestation Time..: 529
+# Fitness.........: 6152703.032136
+# Errors..........: 10
+# Genome Size.....: 100
+# Copied Size.....: 100
+# Executed Size...: 97
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+swap
+set-flow
+nop-A
+sub
+mov-head
+nop-C
+nop-B
+pop
+nop-A
+nop-C
+nop-A
+h-alloc
+if-n-equ
+add
+dec
+inc
+h-copy
+swap
+h-search
+shift-l
+h-divide
+nop-B
+h-copy
+get-head
+h-search
+h-copy
+swap
+h-copy
+pop
+IO
+nand
+nop-C
+if-label
+h-copy
+swap
+swap
+add
+add
+nop-B
+inc
+nop-A
+nand
+h-alloc
+IO
+if-label
+nand
+nop-C
+nand
+push
+if-n-equ
+h-copy
+h-divide
+inc
+IO
+h-copy
+IO
+nand
+h-copy
+if-n-equ
+swap
+nop-B
+inc
+nop-B
+pop
+h-copy
+nand
+nop-C
+IO
+h-copy
+inc
+add
+nop-A
+inc
+shift-r
+if-label
+shift-r
+IO
+h-copy
+sub
+IO
+sub
+IO
+swap
+nop-C
+IO
+nop-A
+sub
+if-label
+push
+h-copy
+h-copy
+h-copy
+nop-C
+add
+nop-A
+h-divide
+mov-head
+set-flow
+if-label

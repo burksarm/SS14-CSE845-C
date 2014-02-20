@@ -1,0 +1,138 @@
+# Sat Feb 15 12:06:41 2014
+# Filename........: archive/109-acauq.org
+# Update Output...: 7634
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3590324224.000000
+# Gestation Time..: 302
+# Fitness.........: 11888490.807947
+# Errors..........: 8
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 107
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nand
+h-divide
+if-label
+nand
+if-label
+sub
+h-divide
+nop-B
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+push
+push
+h-alloc
+nop-C
+h-alloc
+swap
+nop-A
+swap-stk
+jmp-head
+jmp-head
+dec
+nop-C
+pop
+pop
+if-n-equ
+IO
+nand
+nop-C
+h-copy
+nand
+inc
+nop-C
+IO
+dec
+nop-C
+swap-stk
+push
+nop-B
+if-label
+push
+nand
+nand
+push
+get-head
+push
+push
+h-copy
+IO
+get-head
+nop-C
+h-search
+nand
+pop
+if-label
+dec
+nop-C
+nand
+IO
+nand
+nop-C
+h-divide
+h-copy
+h-copy
+IO
+nop-C
+nand
+nop-C
+add
+pop
+add
+swap
+inc
+nop-C
+if-label
+h-copy
+nand
+IO
+IO
+nop-C
+dec
+if-label
+nand
+h-copy
+h-alloc
+h-alloc
+h-copy
+dec
+sub
+if-label
+mov-head
+shift-r
+dec
+nop-A
+shift-l
+add
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

@@ -1,0 +1,121 @@
+# Sat Feb 15 12:02:49 2014
+# Filename........: archive/092-acrkz.org
+# Update Output...: 5734
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5832704.000000
+# Gestation Time..: 246
+# Fitness.........: 23710.178862
+# Errors..........: 3
+# Genome Size.....: 92
+# Copied Size.....: 92
+# Executed Size...: 89
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+swap
+set-flow
+nop-A
+mov-head
+nop-C
+nop-A
+shift-l
+sub
+set-flow
+nop-A
+if-n-equ
+dec
+if-n-equ
+shift-r
+push
+pop
+h-alloc
+pop
+shift-l
+dec
+nop-C
+shift-r
+shift-r
+IO
+swap
+IO
+nop-C
+pop
+add
+h-divide
+nop-A
+swap-stk
+nand
+nop-C
+dec
+IO
+nand
+nand
+nop-A
+h-alloc
+if-label
+IO
+nop-A
+IO
+nop-C
+push
+sub
+nop-C
+IO
+nop-C
+IO
+nand
+swap
+if-n-equ
+push
+h-divide
+h-copy
+inc
+push
+add
+push
+nop-C
+nop-B
+nop-A
+IO
+h-divide
+add
+pop
+set-flow
+swap
+h-copy
+nand
+IO
+swap
+IO
+inc
+shift-r
+inc
+h-alloc
+h-copy
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+if-n-equ
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

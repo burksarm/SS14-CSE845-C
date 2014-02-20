@@ -1,0 +1,137 @@
+# Wed Feb 19 07:43:41 2014
+# Filename........: archive/108-abktp.org
+# Update Output...: 20608
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3523215360.000000
+# Gestation Time..: 686
+# Fitness.........: 5135882.448980
+# Errors..........: 1
+# Genome Size.....: 108
+# Copied Size.....: 108
+# Executed Size...: 105
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-divide
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+get-head
+dec
+h-copy
+inc
+add
+h-search
+inc
+nop-A
+h-copy
+nop-C
+sub
+get-head
+get-head
+nop-B
+h-copy
+if-n-equ
+h-search
+if-n-equ
+swap-stk
+nop-B
+push
+nand
+swap
+if-n-equ
+IO
+push
+pop
+if-n-equ
+nop-A
+nand
+if-label
+IO
+swap
+h-copy
+if-less
+nand
+nop-C
+add
+nop-B
+inc
+IO
+nand
+nand
+nop-C
+if-less
+push
+IO
+nand
+swap
+if-label
+nand
+nop-C
+push
+IO
+push
+nop-C
+if-label
+nop-A
+if-label
+pop
+nand
+pop
+nop-C
+swap-stk
+add
+if-less
+h-copy
+pop
+nand
+push
+if-n-equ
+IO
+swap-stk
+add
+IO
+pop
+if-less
+mov-head
+swap-stk
+nop-C
+inc
+push
+add
+IO
+h-search
+pop
+sub
+set-flow
+nop-C
+shift-l
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+if-less
+mov-head
+nop-A
+nop-B

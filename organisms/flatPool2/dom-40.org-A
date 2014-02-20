@@ -1,0 +1,138 @@
+# Sat Feb 15 12:06:05 2014
+# Filename........: archive/109-abgch.org
+# Update Output...: 6808
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3456106496.000000
+# Gestation Time..: 277
+# Fitness.........: 12476918.758123
+# Errors..........: 5
+# Genome Size.....: 109
+# Copied Size.....: 109
+# Executed Size...: 103
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+shift-l
+nop-C
+nop-C
+jmp-head
+add
+inc
+nop-A
+nop-B
+pop
+swap
+dec
+h-alloc
+shift-r
+set-flow
+nand
+IO
+nop-C
+h-alloc
+IO
+h-divide
+h-alloc
+pop
+inc
+sub
+dec
+set-flow
+dec
+IO
+nop-C
+nop-B
+nand
+nop-C
+inc
+nop-C
+add
+push
+add
+nop-C
+sub
+swap
+nop-C
+IO
+set-flow
+pop
+nop-C
+nop-B
+if-n-equ
+nop-A
+nop-C
+nand
+push
+nop-A
+nop-B
+mov-head
+nop-C
+nand
+IO
+h-alloc
+IO
+nop-C
+nop-B
+nand
+nand
+h-divide
+add
+sub
+nop-C
+nop-C
+sub
+nop-C
+inc
+if-label
+nop-B
+shift-r
+if-label
+h-divide
+swap-stk
+h-copy
+IO
+nand
+swap-stk
+nand
+if-n-equ
+IO
+pop
+h-divide
+add
+nop-B
+dec
+push
+inc
+push
+nand
+IO
+nand
+IO
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+h-copy
+mov-head
+swap-stk
+nop-A
+nop-B
+pop

@@ -1,0 +1,145 @@
+# Wed Feb 19 07:51:32 2014
+# Filename........: archive/116-aaswh.org
+# Update Output...: 6977
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 7143424.000000
+# Gestation Time..: 373
+# Fitness.........: 19151.270777
+# Errors..........: 6
+# Genome Size.....: 116
+# Copied Size.....: 116
+# Executed Size...: 109
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+shift-l
+nop-B
+h-divide
+shift-l
+nop-C
+shift-l
+jmp-head
+add
+h-alloc
+pop
+nop-C
+set-flow
+h-search
+nop-C
+swap-stk
+add
+h-alloc
+if-n-equ
+if-n-equ
+push
+set-flow
+nop-A
+mov-head
+nop-C
+if-less
+sub
+h-alloc
+nop-A
+push
+shift-l
+swap-stk
+set-flow
+shift-r
+swap-stk
+nop-C
+shift-l
+h-search
+swap-stk
+h-divide
+pop
+sub
+nop-C
+IO
+nop-C
+dec
+h-divide
+IO
+if-n-equ
+h-divide
+swap-stk
+IO
+dec
+if-label
+nop-C
+nand
+h-copy
+push
+push
+h-divide
+h-copy
+IO
+IO
+pop
+add
+IO
+if-label
+nand
+nop-C
+nand
+swap
+IO
+swap-stk
+nand
+push
+h-alloc
+swap
+nand
+IO
+h-alloc
+IO
+swap-stk
+swap
+add
+nop-C
+IO
+add
+sub
+nand
+pop
+sub
+nop-C
+pop
+IO
+IO
+nand
+nop-B
+pop
+sub
+IO
+sub
+IO
+IO
+nop-C
+if-label
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+pop
+nop-C
+h-divide
+if-less
+nop-A

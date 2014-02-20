@@ -1,0 +1,136 @@
+# Sat Feb 15 12:07:09 2014
+# Filename........: archive/107-adbys.org
+# Update Output...: 8053
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6750208.000000
+# Gestation Time..: 289
+# Fitness.........: 23357.121107
+# Errors..........: 3
+# Genome Size.....: 107
+# Copied Size.....: 107
+# Executed Size...: 103
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+push
+pop
+swap
+IO
+swap
+IO
+h-alloc
+if-n-equ
+if-n-equ
+IO
+nand
+nand
+swap
+inc
+nop-B
+add
+IO
+nand
+IO
+nop-C
+set-flow
+nop-A
+IO
+swap
+swap-stk
+swap-stk
+mov-head
+nop-C
+nand
+nop-C
+h-divide
+nop-C
+add
+inc
+push
+IO
+shift-l
+inc
+nand
+h-divide
+if-n-equ
+nand
+h-alloc
+shift-r
+pop
+nop-C
+nop-B
+shift-l
+swap
+h-alloc
+h-copy
+if-less
+shift-r
+nop-C
+shift-l
+h-search
+dec
+set-flow
+if-label
+nop-C
+set-flow
+push
+get-head
+pop
+IO
+nop-C
+sub
+if-n-equ
+set-flow
+push
+h-copy
+h-copy
+nop-B
+IO
+if-n-equ
+h-alloc
+shift-r
+nand
+get-head
+nop-B
+shift-l
+pop
+h-copy
+swap
+IO
+nand
+nand
+nop-C
+IO
+nop-C
+sub
+get-head
+IO
+if-n-equ
+swap
+h-divide
+h-copy
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

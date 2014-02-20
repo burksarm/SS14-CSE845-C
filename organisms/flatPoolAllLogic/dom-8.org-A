@@ -1,0 +1,128 @@
+# Wed Feb 19 08:11:13 2014
+# Filename........: archive/099-abzdo.org
+# Update Output...: 8715
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3221225472.000000
+# Gestation Time..: 339
+# Fitness.........: 9502140.035398
+# Errors..........: 4
+# Genome Size.....: 99
+# Copied Size.....: 99
+# Executed Size...: 96
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+add
+h-alloc
+jmp-head
+inc
+nop-A
+IO
+swap-stk
+nop-C
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+get-head
+nand
+nop-C
+shift-r
+nop-A
+nop-A
+inc
+shift-r
+set-flow
+sub
+h-search
+nop-C
+if-label
+IO
+sub
+h-search
+h-search
+h-copy
+h-copy
+shift-r
+h-divide
+h-divide
+h-search
+IO
+swap
+shift-l
+pop
+IO
+push
+sub
+h-copy
+h-copy
+push
+set-flow
+nop-A
+h-copy
+swap-stk
+IO
+nand
+swap
+nand
+IO
+nand
+IO
+push
+nop-C
+nand
+add
+inc
+IO
+inc
+nop-C
+swap-stk
+h-copy
+add
+nop-C
+if-less
+nop-C
+nop-B
+nand
+swap
+IO
+swap-stk
+nand
+if-label
+nand
+h-copy
+IO
+nop-C
+swap
+pop
+h-copy
+swap-stk
+nand
+h-alloc
+if-label
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

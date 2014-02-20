@@ -1,0 +1,147 @@
+# Wed Feb 19 07:33:13 2014
+# Filename........: archive/118-aawbp.org
+# Update Output...: 5354
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 7274496.000000
+# Gestation Time..: 283
+# Fitness.........: 25704.932862
+# Errors..........: 4
+# Genome Size.....: 118
+# Copied Size.....: 118
+# Executed Size...: 111
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+h-alloc
+swap
+swap
+pop
+get-head
+set-flow
+nop-A
+mov-head
+nop-C
+nop-B
+sub
+h-search
+nop-C
+shift-r
+h-divide
+get-head
+nop-C
+push
+push
+dec
+push
+nop-B
+h-divide
+IO
+sub
+inc
+IO
+if-n-equ
+nop-B
+h-divide
+shift-r
+h-divide
+h-divide
+if-label
+nop-A
+get-head
+h-search
+shift-l
+h-alloc
+push
+nop-C
+if-label
+IO
+if-label
+shift-r
+jmp-head
+dec
+h-alloc
+shift-r
+nand
+jmp-head
+push
+nand
+h-copy
+nop-C
+if-label
+h-copy
+IO
+swap-stk
+swap-stk
+nop-A
+sub
+nop-C
+h-divide
+swap
+nand
+IO
+pop
+nand
+swap-stk
+IO
+nop-C
+nand
+nop-C
+inc
+add
+swap-stk
+IO
+IO
+nop-C
+nand
+nop-C
+push
+nop-C
+set-flow
+h-alloc
+shift-l
+set-flow
+nand
+IO
+pop
+nand
+IO
+inc
+h-divide
+add
+if-label
+swap
+IO
+add
+IO
+nop-C
+IO
+h-search
+h-copy
+h-copy
+if-label
+nop-A
+h-divide
+h-copy
+mov-head
+sub
+sub
+IO
+shift-l
+nand
+nop-B

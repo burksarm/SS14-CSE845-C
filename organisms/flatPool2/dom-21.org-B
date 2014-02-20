@@ -1,0 +1,146 @@
+# Sat Feb 15 11:59:39 2014
+# Filename........: archive/117-aahal.org
+# Update Output...: 3711
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 59244544.000000
+# Gestation Time..: 1011
+# Fitness.........: 58599.944609
+# Errors..........: 4
+# Genome Size.....: 117
+# Copied Size.....: 117
+# Executed Size...: 113
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 0 (0.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+swap-stk
+if-less
+get-head
+h-alloc
+shift-r
+add
+h-divide
+h-copy
+IO
+set-flow
+h-divide
+add
+add
+sub
+swap-stk
+add
+set-flow
+nop-A
+mov-head
+nop-C
+if-label
+IO
+swap
+add
+add
+nop-A
+nand
+push
+nand
+nop-C
+swap-stk
+inc
+push
+if-label
+add
+nop-A
+nop-A
+add
+swap
+nop-C
+h-divide
+set-flow
+if-n-equ
+if-less
+nop-B
+mov-head
+nop-B
+swap
+push
+dec
+nand
+shift-r
+h-alloc
+if-n-equ
+shift-l
+shift-l
+IO
+nop-C
+h-alloc
+pop
+if-n-equ
+nand
+nop-C
+nop-B
+nand
+IO
+swap-stk
+pop
+inc
+h-copy
+IO
+nop-A
+nop-A
+add
+IO
+sub
+nop-A
+nop-C
+inc
+add
+push
+IO
+nop-C
+nop-B
+pop
+nop-C
+IO
+push
+nop-B
+sub
+h-alloc
+sub
+nop-C
+IO
+add
+IO
+push
+if-label
+h-search
+h-copy
+get-head
+add
+IO
+sub
+nand
+h-search
+h-divide
+h-divide
+h-copy
+nop-A
+swap-stk
+dec
+shift-r
+mov-head
+set-flow
+dec

@@ -1,0 +1,110 @@
+# Sat Feb 15 11:59:57 2014
+# Filename........: archive/081-aaisw.org
+# Update Output...: 3129
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5111808.000000
+# Gestation Time..: 680
+# Fitness.........: 7517.364706
+# Errors..........: 44
+# Genome Size.....: 81
+# Copied Size.....: 81
+# Executed Size...: 78
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+nop-B
+h-alloc
+nop-C
+swap-stk
+set-flow
+nop-A
+sub
+mov-head
+nop-C
+nop-B
+add
+pop
+if-label
+jmp-head
+nop-B
+nand
+h-alloc
+set-flow
+if-n-equ
+pop
+if-label
+shift-l
+inc
+inc
+h-search
+swap-stk
+jmp-head
+h-search
+get-head
+if-label
+IO
+IO
+nand
+IO
+inc
+if-less
+sub
+h-alloc
+set-flow
+IO
+nop-C
+if-less
+dec
+if-label
+h-copy
+pop
+nand
+if-label
+add
+nop-C
+inc
+nop-C
+h-divide
+h-alloc
+push
+h-copy
+nop-C
+IO
+add
+IO
+IO
+h-copy
+h-alloc
+nand
+IO
+nop-C
+sub
+IO
+inc
+shift-r
+h-copy
+h-copy
+add
+pop
+push
+shift-r
+add
+h-copy
+mov-head
+set-flow
+push

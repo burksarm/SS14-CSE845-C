@@ -1,0 +1,110 @@
+# Sat Feb 15 11:57:43 2014
+# Filename........: archive/081-aagwo.org
+# Update Output...: 2846
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 157696.000000
+# Gestation Time..: 619
+# Fitness.........: 254.759289
+# Errors..........: 3
+# Genome Size.....: 81
+# Copied Size.....: 81
+# Executed Size...: 77
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 0 (0.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+nop-B
+nop-B
+pop
+jmp-head
+jmp-head
+if-less
+swap
+h-alloc
+if-less
+if-n-equ
+if-n-equ
+h-copy
+dec
+h-divide
+push
+IO
+dec
+set-flow
+nop-A
+jmp-head
+add
+add
+pop
+IO
+push
+swap
+dec
+nand
+if-label
+IO
+h-alloc
+nand
+nop-C
+nand
+if-label
+mov-head
+nop-C
+set-flow
+h-alloc
+IO
+nop-C
+nop-A
+nop-A
+h-divide
+nop-B
+get-head
+get-head
+pop
+nop-C
+dec
+dec
+nop-C
+nop-A
+sub
+nop-C
+h-alloc
+inc
+nand
+IO
+nop-C
+sub
+nop-C
+swap
+h-divide
+h-copy
+nand
+IO
+swap
+IO
+shift-r
+h-search
+if-less
+IO
+dec
+h-copy
+if-less
+shift-l
+nop-C
+h-divide
+mov-head
+if-label

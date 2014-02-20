@@ -1,0 +1,131 @@
+# Sat Feb 15 12:02:53 2014
+# Filename........: archive/102-acdng.org
+# Update Output...: 6407
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3388997632.000000
+# Gestation Time..: 248
+# Fitness.........: 13665313.032258
+# Errors..........: 0
+# Genome Size.....: 102
+# Copied Size.....: 102
+# Executed Size...: 101
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+dec
+if-n-equ
+sub
+h-divide
+nop-A
+h-alloc
+nand
+inc
+shift-l
+set-flow
+nop-A
+shift-r
+dec
+sub
+inc
+if-n-equ
+add
+mov-head
+nop-C
+if-label
+sub
+set-flow
+swap-stk
+swap
+nand
+shift-r
+IO
+nop-C
+if-less
+h-copy
+sub
+if-label
+swap
+set-flow
+if-n-equ
+dec
+if-n-equ
+h-divide
+if-label
+IO
+nand
+IO
+nop-C
+IO
+h-divide
+nand
+if-less
+push
+get-head
+push
+pop
+nop-C
+nand
+IO
+IO
+nand
+nop-B
+h-divide
+h-copy
+h-divide
+swap-stk
+h-copy
+IO
+nop-C
+if-less
+h-copy
+h-copy
+h-divide
+swap-stk
+sub
+nop-C
+h-copy
+if-label
+nand
+IO
+pop
+sub
+nop-C
+push
+if-label
+nand
+IO
+nand
+IO
+nop-C
+sub
+IO
+if-label
+nand
+inc
+add
+IO
+IO
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+if-less
+mov-head
+nop-A

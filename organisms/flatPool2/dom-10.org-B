@@ -1,0 +1,124 @@
+# Sat Feb 15 12:00:54 2014
+# Filename........: archive/095-aaeeq.org
+# Update Output...: 3478
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 1526726656.000000
+# Gestation Time..: 1545
+# Fitness.........: 988172.592880
+# Errors..........: 2
+# Genome Size.....: 95
+# Copied Size.....: 95
+# Executed Size...: 91
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+sub
+set-flow
+nop-A
+sub
+nand
+add
+IO
+nop-C
+sub
+nop-C
+if-less
+add
+IO
+IO
+mov-head
+nop-C
+nand
+push
+nop-C
+push
+h-divide
+IO
+get-head
+add
+set-flow
+set-flow
+h-alloc
+inc
+nop-A
+IO
+dec
+h-search
+swap
+shift-l
+shift-r
+shift-r
+h-search
+h-alloc
+h-search
+pop
+if-label
+pop
+nop-C
+nand
+nop-C
+nop-B
+if-n-equ
+push
+dec
+inc
+IO
+nop-C
+push
+sub
+swap-stk
+IO
+pop
+if-n-equ
+shift-l
+h-divide
+if-less
+IO
+nand
+nop-B
+swap-stk
+nop-C
+if-label
+nop-B
+IO
+nand
+if-n-equ
+if-label
+swap
+if-less
+if-label
+pop
+add
+inc
+IO
+if-label
+if-less
+if-less
+h-copy
+h-copy
+sub
+add
+if-label
+h-copy
+if-less
+inc
+mov-head
+swap-stk
+h-divide
+if-label

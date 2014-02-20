@@ -1,0 +1,127 @@
+# Wed Feb 19 07:53:46 2014
+# Filename........: archive/098-aaofv.org
+# Update Output...: 3660
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6225920.000000
+# Gestation Time..: 225
+# Fitness.........: 27670.755556
+# Errors..........: 3
+# Genome Size.....: 98
+# Copied Size.....: 98
+# Executed Size...: 95
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+shift-l
+set-flow
+nop-A
+nop-A
+dec
+h-alloc
+nop-C
+if-label
+nand
+mov-head
+nop-C
+swap
+inc
+inc
+nop-B
+add
+set-flow
+if-label
+IO
+nand
+IO
+nop-C
+h-divide
+nand
+nop-C
+add
+inc
+IO
+dec
+if-less
+if-less
+if-label
+nop-C
+swap
+add
+IO
+set-flow
+push
+nand
+h-copy
+nop-C
+IO
+get-head
+nand
+nop-B
+IO
+pop
+nop-C
+push
+nand
+push
+swap
+IO
+pop
+nand
+swap
+dec
+nop-A
+h-alloc
+if-label
+set-flow
+IO
+h-copy
+pop
+h-copy
+sub
+swap
+IO
+nand
+IO
+add
+IO
+swap-stk
+set-flow
+h-alloc
+IO
+nop-C
+nop-A
+nop-A
+nand
+IO
+nop-C
+if-less
+nand
+swap-stk
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-n-equ
+nop-C
+h-copy
+h-divide
+mov-head
+nop-A
+inc

@@ -1,0 +1,139 @@
+# Wed Feb 19 07:44:12 2014
+# Filename........: archive/110-abcai.org
+# Update Output...: 18045
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3456106496.000000
+# Gestation Time..: 700
+# Fitness.........: 4937294.994286
+# Errors..........: 15
+# Genome Size.....: 110
+# Copied Size.....: 110
+# Executed Size...: 103
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+dec
+h-divide
+h-alloc
+add
+set-flow
+nop-A
+mov-head
+nop-C
+shift-r
+inc
+nop-C
+IO
+jmp-head
+inc
+sub
+jmp-head
+if-label
+add
+dec
+h-search
+swap
+add
+inc
+h-copy
+h-copy
+IO
+nop-B
+nand
+if-label
+mov-head
+push
+h-alloc
+swap
+nop-A
+if-n-equ
+nop-A
+nand
+IO
+nop-A
+IO
+pop
+if-less
+add
+IO
+nand
+nand
+nop-A
+nand
+swap-stk
+IO
+sub
+h-copy
+if-less
+swap-stk
+swap-stk
+sub
+nop-B
+if-n-equ
+shift-r
+sub
+h-alloc
+IO
+if-label
+mov-head
+nop-A
+IO
+if-less
+shift-r
+h-divide
+set-flow
+IO
+shift-l
+shift-r
+shift-r
+pop
+dec
+pop
+add
+h-search
+h-search
+shift-l
+if-n-equ
+get-head
+IO
+get-head
+push
+if-label
+shift-r
+sub
+pop
+h-copy
+if-less
+shift-l
+nop-C
+dec
+pop
+nop-C
+add
+nop-A
+shift-l
+if-n-equ
+h-search
+h-alloc
+if-less
+nop-B
+h-divide
+pop
+nop-C
+nop-A
+if-label

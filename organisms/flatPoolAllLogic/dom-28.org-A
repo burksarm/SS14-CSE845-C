@@ -1,0 +1,177 @@
+# Wed Feb 19 08:09:14 2014
+# Filename........: archive/148-advij.org
+# Update Output...: 18652
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 9502720.000000
+# Gestation Time..: 610
+# Fitness.........: 15578.229508
+# Errors..........: 14
+# Genome Size.....: 148
+# Copied Size.....: 148
+# Executed Size...: 145
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+nop-A
+sub
+nop-A
+h-divide
+h-alloc
+nop-A
+nop-C
+nop-A
+nop-A
+set-flow
+shift-l
+nop-A
+get-head
+sub
+h-alloc
+swap
+push
+nand
+nop-C
+if-less
+swap
+nop-C
+nop-A
+IO
+nop-A
+dec
+nop-B
+inc
+set-flow
+if-label
+h-divide
+nop-A
+nop-A
+swap-stk
+add
+if-n-equ
+shift-r
+nop-A
+pop
+pop
+swap-stk
+h-divide
+push
+inc
+pop
+add
+nand
+h-alloc
+nop-C
+h-alloc
+set-flow
+set-flow
+set-flow
+IO
+push
+nand
+inc
+h-copy
+h-divide
+nop-C
+push
+h-search
+nop-A
+nop-C
+if-n-equ
+sub
+add
+pop
+sub
+pop
+mov-head
+nop-C
+set-flow
+pop
+h-copy
+h-copy
+pop
+h-copy
+inc
+h-copy
+sub
+inc
+h-copy
+inc
+swap
+add
+inc
+h-search
+add
+h-alloc
+swap
+h-copy
+nop-A
+swap
+h-search
+IO
+pop
+if-n-equ
+nop-C
+sub
+nop-C
+swap-stk
+if-label
+h-alloc
+h-alloc
+h-alloc
+IO
+nop-C
+nand
+nand
+nop-C
+IO
+nand
+add
+swap
+h-alloc
+if-label
+get-head
+h-copy
+IO
+nand
+nand
+inc
+nop-C
+IO
+shift-r
+IO
+add
+inc
+swap
+IO
+IO
+add
+IO
+if-label
+push
+if-label
+nop-C
+h-search
+h-copy
+if-label
+nop-C
+nop-A
+if-n-equ
+mov-head
+add
+nop-A
+nop-B

@@ -1,0 +1,131 @@
+# Wed Feb 19 07:43:06 2014
+# Filename........: archive/102-aalur.org
+# Update Output...: 3682
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 207618048.000000
+# Gestation Time..: 254
+# Fitness.........: 817393.889764
+# Errors..........: 2
+# Genome Size.....: 102
+# Copied Size.....: 102
+# Executed Size...: 99
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+pop
+h-alloc
+set-flow
+nop-A
+mov-head
+nop-C
+swap-stk
+inc
+shift-l
+add
+nand
+jmp-head
+nand
+if-label
+IO
+swap
+swap-stk
+pop
+add
+push
+swap
+nand
+IO
+set-flow
+nop-C
+nand
+h-divide
+nop-C
+IO
+nop-C
+nop-B
+h-alloc
+nop-A
+get-head
+push
+nand
+nop-C
+push
+swap
+swap-stk
+pop
+pop
+if-label
+set-flow
+nop-B
+set-flow
+nand
+if-n-equ
+nop-B
+sub
+IO
+nand
+nop-C
+h-copy
+h-alloc
+nand
+IO
+nand
+swap
+swap
+h-copy
+if-label
+nand
+nop-C
+nand
+push
+nop-C
+IO
+pop
+h-divide
+if-n-equ
+push
+if-label
+swap-stk
+nand
+add
+nand
+h-divide
+nop-A
+IO
+if-n-equ
+pop
+nand
+IO
+nop-C
+IO
+nand
+if-label
+inc
+add
+IO
+h-search
+h-copy
+h-copy
+h-copy
+if-less
+h-copy
+h-copy
+h-divide
+mov-head
+nop-A
+add

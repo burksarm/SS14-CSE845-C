@@ -1,0 +1,133 @@
+# Sat Feb 15 12:03:07 2014
+# Filename........: archive/104-aalbk.org
+# Update Output...: 4673
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5636096.000000
+# Gestation Time..: 1482
+# Fitness.........: 3803.033738
+# Errors..........: 72
+# Genome Size.....: 104
+# Copied Size.....: 104
+# Executed Size...: 86
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+mov-head
+nop-C
+add
+swap-stk
+nop-C
+h-divide
+h-alloc
+set-flow
+nop-A
+if-less
+push
+nop-C
+push
+dec
+swap-stk
+add
+jmp-head
+mov-head
+nop-C
+h-search
+h-copy
+dec
+jmp-head
+nop-C
+pop
+h-alloc
+nop-A
+h-divide
+nop-B
+h-alloc
+IO
+push
+if-label
+dec
+nand
+add
+shift-r
+swap-stk
+swap-stk
+h-search
+pop
+shift-l
+swap
+shift-r
+IO
+if-label
+swap
+h-copy
+add
+pop
+if-label
+swap
+nand
+h-alloc
+add
+inc
+IO
+nand
+nand
+nop-C
+inc
+add
+push
+h-alloc
+IO
+nop-C
+inc
+nop-C
+nand
+if-less
+nop-C
+nop-A
+h-divide
+push
+inc
+add
+dec
+nand
+IO
+swap
+if-label
+nop-C
+nop-B
+sub
+inc
+h-divide
+h-copy
+sub
+h-copy
+mov-head
+if-label
+mov-head
+pop
+get-head
+inc
+jmp-head
+swap
+set-flow
+set-flow
+jmp-head
+jmp-head
+h-alloc
+if-n-equ
+nop-B

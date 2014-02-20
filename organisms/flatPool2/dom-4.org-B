@@ -1,0 +1,123 @@
+# Sat Feb 15 11:58:52 2014
+# Filename........: archive/094-aagyv.org
+# Update Output...: 2573
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 188416.000000
+# Gestation Time..: 950
+# Fitness.........: 198.332632
+# Errors..........: 2
+# Genome Size.....: 94
+# Copied Size.....: 94
+# Executed Size...: 92
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 0 (0.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+get-head
+shift-r
+nop-A
+nand
+add
+push
+swap
+if-n-equ
+h-alloc
+nop-B
+IO
+if-label
+push
+swap-stk
+push
+IO
+inc
+h-divide
+set-flow
+nop-A
+swap
+h-divide
+nop-A
+mov-head
+nop-C
+nop-C
+nop-A
+pop
+set-flow
+get-head
+nop-B
+set-flow
+if-n-equ
+set-flow
+IO
+nop-C
+h-divide
+nand
+nop-C
+nand
+push
+nand
+nop-B
+swap
+push
+push
+set-flow
+h-copy
+add
+push
+swap
+if-n-equ
+if-n-equ
+h-alloc
+nop-A
+add
+set-flow
+h-search
+swap
+shift-r
+shift-r
+set-flow
+nop-C
+nand
+nop-C
+h-search
+inc
+h-alloc
+dec
+h-search
+IO
+nop-B
+if-n-equ
+nop-C
+nand
+if-label
+add
+if-n-equ
+inc
+IO
+pop
+swap-stk
+h-copy
+if-n-equ
+nop-B
+shift-l
+nop-A
+swap
+h-divide
+if-label
+h-copy
+mov-head
+swap
+inc

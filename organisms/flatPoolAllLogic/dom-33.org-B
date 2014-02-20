@@ -1,0 +1,120 @@
+# Wed Feb 19 07:40:13 2014
+# Filename........: archive/091-aaxmj.org
+# Update Output...: 11751
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2952790016.000000
+# Gestation Time..: 443
+# Fitness.........: 6665440.216704
+# Errors..........: 13
+# Genome Size.....: 91
+# Copied Size.....: 91
+# Executed Size...: 88
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+nop-B
+set-flow
+nop-A
+mov-head
+nop-C
+h-search
+nop-B
+if-less
+get-head
+h-alloc
+h-divide
+h-search
+if-label
+nop-C
+get-head
+push
+if-label
+dec
+shift-l
+if-less
+nop-B
+h-alloc
+shift-l
+inc
+jmp-head
+add
+shift-r
+get-head
+IO
+pop
+nop-C
+set-flow
+nop-B
+shift-l
+inc
+inc
+nop-B
+shift-l
+nop-B
+h-search
+add
+set-flow
+shift-r
+get-head
+add
+h-copy
+IO
+h-search
+h-copy
+h-copy
+IO
+pop
+h-divide
+if-less
+swap
+nand
+nop-C
+h-copy
+nand
+pop
+nop-B
+h-copy
+h-copy
+h-alloc
+nand
+nand
+swap
+IO
+nand
+push
+nop-B
+h-copy
+sub
+IO
+nand
+swap
+IO
+IO
+h-copy
+h-divide
+IO
+swap-stk
+h-divide
+inc
+h-copy
+nop-B
+nop-A
+mov-head
+inc
+nop-B

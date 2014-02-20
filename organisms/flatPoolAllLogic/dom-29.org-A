@@ -1,0 +1,145 @@
+# Wed Feb 19 07:54:00 2014
+# Filename........: archive/116-acpbq.org
+# Update Output...: 10229
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 7208960.000000
+# Gestation Time..: 369
+# Fitness.........: 19536.476965
+# Errors..........: 2
+# Genome Size.....: 116
+# Copied Size.....: 116
+# Executed Size...: 110
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+if-less
+nop-B
+inc
+add
+dec
+if-less
+nop-B
+nand
+push
+if-label
+jmp-head
+if-less
+if-less
+IO
+jmp-head
+IO
+swap
+h-alloc
+swap
+dec
+set-flow
+nop-A
+mov-head
+nop-C
+get-head
+sub
+nop-A
+IO
+swap
+nop-A
+nand
+nop-B
+get-head
+mov-head
+nop-C
+get-head
+h-search
+swap-stk
+h-divide
+pop
+sub
+nop-C
+IO
+nop-B
+nop-B
+nand
+IO
+nop-C
+nand
+if-less
+IO
+dec
+swap
+nop-C
+if-n-equ
+h-copy
+push
+push
+if-n-equ
+h-copy
+IO
+IO
+pop
+if-n-equ
+IO
+if-label
+nand
+nop-C
+nand
+swap
+IO
+swap-stk
+nand
+push
+h-alloc
+swap
+nand
+IO
+nop-B
+IO
+swap-stk
+swap
+add
+nop-C
+IO
+add
+nand
+sub
+pop
+sub
+swap
+nop-B
+IO
+IO
+nand
+if-n-equ
+nop-B
+nop-C
+IO
+sub
+IO
+IO
+nop-C
+if-label
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+jmp-head
+shift-l
+inc
+inc
+nop-A

@@ -1,0 +1,165 @@
+# Wed Feb 19 07:40:31 2014
+# Filename........: archive/136-aawph.org
+# Update Output...: 17761
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 4496293888.000000
+# Gestation Time..: 525
+# Fitness.........: 8564369.310476
+# Errors..........: 9
+# Genome Size.....: 136
+# Copied Size.....: 136
+# Executed Size...: 134
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-divide
+set-flow
+nop-A
+mov-head
+nop-C
+IO
+nop-B
+inc
+nand
+add
+h-search
+dec
+nop-C
+IO
+nop-C
+h-copy
+nop-A
+pop
+if-label
+IO
+h-copy
+nand
+push
+swap-stk
+nand
+nop-C
+swap-stk
+nop-C
+swap
+nop-C
+h-copy
+push
+nop-C
+nand
+nop-C
+IO
+nop-C
+if-less
+h-divide
+inc
+nop-C
+pop
+nop-C
+if-less
+nop-B
+if-label
+nop-A
+h-copy
+nand
+nop-C
+h-copy
+dec
+IO
+h-alloc
+add
+nop-C
+h-copy
+push
+sub
+nop-C
+swap-stk
+inc
+pop
+if-label
+mov-head
+dec
+add
+IO
+set-flow
+shift-l
+h-search
+if-label
+h-search
+h-search
+nop-A
+nand
+if-n-equ
+push
+h-search
+sub
+swap
+swap
+dec
+swap-stk
+sub
+push
+nop-B
+nand
+set-flow
+nop-C
+h-search
+sub
+dec
+sub
+h-search
+h-search
+nop-C
+IO
+get-head
+swap-stk
+h-copy
+nand
+shift-l
+nand
+h-alloc
+h-alloc
+pop
+if-n-equ
+if-label
+set-flow
+nop-C
+if-less
+swap-stk
+set-flow
+nop-C
+add
+if-less
+h-search
+nop-B
+get-head
+nop-A
+set-flow
+h-copy
+nand
+swap
+h-search
+h-divide
+jmp-head
+if-n-equ
+if-label
+h-copy
+h-copy
+h-copy
+h-copy
+mov-head

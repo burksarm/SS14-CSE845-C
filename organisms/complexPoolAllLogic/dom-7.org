@@ -1,0 +1,208 @@
+# Wed Feb 19 03:49:25 2014
+# Filename........: archive/111-acvvj.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 13440.000000
+# Gestation Time..: 271
+# Fitness.........: 49.594096
+# Errors..........: 5
+# Genome Size.....: 111
+# Copied Size.....: 111
+# Executed Size...: 105
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 0 (0.000000)
+# andn 1 (1.000000)
+# nor 0 (0.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+# logic_3AA 0 (0.000000)
+# logic_3AB 0 (0.000000)
+# logic_3AC 0 (0.000000)
+# logic_3AD 0 (0.000000)
+# logic_3AE 0 (0.000000)
+# logic_3AF 0 (0.000000)
+# logic_3AG 0 (0.000000)
+# logic_3AH 0 (0.000000)
+# logic_3AI 0 (0.000000)
+# logic_3AJ 0 (0.000000)
+# logic_3AK 0 (0.000000)
+# logic_3AL 0 (0.000000)
+# logic_3AM 0 (0.000000)
+# logic_3AN 0 (0.000000)
+# logic_3AO 0 (0.000000)
+# logic_3AP 0 (0.000000)
+# logic_3AQ 0 (0.000000)
+# logic_3AR 0 (0.000000)
+# logic_3AS 0 (0.000000)
+# logic_3AT 0 (0.000000)
+# logic_3AU 0 (0.000000)
+# logic_3AV 0 (0.000000)
+# logic_3AW 0 (0.000000)
+# logic_3AX 0 (0.000000)
+# logic_3AY 0 (0.000000)
+# logic_3AZ 0 (0.000000)
+# logic_3BA 0 (0.000000)
+# logic_3BB 0 (0.000000)
+# logic_3BC 0 (0.000000)
+# logic_3BD 0 (0.000000)
+# logic_3BE 0 (0.000000)
+# logic_3BF 0 (0.000000)
+# logic_3BG 0 (0.000000)
+# logic_3BH 0 (0.000000)
+# logic_3BI 0 (0.000000)
+# logic_3BJ 0 (0.000000)
+# logic_3BK 0 (0.000000)
+# logic_3BL 0 (0.000000)
+# logic_3BM 0 (0.000000)
+# logic_3BN 0 (0.000000)
+# logic_3BO 1 (1.000000)
+# logic_3BP 0 (0.000000)
+# logic_3BQ 0 (0.000000)
+# logic_3BR 0 (0.000000)
+# logic_3BS 0 (0.000000)
+# logic_3BT 0 (0.000000)
+# logic_3BU 0 (0.000000)
+# logic_3BV 0 (0.000000)
+# logic_3BW 0 (0.000000)
+# logic_3BX 0 (0.000000)
+# logic_3BY 1 (1.000000)
+# logic_3BZ 0 (0.000000)
+# logic_3CA 0 (0.000000)
+# logic_3CB 0 (0.000000)
+# logic_3CC 1 (1.000000)
+# logic_3CD 0 (0.000000)
+# logic_3CE 0 (0.000000)
+# logic_3CF 0 (0.000000)
+# logic_3CG 0 (0.000000)
+# logic_3CH 0 (0.000000)
+# logic_3CI 1 (1.000000)
+# logic_3CJ 1 (1.000000)
+# logic_3CK 0 (0.000000)
+# logic_3CL 0 (0.000000)
+# logic_3CM 0 (0.000000)
+# logic_3CN 0 (0.000000)
+# logic_3CO 0 (0.000000)
+# logic_3CP 1 (1.000000)
+
+
+h-alloc
+push
+set-flow
+nop-A
+mov-head
+nop-C
+push
+set-flow
+inc
+mov-head
+nop-B
+nop-A
+nop-B
+h-search
+swap-stk
+if-less
+h-alloc
+IO
+add
+h-search
+if-label
+if-less
+push
+swap
+sub
+inc
+nop-C
+pop
+h-alloc
+shift-r
+get-head
+IO
+get-head
+get-head
+pop
+nop-C
+nand
+jmp-head
+h-alloc
+nop-C
+nop-A
+sub
+shift-r
+add
+h-alloc
+get-head
+if-n-equ
+set-flow
+h-divide
+IO
+nop-C
+nop-A
+swap-stk
+nop-C
+IO
+swap
+nop-B
+nand
+h-alloc
+add
+sub
+nand
+set-flow
+IO
+nand
+add
+h-divide
+swap
+h-alloc
+inc
+nop-C
+nand
+IO
+nop-C
+nop-B
+nand
+nop-C
+h-divide
+nand
+IO
+add
+pop
+nand
+sub
+if-label
+IO
+nand
+inc
+add
+nop-B
+IO
+nand
+IO
+nand
+IO
+swap-stk
+swap
+IO
+h-copy
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+set-flow
+nop-A
+nop-B

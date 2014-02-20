@@ -1,0 +1,147 @@
+# Wed Feb 19 07:34:42 2014
+# Filename........: archive/118-adapd.org
+# Update Output...: 7630
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 115343360.000000
+# Gestation Time..: 284
+# Fitness.........: 406138.591549
+# Errors..........: 3
+# Genome Size.....: 118
+# Copied Size.....: 118
+# Executed Size...: 110
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+add
+h-divide
+nop-C
+h-divide
+inc
+set-flow
+nop-A
+mov-head
+nop-C
+IO
+set-flow
+swap
+sub
+dec
+IO
+if-n-equ
+shift-l
+h-search
+push
+shift-r
+h-divide
+h-search
+inc
+nop-A
+nop-B
+if-label
+nand
+shift-r
+nop-B
+h-alloc
+swap-stk
+inc
+jmp-head
+shift-l
+if-n-equ
+shift-l
+nop-C
+if-n-equ
+nop-A
+if-less
+sub
+dec
+jmp-head
+nand
+if-label
+IO
+nop-B
+dec
+inc
+if-n-equ
+nop-C
+if-label
+swap
+swap-stk
+h-copy
+inc
+h-copy
+if-less
+pop
+dec
+IO
+nop-B
+h-alloc
+IO
+if-n-equ
+add
+nop-A
+nand
+nand
+push
+IO
+nop-C
+nand
+swap
+inc
+add
+IO
+nop-A
+IO
+set-flow
+nand
+nop-C
+h-divide
+nand
+IO
+nand
+if-less
+h-alloc
+nand
+IO
+pop
+nand
+IO
+inc
+if-label
+add
+IO
+nand
+inc
+add
+IO
+nop-C
+IO
+h-search
+h-copy
+h-copy
+if-label
+nop-A
+h-divide
+h-copy
+mov-head
+set-flow
+sub
+add
+dec
+h-search
+nop-B

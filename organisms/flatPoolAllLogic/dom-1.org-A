@@ -1,0 +1,140 @@
+# Wed Feb 19 08:22:48 2014
+# Filename........: archive/111-achzr.org
+# Update Output...: 36705
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3657433088.000000
+# Gestation Time..: 980
+# Fitness.........: 3732074.579592
+# Errors..........: 21
+# Genome Size.....: 111
+# Copied Size.....: 111
+# Executed Size...: 109
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-search
+nop-C
+nop-A
+swap-stk
+mov-head
+nop-C
+nand
+nop-A
+h-alloc
+pop
+get-head
+nop-A
+pop
+inc
+h-search
+shift-l
+nop-B
+set-flow
+h-alloc
+nop-B
+shift-r
+shift-r
+IO
+swap-stk
+nop-C
+nand
+jmp-head
+if-label
+nand
+h-copy
+nop-C
+shift-r
+push
+nop-C
+swap-stk
+h-copy
+push
+IO
+nand
+dec
+h-copy
+nop-A
+nop-C
+shift-r
+h-divide
+h-search
+h-search
+swap
+nand
+swap
+nop-C
+inc
+add
+if-n-equ
+nop-B
+IO
+push
+nand
+if-label
+nand
+nand
+nand
+nop-C
+h-copy
+nop-C
+h-copy
+if-less
+nop-C
+nop-C
+push
+nop-A
+h-copy
+push
+h-divide
+push
+nop-A
+IO
+inc
+add
+IO
+nand
+swap
+h-copy
+nop-A
+pop
+nand
+swap
+IO
+nop-C
+swap-stk
+h-copy
+sub
+IO
+swap-stk
+if-n-equ
+IO
+nop-C
+sub
+IO
+pop
+if-label
+h-copy
+h-alloc
+if-label
+nop-C
+mov-head
+h-divide
+mov-head
+nop-A
+nop-B

@@ -8,6 +8,9 @@ if len(sys.argv) != 3:
 	print "Usage: python pairGen.py <ANCESTOR_DIRECTORY> <OUTPUT_DIRECTORY>"
 	quit()
 
+#Run the compare script to make sure we have our environments and events setup
+#subprocess.call(["python", "../scripts/compare.py"])
+
 ancestorDir = sys.argv[1]
 outputDir   = sys.argv[2]
 
@@ -39,13 +42,13 @@ for dirname, dirs, files in os.walk(ancestorDir):
 
 				#Create a simple events file to fill the pop with the start org
 				#and collect the dominant genotype after 1000 generations
-				eventsFileA = open("adapt_%s.cfg" %fname, "w")
+				eventsFileA = open("events_%s_adapt.cfg" %fname, "w")
 				eventsFileA.write("u begin InjectAll %s\n" %startOrg)
 				eventsFileA.write("g 1000 PrintDominantGenotype\n")
 				eventsFileA.write("g 1000 Exit\n")
 				eventsFileA.close()
 
-                                eventsFileB = open("adapt_%s.cfg" %fname, "w")
+                                eventsFileB = open("events_%s_adapt.cfg" %fname, "w")
                                 eventsFileB.write("u begin InjectAll %s\n" %startOrg)
                                 eventsFileB.write("g 1000 PrintDominantGenotype\n")
                                 eventsFileB.write("g 1000 Exit\n")
@@ -53,11 +56,11 @@ for dirname, dirs, files in os.walk(ancestorDir):
 
 
 				#Run Avida with both the low and high mutation rate ~10 at a time
-				runList.append("avida -v0 -c avida_flat.cfg -set DATA_DIR %s -set COPY_MUT_PROB %s -set EVENT_FILE %s"
+				runList.append("avida -v0 -c avida_adapt.cfg -set DATA_DIR %s -set COPY_MUT_PROB %s -set EVENT_FILE %s"
 					%(orgA, low, eventsFileA.name))
 
 				
- 				runList.append("avida -v0 -c avida_flat.cfg -set DATA_DIR %s -set COPY_MUT_PROB %s -set EVENT_FILE %s" 
+ 				runList.append("avida -v0 -c avida_adapt.cfg -set DATA_DIR %s -set COPY_MUT_PROB %s -set EVENT_FILE %s" 
 					%(orgB, high, eventsFileB.name))
 
 
@@ -85,7 +88,7 @@ for i in range(len(runList)):
 
 	runFile.close();
 
-	subprocess.call(["qsub", runFile.name])
+	#subprocess.call(["qsub", runFile.name])
 
 
 

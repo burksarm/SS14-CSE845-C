@@ -1,0 +1,137 @@
+# Sat Feb 15 11:59:28 2014
+# Filename........: archive/108-aahpe.org
+# Update Output...: 4068
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 819200.000000
+# Gestation Time..: 918
+# Fitness.........: 892.374728
+# Errors..........: 2
+# Genome Size.....: 108
+# Copied Size.....: 108
+# Executed Size...: 100
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+sub
+pop
+IO
+get-head
+shift-l
+if-less
+nop-B
+add
+set-flow
+if-less
+IO
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+set-flow
+nop-A
+shift-r
+h-copy
+nop-B
+if-label
+nop-C
+swap-stk
+pop
+h-alloc
+get-head
+nop-A
+sub
+set-flow
+dec
+nop-B
+h-search
+if-less
+push
+IO
+nop-C
+nand
+sub
+get-head
+get-head
+nop-C
+push
+swap
+if-less
+if-n-equ
+if-less
+nop-B
+push
+IO
+nop-C
+nop-B
+IO
+IO
+nand
+nop-C
+nand
+nop-C
+nop-A
+nand
+IO
+nop-C
+h-copy
+add
+nop-C
+h-divide
+h-alloc
+h-divide
+shift-r
+IO
+shift-l
+if-less
+set-flow
+inc
+nop-C
+IO
+add
+set-flow
+nop-B
+swap
+swap
+swap
+IO
+nop-C
+if-less
+swap
+sub
+dec
+h-copy
+pop
+sub
+IO
+if-n-equ
+IO
+nop-C
+shift-l
+h-search
+swap
+inc
+swap-stk
+IO
+shift-l
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

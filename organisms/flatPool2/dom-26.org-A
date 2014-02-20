@@ -1,0 +1,127 @@
+# Sat Feb 15 11:59:27 2014
+# Filename........: archive/098-aamdm.org
+# Update Output...: 2702
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 97517568.000000
+# Gestation Time..: 349
+# Fitness.........: 279419.965616
+# Errors..........: 1
+# Genome Size.....: 98
+# Copied Size.....: 98
+# Executed Size...: 93
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
+
+
+nand
+shift-r
+nop-B
+nand
+set-flow
+nand
+h-alloc
+swap
+if-less
+if-n-equ
+pop
+dec
+swap
+IO
+nand
+nop-C
+IO
+nand
+set-flow
+nop-A
+if-n-equ
+push
+if-less
+nop-B
+mov-head
+nop-C
+if-n-equ
+if-label
+swap-stk
+nop-A
+if-less
+push
+set-flow
+h-copy
+nand
+nop-C
+h-copy
+swap-stk
+IO
+nop-C
+set-flow
+nop-A
+push
+nop-B
+nop-C
+inc
+if-n-equ
+if-label
+dec
+nop-B
+IO
+nop-C
+h-divide
+if-less
+sub
+IO
+if-less
+add
+if-less
+if-n-equ
+nop-A
+nand
+inc
+add
+shift-l
+h-alloc
+shift-r
+push
+IO
+push
+nand
+IO
+inc
+push
+h-search
+nand
+add
+nand
+add
+IO
+h-copy
+h-copy
+pop
+nand
+h-copy
+IO
+h-copy
+nand
+nop-C
+h-copy
+h-copy
+if-label
+nop-C
+pop
+h-divide
+mov-head
+dec
+nop-B

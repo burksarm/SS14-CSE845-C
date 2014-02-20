@@ -1,0 +1,209 @@
+# Wed Feb 19 08:10:00 2014
+# Filename........: archive/180-abfgy.org
+# Update Output...: 25826
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5838471168.000000
+# Gestation Time..: 1098
+# Fitness.........: 5317369.005464
+# Errors..........: 36
+# Genome Size.....: 180
+# Copied Size.....: 180
+# Executed Size...: 174
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nop-A
+h-alloc
+if-less
+nop-C
+if-less
+nand
+shift-r
+h-divide
+get-head
+set-flow
+nop-A
+sub
+swap
+nop-B
+if-less
+dec
+inc
+mov-head
+nop-C
+if-n-equ
+shift-l
+if-less
+pop
+nop-C
+inc
+swap
+if-label
+nand
+shift-r
+shift-l
+nand
+inc
+dec
+nop-B
+sub
+if-n-equ
+inc
+h-search
+get-head
+nop-B
+h-divide
+pop
+nop-C
+swap
+swap-stk
+pop
+h-search
+nop-B
+get-head
+if-n-equ
+pop
+if-n-equ
+if-label
+IO
+if-n-equ
+shift-l
+h-search
+inc
+h-copy
+nop-A
+if-label
+nand
+swap
+h-copy
+if-label
+IO
+nand
+nop-C
+pop
+nop-B
+nand
+h-alloc
+nand
+nop-C
+push
+push
+swap
+IO
+pop
+nand
+h-copy
+IO
+nop-B
+inc
+IO
+nand
+h-copy
+add
+h-copy
+nop-C
+shift-r
+nop-A
+h-copy
+if-label
+nop-C
+nop-A
+if-label
+mov-head
+inc
+inc
+pop
+h-alloc
+shift-l
+nand
+if-less
+shift-l
+if-less
+push
+pop
+h-alloc
+nand
+if-less
+if-label
+h-search
+dec
+sub
+set-flow
+h-search
+pop
+shift-l
+swap-stk
+swap
+inc
+inc
+shift-l
+shift-r
+push
+nop-B
+IO
+nop-C
+nop-A
+nop-B
+sub
+if-n-equ
+h-search
+sub
+h-alloc
+pop
+nop-B
+jmp-head
+nop-C
+h-alloc
+set-flow
+h-search
+nop-A
+if-n-equ
+nop-A
+if-less
+if-less
+if-less
+set-flow
+IO
+h-search
+swap-stk
+h-alloc
+push
+nop-B
+nop-A
+swap-stk
+push
+nand
+sub
+set-flow
+nop-B
+inc
+shift-r
+swap
+IO
+pop
+if-less
+nop-A
+if-n-equ
+push
+get-head
+add
+pop
+nop-C
+push
+nop-A
+nop-B

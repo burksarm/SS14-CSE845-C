@@ -1,0 +1,134 @@
+# Wed Feb 19 08:05:30 2014
+# Filename........: archive/105-abvai.org
+# Update Output...: 10650
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3355443200.000000
+# Gestation Time..: 334
+# Fitness.........: 10046237.125749
+# Errors..........: 8
+# Genome Size.....: 105
+# Copied Size.....: 105
+# Executed Size...: 100
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-divide
+h-alloc
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+if-n-equ
+nop-A
+h-copy
+shift-r
+inc
+nop-A
+IO
+IO
+if-n-equ
+h-search
+h-search
+nop-B
+pop
+jmp-head
+pop
+swap-stk
+h-divide
+sub
+h-alloc
+shift-l
+h-search
+IO
+pop
+h-alloc
+nand
+if-less
+inc
+h-copy
+IO
+nand
+h-copy
+nop-C
+IO
+swap
+push
+nand
+nop-B
+h-divide
+push
+if-label
+IO
+if-n-equ
+if-n-equ
+nand
+swap
+nop-B
+IO
+IO
+nand
+nop-C
+IO
+nand
+if-label
+nop-C
+if-label
+mov-head
+swap
+inc
+if-n-equ
+h-alloc
+add
+h-alloc
+if-n-equ
+IO
+pop
+h-divide
+shift-r
+IO
+if-n-equ
+pop
+inc
+h-alloc
+push
+h-divide
+nop-B
+if-label
+swap-stk
+h-divide
+add
+IO
+push
+add
+get-head
+inc
+IO
+h-search
+h-copy
+h-copy
+pop
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+mov-head
+nop-A
+nop-B

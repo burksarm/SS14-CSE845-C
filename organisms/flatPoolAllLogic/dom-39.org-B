@@ -1,0 +1,131 @@
+# Wed Feb 19 08:03:38 2014
+# Filename........: archive/102-aahok.org
+# Update Output...: 15741
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3355443200.000000
+# Gestation Time..: 1149
+# Fitness.........: 2920316.100957
+# Errors..........: 49
+# Genome Size.....: 102
+# Copied Size.....: 102
+# Executed Size...: 100
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-search
+nop-C
+nop-A
+sub
+nop-B
+mov-head
+nop-C
+nop-C
+get-head
+shift-r
+nop-C
+set-flow
+h-divide
+nop-A
+inc
+pop
+nop-C
+h-copy
+swap
+nop-B
+h-divide
+inc
+h-search
+pop
+h-copy
+IO
+inc
+nop-B
+push
+shift-r
+nop-C
+sub
+nop-C
+swap-stk
+h-divide
+pop
+IO
+add
+set-flow
+pop
+sub
+h-copy
+get-head
+set-flow
+if-n-equ
+if-less
+nop-B
+swap-stk
+IO
+nop-C
+if-label
+IO
+h-alloc
+h-alloc
+push
+nand
+swap
+IO
+nand
+swap
+push
+swap-stk
+swap-stk
+push
+if-label
+h-search
+nand
+swap
+swap-stk
+IO
+pop
+nand
+h-alloc
+IO
+if-less
+pop
+add
+nop-A
+if-less
+push
+dec
+nand
+IO
+swap
+swap-stk
+nop-A
+IO
+pop
+push
+if-label
+IO
+h-copy
+h-copy
+h-copy
+if-label
+pop
+nop-C
+h-divide
+mov-head
+nop-A
+nop-B

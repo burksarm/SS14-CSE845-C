@@ -1,0 +1,130 @@
+# Wed Feb 19 15:38:32 2014
+# Filename........: archive/101-abuuu.org
+# Update Output...: 10682
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 203423744.000000
+# Gestation Time..: 385
+# Fitness.........: 528373.361039
+# Errors..........: 9
+# Genome Size.....: 101
+# Copied Size.....: 101
+# Executed Size...: 97
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+nop-A
+nop-A
+dec
+sub
+IO
+h-alloc
+push
+nop-C
+nop-B
+IO
+nop-C
+h-search
+nop-C
+nop-C
+mov-head
+nop-C
+nand
+shift-r
+h-alloc
+shift-r
+swap
+pop
+h-copy
+if-n-equ
+swap
+sub
+swap
+IO
+nop-C
+sub
+IO
+if-less
+if-label
+nand
+nop-B
+nop-A
+push
+nop-A
+set-flow
+nand
+nop-C
+if-less
+h-divide
+IO
+nop-C
+nop-C
+nand
+swap
+if-label
+h-search
+IO
+set-flow
+nand
+nop-B
+set-flow
+if-label
+IO
+nop-B
+nand
+nop-C
+dec
+nop-A
+if-n-equ
+add
+inc
+h-alloc
+push
+IO
+swap-stk
+nand
+IO
+pop
+if-less
+mov-head
+if-n-equ
+pop
+h-search
+get-head
+pop
+nand
+set-flow
+inc
+h-alloc
+swap
+add
+IO
+nop-A
+shift-l
+h-search
+nand
+IO
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

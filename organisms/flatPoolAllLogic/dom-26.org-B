@@ -1,0 +1,254 @@
+# Wed Feb 19 08:42:32 2014
+# Filename........: archive/225-abiep.org
+# Update Output...: 53065
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 7281311744.000000
+# Gestation Time..: 1506
+# Fitness.........: 4834868.355910
+# Errors..........: 3
+# Genome Size.....: 225
+# Copied Size.....: 225
+# Executed Size...: 217
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nop-A
+nop-A
+if-n-equ
+swap-stk
+IO
+swap
+nop-C
+IO
+h-copy
+shift-r
+pop
+shift-r
+pop
+dec
+h-divide
+h-alloc
+nop-A
+nop-C
+nand
+inc
+inc
+if-label
+if-n-equ
+set-flow
+inc
+IO
+IO
+if-n-equ
+if-label
+get-head
+sub
+pop
+shift-l
+swap
+nand
+shift-r
+if-less
+nop-B
+set-flow
+swap-stk
+if-n-equ
+sub
+dec
+nop-B
+h-search
+nop-B
+if-n-equ
+add
+set-flow
+add
+swap-stk
+if-n-equ
+nand
+dec
+dec
+if-n-equ
+nop-B
+dec
+nop-C
+swap-stk
+set-flow
+add
+IO
+if-n-equ
+h-search
+pop
+add
+h-copy
+nop-C
+shift-r
+swap
+inc
+shift-l
+swap-stk
+shift-r
+set-flow
+jmp-head
+jmp-head
+sub
+shift-l
+nop-A
+dec
+jmp-head
+nop-A
+shift-r
+swap
+nop-C
+swap
+add
+nand
+set-flow
+dec
+h-divide
+nop-B
+nand
+if-less
+swap
+swap
+swap-stk
+get-head
+nop-C
+IO
+nop-C
+shift-l
+add
+nand
+nop-C
+shift-l
+h-search
+if-less
+shift-r
+shift-l
+swap
+get-head
+h-search
+inc
+if-n-equ
+inc
+swap-stk
+nop-C
+if-less
+IO
+add
+set-flow
+if-n-equ
+shift-r
+pop
+if-less
+nop-C
+nop-C
+h-divide
+nop-B
+dec
+get-head
+swap
+nop-C
+jmp-head
+add
+IO
+jmp-head
+sub
+pop
+sub
+shift-l
+nop-C
+IO
+pop
+push
+get-head
+set-flow
+nop-A
+set-flow
+sub
+h-alloc
+dec
+nop-C
+pop
+swap
+h-search
+nop-C
+nop-C
+mov-head
+nop-C
+pop
+get-head
+nop-A
+if-n-equ
+swap-stk
+set-flow
+h-search
+sub
+nop-B
+nop-B
+sub
+push
+inc
+h-search
+pop
+nop-C
+shift-r
+get-head
+h-copy
+push
+push
+if-n-equ
+if-less
+shift-r
+get-head
+pop
+if-label
+push
+nand
+if-less
+h-alloc
+set-flow
+swap
+h-alloc
+nop-A
+h-search
+push
+nand
+nand
+nop-C
+swap-stk
+h-copy
+pop
+nand
+push
+nop-B
+IO
+nop-C
+h-copy
+IO
+pop
+if-label
+nop-B
+pop
+h-copy
+if-label
+IO
+nop-A
+h-divide
+mov-head
+nop-A
+jmp-head

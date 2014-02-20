@@ -1,8 +1,19 @@
 #!/usr/bin/python
 import os
 
-#task names to match in the organism file
-tasks = ["not", "nand", "and", "orn", "or", "andn", "nor", "xor", "equ"]
+#Gets the set of task names from the environment-all-logic file.
+def getAllTasks():
+	#task names to match in the organism file
+	tasks = set() #["not", "nand", "and", "orn", "or", "andn", "nor", "xor", "equ"]
+
+	#The task name we'll use to match in the organisms is item 3 in the env file
+	for line in open("../avidaFiles/environment-all-logic.cfg", "r"):
+		if line.startswith("REACTION"):
+			items = line.split()
+			tasks.add(items[2])
+
+	#Return it (we'll make it a set just to be extra safe)
+	return tasks
 
 #Gets the set of tasks performed in the given organism file
 def getTasks(file):
@@ -11,7 +22,7 @@ def getTasks(file):
 		#Get the tasks performed line
 		items = line.split()
 
-		if len(items) >= 4 and items[1] in tasks:
+		if len(items) >= 4 and items[1] in getAllTasks():
 			#Gather the task if it was performed
 			if int(items[2]) > 0:
 				tasksPerformed.add(items[1])
@@ -24,7 +35,7 @@ def generate(aFile, bFile):
 	allResources = {} #format: task -> original line of text
 
 	#Steal the resource strings from the regular environment.cfg file
-	envFile = open("../avidaFiles/environment.cfg", "r")
+	envFile = open("../avidaFiles/environment-all-logic.cfg", "r")
 
 	for line in envFile:
 		if line.startswith("REACTION"):
@@ -35,12 +46,11 @@ def generate(aFile, bFile):
 	domName = aFile[aFile.rfind("/")+1:aFile.rfind(".")]
 
 	#Get the set of tasks performed by the common ancestor
-	ancestorTasks = getTasks(open("../organisms/complexPool/%s.org" %domName, "r"))
+	ancestorTasks = getTasks(open("../organisms/complexPoolAllLogic/%s.org" %domName, "r"))
 	
 	#Now write the environment file
 	outFile = open("../avidaFiles/environment_%s_comp.cfg" %domName, "w")
 	for task in ancestorTasks:
 		outFile.write(allResources[task] + "\n")
 	
-
 

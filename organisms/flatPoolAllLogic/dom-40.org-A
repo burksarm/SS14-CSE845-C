@@ -1,0 +1,258 @@
+# Wed Feb 19 09:57:04 2014
+# Filename........: archive/229-aeuij.org
+# Update Output...: 34209
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 166723584.000000
+# Gestation Time..: 651
+# Fitness.........: 256103.815668
+# Errors..........: 6
+# Genome Size.....: 229
+# Copied Size.....: 229
+# Executed Size...: 159
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
+
+
+if-less
+shift-r
+if-label
+IO
+set-flow
+h-search
+h-alloc
+swap
+h-alloc
+dec
+swap-stk
+nop-C
+if-n-equ
+nop-A
+set-flow
+nop-A
+shift-r
+inc
+h-alloc
+h-alloc
+add
+h-divide
+h-divide
+swap
+shift-l
+nop-B
+nand
+shift-l
+mov-head
+nop-C
+swap-stk
+nop-C
+dec
+nop-C
+IO
+nand
+nop-C
+mov-head
+nop-C
+if-n-equ
+dec
+if-less
+jmp-head
+h-divide
+IO
+swap-stk
+nand
+push
+set-flow
+add
+inc
+swap
+sub
+h-alloc
+nop-B
+push
+swap
+IO
+if-n-equ
+IO
+nop-C
+get-head
+nand
+nop-C
+swap-stk
+if-n-equ
+sub
+shift-l
+h-alloc
+shift-r
+nop-A
+nand
+push
+nand
+shift-r
+get-head
+dec
+IO
+nand
+nop-A
+push
+nop-A
+push
+swap-stk
+nop-C
+h-search
+h-copy
+h-copy
+dec
+nop-C
+shift-l
+h-search
+IO
+nand
+push
+IO
+if-label
+swap-stk
+IO
+pop
+swap
+nand
+IO
+h-copy
+h-copy
+if-label
+nop-A
+if-label
+mov-head
+h-copy
+dec
+h-search
+nop-A
+if-n-equ
+if-less
+h-search
+jmp-head
+inc
+h-alloc
+if-less
+nop-C
+get-head
+shift-l
+inc
+shift-l
+set-flow
+nop-A
+if-less
+IO
+sub
+swap-stk
+IO
+swap-stk
+pop
+if-less
+sub
+nop-B
+push
+shift-l
+sub
+h-copy
+shift-r
+shift-r
+pop
+h-copy
+add
+shift-r
+pop
+shift-l
+nop-A
+if-n-equ
+nop-C
+h-search
+h-divide
+h-copy
+h-copy
+shift-r
+nop-A
+h-copy
+h-copy
+add
+h-copy
+mov-head
+set-flow
+h-copy
+set-flow
+if-n-equ
+if-less
+swap-stk
+push
+swap
+nop-C
+shift-l
+mov-head
+if-n-equ
+get-head
+push
+push
+h-search
+mov-head
+inc
+shift-r
+IO
+jmp-head
+h-divide
+nop-C
+inc
+inc
+h-search
+push
+inc
+if-less
+h-search
+if-label
+get-head
+set-flow
+dec
+if-n-equ
+nop-C
+pop
+h-divide
+shift-r
+dec
+swap
+dec
+dec
+if-n-equ
+dec
+mov-head
+h-divide
+shift-l
+nop-C
+nop-B
+shift-r
+dec
+get-head
+push
+swap
+set-flow
+add
+nop-C
+nop-B
+sub
+if-n-equ
+mov-head
+dec
+if-n-equ
+swap
+get-head

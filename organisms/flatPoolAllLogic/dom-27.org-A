@@ -1,0 +1,126 @@
+# Wed Feb 19 07:47:42 2014
+# Filename........: archive/097-acehf.org
+# Update Output...: 6131
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 49807360.000000
+# Gestation Time..: 234
+# Fitness.........: 212851.965812
+# Errors..........: 4
+# Genome Size.....: 97
+# Copied Size.....: 97
+# Executed Size...: 95
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+nop-A
+set-flow
+nop-A
+mov-head
+nop-C
+sub
+set-flow
+pop
+set-flow
+inc
+dec
+nop-C
+IO
+nand
+swap
+if-label
+nand
+nop-A
+swap-stk
+h-divide
+add
+if-less
+nop-B
+sub
+IO
+nand
+swap
+nand
+push
+IO
+IO
+nop-C
+nand
+swap
+inc
+add
+push
+if-n-equ
+h-alloc
+pop
+nop-A
+nop-C
+IO
+if-label
+shift-r
+shift-l
+inc
+shift-l
+shift-l
+h-divide
+set-flow
+h-copy
+IO
+h-alloc
+h-divide
+nop-C
+h-alloc
+nand
+swap
+nop-C
+h-copy
+h-divide
+sub
+nand
+nop-C
+IO
+pop
+nand
+IO
+nand
+IO
+nop-B
+IO
+IO
+IO
+nop-A
+nop-C
+nop-C
+push
+push
+nop-C
+nand
+push
+h-alloc
+swap-stk
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B

@@ -27,7 +27,7 @@ def runComps(outputDir):
 				baseOrg = m.group(1)
 			
 				#Get the file names
-				orgFiles = ("../organisms/flatPool2/%s.org-A" %baseOrg, "../organisms/flatPool2/%s.org-B" %baseOrg)
+				orgFiles = ("../organisms/flatPoolAllLogic/%s.org-A" %baseOrg, "../organisms/flatPoolAllLogic/%s.org-B" %baseOrg)
 			
 				#Now do the experiments for each mutation rate
 				targetMutRate = 0.5
@@ -52,5 +52,6 @@ if __name__ == "__main__":
 	if len(sys.argv) != 2:
 		print "usage: python competitions.py <OUTPUT_DIRECTORY>"
 	else:
-		runComps(sys.argv[1])			
+		runComps(sys.argv[1])
+		subprocess.call(["python", "../scripts/renameCompPopulations.py", sys.argv[1]])		
 			

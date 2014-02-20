@@ -1,0 +1,209 @@
+# Wed Feb 19 08:21:41 2014
+# Filename........: archive/180-afafj.org
+# Update Output...: 37859
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3288334336.000000
+# Gestation Time..: 1032
+# Fitness.........: 3186370.480620
+# Errors..........: 33
+# Genome Size.....: 180
+# Copied Size.....: 180
+# Executed Size...: 98
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+pop
+set-flow
+swap-stk
+pop
+dec
+h-alloc
+shift-r
+h-divide
+set-flow
+h-divide
+set-flow
+nop-A
+dec
+IO
+nop-A
+shift-r
+if-label
+mov-head
+nop-C
+h-alloc
+if-less
+set-flow
+sub
+pop
+get-head
+if-n-equ
+swap-stk
+nop-A
+get-head
+push
+shift-l
+nand
+h-search
+nop-A
+dec
+sub
+pop
+h-search
+h-alloc
+nop-B
+nop-B
+nop-A
+sub
+push
+nand
+nand
+h-alloc
+push
+set-flow
+inc
+swap-stk
+shift-l
+nop-C
+IO
+push
+nop-C
+h-search
+if-label
+h-search
+IO
+h-copy
+nand
+swap
+h-copy
+if-label
+IO
+nand
+nop-C
+pop
+nop-B
+nand
+if-n-equ
+push
+nop-C
+push
+push
+swap
+IO
+pop
+nand
+h-copy
+IO
+swap
+nop-A
+IO
+swap-stk
+h-alloc
+add
+h-copy
+dec
+shift-r
+nop-B
+h-copy
+h-copy
+IO
+nop-A
+h-divide
+mov-head
+push
+push
+shift-l
+nop-B
+inc
+nop-C
+IO
+add
+dec
+h-alloc
+set-flow
+nop-A
+IO
+h-search
+add
+h-search
+swap
+jmp-head
+swap-stk
+set-flow
+nop-B
+if-label
+IO
+nop-C
+dec
+h-alloc
+h-alloc
+nop-B
+h-alloc
+if-n-equ
+nop-C
+dec
+add
+nop-C
+h-alloc
+h-copy
+nand
+sub
+h-copy
+get-head
+shift-l
+if-label
+swap-stk
+sub
+if-label
+get-head
+h-copy
+swap-stk
+mov-head
+get-head
+h-search
+push
+pop
+nand
+dec
+h-search
+jmp-head
+swap-stk
+push
+nop-B
+nop-A
+h-alloc
+pop
+if-less
+h-divide
+nop-A
+jmp-head
+nop-C
+swap
+mov-head
+if-n-equ
+nop-C
+add
+h-divide
+nop-B
+pop
+swap-stk
+add
+swap
+shift-l
+if-label
+IO

@@ -1,0 +1,114 @@
+# Sat Feb 15 12:05:14 2014
+# Filename........: archive/085-aanua.org
+# Update Output...: 5378
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 10354688.000000
+# Gestation Time..: 632
+# Fitness.........: 16384.000000
+# Errors..........: 1
+# Genome Size.....: 85
+# Copied Size.....: 85
+# Executed Size...: 79
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 0 (0.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 0 (0.000000)
+
+
+add
+swap
+if-n-equ
+nop-C
+nop-A
+swap-stk
+IO
+sub
+nop-A
+if-n-equ
+nop-A
+inc
+nop-B
+pop
+jmp-head
+shift-r
+nop-C
+dec
+shift-r
+sub
+nop-B
+push
+h-search
+h-alloc
+if-n-equ
+h-alloc
+IO
+shift-l
+add
+h-search
+set-flow
+nop-A
+jmp-head
+dec
+nand
+inc
+inc
+nop-A
+add
+sub
+nop-B
+pop
+dec
+IO
+push
+IO
+nop-C
+nand
+push
+mov-head
+nop-C
+nand
+nop-A
+swap
+pop
+h-copy
+if-label
+nand
+IO
+dec
+h-divide
+pop
+nand
+swap
+nop-C
+nand
+IO
+swap-stk
+swap
+sub
+IO
+nand
+shift-r
+h-alloc
+h-search
+h-copy
+if-label
+IO
+nand
+h-divide
+swap
+mov-head
+get-head
+swap-stk
+add

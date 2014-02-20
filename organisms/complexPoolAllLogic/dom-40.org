@@ -1,0 +1,326 @@
+# Wed Feb 19 05:02:27 2014
+# Filename........: archive/229-aaaat.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 832508645.842422
+# Gestation Time..: 1778
+# Fitness.........: 468227.584838
+# Errors..........: 3
+# Genome Size.....: 229
+# Copied Size.....: 229
+# Executed Size...: 114
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+# logic_3AA 0 (0.000000)
+# logic_3AB 0 (0.000000)
+# logic_3AC 0 (0.000000)
+# logic_3AD 0 (0.000000)
+# logic_3AE 0 (0.000000)
+# logic_3AF 0 (0.000000)
+# logic_3AG 1 (1.000000)
+# logic_3AH 0 (0.000000)
+# logic_3AI 0 (0.000000)
+# logic_3AJ 0 (0.000000)
+# logic_3AK 0 (0.000000)
+# logic_3AL 0 (0.000000)
+# logic_3AM 0 (0.000000)
+# logic_3AN 0 (0.000000)
+# logic_3AO 0 (0.000000)
+# logic_3AP 0 (0.000000)
+# logic_3AQ 1 (1.000000)
+# logic_3AR 0 (0.000000)
+# logic_3AS 0 (0.000000)
+# logic_3AT 1 (1.000000)
+# logic_3AU 0 (0.000000)
+# logic_3AV 0 (0.000000)
+# logic_3AW 0 (0.000000)
+# logic_3AX 1 (1.000000)
+# logic_3AY 0 (0.000000)
+# logic_3AZ 0 (0.000000)
+# logic_3BA 1 (1.000000)
+# logic_3BB 0 (0.000000)
+# logic_3BC 0 (0.000000)
+# logic_3BD 0 (0.000000)
+# logic_3BE 1 (1.000000)
+# logic_3BF 0 (0.000000)
+# logic_3BG 1 (1.000000)
+# logic_3BH 0 (0.000000)
+# logic_3BI 0 (0.000000)
+# logic_3BJ 0 (0.000000)
+# logic_3BK 0 (0.000000)
+# logic_3BL 0 (0.000000)
+# logic_3BM 0 (0.000000)
+# logic_3BN 1 (1.000000)
+# logic_3BO 1 (1.000000)
+# logic_3BP 0 (0.000000)
+# logic_3BQ 0 (0.000000)
+# logic_3BR 0 (0.000000)
+# logic_3BS 1 (1.000000)
+# logic_3BT 0 (0.000000)
+# logic_3BU 0 (0.000000)
+# logic_3BV 1 (1.000000)
+# logic_3BW 0 (0.000000)
+# logic_3BX 0 (0.000000)
+# logic_3BY 1 (1.000000)
+# logic_3BZ 1 (1.000000)
+# logic_3CA 0 (0.000000)
+# logic_3CB 1 (1.000000)
+# logic_3CC 0 (0.000000)
+# logic_3CD 0 (0.000000)
+# logic_3CE 0 (0.000000)
+# logic_3CF 1 (1.000000)
+# logic_3CG 0 (0.000000)
+# logic_3CH 1 (1.000000)
+# logic_3CI 1 (1.000000)
+# logic_3CJ 1 (1.000000)
+# logic_3CK 0 (0.000000)
+# logic_3CL 0 (0.000000)
+# logic_3CM 0 (0.000000)
+# logic_3CN 1 (1.000000)
+# logic_3CO 0 (0.000000)
+# logic_3CP 1 (1.000000)
+
+
+push
+nop-B
+h-divide
+push
+sub
+h-search
+h-alloc
+IO
+shift-r
+dec
+nand
+nop-C
+if-n-equ
+nand
+set-flow
+nop-A
+if-less
+inc
+h-alloc
+h-alloc
+add
+h-divide
+pop
+swap
+shift-l
+nop-B
+nand
+shift-l
+h-divide
+nop-C
+swap-stk
+swap-stk
+dec
+nop-C
+IO
+nand
+nop-C
+mov-head
+nop-C
+if-n-equ
+nop-C
+if-less
+jmp-head
+shift-r
+IO
+swap-stk
+nand
+push
+h-divide
+add
+inc
+swap
+sub
+swap-stk
+push
+IO
+nand
+IO
+if-n-equ
+IO
+nop-C
+push
+nand
+nop-C
+swap-stk
+if-n-equ
+shift-l
+IO
+nand
+add
+nop-A
+nand
+push
+nop-B
+dec
+nop-B
+swap-stk
+IO
+nand
+nop-A
+h-alloc
+if-n-equ
+push
+IO
+pop
+swap
+set-flow
+h-copy
+inc
+nop-C
+nand
+h-search
+IO
+nand
+push
+IO
+if-label
+swap-stk
+IO
+pop
+swap
+nand
+IO
+h-copy
+h-copy
+if-label
+nop-A
+if-label
+mov-head
+sub
+dec
+h-search
+get-head
+h-divide
+h-divide
+h-search
+add
+inc
+if-n-equ
+if-less
+nop-C
+shift-l
+shift-l
+push
+shift-l
+set-flow
+nop-A
+if-less
+h-search
+jmp-head
+shift-r
+IO
+swap
+pop
+dec
+nop-C
+nop-B
+h-divide
+shift-l
+jmp-head
+if-less
+swap
+shift-r
+IO
+nop-C
+push
+pop
+nop-C
+mov-head
+nop-A
+if-n-equ
+nop-C
+h-search
+h-divide
+if-label
+h-divide
+inc
+get-head
+push
+h-copy
+add
+shift-l
+swap
+set-flow
+set-flow
+swap-stk
+if-less
+if-less
+IO
+h-alloc
+swap
+nop-C
+swap
+nand
+nop-C
+if-less
+inc
+shift-l
+get-head
+nand
+dec
+nop-A
+push
+if-less
+h-divide
+if-less
+mov-head
+h-search
+sub
+h-divide
+shift-l
+shift-l
+h-search
+dec
+inc
+set-flow
+dec
+if-n-equ
+inc
+pop
+if-n-equ
+nand
+nop-A
+if-less
+shift-l
+dec
+if-less
+pop
+mov-head
+h-divide
+inc
+nop-C
+nop-B
+if-n-equ
+shift-l
+h-divide
+h-divide
+pop
+shift-l
+IO
+nop-C
+IO
+h-search
+nop-A
+mov-head
+nop-C
+if-n-equ
+swap
+nop-B

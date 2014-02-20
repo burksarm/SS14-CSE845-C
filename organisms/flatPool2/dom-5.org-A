@@ -1,0 +1,111 @@
+# Sat Feb 15 12:02:28 2014
+# Filename........: archive/082-ababw.org
+# Update Output...: 7903
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 159383552.000000
+# Gestation Time..: 278
+# Fitness.........: 573322.129496
+# Errors..........: 7
+# Genome Size.....: 82
+# Copied Size.....: 82
+# Executed Size...: 76
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+jmp-head
+nand
+IO
+pop
+if-label
+nand
+swap
+set-flow
+h-alloc
+set-flow
+nop-A
+dec
+pop
+add
+push
+swap-stk
+nop-C
+IO
+if-less
+shift-r
+nop-A
+push
+nand
+push
+pop
+nop-C
+if-label
+if-n-equ
+mov-head
+if-less
+sub
+IO
+swap
+if-n-equ
+nop-C
+h-divide
+h-alloc
+h-alloc
+if-less
+mov-head
+nop-C
+swap-stk
+IO
+nop-C
+nop-C
+if-label
+swap
+nop-B
+nand
+nand
+nop-C
+pop
+nand
+IO
+h-divide
+nand
+add
+h-copy
+inc
+h-alloc
+nop-B
+push
+swap
+nand
+h-alloc
+IO
+IO
+nop-B
+nand
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+mov-head
+set-flow
+inc
+nop-A
+nop-B

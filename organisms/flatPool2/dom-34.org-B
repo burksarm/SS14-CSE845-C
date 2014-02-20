@@ -1,0 +1,120 @@
+# Sat Feb 15 12:01:35 2014
+# Filename........: archive/091-aafha.org
+# Update Output...: 3967
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2516582400.000000
+# Gestation Time..: 1726
+# Fitness.........: 1458043.105446
+# Errors..........: 47
+# Genome Size.....: 91
+# Copied Size.....: 91
+# Executed Size...: 75
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+shift-l
+IO
+h-divide
+h-alloc
+jmp-head
+if-label
+h-search
+nop-C
+nop-A
+push
+swap-stk
+mov-head
+nop-C
+add
+jmp-head
+pop
+add
+inc
+nop-C
+h-divide
+h-divide
+nop-A
+IO
+nand
+nand
+h-copy
+dec
+inc
+nop-C
+sub
+h-search
+h-alloc
+nop-A
+IO
+h-divide
+IO
+swap
+if-label
+swap
+if-label
+nand
+push
+sub
+nop-A
+add
+dec
+shift-r
+h-copy
+add
+IO
+nand
+h-divide
+nand
+if-label
+push
+IO
+nop-C
+pop
+nop-C
+nand
+swap
+swap-stk
+h-copy
+swap
+nop-C
+IO
+nop-A
+sub
+nop-C
+swap-stk
+swap
+nop-B
+IO
+if-less
+pop
+shift-l
+mov-head
+h-divide
+swap-stk
+if-label
+if-label
+h-copy
+dec
+dec
+h-divide
+nop-B
+nop-C
+dec
+nop-A
+nop-B

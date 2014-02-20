@@ -1,0 +1,4 @@
+avidaFiles/events_dom*_comp.cfg
+avidaFiles/environment_dom*_comp.cfg
+avidaFiles/analyze_dom*-comp*.cfg
+avidaFiles/*.qsub

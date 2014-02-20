@@ -1,0 +1,133 @@
+# Sat Feb 15 12:06:43 2014
+# Filename........: archive/104-adexb.org
+# Update Output...: 7151
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5701632.000000
+# Gestation Time..: 257
+# Fitness.........: 22185.338521
+# Errors..........: 2
+# Genome Size.....: 104
+# Copied Size.....: 104
+# Executed Size...: 87
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+nop-B
+nop-B
+h-search
+push
+push
+if-label
+set-flow
+nop-A
+if-label
+if-less
+set-flow
+shift-l
+if-label
+push
+dec
+IO
+mov-head
+nop-C
+get-head
+h-copy
+if-less
+set-flow
+get-head
+if-less
+nop-B
+get-head
+add
+nop-C
+dec
+IO
+push
+swap
+IO
+nand
+nop-A
+dec
+swap-stk
+nand
+h-search
+if-n-equ
+if-label
+swap
+nop-A
+IO
+h-alloc
+swap
+h-copy
+swap-stk
+pop
+shift-l
+shift-r
+nand
+nand
+add
+inc
+IO
+nand
+nand
+nop-C
+inc
+add
+push
+swap-stk
+IO
+nop-C
+nand
+nop-C
+nand
+nop-A
+if-label
+set-flow
+inc
+if-label
+inc
+add
+IO
+nand
+IO
+dec
+if-label
+h-search
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+h-copy
+h-copy
+mov-head
+nand
+h-alloc
+dec
+nop-A
+get-head
+h-alloc
+nop-B
+swap-stk
+IO
+inc
+h-divide
+h-alloc
+dec
+nop-A

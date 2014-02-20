@@ -1,0 +1,110 @@
+# Sat Feb 15 11:57:48 2014
+# Filename........: archive/081-aakrb.org
+# Update Output...: 3514
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 315392.000000
+# Gestation Time..: 442
+# Fitness.........: 713.556561
+# Errors..........: 2
+# Genome Size.....: 81
+# Copied Size.....: 81
+# Executed Size...: 77
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+get-head
+if-label
+set-flow
+nop-A
+swap-stk
+mov-head
+nop-C
+sub
+h-copy
+if-label
+swap
+pop
+pop
+set-flow
+swap
+h-search
+h-search
+h-alloc
+add
+h-copy
+sub
+inc
+nand
+IO
+nop-C
+if-label
+if-n-equ
+nand
+IO
+nop-C
+nand
+nop-C
+push
+h-copy
+nand
+IO
+swap
+nop-B
+h-copy
+get-head
+IO
+nop-C
+sub
+nop-C
+IO
+nop-C
+if-n-equ
+nop-C
+IO
+swap-stk
+nand
+add
+push
+nop-B
+nop-B
+swap
+inc
+shift-r
+inc
+nop-C
+IO
+swap
+IO
+pop
+add
+swap
+h-alloc
+dec
+h-copy
+swap
+h-search
+dec
+h-divide
+h-copy
+IO
+mov-head
+jmp-head
+h-divide
+dec
+swap

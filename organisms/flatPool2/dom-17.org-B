@@ -1,0 +1,136 @@
+# Sat Feb 15 12:02:49 2014
+# Filename........: archive/107-aakqr.org
+# Update Output...: 4752
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 421888.000000
+# Gestation Time..: 703
+# Fitness.........: 600.125178
+# Errors..........: 4
+# Genome Size.....: 107
+# Copied Size.....: 107
+# Executed Size...: 103
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 0 (0.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 0 (0.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+sub
+h-search
+nand
+IO
+swap
+h-alloc
+if-label
+h-alloc
+h-alloc
+IO
+nand
+nand
+swap
+inc
+set-flow
+add
+swap
+set-flow
+IO
+nop-C
+set-flow
+nop-A
+IO
+swap
+push
+swap-stk
+mov-head
+nop-C
+nand
+if-less
+shift-r
+push
+add
+inc
+push
+shift-r
+nop-B
+nand
+if-less
+push
+if-less
+if-n-equ
+push
+get-head
+h-alloc
+nop-A
+if-label
+IO
+if-less
+push
+nand
+shift-l
+nand
+shift-r
+h-divide
+h-search
+dec
+nand
+h-divide
+shift-r
+swap-stk
+nand
+shift-r
+nop-B
+IO
+nop-C
+sub
+if-label
+nop-B
+add
+h-alloc
+h-copy
+push
+IO
+inc
+if-label
+h-copy
+h-search
+h-copy
+shift-r
+shift-l
+pop
+h-copy
+swap
+IO
+nand
+nand
+nop-C
+IO
+nop-C
+sub
+if-less
+IO
+push
+nop-A
+sub
+pop
+h-search
+IO
+h-copy
+swap-stk
+pop
+nop-B
+h-divide
+mov-head
+shift-l
+nop-C

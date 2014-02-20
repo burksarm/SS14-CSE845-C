@@ -1,0 +1,118 @@
+# Sat Feb 15 12:10:02 2014
+# Filename........: archive/089-aaire.org
+# Update Output...: 9614
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2919235584.000000
+# Gestation Time..: 1015
+# Fitness.........: 2876094.171429
+# Errors..........: 67
+# Genome Size.....: 89
+# Copied Size.....: 89
+# Executed Size...: 87
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+h-search
+IO
+h-copy
+h-copy
+if-label
+nand
+nop-C
+sub
+nop-A
+push
+shift-l
+swap-stk
+nop-B
+h-copy
+swap-stk
+push
+nop-C
+IO
+nop-C
+nop-B
+h-alloc
+IO
+h-alloc
+nand
+pop
+nop-C
+h-divide
+nop-A
+nand
+nop-A
+IO
+nop-A
+swap-stk
+if-less
+add
+swap-stk
+inc
+push
+IO
+if-label
+nop-B
+nand
+swap-stk
+IO
+nop-C
+h-alloc
+nop-A
+nand
+nop-C
+nand
+nop-C
+push
+nop-C
+inc
+shift-l
+h-copy
+h-divide
+nop-A
+IO
+pop
+nand
+IO
+sub
+IO
+h-divide
+nop-C
+h-alloc
+if-label
+add
+nand
+if-less
+mov-head
+h-divide
+h-copy
+h-copy
+h-copy
+shift-l
+nop-B
+if-label
+sub
+mov-head
+nop-A
+nop-B

@@ -1,0 +1,598 @@
+# Wed Feb 19 04:08:14 2014
+# Filename........: archive/501-aaaai.org
+# Update Output...: 50000
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 62977756.572391
+# Gestation Time..: 2201
+# Fitness.........: 28613.246966
+# Errors..........: 9
+# Genome Size.....: 501
+# Copied Size.....: 501
+# Executed Size...: 317
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 0 (0.000000)
+# andn 1 (1.000000)
+# nor 0 (0.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+# logic_3AA 0 (0.000000)
+# logic_3AB 0 (0.000000)
+# logic_3AC 0 (0.000000)
+# logic_3AD 0 (0.000000)
+# logic_3AE 0 (0.000000)
+# logic_3AF 0 (0.000000)
+# logic_3AG 1 (1.000000)
+# logic_3AH 1 (1.000000)
+# logic_3AI 0 (0.000000)
+# logic_3AJ 0 (0.000000)
+# logic_3AK 0 (0.000000)
+# logic_3AL 0 (0.000000)
+# logic_3AM 0 (0.000000)
+# logic_3AN 0 (0.000000)
+# logic_3AO 1 (1.000000)
+# logic_3AP 0 (0.000000)
+# logic_3AQ 1 (1.000000)
+# logic_3AR 1 (1.000000)
+# logic_3AS 0 (0.000000)
+# logic_3AT 0 (0.000000)
+# logic_3AU 0 (0.000000)
+# logic_3AV 0 (0.000000)
+# logic_3AW 0 (0.000000)
+# logic_3AX 1 (1.000000)
+# logic_3AY 0 (0.000000)
+# logic_3AZ 0 (0.000000)
+# logic_3BA 1 (1.000000)
+# logic_3BB 0 (0.000000)
+# logic_3BC 0 (0.000000)
+# logic_3BD 0 (0.000000)
+# logic_3BE 0 (0.000000)
+# logic_3BF 0 (0.000000)
+# logic_3BG 0 (0.000000)
+# logic_3BH 0 (0.000000)
+# logic_3BI 0 (0.000000)
+# logic_3BJ 0 (0.000000)
+# logic_3BK 0 (0.000000)
+# logic_3BL 0 (0.000000)
+# logic_3BM 0 (0.000000)
+# logic_3BN 0 (0.000000)
+# logic_3BO 1 (1.000000)
+# logic_3BP 0 (0.000000)
+# logic_3BQ 0 (0.000000)
+# logic_3BR 0 (0.000000)
+# logic_3BS 1 (1.000000)
+# logic_3BT 0 (0.000000)
+# logic_3BU 0 (0.000000)
+# logic_3BV 0 (0.000000)
+# logic_3BW 0 (0.000000)
+# logic_3BX 0 (0.000000)
+# logic_3BY 1 (1.000000)
+# logic_3BZ 1 (1.000000)
+# logic_3CA 0 (0.000000)
+# logic_3CB 1 (1.000000)
+# logic_3CC 1 (1.000000)
+# logic_3CD 0 (0.000000)
+# logic_3CE 0 (0.000000)
+# logic_3CF 0 (0.000000)
+# logic_3CG 0 (0.000000)
+# logic_3CH 0 (0.000000)
+# logic_3CI 1 (1.000000)
+# logic_3CJ 1 (1.000000)
+# logic_3CK 0 (0.000000)
+# logic_3CL 0 (0.000000)
+# logic_3CM 0 (0.000000)
+# logic_3CN 0 (0.000000)
+# logic_3CO 0 (0.000000)
+# logic_3CP 1 (1.000000)
+
+
+nop-A
+nop-A
+nop-A
+nop-A
+nop-A
+nop-A
+jmp-head
+nop-A
+nop-A
+add
+shift-l
+push
+push
+add
+h-copy
+nop-A
+if-less
+h-alloc
+shift-l
+if-label
+nop-A
+nop-A
+nop-C
+mov-head
+h-divide
+shift-r
+add
+h-search
+swap
+nop-A
+shift-l
+nop-A
+nop-B
+jmp-head
+if-label
+shift-r
+h-copy
+swap
+set-flow
+get-head
+inc
+pop
+if-less
+nop-A
+add
+IO
+IO
+swap-stk
+jmp-head
+h-search
+swap
+if-n-equ
+inc
+if-n-equ
+h-divide
+jmp-head
+shift-r
+jmp-head
+shift-r
+get-head
+if-label
+pop
+sub
+swap-stk
+inc
+IO
+if-less
+add
+h-divide
+h-search
+jmp-head
+swap
+if-label
+nop-B
+push
+sub
+nop-B
+shift-r
+h-alloc
+jmp-head
+swap-stk
+if-less
+nop-C
+jmp-head
+nop-A
+shift-l
+swap
+nand
+add
+get-head
+h-search
+if-less
+add
+push
+swap
+shift-l
+jmp-head
+if-less
+swap-stk
+inc
+dec
+inc
+nop-A
+add
+dec
+set-flow
+shift-l
+pop
+set-flow
+h-search
+if-n-equ
+nop-A
+get-head
+jmp-head
+h-alloc
+if-less
+if-less
+dec
+jmp-head
+pop
+h-divide
+if-label
+IO
+nop-C
+swap-stk
+h-search
+h-alloc
+h-alloc
+jmp-head
+nop-A
+h-divide
+set-flow
+if-label
+pop
+inc
+add
+h-alloc
+set-flow
+h-divide
+add
+inc
+nop-B
+nand
+push
+swap
+inc
+nop-B
+swap
+if-n-equ
+nop-A
+shift-l
+pop
+swap-stk
+swap
+jmp-head
+push
+inc
+push
+nop-A
+nop-B
+nop-C
+set-flow
+swap-stk
+nop-A
+get-head
+nop-A
+sub
+inc
+h-divide
+IO
+dec
+IO
+set-flow
+inc
+swap
+nop-B
+inc
+nand
+get-head
+shift-l
+if-label
+nop-A
+set-flow
+add
+inc
+set-flow
+get-head
+nop-A
+nop-B
+h-alloc
+pop
+sub
+swap
+nop-A
+nand
+add
+if-less
+nop-B
+if-less
+swap
+h-divide
+sub
+push
+set-flow
+h-search
+get-head
+shift-r
+add
+swap
+swap-stk
+get-head
+shift-r
+h-copy
+h-copy
+mov-head
+nop-A
+nop-C
+pop
+nop-B
+nop-B
+inc
+if-less
+set-flow
+sub
+jmp-head
+nop-A
+nop-A
+dec
+if-less
+IO
+dec
+shift-r
+h-search
+h-search
+nand
+inc
+nop-C
+nop-C
+if-n-equ
+nop-A
+nand
+h-search
+IO
+nop-C
+if-less
+IO
+nop-C
+inc
+nop-B
+pop
+nop-C
+nop-A
+pop
+inc
+sub
+if-less
+if-n-equ
+if-less
+nand
+dec
+add
+dec
+if-less
+if-less
+if-label
+pop
+h-copy
+nop-A
+if-less
+if-less
+push
+set-flow
+nop-B
+sub
+swap-stk
+get-head
+h-search
+sub
+h-copy
+h-copy
+shift-l
+push
+nop-C
+nop-B
+if-n-equ
+dec
+nop-C
+dec
+h-search
+get-head
+pop
+shift-l
+nop-B
+inc
+swap
+IO
+sub
+h-search
+nand
+nop-A
+add
+swap
+IO
+push
+nop-B
+if-less
+add
+nop-B
+swap
+add
+nop-A
+swap-stk
+h-search
+nop-B
+get-head
+shift-r
+nand
+if-less
+nand
+get-head
+add
+nop-B
+get-head
+h-divide
+sub
+inc
+add
+inc
+add
+get-head
+push
+if-label
+h-alloc
+pop
+sub
+set-flow
+nop-B
+IO
+shift-l
+sub
+nop-B
+nop-A
+h-search
+add
+nop-A
+shift-l
+nand
+if-n-equ
+jmp-head
+shift-r
+h-divide
+nop-B
+IO
+IO
+nop-C
+set-flow
+nand
+if-label
+IO
+nand
+nop-C
+h-divide
+inc
+if-less
+h-divide
+dec
+add
+IO
+nand
+push
+inc
+nop-C
+h-alloc
+add
+nop-C
+nop-B
+nand
+push
+h-copy
+IO
+IO
+nop-C
+nop-C
+pop
+nop-C
+nand
+swap
+nop-C
+h-divide
+if-label
+push
+IO
+h-alloc
+IO
+pop
+set-flow
+nop-C
+nop-C
+jmp-head
+nop-C
+push
+IO
+push
+shift-l
+IO
+swap
+IO
+if-label
+swap
+set-flow
+pop
+nop-A
+sub
+inc
+set-flow
+pop
+nop-B
+swap
+nand
+nop-A
+add
+set-flow
+inc
+push
+nop-C
+IO
+sub
+pop
+nand
+push
+IO
+shift-l
+pop
+h-search
+h-copy
+if-label
+nop-C
+nop-A
+if-label
+mov-head
+if-label
+dec
+nop-B
+inc
+IO
+nop-A
+if-label
+IO
+h-divide
+jmp-head
+shift-l
+if-label
+shift-l
+h-copy
+push
+shift-l
+nop-C
+pop
+IO
+nop-A
+nop-C
+h-copy
+set-flow
+push
+if-label
+dec
+jmp-head
+add
+push
+if-n-equ
+shift-r
+sub
+shift-r
+push
+nand
+nop-B
+h-divide
+h-search
+nop-A
+push
+swap
+nop-C
+shift-r
+swap
+jmp-head
+if-less
+nop-A
+IO
+IO
+nand
+nop-B
+h-alloc
+swap
+IO
+add
+shift-r
+get-head
+if-less
+if-n-equ
+nop-A
+nop-B

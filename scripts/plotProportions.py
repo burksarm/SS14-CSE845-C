@@ -72,10 +72,9 @@ def plotAllCompetitionLines(org, resultsDir, outputDir):
 		os.makedirs(outputDir)
 		
 	for mutRate in mutRates:
-		#for i in range(1, 11):
-		i = 1
-		plotCompetitions(org, "%s/comp%s" %(resultsDir, i), mutRate, doLabel=True if i == 1 else False)
-		
+		for i in range(1, 11):
+			plotCompetitions(org, "%s/comp%s" %(resultsDir, i), mutRate, doLabel=True if i == 1 else False)
+			
 		#Save the plot to a png.
 		plt.xlabel("Generation")
 		plt.ylabel("Proportion")
@@ -85,7 +84,7 @@ def plotAllCompetitionLines(org, resultsDir, outputDir):
 		
 		#Clear the plot for the next mutation rate
 		plt.clf()
-	
+		
 
 #----------- MAIN ------------------------------		
 if __name__ == "__main__":

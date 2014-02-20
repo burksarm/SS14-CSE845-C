@@ -1,0 +1,178 @@
+# Wed Feb 19 08:31:16 2014
+# Filename........: archive/149-aesro.org
+# Update Output...: 41946
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 4764729344.000000
+# Gestation Time..: 1193
+# Fitness.........: 3993905.569153
+# Errors..........: 1
+# Genome Size.....: 149
+# Copied Size.....: 149
+# Executed Size...: 142
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+inc
+swap
+inc
+sub
+swap
+set-flow
+nop-A
+shift-l
+if-less
+h-alloc
+swap-stk
+if-label
+dec
+nop-C
+add
+if-label
+h-divide
+inc
+if-n-equ
+h-search
+jmp-head
+shift-l
+nop-B
+swap-stk
+dec
+add
+dec
+set-flow
+nop-A
+add
+shift-r
+nop-A
+shift-r
+h-divide
+dec
+push
+sub
+shift-r
+nop-C
+nop-B
+if-less
+swap
+h-divide
+add
+nand
+push
+nop-C
+IO
+if-label
+h-divide
+nop-C
+nop-A
+swap
+swap
+shift-r
+inc
+nand
+add
+push
+inc
+if-label
+nop-A
+nop-A
+h-divide
+mov-head
+nop-C
+shift-l
+h-search
+IO
+inc
+IO
+shift-l
+nop-A
+if-n-equ
+set-flow
+push
+sub
+swap
+nand
+shift-r
+if-n-equ
+set-flow
+nop-C
+add
+nop-B
+if-n-equ
+h-search
+h-copy
+nop-A
+nop-A
+h-divide
+swap
+h-search
+swap
+pop
+nop-C
+h-divide
+if-label
+get-head
+IO
+shift-l
+swap
+pop
+nop-B
+h-search
+add
+add
+nop-C
+nop-A
+dec
+nop-C
+IO
+h-alloc
+h-search
+add
+push
+shift-l
+swap
+nop-A
+get-head
+nop-A
+nop-A
+h-search
+h-copy
+pop
+nop-C
+if-label
+nand
+push
+nop-B
+swap-stk
+IO
+IO
+nop-A
+if-less
+if-n-equ
+if-label
+IO
+nand
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+mov-head
+if-label
+nop-A
+nop-B

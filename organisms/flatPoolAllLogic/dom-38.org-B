@@ -1,0 +1,222 @@
+# Wed Feb 19 08:10:59 2014
+# Filename........: archive/193-abjxh.org
+# Update Output...: 33983
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3288334336.000000
+# Gestation Time..: 1203
+# Fitness.........: 2733445.000831
+# Errors..........: 1
+# Genome Size.....: 193
+# Copied Size.....: 193
+# Executed Size...: 98
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+add
+dec
+h-divide
+dec
+shift-l
+if-less
+sub
+h-alloc
+shift-r
+nop-C
+nop-A
+shift-r
+swap-stk
+swap
+nop-A
+swap
+set-flow
+sub
+h-divide
+dec
+nop-B
+mov-head
+nop-C
+nop-B
+h-divide
+shift-r
+h-alloc
+inc
+shift-l
+if-label
+h-search
+if-label
+IO
+swap-stk
+nop-C
+inc
+nop-B
+inc
+IO
+nop-C
+shift-r
+shift-l
+nop-B
+if-n-equ
+inc
+if-n-equ
+sub
+swap
+get-head
+shift-l
+swap
+set-flow
+dec
+swap-stk
+h-copy
+h-copy
+if-less
+nop-B
+set-flow
+swap
+sub
+nop-A
+nop-C
+swap-stk
+h-search
+if-label
+nand
+nop-C
+h-divide
+if-n-equ
+add
+h-copy
+inc
+IO
+swap-stk
+nop-C
+shift-l
+IO
+pop
+h-copy
+nand
+IO
+swap
+nop-A
+nop-B
+nand
+if-label
+IO
+push
+nop-C
+nop-C
+h-copy
+if-label
+h-copy
+h-divide
+h-copy
+mov-head
+nop-A
+if-n-equ
+if-less
+if-n-equ
+add
+get-head
+shift-r
+sub
+nop-B
+inc
+nop-B
+if-less
+get-head
+add
+nop-A
+mov-head
+h-search
+h-divide
+nand
+if-n-equ
+swap
+shift-l
+jmp-head
+push
+nop-C
+sub
+jmp-head
+nop-C
+sub
+nand
+nop-B
+sub
+shift-l
+h-copy
+swap-stk
+nand
+nop-C
+h-search
+if-label
+nop-A
+h-copy
+sub
+nop-A
+dec
+nand
+if-n-equ
+h-copy
+h-divide
+h-search
+h-search
+inc
+swap
+add
+nop-B
+h-search
+shift-r
+if-label
+sub
+set-flow
+if-n-equ
+add
+if-label
+mov-head
+dec
+if-less
+swap-stk
+push
+swap
+nop-C
+shift-r
+nop-A
+swap
+nop-A
+IO
+nop-B
+sub
+add
+shift-l
+if-label
+nop-A
+swap
+pop
+set-flow
+nand
+h-search
+swap-stk
+if-less
+if-less
+shift-r
+add
+nop-C
+h-alloc
+if-less
+set-flow
+if-label
+pop

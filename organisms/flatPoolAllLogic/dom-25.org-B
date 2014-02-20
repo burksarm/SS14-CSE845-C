@@ -1,0 +1,134 @@
+# Wed Feb 19 07:30:00 2014
+# Filename........: archive/105-aahfu.org
+# Update Output...: 3048
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 419430400.000000
+# Gestation Time..: 246
+# Fitness.........: 1705001.626016
+# Errors..........: 1
+# Genome Size.....: 105
+# Copied Size.....: 105
+# Executed Size...: 100
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+set-flow
+swap-stk
+swap
+swap
+nop-A
+h-alloc
+swap-stk
+nop-A
+if-less
+h-alloc
+swap
+inc
+if-label
+nand
+set-flow
+nop-A
+nop-A
+shift-r
+sub
+nop-A
+inc
+jmp-head
+if-n-equ
+pop
+swap-stk
+IO
+nop-B
+shift-l
+nand
+swap-stk
+swap
+nand
+mov-head
+nop-C
+IO
+nop-C
+nand
+push
+h-copy
+h-alloc
+nand
+IO
+swap
+if-n-equ
+h-copy
+pop
+nop-B
+nand
+nop-C
+nand
+push
+h-divide
+swap-stk
+nop-A
+IO
+nand
+nand
+pop
+add
+nand
+push
+IO
+if-label
+nand
+nop-B
+IO
+nand
+IO
+nop-C
+nop-A
+swap
+IO
+swap-stk
+pop
+swap
+nand
+IO
+sub
+swap
+nand
+nop-B
+add
+inc
+IO
+nand
+IO
+h-divide
+swap-stk
+pop
+swap-stk
+sub
+IO
+nand
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+h-copy
+h-copy
+h-divide
+mov-head
+h-search
+shift-l
+nop-B

@@ -1,0 +1,120 @@
+# Wed Feb 19 07:44:31 2014
+# Filename........: archive/091-adcny.org
+# Update Output...: 15346
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2919235584.000000
+# Gestation Time..: 393
+# Fitness.........: 7428080.366412
+# Errors..........: 2
+# Genome Size.....: 91
+# Copied Size.....: 91
+# Executed Size...: 87
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+nop-A
+get-head
+if-n-equ
+h-search
+shift-l
+inc
+jmp-head
+nop-A
+shift-r
+get-head
+h-divide
+h-copy
+push
+swap
+inc
+shift-l
+nop-C
+set-flow
+pop
+push
+h-search
+set-flow
+nop-A
+h-divide
+shift-l
+if-less
+dec
+inc
+set-flow
+nand
+dec
+IO
+set-flow
+h-alloc
+nop-A
+swap
+if-less
+dec
+h-alloc
+nand
+dec
+h-search
+if-less
+nop-B
+if-less
+IO
+pop
+if-less
+nop-B
+nop-B
+nand
+nop-C
+h-copy
+h-copy
+pop
+nop-B
+h-divide
+h-copy
+push
+add
+nand
+swap
+IO
+nand
+push
+nand
+nop-B
+h-copy
+IO
+nand
+swap
+IO
+IO
+if-label
+h-copy
+IO
+swap-stk
+h-copy
+h-copy
+h-copy
+h-copy
+h-divide
+mov-head
+nop-A
+nop-B

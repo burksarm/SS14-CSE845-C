@@ -1,0 +1,111 @@
+# Sat Feb 15 11:55:23 2014
+# Filename........: archive/082-aacrz.org
+# Update Output...: 2546
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 311296.000000
+# Gestation Time..: 549
+# Fitness.........: 567.023679
+# Errors..........: 5
+# Genome Size.....: 82
+# Copied Size.....: 82
+# Executed Size...: 76
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 0 (0.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+jmp-head
+nand
+IO
+pop
+if-label
+dec
+swap
+sub
+h-alloc
+set-flow
+nop-A
+shift-r
+pop
+add
+push
+swap-stk
+nop-C
+IO
+if-less
+shift-r
+nop-A
+push
+nand
+push
+pop
+nop-C
+if-label
+if-n-equ
+mov-head
+if-less
+h-copy
+IO
+swap
+if-n-equ
+nop-C
+push
+h-alloc
+if-n-equ
+push
+mov-head
+nop-C
+swap-stk
+IO
+nop-C
+if-less
+if-label
+swap
+nop-B
+nand
+nand
+nop-C
+pop
+shift-r
+IO
+h-divide
+nand
+add
+h-copy
+inc
+h-alloc
+if-n-equ
+push
+swap
+nand
+if-less
+IO
+IO
+shift-r
+add
+h-search
+dec
+if-less
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+mov-head
+inc
+h-divide
+nop-A
+nop-B

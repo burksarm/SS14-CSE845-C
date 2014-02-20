@@ -1,0 +1,116 @@
+# Sat Feb 15 12:05:58 2014
+# Filename........: archive/087-aavsr.org
+# Update Output...: 9966
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2785017856.000000
+# Gestation Time..: 654
+# Fitness.........: 4258437.088685
+# Errors..........: 2
+# Genome Size.....: 87
+# Copied Size.....: 87
+# Executed Size...: 83
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-search
+h-alloc
+nop-C
+shift-r
+h-alloc
+set-flow
+nop-A
+swap-stk
+mov-head
+nop-C
+get-head
+if-less
+shift-r
+push
+h-alloc
+if-n-equ
+inc
+if-less
+h-search
+get-head
+add
+if-less
+pop
+if-less
+shift-l
+IO
+push
+nop-A
+h-search
+swap-stk
+shift-r
+if-label
+h-search
+jmp-head
+if-label
+set-flow
+sub
+if-label
+if-less
+inc
+IO
+if-n-equ
+get-head
+if-label
+h-divide
+push
+set-flow
+sub
+h-search
+pop
+nand
+nop-C
+if-label
+nand
+swap
+IO
+nop-B
+h-divide
+nand
+push
+nand
+push
+nand
+if-label
+swap
+IO
+pop
+nop-B
+inc
+add
+IO
+nand
+inc
+nop-C
+add
+nop-C
+h-copy
+if-n-equ
+mov-head
+if-label
+h-search
+h-copy
+pop
+sub
+h-divide
+mov-head
+mov-head

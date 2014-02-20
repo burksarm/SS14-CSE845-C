@@ -1,0 +1,120 @@
+# Sat Feb 15 12:10:10 2014
+# Filename........: archive/091-abuxr.org
+# Update Output...: 12247
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2986344448.000000
+# Gestation Time..: 481
+# Fitness.........: 6208616.316008
+# Errors..........: 4
+# Genome Size.....: 91
+# Copied Size.....: 91
+# Executed Size...: 89
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+jmp-head
+nop-A
+set-flow
+inc
+inc
+swap
+h-search
+nop-C
+nop-A
+push
+h-alloc
+mov-head
+nop-C
+nop-C
+push
+push
+if-label
+shift-l
+h-divide
+if-label
+swap
+add
+nop-C
+get-head
+if-n-equ
+add
+if-n-equ
+swap
+nand
+get-head
+h-divide
+h-search
+push
+IO
+nop-A
+IO
+swap
+add
+swap
+if-label
+nand
+push
+if-n-equ
+h-alloc
+swap
+pop
+sub
+h-copy
+sub
+IO
+nand
+nop-A
+nand
+if-label
+push
+IO
+nop-C
+pop
+nop-C
+nand
+swap
+push
+h-copy
+push
+nop-C
+IO
+nop-C
+sub
+nop-C
+swap-stk
+nand
+h-divide
+IO
+nop-C
+pop
+nop-C
+nop-C
+if-less
+h-search
+nop-A
+nop-A
+h-copy
+if-label
+mov-head
+if-less
+h-divide
+sub
+mov-head
+nop-A
+nop-B

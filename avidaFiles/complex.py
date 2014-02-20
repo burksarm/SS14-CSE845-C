@@ -4,20 +4,17 @@ import sys
 from subprocess import call
 
 #Figure out the directory name to save to
-baseDir = "../organisms/complex/"
+if len(sys.argv) != 2:
+	print "Usage: python complex.py <OUTPUT_DIRECTORY>"
+	quit()
 
-#Don't cause an endless loop if we mess with the dirs
-if os.path.isdir(baseDir):
+outDir = sys.argv[1]
 
-	i = 1
-	while os.path.isdir(baseDir + "data-%s" %(i)):
-		i += 1
+#Make sure the entire path exists, or else avida won't actually save
+#even though it will create the inner-most dir if everything else exists
+if not os.path.exists(outDir):
+	os.makedirs(outDir)
 
-	outDir = baseDir + "data-%s" %i
-
-
-	#Run Avida i times, setting the output directory to data-i where i is the current run number
-	call(["avida", "-c", "avida_complexityRobustness.cfg",  "-set", "DATA_DIR", outDir])
-
-
+#Run Avida i times, setting the output directory to data-i where i is the current run number
+call(["avida", "-c", "avida_complexityRobustness.cfg",  "-set", "DATA_DIR", outDir])
 

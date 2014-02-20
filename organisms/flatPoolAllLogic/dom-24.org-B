@@ -1,0 +1,229 @@
+# Wed Feb 19 07:56:47 2014
+# Filename........: archive/200-aatbd.org
+# Update Output...: 35959
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 6341787648.000000
+# Gestation Time..: 1816
+# Fitness.........: 3492173.814978
+# Errors..........: 98
+# Genome Size.....: 200
+# Copied Size.....: 200
+# Executed Size...: 189
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-search
+nand
+swap-stk
+get-head
+h-alloc
+nop-B
+swap-stk
+jmp-head
+IO
+h-alloc
+h-search
+get-head
+IO
+nop-C
+nop-A
+h-alloc
+inc
+nop-C
+push
+swap-stk
+get-head
+if-less
+get-head
+pop
+nop-C
+if-n-equ
+push
+if-less
+push
+mov-head
+nop-B
+nop-A
+if-n-equ
+IO
+nand
+if-n-equ
+nop-C
+nop-A
+shift-l
+add
+IO
+nop-B
+if-less
+pop
+nand
+push
+if-less
+mov-head
+jmp-head
+nop-B
+nop-A
+IO
+add
+set-flow
+add
+sub
+inc
+nop-C
+swap
+shift-l
+pop
+inc
+push
+if-less
+sub
+IO
+shift-l
+set-flow
+swap
+nop-C
+h-alloc
+inc
+inc
+dec
+sub
+h-alloc
+shift-l
+set-flow
+set-flow
+get-head
+h-divide
+if-label
+nop-A
+shift-r
+mov-head
+nop-C
+sub
+nop-B
+h-search
+h-copy
+swap-stk
+h-copy
+if-label
+nop-C
+nop-A
+if-less
+mov-head
+jmp-head
+inc
+h-search
+nand
+swap-stk
+h-divide
+h-alloc
+if-n-equ
+swap-stk
+if-less
+nop-C
+nop-B
+if-n-equ
+nop-C
+IO
+nop-C
+swap
+swap-stk
+push
+nop-C
+push
+swap-stk
+if-label
+inc
+nand
+pop
+nop-C
+h-alloc
+nop-A
+if-less
+if-label
+mov-head
+if-less
+if-n-equ
+nand
+IO
+shift-r
+h-alloc
+if-n-equ
+nop-A
+if-n-equ
+nop-A
+if-n-equ
+pop
+if-less
+swap-stk
+nand
+push
+if-less
+mov-head
+IO
+swap
+nop-B
+IO
+nand
+h-copy
+nand
+add
+set-flow
+inc
+h-divide
+sub
+nop-C
+nop-A
+nop-B
+h-alloc
+push
+IO
+push
+shift-l
+swap
+IO
+nand
+get-head
+if-less
+dec
+IO
+push
+nop-B
+nop-A
+h-divide
+h-search
+add
+add
+sub
+set-flow
+add
+push
+dec
+h-copy
+sub
+swap
+sub
+dec
+nop-B
+if-n-equ
+shift-r
+swap
+h-divide
+nop-A
+nop-B
+h-copy
+h-alloc

@@ -1,0 +1,132 @@
+# Sat Feb 15 12:08:21 2014
+# Filename........: archive/103-acccf.org
+# Update Output...: 7348
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 205520896.000000
+# Gestation Time..: 300
+# Fitness.........: 685069.653333
+# Errors..........: 5
+# Genome Size.....: 103
+# Copied Size.....: 103
+# Executed Size...: 98
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+pop
+h-alloc
+add
+set-flow
+nop-A
+shift-r
+nop-B
+if-less
+set-flow
+IO
+mov-head
+nop-C
+IO
+nop-C
+sub
+push
+inc
+push
+shift-l
+if-label
+IO
+push
+add
+h-divide
+sub
+nand
+if-label
+if-less
+nop-C
+if-n-equ
+IO
+nand
+pop
+nop-B
+set-flow
+h-search
+nop-C
+dec
+nand
+nop-C
+inc
+swap-stk
+h-copy
+h-alloc
+shift-r
+pop
+nand
+swap
+IO
+nand
+nop-C
+h-alloc
+if-less
+nand
+nop-B
+shift-r
+nop-A
+set-flow
+pop
+add
+IO
+h-alloc
+set-flow
+nand
+IO
+h-copy
+h-copy
+set-flow
+nop-A
+if-n-equ
+nand
+nand
+nop-C
+swap-stk
+if-label
+push
+IO
+nop-C
+sub
+IO
+get-head
+pop
+nop-C
+pop
+add
+push
+nand
+IO
+h-copy
+inc
+add
+IO
+h-copy
+h-copy
+h-copy
+if-label
+h-search
+h-divide
+h-copy
+h-copy
+mov-head
+h-copy
+shift-l

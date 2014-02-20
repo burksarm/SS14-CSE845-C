@@ -1,0 +1,137 @@
+# Wed Feb 19 08:22:25 2014
+# Filename........: archive/108-abxzc.org
+# Update Output...: 38946
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2852126720.000000
+# Gestation Time..: 856
+# Fitness.........: 3331923.738318
+# Errors..........: 0
+# Genome Size.....: 108
+# Copied Size.....: 108
+# Executed Size...: 85
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+get-head
+h-alloc
+h-search
+nop-C
+nop-A
+if-label
+mov-head
+nop-C
+set-flow
+nop-B
+push
+nand
+h-search
+IO
+nand
+nop-B
+swap
+pop
+swap
+nand
+IO
+nand
+nand
+IO
+nop-C
+if-label
+nand
+nop-A
+push
+if-n-equ
+h-copy
+nop-C
+swap-stk
+IO
+nop-C
+nand
+nop-C
+if-less
+h-copy
+IO
+nand
+nop-A
+swap-stk
+nand
+h-divide
+inc
+swap-stk
+add
+h-copy
+IO
+nop-A
+if-label
+IO
+h-copy
+IO
+h-copy
+h-copy
+h-copy
+pop
+dec
+sub
+push
+IO
+IO
+nop-C
+pop
+swap
+sub
+swap-stk
+if-label
+mov-head
+h-divide
+push
+sub
+push
+dec
+nop-A
+nop-C
+get-head
+get-head
+h-divide
+swap-stk
+shift-l
+nop-B
+add
+mov-head
+add
+swap-stk
+h-copy
+h-search
+shift-l
+h-search
+push
+nop-B
+shift-r
+h-alloc
+dec
+nop-C
+IO
+h-copy
+swap
+nop-A
+if-less
+shift-l
+h-alloc
+get-head
+nop-A
+nop-B

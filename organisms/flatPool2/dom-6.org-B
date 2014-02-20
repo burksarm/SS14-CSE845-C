@@ -1,0 +1,133 @@
+# Sat Feb 15 12:02:28 2014
+# Filename........: archive/104-aandw.org
+# Update Output...: 3411
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 1327104.000000
+# Gestation Time..: 240
+# Fitness.........: 5529.600000
+# Errors..........: 4
+# Genome Size.....: 104
+# Copied Size.....: 104
+# Executed Size...: 81
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+shift-r
+h-alloc
+pop
+h-alloc
+mov-head
+nop-C
+set-flow
+nop-A
+mov-head
+nop-C
+swap-stk
+get-head
+h-search
+dec
+shift-r
+if-less
+h-divide
+h-alloc
+pop
+shift-l
+h-divide
+nop-A
+add
+h-alloc
+h-copy
+if-n-equ
+shift-r
+shift-l
+shift-r
+nand
+if-n-equ
+IO
+nop-C
+set-flow
+h-copy
+sub
+nop-C
+h-copy
+h-alloc
+add
+inc
+h-divide
+swap-stk
+set-flow
+IO
+push
+nand
+swap
+push
+push
+nand
+nop-C
+swap-stk
+nand
+IO
+pop
+nand
+h-copy
+nand
+IO
+push
+nop-C
+IO
+nop-C
+pop
+sub
+IO
+sub
+IO
+nand
+IO
+shift-r
+if-n-equ
+IO
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-n-equ
+h-search
+h-divide
+mov-head
+h-alloc
+h-copy
+shift-r
+nop-A
+nand
+sub
+set-flow
+sub
+if-less
+dec
+jmp-head
+IO
+swap-stk
+nand
+add
+mov-head
+shift-l
+h-copy
+dec
+mov-head
+nand

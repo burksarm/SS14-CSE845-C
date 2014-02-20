@@ -1,0 +1,136 @@
+# Sat Feb 15 12:13:14 2014
+# Filename........: archive/107-accka.org
+# Update Output...: 13293
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3254779904.000000
+# Gestation Time..: 362
+# Fitness.........: 8991104.707182
+# Errors..........: 5
+# Genome Size.....: 107
+# Copied Size.....: 107
+# Executed Size...: 97
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+h-alloc
+nand
+sub
+pop
+swap-stk
+set-flow
+nop-A
+shift-l
+if-less
+set-flow
+mov-head
+nop-C
+h-search
+dec
+shift-r
+nand
+IO
+nop-C
+sub
+nop-C
+IO
+nand
+if-n-equ
+h-alloc
+push
+nand
+push
+h-copy
+push
+push
+swap-stk
+IO
+swap-stk
+nand
+nop-C
+swap-stk
+inc
+nop-C
+h-divide
+h-alloc
+add
+add
+nop-C
+IO
+sub
+h-alloc
+h-divide
+IO
+push
+swap
+if-label
+add
+add
+IO
+h-copy
+swap
+IO
+nand
+swap
+set-flow
+IO
+nop-C
+inc
+nand
+IO
+nand
+nand
+IO
+if-n-equ
+nop-B
+swap-stk
+nand
+nop-C
+h-copy
+h-copy
+set-flow
+h-copy
+if-n-equ
+nop-B
+pop
+add
+nop-B
+h-copy
+if-less
+h-alloc
+inc
+nand
+IO
+h-search
+nop-A
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+IO
+if-label
+if-label
+h-divide
+h-alloc
+h-search
+mov-head
+if-label
+nop-A

@@ -1,0 +1,222 @@
+# Wed Feb 19 08:10:53 2014
+# Filename........: archive/193-afadk.org
+# Update Output...: 37729
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3254779904.000000
+# Gestation Time..: 1185
+# Fitness.........: 2746649.708017
+# Errors..........: 49
+# Genome Size.....: 193
+# Copied Size.....: 193
+# Executed Size...: 97
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nop-B
+inc
+if-less
+push
+if-label
+inc
+nand
+h-alloc
+shift-r
+nop-C
+inc
+jmp-head
+nop-C
+swap
+nop-A
+swap
+set-flow
+add
+pop
+nand
+if-less
+mov-head
+nop-C
+nop-B
+sub
+if-n-equ
+IO
+nop-C
+swap-stk
+push
+nop-A
+shift-l
+shift-r
+shift-l
+shift-r
+get-head
+if-less
+IO
+pop
+pop
+get-head
+nop-B
+swap-stk
+shift-l
+shift-l
+dec
+jmp-head
+shift-l
+h-search
+dec
+jmp-head
+shift-r
+IO
+shift-l
+pop
+add
+h-copy
+nop-A
+get-head
+h-copy
+shift-r
+h-alloc
+get-head
+set-flow
+h-search
+if-label
+nand
+nop-C
+if-less
+nop-C
+add
+h-copy
+inc
+IO
+swap-stk
+shift-l
+nop-B
+IO
+pop
+h-copy
+nand
+nop-C
+swap
+nop-C
+nop-A
+nand
+if-label
+IO
+push
+nop-C
+h-alloc
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+mov-head
+nop-A
+nop-B
+IO
+h-alloc
+shift-r
+pop
+add
+shift-r
+nop-B
+if-label
+dec
+shift-l
+jmp-head
+h-copy
+jmp-head
+mov-head
+nop-B
+set-flow
+h-copy
+sub
+h-divide
+add
+swap-stk
+h-copy
+inc
+dec
+swap-stk
+nop-A
+shift-r
+set-flow
+nand
+h-search
+add
+nop-B
+nop-A
+mov-head
+h-copy
+inc
+if-label
+nand
+nop-B
+sub
+add
+swap-stk
+h-copy
+if-label
+mov-head
+nop-B
+nop-C
+set-flow
+add
+sub
+if-n-equ
+h-alloc
+shift-l
+swap-stk
+if-label
+shift-l
+pop
+jmp-head
+nand
+swap-stk
+get-head
+pop
+nop-A
+nop-A
+if-less
+push
+push
+if-n-equ
+if-less
+IO
+sub
+pop
+h-search
+pop
+set-flow
+set-flow
+if-label
+swap-stk
+add
+IO
+swap
+swap
+h-copy
+jmp-head
+pop
+h-copy
+h-search
+set-flow
+add
+nop-B
+nop-B
+push
+if-n-equ
+nop-A

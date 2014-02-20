@@ -1,0 +1,118 @@
+# Sat Feb 15 12:03:10 2014
+# Filename........: archive/089-admrr.org
+# Update Output...: 5599
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 1343488.000000
+# Gestation Time..: 197
+# Fitness.........: 6819.736041
+# Errors..........: 3
+# Genome Size.....: 89
+# Copied Size.....: 89
+# Executed Size...: 82
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+set-flow
+nop-A
+sub
+mov-head
+nop-C
+pop
+nop-A
+dec
+swap
+if-label
+if-less
+add
+h-search
+h-divide
+shift-l
+h-search
+nop-B
+jmp-head
+sub
+h-copy
+if-less
+nop-A
+inc
+nop-A
+IO
+nop-C
+nop-A
+pop
+nop-B
+push
+pop
+dec
+pop
+h-alloc
+nand
+nand
+nop-C
+swap-stk
+if-less
+if-n-equ
+shift-l
+IO
+nand
+nand
+nop-C
+nop-C
+IO
+if-n-equ
+IO
+IO
+nand
+IO
+pop
+add
+push
+nand
+IO
+if-n-equ
+h-divide
+h-alloc
+swap
+IO
+nand
+IO
+pop
+sub
+IO
+inc
+inc
+nand
+shift-r
+inc
+swap
+h-alloc
+push
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+nop-A
+sub
+h-search
+nop-A

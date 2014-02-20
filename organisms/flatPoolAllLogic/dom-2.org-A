@@ -1,0 +1,139 @@
+# Wed Feb 19 07:49:02 2014
+# Filename........: archive/110-adxeh.org
+# Update Output...: 21875
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3590324224.000000
+# Gestation Time..: 709
+# Fitness.........: 5063926.973202
+# Errors..........: 1
+# Genome Size.....: 110
+# Copied Size.....: 110
+# Executed Size...: 107
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-divide
+h-alloc
+swap-stk
+add
+set-flow
+nop-A
+mov-head
+nop-C
+inc
+swap-stk
+nop-C
+shift-r
+push
+nand
+if-n-equ
+h-divide
+get-head
+h-divide
+get-head
+h-search
+swap
+add
+inc
+h-copy
+h-copy
+IO
+nop-B
+nand
+if-label
+mov-head
+h-divide
+nand
+swap
+nop-A
+if-label
+get-head
+nand
+IO
+nand
+IO
+add
+if-less
+h-alloc
+IO
+nand
+nand
+if-less
+mov-head
+if-n-equ
+IO
+nop-B
+h-copy
+pop
+nop-B
+swap
+if-label
+nop-B
+h-alloc
+if-n-equ
+shift-r
+h-divide
+IO
+if-label
+mov-head
+add
+nand
+inc
+nop-B
+swap
+h-divide
+h-alloc
+set-flow
+get-head
+shift-r
+swap
+sub
+jmp-head
+sub
+set-flow
+h-divide
+dec
+shift-r
+shift-r
+jmp-head
+sub
+swap-stk
+inc
+get-head
+inc
+IO
+IO
+inc
+h-search
+IO
+nop-B
+set-flow
+set-flow
+swap
+sub
+h-divide
+set-flow
+sub
+nop-B
+shift-r
+sub
+push
+h-copy
+nop-A
+nop-A
+swap-stk

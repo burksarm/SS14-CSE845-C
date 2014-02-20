@@ -1,0 +1,134 @@
+# Sat Feb 15 12:05:58 2014
+# Filename........: archive/105-acxps.org
+# Update Output...: 6291
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 209715200.000000
+# Gestation Time..: 233
+# Fitness.........: 900065.236052
+# Errors..........: 1
+# Genome Size.....: 105
+# Copied Size.....: 105
+# Executed Size...: 100
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+sub
+h-alloc
+h-search
+set-flow
+nop-A
+dec
+sub
+jmp-head
+get-head
+push
+pop
+mov-head
+nop-C
+shift-l
+IO
+swap
+dec
+IO
+nand
+nand
+add
+nop-B
+inc
+IO
+pop
+h-search
+h-copy
+get-head
+h-search
+nop-B
+if-n-equ
+shift-r
+if-less
+h-search
+pop
+h-copy
+push
+nop-B
+inc
+nop-B
+swap-stk
+h-divide
+pop
+set-flow
+inc
+shift-r
+nand
+IO
+nop-C
+sub
+nop-C
+inc
+if-label
+add
+IO
+nop-C
+sub
+nop-A
+swap
+nand
+IO
+nop-B
+nop-C
+push
+set-flow
+if-label
+nand
+nand
+nop-C
+IO
+nop-C
+sub
+push
+h-alloc
+IO
+if-label
+nand
+IO
+nop-B
+nand
+inc
+swap
+add
+IO
+pop
+sub
+IO
+h-divide
+if-label
+h-search
+h-search
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+h-copy
+mov-head
+nop-A
+h-alloc
+h-alloc
+h-copy
+add
+nop-A

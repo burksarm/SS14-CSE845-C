@@ -1,0 +1,136 @@
+# Wed Feb 19 07:33:32 2014
+# Filename........: archive/107-aaqou.org
+# Update Output...: 4456
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 218103808.000000
+# Gestation Time..: 224
+# Fitness.........: 973677.714286
+# Errors..........: 2
+# Genome Size.....: 107
+# Copied Size.....: 107
+# Executed Size...: 104
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+sub
+shift-l
+jmp-head
+set-flow
+nop-A
+nop-B
+jmp-head
+nop-A
+mov-head
+nop-C
+shift-l
+nop-B
+pop
+IO
+set-flow
+dec
+if-label
+inc
+if-label
+dec
+if-n-equ
+shift-r
+pop
+if-label
+if-n-equ
+if-n-equ
+add
+push
+sub
+dec
+nop-A
+h-divide
+if-label
+h-alloc
+h-copy
+pop
+sub
+h-search
+shift-l
+IO
+nop-C
+sub
+swap-stk
+pop
+shift-l
+push
+add
+nand
+IO
+IO
+nand
+swap
+push
+nop-C
+swap-stk
+IO
+swap-stk
+nand
+IO
+pop
+nand
+IO
+add
+swap-stk
+inc
+nop-B
+push
+nop-C
+h-divide
+nop-C
+push
+IO
+nop-C
+IO
+h-alloc
+pop
+add
+push
+IO
+nand
+nop-A
+pop
+nop-C
+pop
+nand
+IO
+if-less
+h-divide
+swap
+nop-A
+nand
+pop
+add
+nand
+IO
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+h-divide
+h-copy
+h-copy
+mov-head
+if-less
+nop-C

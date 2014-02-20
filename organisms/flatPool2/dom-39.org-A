@@ -1,0 +1,145 @@
+# Sat Feb 15 12:14:47 2014
+# Filename........: archive/116-achbm.org
+# Update Output...: 15590
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3758096384.000000
+# Gestation Time..: 976
+# Fitness.........: 3850508.590164
+# Errors..........: 17
+# Genome Size.....: 116
+# Copied Size.....: 116
+# Executed Size...: 112
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nop-C
+swap-stk
+h-alloc
+inc
+nand
+nop-A
+if-label
+swap
+IO
+sub
+get-head
+if-label
+get-head
+add
+nand
+push
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+inc
+nop-C
+nop-C
+nand
+set-flow
+shift-r
+nop-A
+push
+h-alloc
+if-less
+if-less
+h-search
+push
+nop-A
+swap
+nop-A
+nop-C
+if-label
+IO
+pop
+nop-C
+nand
+nop-C
+h-copy
+IO
+nop-C
+h-alloc
+IO
+nop-A
+nop-A
+if-label
+nand
+nand
+nop-C
+nop-B
+if-label
+h-copy
+nop-C
+add
+if-less
+if-label
+inc
+if-label
+pop
+pop
+dec
+sub
+IO
+add
+nop-A
+h-divide
+if-n-equ
+shift-r
+nop-A
+push
+nop-C
+if-label
+nand
+swap
+nand
+nop-C
+h-copy
+sub
+dec
+swap
+nop-B
+IO
+add
+if-n-equ
+inc
+IO
+shift-r
+nop-C
+pop
+IO
+nop-C
+sub
+IO
+nand
+get-head
+h-copy
+IO
+pop
+h-divide
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+h-copy
+mov-head
+nop-A
+nop-B

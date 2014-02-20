@@ -1,0 +1,110 @@
+# Sat Feb 15 12:00:37 2014
+# Filename........: archive/081-abolz.org
+# Update Output...: 4195
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5177344.000000
+# Gestation Time..: 164
+# Fitness.........: 31569.170732
+# Errors..........: 1
+# Genome Size.....: 81
+# Copied Size.....: 81
+# Executed Size...: 79
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+nop-C
+nop-C
+IO
+nop-C
+sub
+nop-C
+nop-B
+if-less
+nop-B
+set-flow
+mov-head
+nop-C
+dec
+nop-C
+swap
+h-alloc
+if-n-equ
+set-flow
+nop-A
+add
+sub
+nop-C
+IO
+push
+push
+swap
+jmp-head
+nop-C
+nand
+IO
+h-alloc
+nand
+nop-C
+nand
+nop-B
+mov-head
+nop-C
+set-flow
+if-less
+IO
+nop-C
+if-label
+nop-B
+h-alloc
+add
+nop-A
+if-label
+pop
+nop-C
+dec
+dec
+nop-C
+set-flow
+sub
+nop-C
+push
+inc
+nand
+IO
+nop-C
+sub
+nop-C
+if-label
+h-copy
+IO
+sub
+IO
+nop-C
+IO
+sub
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+mov-head
+h-divide
+mov-head
+nop-A

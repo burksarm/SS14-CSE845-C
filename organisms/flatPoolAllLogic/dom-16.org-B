@@ -1,0 +1,236 @@
+# Wed Feb 19 08:01:25 2014
+# Filename........: archive/207-abdxa.org
+# Update Output...: 32373
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 3556769792.000000
+# Gestation Time..: 922
+# Fitness.........: 3857667.887202
+# Errors..........: 5
+# Genome Size.....: 207
+# Copied Size.....: 207
+# Executed Size...: 106
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+jmp-head
+h-alloc
+jmp-head
+push
+nop-A
+get-head
+get-head
+h-alloc
+shift-l
+dec
+if-less
+pop
+set-flow
+nop-A
+mov-head
+nop-C
+h-alloc
+if-less
+dec
+if-label
+swap-stk
+nop-A
+pop
+nop-A
+IO
+nop-A
+add
+sub
+pop
+dec
+h-alloc
+h-divide
+nop-C
+swap
+swap-stk
+shift-r
+shift-r
+add
+get-head
+IO
+if-n-equ
+swap-stk
+inc
+swap-stk
+IO
+if-n-equ
+IO
+h-alloc
+h-alloc
+push
+if-label
+h-copy
+IO
+swap
+shift-r
+shift-l
+swap
+h-copy
+inc
+IO
+shift-r
+pop
+h-search
+if-label
+nand
+nop-B
+h-copy
+h-copy
+swap
+push
+h-copy
+h-copy
+IO
+nop-B
+nand
+nand
+IO
+nand
+if-less
+swap
+h-copy
+shift-l
+pop
+add
+h-copy
+shift-r
+swap-stk
+if-label
+h-copy
+pop
+nand
+add
+inc
+h-copy
+push
+IO
+add
+if-less
+nop-B
+mov-head
+sub
+if-less
+nop-B
+nop-B
+h-copy
+if-label
+mov-head
+h-divide
+mov-head
+set-flow
+mov-head
+h-search
+h-alloc
+h-alloc
+h-alloc
+if-label
+nop-C
+nop-B
+sub
+jmp-head
+nand
+nop-C
+if-less
+get-head
+swap-stk
+h-divide
+set-flow
+IO
+if-label
+mov-head
+pop
+h-copy
+dec
+add
+if-less
+if-n-equ
+h-alloc
+nop-A
+jmp-head
+nand
+IO
+if-less
+if-n-equ
+add
+sub
+get-head
+h-search
+shift-r
+nop-C
+nand
+nop-C
+nop-B
+pop
+push
+get-head
+if-label
+if-less
+IO
+get-head
+if-label
+inc
+nop-B
+sub
+IO
+add
+shift-r
+nop-C
+pop
+jmp-head
+nop-A
+swap
+sub
+swap-stk
+dec
+h-copy
+nop-A
+if-less
+nop-C
+nop-A
+shift-l
+nand
+nop-C
+shift-l
+swap-stk
+IO
+IO
+if-label
+if-label
+nop-A
+pop
+if-n-equ
+mov-head
+mov-head
+swap
+push
+inc
+inc
+h-divide
+nand
+h-copy
+push
+dec
+get-head
+h-divide
+nop-C
+dec
+nop-A

@@ -1,0 +1,125 @@
+# Wed Feb 19 07:55:37 2014
+# Filename........: archive/096-aakvv.org
+# Update Output...: 4207
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 192937984.000000
+# Gestation Time..: 255
+# Fitness.........: 756619.545098
+# Errors..........: 2
+# Genome Size.....: 96
+# Copied Size.....: 96
+# Executed Size...: 92
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+if-less
+shift-r
+nop-A
+nop-B
+add
+if-label
+pop
+h-alloc
+nand
+swap
+nop-C
+set-flow
+get-head
+swap
+pop
+nand
+add
+swap-stk
+nop-C
+nop-C
+inc
+IO
+nand
+swap
+h-divide
+add
+inc
+IO
+nand
+mov-head
+nop-C
+nop-B
+nand
+push
+push
+push
+push
+nop-B
+h-alloc
+nop-B
+nand
+nop-B
+nand
+if-label
+nand
+h-divide
+dec
+nop-A
+h-search
+IO
+IO
+nop-C
+nop-C
+nand
+inc
+nop-C
+if-n-equ
+add
+nop-C
+IO
+pop
+IO
+add
+h-divide
+nand
+nop-B
+if-less
+if-less
+IO
+nop-C
+IO
+if-label
+nand
+push
+nop-B
+if-n-equ
+pop
+nop-C
+nand
+IO
+pop
+nand
+IO
+nop-B
+h-search
+h-copy
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+h-copy
+mov-head
+nop-A
+nop-B
+set-flow

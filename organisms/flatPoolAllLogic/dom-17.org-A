@@ -1,0 +1,165 @@
+# Wed Feb 19 07:45:58 2014
+# Filename........: archive/136-adoss.org
+# Update Output...: 24104
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 4429185024.000000
+# Gestation Time..: 794
+# Fitness.........: 5578318.670025
+# Errors..........: 27
+# Genome Size.....: 136
+# Copied Size.....: 136
+# Executed Size...: 132
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+set-flow
+set-flow
+nop-A
+mov-head
+nop-C
+h-alloc
+dec
+h-alloc
+IO
+inc
+h-search
+dec
+nop-C
+IO
+nop-C
+h-copy
+add
+pop
+if-label
+IO
+h-copy
+nand
+if-less
+swap-stk
+nand
+nop-C
+swap-stk
+h-divide
+swap
+nop-C
+h-copy
+push
+nop-C
+nand
+nop-C
+IO
+nop-C
+nop-B
+h-alloc
+if-n-equ
+nop-C
+pop
+nop-C
+if-less
+nop-B
+if-label
+nop-A
+h-alloc
+nand
+nop-C
+h-copy
+push
+inc
+nand
+add
+nop-C
+h-copy
+h-divide
+sub
+nop-C
+swap-stk
+h-divide
+IO
+if-label
+mov-head
+sub
+if-n-equ
+push
+add
+nop-C
+shift-l
+swap
+swap
+h-alloc
+nop-B
+nop-B
+nop-B
+h-alloc
+nop-C
+push
+if-less
+nop-A
+IO
+push
+dec
+pop
+shift-l
+nop-C
+h-search
+nand
+h-search
+h-alloc
+shift-l
+IO
+dec
+shift-l
+IO
+jmp-head
+swap
+nop-C
+get-head
+shift-l
+shift-l
+swap
+nop-A
+set-flow
+get-head
+shift-r
+nop-C
+add
+nand
+shift-r
+IO
+pop
+nop-C
+sub
+push
+push
+add
+nop-C
+IO
+nop-A
+sub
+nop-C
+IO
+h-search
+h-divide
+h-copy
+h-copy
+mov-head
+nop-A
+get-head
+add
+pop
+mov-head

@@ -1,0 +1,116 @@
+# Sat Feb 15 12:07:42 2014
+# Filename........: archive/087-adkbg.org
+# Update Output...: 12064
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 2919235584.000000
+# Gestation Time..: 425
+# Fitness.........: 6868789.609412
+# Errors..........: 6
+# Genome Size.....: 87
+# Copied Size.....: 87
+# Executed Size...: 87
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+sub
+nop-B
+sub
+push
+set-flow
+nop-A
+dec
+mov-head
+nop-C
+pop
+nop-C
+h-divide
+h-alloc
+pop
+inc
+nop-A
+dec
+inc
+swap-stk
+shift-r
+IO
+add
+h-alloc
+inc
+sub
+h-search
+dec
+shift-r
+dec
+jmp-head
+if-less
+if-n-equ
+add
+get-head
+if-n-equ
+h-divide
+swap
+shift-l
+nop-C
+push
+nop-A
+inc
+if-label
+IO
+push
+set-flow
+nop-C
+h-search
+pop
+sub
+nop-C
+if-label
+nand
+swap
+IO
+if-label
+h-alloc
+nand
+push
+nand
+push
+nand
+if-label
+swap
+IO
+pop
+h-copy
+inc
+add
+IO
+nand
+inc
+nop-C
+add
+nop-C
+h-copy
+nop-A
+if-label
+nop-C
+h-search
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+nop-A

@@ -1,0 +1,121 @@
+# Sat Feb 15 12:02:34 2014
+# Filename........: archive/092-aamtg.org
+# Update Output...: 4657
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 5439488.000000
+# Gestation Time..: 386
+# Fitness.........: 14091.937824
+# Errors..........: 3
+# Genome Size.....: 92
+# Copied Size.....: 92
+# Executed Size...: 83
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+get-head
+h-alloc
+set-flow
+nop-A
+if-label
+mov-head
+nop-C
+if-n-equ
+h-divide
+get-head
+if-less
+h-search
+h-search
+dec
+swap-stk
+pop
+swap-stk
+dec
+nop-C
+nand
+IO
+nand
+nop-C
+IO
+if-n-equ
+nop-C
+IO
+if-label
+nand
+nand
+nop-A
+nand
+add
+if-label
+IO
+nop-C
+swap
+nop-C
+inc
+shift-l
+nop-A
+IO
+IO
+nop-C
+nand
+push
+IO
+swap-stk
+if-n-equ
+nand
+h-search
+if-n-equ
+nop-A
+get-head
+nop-B
+inc
+swap
+add
+swap
+if-less
+shift-r
+set-flow
+nop-C
+h-copy
+swap
+nop-A
+set-flow
+inc
+dec
+h-copy
+sub
+set-flow
+h-alloc
+nop-C
+h-divide
+shift-r
+h-search
+nop-B
+h-search
+h-copy
+if-label
+nop-C
+nop-A
+set-flow
+mov-head
+h-alloc
+pop
+h-search
+nop-A
+nop-B
+swap
+mov-head

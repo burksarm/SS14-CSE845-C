@@ -1,0 +1,136 @@
+# Wed Feb 19 07:34:40 2014
+# Filename........: archive/107-acfuw.org
+# Update Output...: 6578
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 218103808.000000
+# Gestation Time..: 261
+# Fitness.........: 835646.773946
+# Errors..........: 2
+# Genome Size.....: 107
+# Copied Size.....: 107
+# Executed Size...: 104
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 1 (1.000000)
+
+
+h-alloc
+if-n-equ
+sub
+h-alloc
+set-flow
+nop-A
+jmp-head
+IO
+nop-B
+mov-head
+nop-C
+nop-C
+nand
+sub
+sub
+push
+swap-stk
+inc
+nop-A
+nand
+add
+if-n-equ
+h-alloc
+nand
+nop-A
+push
+shift-r
+h-divide
+if-label
+sub
+jmp-head
+IO
+nop-B
+h-divide
+h-search
+h-copy
+h-search
+if-label
+h-divide
+swap-stk
+IO
+nop-C
+h-divide
+swap-stk
+nand
+inc
+shift-r
+add
+nand
+IO
+IO
+nand
+swap
+push
+nop-C
+nand
+IO
+swap-stk
+nop-B
+IO
+pop
+nand
+IO
+add
+swap-stk
+inc
+if-less
+nop-C
+nop-C
+if-n-equ
+set-flow
+push
+IO
+nop-C
+IO
+set-flow
+pop
+add
+push
+IO
+h-search
+nand
+pop
+nop-C
+pop
+nand
+IO
+nop-A
+IO
+pop
+push
+nop-C
+push
+pop
+nand
+IO
+h-search
+h-copy
+if-label
+nop-C
+nop-A
+h-divide
+h-copy
+h-copy
+mov-head
+nop-A
+nop-B

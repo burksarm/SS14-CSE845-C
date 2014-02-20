@@ -1,0 +1,91 @@
+# Sat Feb 15 12:01:35 2014
+# Filename........: archive/062-aaimk.org
+# Update Output...: 3210
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 241664.000000
+# Gestation Time..: 501
+# Fitness.........: 482.363273
+# Errors..........: 5
+# Genome Size.....: 62
+# Copied Size.....: 62
+# Executed Size...: 59
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 0 (0.000000)
+# nand 0 (0.000000)
+# and 0 (0.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+nop-A
+nop-A
+set-flow
+h-alloc
+h-search
+nop-C
+nop-C
+get-head
+h-alloc
+nop-C
+pop
+IO
+nop-C
+h-divide
+if-n-equ
+push
+nop-C
+if-n-equ
+IO
+nand
+nop-C
+nand
+if-less
+nop-C
+nop-C
+pop
+nop-C
+nop-B
+nop-C
+if-label
+sub
+mov-head
+nop-C
+pop
+nop-C
+h-divide
+h-divide
+add
+jmp-head
+h-alloc
+if-n-equ
+h-copy
+dec
+nop-C
+nand
+nop-C
+nop-C
+IO
+IO
+nop-C
+shift-l
+nand
+if-label
+h-search
+h-copy
+inc
+shift-r
+dec
+h-divide
+mov-head
+swap
+if-n-equ

@@ -1,0 +1,254 @@
+# Wed Feb 19 15:16:41 2014
+# Filename........: archive/225-aepam.org
+# Update Output...: 71652
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 7214202880.000000
+# Gestation Time..: 2167
+# Fitness.........: 3329119.926165
+# Errors..........: 7
+# Genome Size.....: 225
+# Copied Size.....: 225
+# Executed Size...: 215
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 1 (1.000000)
+# equ 1 (1.000000)
+
+
+nop-A
+nop-A
+h-copy
+set-flow
+inc
+jmp-head
+nop-C
+h-alloc
+h-copy
+if-less
+pop
+set-flow
+if-less
+if-less
+shift-r
+inc
+nop-A
+if-less
+add
+if-label
+add
+push
+pop
+swap-stk
+nop-C
+swap
+if-n-equ
+shift-l
+dec
+h-divide
+if-n-equ
+inc
+nand
+shift-l
+dec
+nop-C
+if-label
+nop-A
+pop
+nop-A
+shift-r
+IO
+IO
+add
+push
+swap
+dec
+pop
+pop
+push
+nop-C
+if-label
+swap
+swap
+IO
+sub
+sub
+set-flow
+nop-C
+h-search
+nop-A
+get-head
+sub
+h-alloc
+nop-A
+if-less
+IO
+nop-C
+IO
+nop-A
+h-alloc
+pop
+if-n-equ
+get-head
+shift-r
+nand
+nand
+IO
+shift-l
+h-alloc
+h-search
+h-search
+jmp-head
+nop-C
+shift-l
+pop
+add
+h-search
+sub
+shift-r
+h-alloc
+shift-l
+nop-C
+swap
+inc
+h-divide
+nop-C
+swap
+shift-r
+inc
+nop-A
+mov-head
+nop-C
+h-alloc
+swap
+jmp-head
+swap
+if-n-equ
+sub
+push
+nop-C
+sub
+if-n-equ
+pop
+nop-B
+nop-B
+add
+nop-C
+IO
+swap
+nop-A
+h-search
+get-head
+nop-A
+nop-A
+nop-A
+nand
+nop-A
+get-head
+shift-r
+push
+h-search
+nop-C
+nop-A
+mov-head
+nop-C
+h-alloc
+if-n-equ
+h-divide
+inc
+swap-stk
+nop-A
+if-n-equ
+add
+push
+shift-r
+nop-A
+dec
+h-divide
+nop-C
+nop-A
+if-label
+h-divide
+IO
+jmp-head
+nop-C
+pop
+nand
+h-search
+set-flow
+nop-B
+nop-C
+add
+set-flow
+push
+nop-C
+IO
+inc
+set-flow
+shift-r
+dec
+pop
+set-flow
+jmp-head
+jmp-head
+h-divide
+add
+IO
+nop-B
+IO
+h-alloc
+h-copy
+h-search
+h-divide
+nop-C
+nand
+inc
+nop-C
+shift-r
+if-label
+shift-l
+h-divide
+dec
+swap-stk
+swap-stk
+if-n-equ
+h-search
+IO
+nop-C
+push
+nop-B
+nand
+nop-C
+swap-stk
+IO
+pop
+nand
+push
+h-copy
+IO
+nop-C
+IO
+nop-B
+pop
+if-label
+nop-B
+nand
+h-copy
+if-label
+swap
+nop-A
+h-divide
+mov-head
+nop-A
+nop-B

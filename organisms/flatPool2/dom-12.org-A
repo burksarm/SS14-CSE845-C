@@ -1,0 +1,95 @@
+# Sat Feb 15 11:59:54 2014
+# Filename........: archive/066-abzft.org
+# Update Output...: 3509
+# Is Viable.......: 1
+# Repro Cycle Size: 0
+# Depth to Viable.: 0
+# 
+# Generation: 0
+# Merit...........: 4259840.000000
+# Gestation Time..: 133
+# Fitness.........: 32028.872180
+# Errors..........: 0
+# Genome Size.....: 66
+# Copied Size.....: 66
+# Executed Size...: 65
+# Offspring.......: SELF
+# 
+# Tasks Performed:
+# not 1 (1.000000)
+# nand 1 (1.000000)
+# and 1 (1.000000)
+# orn 1 (1.000000)
+# or 1 (1.000000)
+# andn 1 (1.000000)
+# nor 1 (1.000000)
+# xor 0 (0.000000)
+# equ 0 (0.000000)
+
+
+h-alloc
+nop-B
+pop
+set-flow
+nop-A
+sub
+push
+mov-head
+nop-C
+add
+sub
+if-less
+set-flow
+set-flow
+shift-r
+h-search
+swap
+push
+nand
+swap-stk
+IO
+nop-C
+nand
+IO
+nand
+IO
+nand
+nop-C
+pop
+nand
+nop-B
+push
+sub
+IO
+inc
+add
+IO
+pop
+nop-C
+nand
+nop-C
+set-flow
+shift-l
+IO
+nand
+IO
+nand
+nand
+nop-C
+IO
+nop-C
+set-flow
+sub
+IO
+h-search
+h-copy
+h-copy
+h-copy
+h-copy
+h-copy
+h-copy
+if-label
+nop-C
+h-divide
+mov-head
+nop-A
