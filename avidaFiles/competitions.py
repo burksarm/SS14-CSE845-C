@@ -14,7 +14,7 @@ def calcMutRate(fName, mutRate):
 				genomeLength = float(line.split()[-1])
 				return mutRate/genomeLength
 
-def runComps(outputDir):
+def runComps(flatPoolDir, outputDir):
 	#Make sure the output directory exists
 	if not os.path.exists(outputDir):
 		os.makedirs(outputDir)
@@ -27,7 +27,7 @@ def runComps(outputDir):
 				baseOrg = m.group(1)
 			
 				#Get the file names
-				orgFiles = ("../organisms/flatPoolAllLogic/%s.org-A" %baseOrg, "../organisms/flatPoolAllLogic/%s.org-B" %baseOrg)
+				orgFiles = ("%s/%s.org-A" %(flatPoolDir, baseOrg), "%s/%s.org-B" %(flatPoolDir, baseOrg))
 			
 				#Now do the experiments for each mutation rate
 				targetMutRate = 0.5
@@ -49,9 +49,9 @@ def runComps(outputDir):
 
 
 if __name__ == "__main__":
-	if len(sys.argv) != 2:
-		print "usage: python competitions.py <OUTPUT_DIRECTORY>"
+	if len(sys.argv) != 3:
+		print "usage: python competitions.py <FLAT_ORGS_DIRECTORY> <OUTPUT_DIRECTORY>"
 	else:
-		runComps(sys.argv[1])
+		runComps(sys.argv[1], sys.argv[2])
 		subprocess.call(["python", "../scripts/renameCompPopulations.py", sys.argv[1]])		
 			
