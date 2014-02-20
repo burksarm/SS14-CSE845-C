@@ -1,10 +1,20 @@
 #!/usr/bin/python
 import environments  #Handles generating environments for the competitions
 import random
+import sys
 
 #Compares each A/B pair to find pairs which A has a replication rate of at least 1.5 greater than B.
 #A is from the low mutation rate, B is from the high mutation rate.
 #For those pairs meeting the criteria, we'll generate an events and environment file for the competition
+
+#Check args
+if __name__ == "__main__":
+	if len(sys.argv) != 2:
+		print "Usage python compare.py <FLAT_ORGS_DIR>"
+		quit()
+
+#Get the input directory
+flatPoolDir = sys.argv[1]
 
 #Go through all the pairs and get their fitness
 for i in range(1, 41):
@@ -15,8 +25,8 @@ for i in range(1, 41):
 	aMerit  =  None     #Holds organism A's merit
 	bMeriit =  None     #Holds organism B's merit
 	
-	aFile = open("../organisms/flatPoolAllLogic/dom-%s.org-A" %i, "r")
-	bFile = open("../organisms/flatPoolAllLogic/dom-%s.org-B" %i, "r")
+	aFile = open("%s/dom-%s.org-A" %(flatPoolDir, i), "r")
+	bFile = open("%s/dom-%s.org-B" %(flatPoolDir, i), "r")
 	
 	#Find the fitnesses and make sure they're both viable
 	for line in aFile:
