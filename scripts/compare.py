@@ -35,7 +35,7 @@ for i in range(1, 41):
 		
 		#Get the merit
 		if line.startswith("# Merit"):
-			aMerit = line.split()[-1]
+			aMerit = float(line.split()[-1])
 		
 		#Get the fitness
 		if line.startswith("# Fitness"):
@@ -48,7 +48,7 @@ for i in range(1, 41):
 			
 		#Get the merit
 		if line.startswith("# Merit"):
-			bMerit = line.split()[-1]
+			bMerit = float(line.split()[-1])
 		
 		#Get the fitness
 		if line.startswith("# Fitness"):
@@ -57,6 +57,8 @@ for i in range(1, 41):
 		
 	#Now compare them and if they meet the criteria, generate an events file for their competition
 	if aViable == "1" and bViable == "1" and aFitness/bFitness > 1.5:
+		print "A/B fitness ratio: ", aFitness/bFitness
+	
 		#Create the events file
 		eventsFile = open("../avidaFiles/events_dom-%s_comp.cfg" %i, "w")
 
@@ -64,15 +66,15 @@ for i in range(1, 41):
 		cells = [index for index in range(3600)]
 		#random.shuffle(cells)
 
-		#Fill half the pop with organism A and give it a marker of 0
+		#Fill half the pop with organism A and give it a marker of 0 and put the merit somewhere along the reproduction cycle
 		eventsFile.write("#Fill half the pop with organism A and give it a marker of 0\n")
 		for cell in range(1800):
-			eventsFile.write("u begin Inject %s %s %s 0\n" %(aFile.name, cells[cell], aMerit))
+			eventsFile.write("u begin Inject %s %s %.5f 0\n" %(aFile.name, cells[cell], (aMerit/random.uniform(0.01, 1))))
 		
-		#Fill half the pop with organism B and give it a marker of 1
+		#Fill half the pop with organism B and give it a marker of 1 and put the merit somewhere along the reproduction cycle
 		eventsFile.write("\n#Fill half the pop with organism B and give it a marker of 1\n")
 		for cell in range(1800, 3600):
-			eventsFile.write("u begin Inject %s %s %s 1\n" %(bFile.name, cells[cell], bMerit))
+			eventsFile.write("u begin Inject %s %s %.5f 1\n" %(bFile.name, cells[cell], (bMerit/random.uniform(0.01, 1))))
 
 		#Save the initial population
 		eventsFile.write("#Save the initial population\n")

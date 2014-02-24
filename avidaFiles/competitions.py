@@ -41,7 +41,7 @@ def runComps(flatPoolDir, outputDir):
 					#Run the competition
 					subprocess.call(["avida", "-v0", "-c", "avida_comp.cfg", "-set", "EVENT_FILE", 
 						"events_%s_comp.cfg" %baseOrg, "-set", "ENVIRONMENT_FILE", filename,
-						"-set", "DATA_DIR", outDir, "-set", "COPY_MUT_PROB", "%s" %copyMutRate])
+						"-set", "DATA_DIR", outDir, "-set", "COPY_MUT_PROB", "%.5f" %copyMutRate])
 				
 					targetMutRate += 0.5
 

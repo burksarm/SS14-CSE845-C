@@ -1,7 +1,8 @@
 #!/usr/bin/python
 
-#Plots the distributions of organism A and B for each of the competitions for an organism
-#The plot is as in the "Survival of the Flattest" paper, Fig. 1.
+#Plots the proportions of organism A and B descendants for each of the 
+#competitions for an organism
+#The plot is like the "Survival of the Flattest" paper, Fig. 1.
 import sys
 import os
 import re
@@ -14,9 +15,9 @@ mutRates = ["0.5", "1.0", "1.5", "2.0", "2.5", "3.0"]
 def plotCompetitions(org, resultsDir, mutRate, doLabel, clearPlot=False):
 	aProportions = {} #generation -> total number of A descendants
 	bProportions = {} #generation -> total number of B descendants
-	popSizes = {} #Holds the population size at each generation (we get this by counting the lines)
+	popSizes = {} #Holds the population size at each generation (we get this by counting the orgs)
 	
-	#Files are saved by population snapshots from generation 5-50 in increments of 5
+	#Files are saved by population snapshots from generation 0-50 in increments of 5
 	generations = [gen for gen in range(0, 55, 5)]
 	for gen in generations:
 		#Open the result file for this mutation rate, for the current generation
@@ -60,10 +61,7 @@ def plotCompetitions(org, resultsDir, mutRate, doLabel, clearPlot=False):
 	else:
 		plt.plot(generations, [aProportions[gen]/popSizes[gen] for gen in generations], "b-")
 		plt.plot(generations, [bProportions[gen]/popSizes[gen] for gen in generations], "r-")
-		
-	#Clear the plot for subsequent calls.
-	if (clearPlot == True):
-		plt.clf()
+
 		
 #Plots all 10 competition lines for the given ancestor organism
 def plotAllCompetitionLines(org, resultsDir, outputDir):
@@ -84,17 +82,42 @@ def plotAllCompetitionLines(org, resultsDir, outputDir):
 		
 		#Clear the plot for the next mutation rate
 		plt.clf()
+
+#Plots a single competition (all mut rates) for a single ancestor organism
+def plotSingleCompetition(org, resultsDir, outputDir):
+	#Make sure the output directory exists
+	if not os.path.exists(outputDir):
+		os.makedirs(outputDir)
+
+	for mutRate in mutRates:
+		#Plot each mutation rate for the org in a separate image
+		plotCompetitions(org, resultsDir, mutRate, doLabel=True)
+
+		#Save the plot to a png.
+		plt.xlabel("Generation")
+		plt.ylabel("Proportion")
+		plt.ylim(0.0, 1.0)
+		plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+		plt.savefig(os.path.join(outputDir, "%s-%s.png" %(org, mutRate)), bbox_inches = "tight")
+		
+		#Clear the plot for the next mutation rate
+		plt.clf()
 		
 
 #----------- MAIN ------------------------------		
 if __name__ == "__main__":
-	if len(sys.argv) != 3:
-		print "Usage: python plotProportions.py <COMPETITION_RESULTS_DIR> <OUTPUT_DIRECTORY>."
+	if len(sys.argv) < 3:
+		print "Usage: python plotProportions.py <COMPETITION_RESULTS_DIR> <OUTPUT_DIRECTORY> <ORG ex. dom-i (optional)>."
 		quit()
 	
-	#For all of the competitions, generate the plots.
-	for compOrg in compOrgs.getCompOrgs():
-		plotAllCompetitionLines(compOrg, sys.argv[1], sys.argv[2])
+	if len(sys.argv) == 3:
+		#For all of the competitions, generate the plots.
+		for compOrg in compOrgs.getCompOrgs():
+			plotAllCompetitionLines(compOrg, sys.argv[1], sys.argv[2])
+
+	#Plot the single competition if given a single org to plot
+	elif len(sys.argv) == 4:
+		plotSingleCompetition(sys.argv[3], sys.argv[1], sys.argv[2])
 
 	
 	

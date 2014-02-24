@@ -7,7 +7,7 @@ def getAllTasks():
 	tasks = set() #["not", "nand", "and", "orn", "or", "andn", "nor", "xor", "equ"]
 
 	#The task name we'll use to match in the organisms is item 3 in the env file
-	for line in open("../avidaFiles/environment-all-logic.cfg", "r"):
+	for line in open("../avidaFiles/environment.cfg", "r"):
 		if line.startswith("REACTION"):
 			items = line.split()
 			tasks.add(items[2])
@@ -35,7 +35,7 @@ def generate(aFile, bFile):
 	allResources = {} #format: task -> original line of text
 
 	#Steal the resource strings from the regular environment.cfg file
-	envFile = open("../avidaFiles/environment-all-logic.cfg", "r")
+	envFile = open("../avidaFiles/environment.cfg", "r")
 
 	for line in envFile:
 		if line.startswith("REACTION"):
