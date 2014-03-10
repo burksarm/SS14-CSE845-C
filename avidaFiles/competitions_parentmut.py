@@ -33,15 +33,20 @@ def runComps(flatPoolDir, outputDir):
 				targetMutRate = 0.5
 				while (targetMutRate <= 3.0):
 					#Get the copy mutation rate (just use org A since they're the same length)
-					copyMutRate = calcMutRate(orgFiles[0], targetMutRate)
+					copyMutRate = calcMutRate(orgFiles[0], targetMutRate)/2.0
+					parentMutRate = copyMutRate
 				
 					#Get the output directory name, based on the competition and the mutation rate
 					outDir = "%s/%s-comp-%s" %(outputDir, baseOrg, targetMutRate)
 				
+					#Generate the run command, so we can print it (as a sanity check)
+					runCommand = "avida -v0 -c avida_comp.cfg -set " +\
+						"EVENT_FILE events_%s_comp.cfg -set ENVIRONMENT_FILE %s -set DATA_DIR %s -set COPY_MUT_PROB %.10f -set PARENT_MUT_PROB %.10f"\
+						%(baseOrg, filename, outDir, copyMutRate, parentMutRate)
+
 					#Run the competition
-					subprocess.call(["avida", "-v0", "-c", "avida_comp.cfg", "-set", "EVENT_FILE", 
-						"events_%s_comp.cfg" %baseOrg, "-set", "ENVIRONMENT_FILE", filename,
-						"-set", "DATA_DIR", outDir, "-set", "COPY_MUT_PROB", "%.5f" %copyMutRate])
+					print runCommand
+					subprocess.call(runCommand.split())
 				
 					targetMutRate += 0.5
 

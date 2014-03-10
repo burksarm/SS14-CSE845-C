@@ -31,7 +31,7 @@ orgAFile = os.path.join(compOrgDir, "%s.org-A" %compOrg)
 targetMutRate = 0.5
 while (targetMutRate <= 3.0):
 	#Calculate the copy mutation rate
-	copyMutRate = (competitions.calcMutRate(orgAFile, targetMutRate))
+	copyMutRate = (competitions.calcMutRate(orgAFile, targetMutRate))/2.0
 	parentMutRate = copyMutRate
 
 	#Generate the intermediate output directory (i.e. for the mut rate)
@@ -39,8 +39,8 @@ while (targetMutRate <= 3.0):
 
 	#Generate the run command
 	runCommand = \
-		"avida -c avida_comp.cfg -set EVENT_FILE %s -set ENVIRONMENT_FILE %s -set DATA_DIR %s -set COPY_MUT_PROB %.10f"\
-		%(eventsFile, environmentFile, dataDir, copyMutRate)
+		"avida -c avida_comp.cfg -set EVENT_FILE %s -set ENVIRONMENT_FILE %s -set DATA_DIR %s -set COPY_MUT_PROB %.10f -set PARENT_MUT_PROB %.10f"\
+		%(eventsFile, environmentFile, dataDir, copyMutRate, parentMutRate)
 
 	#Print the command as a sanity check
 	print runCommand

@@ -1,4 +1,13 @@
 avidaFiles/events_dom*_comp.cfg
 avidaFiles/environment_dom*_comp.cfg
 avidaFiles/analyze_dom*-comp*.cfg
+avidaFiles/mod-analyze*cfg
 avidaFiles/*.qsub
+*.tar.gz
+organisms/comps*
+organisms/compe*
+organisms/compP*
+organisms/compD*
+*/*.pyc
+*/test.py
+testing

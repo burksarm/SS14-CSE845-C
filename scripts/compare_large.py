@@ -10,7 +10,7 @@ import sys
 #Check args
 if __name__ == "__main__":
 	if len(sys.argv) != 2:
-		print "Usage python compare.py <FLAT_ORGS_DIR>"
+		print "Usage python compare_large.py <FLAT_ORGS_DIR>"
 		quit()
 
 #Get the input directory
@@ -62,19 +62,29 @@ for i in range(1, 41):
 		#Create the events file
 		eventsFile = open("../avidaFiles/events_dom-%s_comp.cfg" %i, "w")
 
-		#We'll uniformly mix the initial population
-		cells = [index for index in range(3600)]
-		#random.shuffle(cells)
+		#Start A halfway down, in two rows in the 2nd 8th of the horizontal row
+		aStart = 19825
+		
+		#Start B halfway down, in two rows in the 2nd half of the horizontal row
+		bStart = 19900
 
 		#Fill half the pop with organism A and give it a marker of 0 and put the merit somewhere along the reproduction cycle
 		eventsFile.write("#Fill half the pop with organism A and give it a marker of 0\n")
-		for cell in range(1800):
-			eventsFile.write("u begin Inject %s %s %.5f 0\n" %(aFile.name, cells[cell], (aMerit/random.uniform(0.01, 1))))
+		for numInjects in range(10):
+			eventsFile.write("u begin Inject %s %s %.5f 0\n" %(aFile.name, (aStart + numInjects), (aMerit/random.uniform(0.01, 1))))
+			
+			#Inject five orgs in a row, then place the other five on the next row below
+			if numInjects == 4:
+				aStart += 195
 		
 		#Fill half the pop with organism B and give it a marker of 1 and put the merit somewhere along the reproduction cycle
 		eventsFile.write("\n#Fill half the pop with organism B and give it a marker of 1\n")
-		for cell in range(1800, 3600):
-			eventsFile.write("u begin Inject %s %s %.5f 1\n" %(bFile.name, cells[cell], (bMerit/random.uniform(0.01, 1))))
+		for numInjects in range(10):
+			eventsFile.write("u begin Inject %s %s %.5f 1\n" %(bFile.name, (bStart + numInjects), (bMerit/random.uniform(0.01, 1))))
+			
+			#Inject five orgs in a row, then place the other five on the next row below
+			if numInjects == 4:
+				bStart += 195
 
 		#Save the initial population
 		eventsFile.write("#Save the initial population\n")

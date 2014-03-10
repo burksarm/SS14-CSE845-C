@@ -18,7 +18,7 @@ for i in range(1, 11):
 	jobScript = open("comp%s.qsub" %i, "w")
 
 	jobScript.write("#!/bin/bash -login\n")
-	jobScript.write("#PBS -l walltime=03:59:00,nodes=1:ppn=1,mem=4gb\n")
+	jobScript.write("#PBS -l walltime=08:00:00,nodes=1:ppn=1,mem=4gb\n")
 	jobScript.write("#PBS -j oe\n")
 	jobScript.write("#PBS -N competition%s\n\n" %i)
 
