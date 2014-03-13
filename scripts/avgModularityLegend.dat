@@ -1,0 +1,44 @@
+Genome Length
+Tasks Done
+Sites Used in Tasks
+Proportion of Sites Used in Tasks
+Avg Tasks Per Site
+Avg Sites Per Task
+Avg Tasks Per Site Per Task
+Avg Proportion of Non-overlapping Region
+Avg Stdev in positions (Not)
+Avg Stdev in positions (Nand)
+Avg Stdev in positions (And)
+Avg Stdev in positions (Orn)
+Avg Stdev in positions (Or)
+Avg Stdev in positions (Andn)
+Avg Stdev in positions (Nor)
+Avg Stdev in positions (Xor)
+Avg Stdev in positions (Equ)
+Avg Sites Necessary (Not)
+Avg Sites Necessary (Nand)
+Avg Sites Necessary (And)
+Avg Sites Necessary (Orn)
+Avg Sites Necessary (Or)
+Avg Sites Necessary (Andn)
+Avg Sites Necessary (Nor)
+Avg Sites Necessary (Xor)
+Avg Sites Necessary (Equ)
+Sites Involved (Not)
+Sites Involved (Nand)
+Sites Involved (And)
+Sites Involved (Orn)
+Sites Involved (Or)
+Sites Involved (Andn)
+Sites Involved (Nor)
+Sites Involved (Xor)
+Sites Involved (Equ)
+Avg Task Length (Not)
+Avg Task Length (Nand)
+Avg Task Length (And)
+Avg Task Length (Orn)
+Avg Task Length (Or)
+Avg Task Length (Andn)
+Avg Task Length (Nor)
+Avg Task Length (Xor)
+Avg Task Length (Equ)
