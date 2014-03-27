@@ -10,6 +10,7 @@ from pylab import *
 
 if not len(sys.argv) == 2:
 	print "Usage: python mutAnalysis.py <OUTPUT_DIR>"
+	quit()
 
 #Convenience method to generate a file name for the figure, based on the label
 def getFigName(label):
