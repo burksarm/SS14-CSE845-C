@@ -24,11 +24,15 @@ if not os.path.exists(popOutDir):
 if not os.path.exists(resultOutDir):
 	os.makedirs(resultOutDir)
 
-#Also make sure the mutation map directory exists
+#Also make sure the mutation and task map directories exists
 mutDir = os.path.join(resultOutDir, "mutations")
+taskDir = os.path.join(resultOutDir, "tasks")
 
 if not os.path.exists(mutDir):
 	os.makedirs(mutDir)
+
+if not os.path.exists(taskDir):
+	os.makedirs(taskDir)
 
 #Get the list of ancestors we want to use
 ancestors = []
@@ -71,6 +75,9 @@ analyzeFile.write("AVERAGE_MODULARITY %s/modularity_cluster-A.dat task.0 task.1 
 #Run MAP_MUTATIONS on the A cluster
 analyzeFile.write("MAP_MUTATIONS %s html\n" %mutDir)
 
+#Run MAP_TASKS on the A cluster
+analyzeFile.write("MAP_TASKS %s task.0 task.1 task.2 task.3 task.4 task.5 task.6 task.7 task.8 html\n" %taskDir)
+
 #Cleanup the results from A
 analyzeFile.write("PURGE_BATCH\n")
 
@@ -86,20 +93,34 @@ analyzeFile.write("AVERAGE_MODULARITY %s/modularity_cluster-B.dat task.0 task.1 
 #Run MAP_MUTATIONS on the B cluster
 analyzeFile.write("MAP_MUTATIONS %s html\n" %mutDir)
 
+#Run MAP_TASKS on the B cluster
+analyzeFile.write("MAP_TASKS %s task.0 task.1 task.2 task.3 task.4 task.5 task.6 task.7 task.8 html \n" %taskDir)
+
 #Done
 analyzeFile.close()
 
 #Fire up avida on the analyze file
 subprocess.call(("avida -c avida_comp.cfg -set EVENT_FILE events.cfg -set ANALYZE_FILE mod-analyze_cluster.cfg -set DATA_DIR %s -a" %resultOutDir).split())
 
-#Finally, lets rename the mutations files based on the pairs so it's easier to keep up with
+#Finally, lets rename the mutations and tasks files based on the pairs so it's easier to keep up with
 org = 1
 for ancestor in ancestors:
+	#Rename the mutations files
 	oldA = os.path.join(mutDir, "mut_map.org-%s.html" %org)
 	newA = os.path.join(mutDir, "mut_map_%s-A.html" %ancestor)
 
 	oldB = os.path.join(mutDir, "mut_map.org-%s.html" %(org+1))
 	newB = os.path.join(mutDir, "mut_map_%s-B.html" %ancestor)
+
+	os.rename(oldA, newA)
+	os.rename(oldB, newB)
+
+	#Rename the tasks files
+	oldA = os.path.join(taskDir, "tasksites.org-%s.html" %org)
+	newA = os.path.join(taskDir, "tasksites_%s-A.html" %ancestor)
+
+	oldB = os.path.join(taskDir, "tasksites.org-%s.html" %(org+1))
+	newB = os.path.join(taskDir, "tasksites_%s-B.html" %ancestor)
 
 	os.rename(oldA, newA)
 	os.rename(oldB, newB)
