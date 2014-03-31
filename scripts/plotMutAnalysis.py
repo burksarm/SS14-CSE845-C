@@ -4,6 +4,8 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 from pylab import *
+import scipy.stats
+
 ''' Plots the data from the mutation map on the competition organisms.
 	Simply plots the total fraction of lethal, detrimental, neutral, and beneficial mutations.
 '''
@@ -18,8 +20,6 @@ def getFigName(label):
 
 #Setup some variables
 outDir = sys.argv[1]
-
-
 
 #Make sure output path exists
 if not os.path.exists(outDir):
@@ -39,43 +39,39 @@ for line in open("../results/mutAnalysis/mutMap-B.dat"):
 
 #Calulate the means and stdevs (in case we want to plot error bars)
 aMeans = []
-aStdvs = []
+aStdErrs = []
 
 bMeans = []
-bStdvs = []
+bStdErrs = []
 
 for i in range(4):
-	aVals = [data[i] for data in aData]
-	bVals = [data[i] for data in bData]
+	#Get the data and convert to percentages
+	aVals = [data[i] * 100 for data in aData]
+	bVals = [data[i] * 100 for data in bData]
 
+	#Calculate the means & stdevs
 	aMeans.append(np.mean(aVals))
-	aStdvs.append(np.std(aVals))
+	aStdErrs.append(scipy.stats.sem(aVals))
 
 	bMeans.append(np.mean(bVals))
-	bStdvs.append(np.std(bVals))
+	bStdErrs.append(scipy.stats.sem(bVals))
 
 #Setup some needed vars for the plots
 width = 0.25
-index = np.arange(14)
+index = np.arange(1)
 errorConfig = {'ecolor': '0.3'}
 labels = ["Percent Lethal mutations", "Percent Detrimental Mutations", "Percent Neutral Mutations", "Percent Beneficial Mutations"]
 
 #Plot each metric in a separate figure
 for i in range(4):
-	#Get all the data for A and B for the current column (and converto to percentages)
-	aVals = [data[i] * 100 for data in aData]
-	bVals = [data[i] * 100 for data in bData]
-
-	plt.bar(index, aVals, width, color='b', label="A")#, yerr=[aStdvs[i] for aVal in aVals], error_kw=errorConfig)
-	plt.bar(index+width, bVals, width, color='r', label="B")#yerr=[bStdvs[i] for bVal in bVals], error_kw=errorConfig)
-
-	#Set the y scale to help compare figures
-	#plt.ylim(0, 70)
+	#Plot only the average of all A vs all B
+	plt.bar(index, aMeans[i], width, color='b', label="A", yerr=aStdErrs[i], error_kw=errorConfig)
+	plt.bar(index+width, bMeans[i], width, color='r', label="B", yerr=bStdErrs[i], error_kw=errorConfig)
 
 	#Set the labels/legend and save the figure
 	plt.ylabel(labels[i])
 	plt.xlabel("Ancestor Pair")
-	plt.xticks(index + width, [group for group in range(1, 15)])
+	#plt.xticks(index + width, [group for group in range(1, 15)])
 	plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 	plt.savefig(os.path.join(outDir, getFigName(labels[i]) + ".png"), bbox_inches="tight")
 
