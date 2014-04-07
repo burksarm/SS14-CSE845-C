@@ -31,11 +31,11 @@ bData = []
 
 for line in open("../results/mutAnalysis/mutMap-A.dat"):
 	if not line.startswith("#"):		
-		aData.append([float(d) for d in line.strip().split("\t")])
+		aData.append([float(d) * 100 for d in line.strip().split("\t")])
 
 for line in open("../results/mutAnalysis/mutMap-B.dat"):
 	if not line.startswith("#"):		
-		bData.append([float(d) for d in line.strip().split("\t")])
+		bData.append([float(d) * 100 for d in line.strip().split("\t")])
 
 #Calulate the means and stdevs (in case we want to plot error bars)
 aMeans = []
@@ -46,8 +46,8 @@ bStdErrs = []
 
 for i in range(4):
 	#Get the data and convert to percentages
-	aVals = [data[i] * 100 for data in aData]
-	bVals = [data[i] * 100 for data in bData]
+	aVals = [data[i] for data in aData]
+	bVals = [data[i] for data in bData]
 
 	#Calculate the means & stdevs
 	aMeans.append(np.mean(aVals))
@@ -64,16 +64,14 @@ labels = ["Percent Lethal mutations", "Percent Detrimental Mutations", "Percent 
 
 #Plot each metric in a separate figure
 for i in range(4):
-	#Plot only the average of all A vs all B
-	plt.bar(index, aMeans[i], width, color='b', label="A", yerr=aStdErrs[i], error_kw=errorConfig)
-	plt.bar(index+width, bMeans[i], width, color='r', label="B", yerr=bStdErrs[i], error_kw=errorConfig)
+	plt.boxplot([[data[i] for data in aData], [data[i] for data in bData]], notch=True, bootstrap=5000)
 
 	#Set the labels/legend and save the figure
 	plt.ylabel(labels[i])
-	plt.xlabel("Ancestor Pair")
-	#plt.xticks(index + width, [group for group in range(1, 15)])
+	plt.xlabel("Ancestor Group")
+	plt.xticks([1,2], ["A", "B"])
 	plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-	plt.savefig(os.path.join(outDir, getFigName(labels[i]) + ".png"), bbox_inches="tight")
+	plt.savefig(os.path.join(outDir, getFigName(labels[i]) + ".png"))
 
 	#Clear the plot for the next figure
 	plt.clf()
