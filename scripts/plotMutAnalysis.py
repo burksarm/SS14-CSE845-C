@@ -64,7 +64,7 @@ labels = ["Percent Lethal mutations", "Percent Detrimental Mutations", "Percent 
 
 #Plot each metric in a separate figure
 for i in range(4):
-	plt.boxplot([[data[i] for data in aData], [data[i] for data in bData]], notch=True, bootstrap=5000)
+	plt.boxplot([[data[i] for data in aData], [data[i] for data in bData]], notch=True)
 
 	#Set the labels/legend and save the figure
 	plt.ylabel(labels[i])
