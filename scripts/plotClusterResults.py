@@ -8,8 +8,7 @@ import scipy.stats as stats
 #Simple script to plot the data of interest from the A and B clustered ancestors.
 #Takes three arguments: 1 - the path to the AVERAGE_MODULARITY results
 #					    2 - the output path
-
-COLS_TO_PLOT = [3, 5, 6, 7] #The columns of data we want to plot
+#						3 - a list of column indices to plot. example: 0,1,3,10
 
 #Convenience method to generate a file name for the figure, based on the label
 def getFigName(label):
@@ -23,9 +22,15 @@ def checkOutputPaths(dirNames):
 			os.makedirs(dirName)
 
 #Check args
-if len(sys.argv) != 3:
-	print "Usage plotModularity.py <INPUT_DIR> <OUTPUT_DIR>"
+if len(sys.argv) < 3:
+	print "Usage plotModularity.py <INPUT_DIR> <OUTPUT_DIR> <COLS TO PLOT (optional) example: 0,1,3,10"
 	quit()
+
+#Figure out the columns of interest to plot
+COLS_TO_PLOT = [3, 5, 6, 7]
+
+if len(sys.argv) == 4:
+	COLS_TO_PLOT = [int(col.strip()) for col in sys.argv[3].split(",")]
 
 #Setup some needed vars
 inDir = sys.argv[1]
