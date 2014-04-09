@@ -78,7 +78,7 @@ def calcNeutralSites(genomeData):
 		mutTypes = set(siteData)
 
 		#If they were all neutral or beneficial, increment the count
-		if (len(mutTypes) == 1 and NEUTRAL in mutTypes) or (len(mutTypes) == 2 and NEUTRAL in mutTypes and BENEFICIAL in mutTypes):
+		if (len(mutTypes) == 1 and NEUTRAL in mutTypes):# or (len(mutTypes) == 2 and NEUTRAL in mutTypes and BENEFICIAL in mutTypes):
 			totalNeutral += 1.0
 
 	#Now calculate the percent of neutral sites in the entire genome
