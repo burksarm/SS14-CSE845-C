@@ -6,7 +6,7 @@ import subprocess
 
 argc = len(sys.argv)
 if argc < 3:
-	print "Usage analyzeTasks.py <TOP-LEVEL_COMPETITION_RESULTS_DIRECTORY> <OUTPUT_DIRECTORY> <MUT_RATES (optional. ex. .'5,3')>"
+	print "Usage analyzeTasks.py <TOP-LEVEL_COMPETITION_RESULTS_DIRECTORY> <OUTPUT_DIRECTORY> <MUT_RATES (optional. ex. '0.5,3')>"
 	quit()
 
 MUT_RATES = [0.5, 3.0]
