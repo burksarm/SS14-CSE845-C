@@ -31,16 +31,19 @@ inFile = open("../results/goodComps.txt", "r")
 for line in inFile:
 	goodComps.append(line.strip())
 
-
-
 #Now collect all the data
+gens = [gen for gen in range(0, 55, 5)]
+
 for mutRate in MUT_RATES:
+	allAAverages = {} #taskNum -> [[averages for each gen]]
+	allBAverages = {} #taskNum -> [[averages for each gen]]
+
 	allAData = {} #generation -> org-> [[total A descendants with each task 0-9]]
 	allBData = {} #generation -> org-> [[total B descendants with each task 0-9]]
 
 	for comp in range(1, 11):
 		for org in goodComps:
-			for gen in range(0, 55, 5):
+			for gen in gens:
 					resultFile = open(os.path.join(inDir, "comp%s-tasks-%s-%s-%s" %(comp, org, mutRate, gen)), "r")
 
 					#Init all nine tasks with 0
@@ -79,20 +82,21 @@ for mutRate in MUT_RATES:
 							
 	for org in goodComps:
 		#Now plot the averages for each task for this mutation rate
-		gens = [gen for gen in range(0, 55, 5)]
-
-		#print "%s: %s" %(org, allAData[0][org])
 
 		for task in range(9):
 			lineStyle = "--" if task%2 == 0 else "-"
 
 			#Calculate the averages
-			taskInfo = [sum(taskData[task] for taskData in allAData[gen][org])/10 for gen in gens]
-			#print taskInfo
-			#allComps = [allAData[gen][org] for gen in gens]
-			#print [sum([comp[task] for comp in allComps])/10.0]
-			plt.plot(gens, taskInfo,
-				label=tasks[task], ls=lineStyle)
+			taskAverages = [sum(taskData[task] for taskData in allAData[gen][org])/10 for gen in gens]
+
+			#Save them so we can average across all A
+			if task not in allAAverages:
+				allAAverages[task] = []
+
+			allAAverages[task].append(taskAverages)
+
+			#Finally plot the A data for this org and mutation rate
+			plt.plot(gens, taskAverages, label=tasks[task], ls=lineStyle)
 
 		plt.xlabel("Generation")
 		plt.ylabel("Organisms Performing Task")
@@ -100,23 +104,58 @@ for mutRate in MUT_RATES:
 		plt.savefig(os.path.join(outDir, "tasks-%s-A-%s.png" %(org, mutRate)), bbox_inches="tight")
 		plt.clf()
 
-		#Redo it for B
+		#Plot B separately
 		for task in range(9):
 			lineStyle = "--" if task%2 == 0 else "-"
 
 			#Calculate the averages
-			taskInfo = [sum(taskData[task] for taskData in allBData[gen][org])/10 for gen in gens]
-			plt.plot(gens, taskInfo,
-				label=tasks[task], ls=lineStyle)
+			taskAverages = [sum(taskData[task] for taskData in allBData[gen][org])/10 for gen in gens]
+
+			#Save them so we can average across all B
+			if task not in allBAverages:
+				allBAverages[task] = []
+			
+			allBAverages[task].append(taskAverages)
+
+			#Finally plot the B data for this org and mutation rate
+			plt.plot(gens, taskAverages, label=tasks[task], ls=lineStyle)
 
 		plt.xlabel("Generation")
 		plt.ylabel("Organisms Performing Task")
 		plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 		plt.savefig(os.path.join(outDir, "tasks-%s-B-%s.png" %(org, mutRate)), bbox_inches="tight")
 		plt.clf()
+
+	#Now average across all A data and plot it
+	for task in range(9):
+		lineStyle = "--" if task%2 == 0 else "-"
 		
+		#Average for each generation across all the A organisms
+		avgA = [sum(orgAvg[i] for orgAvg in allAAverages[task])/len(allAAverages[task]) 
+			for i in range(len(gens))]
+		
+		plt.plot(gens, avgA, label=tasks[task], ls=lineStyle)
 
+	plt.ylabel("Avg. A Organisms Performing Task")
+	plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+	plt.savefig(os.path.join(outDir, "_avgTasksA-%s.png" %(mutRate)), bbox_inches="tight")
+	plt.clf()
 
+	#Now average across all B data and plot it
+	for task in range(9):
+		lineStyle = "--" if task%2 == 0 else "-"
+		
+		#Average for each generation across all the B organisms
+		avgB = [sum(orgAvg[i] for orgAvg in allBAverages[task])/len(allBAverages[task]) 
+			for i in range(len(gens))]
+		
+		plt.plot(gens, avgB, label=tasks[task], ls=lineStyle)
+
+	plt.xlabel("Generation")
+	plt.ylabel("Avg. B Organisms Performing Task")
+	plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+	plt.savefig(os.path.join(outDir, "_avgTasksB-%s.png" %(mutRate)), bbox_inches="tight")
+	plt.clf()
 
 
 
