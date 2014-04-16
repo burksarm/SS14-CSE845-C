@@ -3,20 +3,41 @@ import sys
 import imp
 import os
 import subprocess
+import competitions_parentmut as compScript
+
+#Convenience method to generate the run string, making sure the outDir exists
+def generateCmd(org, ab, eventFile, outDir, targetMutRate):
+	mutRate = compScript.calcMutRate("../organisms/complexPool/%s.org" %org, targetMutRate)/2.0
+	outputDir = outDir + "/%s-%s-%s" %(org, ab, targetMutRate)
+
+	#Make sure the sub-directory exists
+	if not os.path.exists(outputDir):
+		os.makedirs(outputDir)
+
+	#Generate the hideous command
+	cmd = "avida -v0 -c avida_comp.cfg -set DATA_DIR %s -set EVENT_FILE %s -set ENVIRONMENT_FILE environment_%s_comp.cfg -set COPY_MUT_PROB %.10f -set PARENT_MUT_PROB %.10f" %(outputDir, eventFile, org, mutRate, mutRate)
+
+	return cmd
+
+#Convenience method to figure out the org's merit from the organism file
+def getOrgMerit(fName):
+	for line in open(fName):
+		if line.startswith("# Merit"):
+			return float(line.strip().split()[-1])
 
 argc = len(sys.argv)
-if argc < 3:
-	print "Usage analyzeTasks.py <TOP-LEVEL_COMPETITION_RESULTS_DIRECTORY> <OUTPUT_DIRECTORY> <MUT_RATES (optional. ex. '0.5,3')>"
+if argc < 2:
+	print "Usage analyzeTasks.py <OUTPUT_DIRECTORY> <MUT_RATES (optional. ex. '0.5,3.0')>"
 	quit()
 
 MUT_RATES = [0.5, 3.0]
 
-if argc == 4:
-	MUT_RATES = sys.argv[3].split(",")
+if argc == 3:
+	MUT_RATES = [float(rate) for rate in sys.argv[2].split(",")]
 
-#Get the input and output directory
-compDir = sys.argv[1]
-outDir = sys.argv[2]
+#Get output directory
+#compDir = sys.argv[1]
+outDir = sys.argv[1]
 
 #Make sure the output path exists (and each competition directory)
 if not os.path.exists(outDir):
@@ -30,68 +51,80 @@ inFile = open("../results/goodComps.txt", "r")
 for line in inFile:
 	goodComps.append(line.strip())
 
+runList = [] #Holds all the runs we'll need
 
+#For each org, run it in isolation and collect stats on it
+for org in goodComps:
+	#Create an event file to run the org in isolation (A & B)
+	eventFileA = open("events_%s-A_isolation.cfg" %org, "w")
+	eventFileB = open("events_%s-B_isolation.cfg" %org, "w")
+
+	#Get the initial a and b merit...
+	aMerit = getOrgMerit("../organisms/flatPool/%s.org-A" %org)
+	bMerit = getOrgMerit("../organisms/flatPool/%s.org-B" %org)
+
+	#Inject the organism
+	eventFileA.write("u begin Inject ../organisms/flatPool/%s.org-A 0 %.10f 0\n" %(org, aMerit))
+	eventFileB.write("u begin Inject ../organisms/flatPool/%s.org-B 0 %.10f 1\n" %(org, bMerit))
+
+	#Get the average stats for each generation
+	eventFileA.write("g 0:5 PrintAverageData\n")
+	eventFileB.write("g 0:5 PrintAverageData\n")
+
+	#Tasks aren't in the average.dat file. We want them.
+	eventFileA.write("g 0:5 PrintAveNumTasks\n")
+	eventFileB.write("g 0:5 PrintAveNumTasks\n")
+
+	#Save the pop, just in case we need it later for something else...
+	eventFileA.write("g 0:5 SavePopulation\n")
+	eventFileB.write("g 0:5 SavePopulation\n")
+
+	#Stop after 50 generations
+	eventFileA.write("g 50 Exit\n")
+	eventFileB.write("g 50 Exit\n")
+	
+	#Done
+	eventFileA.close()
+	eventFileB.close()
+
+	#Now get the command for this org and add it to the run list
+	for mutRate in MUT_RATES:
+		runList.append(generateCmd(org, "A", eventFileA.name, outDir, mutRate))
+		runList.append(generateCmd(org, "B", eventFileB.name, outDir, mutRate))
+
+#Divide the runs into a few job files
+runNum = 0
 jobFiles = []
-#Create an analyze file for each competition run
-for comp in range(1, 11):
-	analyzeFile = open("analyzeTasks%s.cfg"  %comp, "w")
 
-	for org in goodComps:
-		for mutRate in MUT_RATES:
-			#Load each generation 0-50, by 5
-			analyzeFile.write("#Load each generation population file.\n")
-			analyzeFile.write("FORRANGE i 0 50 5\n")
-
-			#Cleanup from previously-loaded data.
-			analyzeFile.write("\t#First, cleanup from previously-loaded data.\n")
-			analyzeFile.write("\tPURGE_BATCH\n\n")
-
-			#Now load the file
-			competition = "%s-comp-%s" %(org, mutRate)
-			analyzeFile.write("\tLOAD %s/detail-$i.spop\n\n" %os.path.abspath(os.path.join("%s/comp%s" %(compDir, comp), competition)))
-
-			#Filter out genotypes with numCpus < 0
-			analyzeFile.write("\t#Filter out genotypes with numCpus < 0\n")
-			analyzeFile.write("\tFILTER num_cpus > 0\n\n")
-
-			#Run RECALCULATE
-			analyzeFile.write("\t#Run RECALCULATE\n")
-			analyzeFile.write("\tRECALCULATE\n\n")
-
-			#Run Detail and get the lineage label, num_cpus and whether or not 
-			#each task was performed
-			analyzeFile.write("\t#Get the tasks for all the A/B descendants\n")
-			analyzeFile.write("\tDETAIL %s/comp%s-tasks-%s-%s-$i lineage num_cpus task.0 task.1 task.2 task.3 task.4 task.5 task.6 task.7 task.8\n" 
-				%(outDir, comp, org, mutRate))
-
-			#Done
-			analyzeFile.write("END\n\n")
-
-	analyzeFile.close()
-
-	#Now Create and run a job file for the analyze script
-	jobFile = open("analyzeTasks%s.qsub" %comp, "w")
+for i in range(10):
+	#Create a new job file
+	jobFile = open("analyzeTasks-%s.qsub" %i, "w")
 
 	jobFile.write("#!/bin/bash -login\n")
-	jobFile.write("#PBS -l walltime=01:00:00,nodes=1:ppn=1\n")
+	jobFile.write("#PBS -l walltime=02:00:00,nodes=1:ppn=1\n")
 	jobFile.write("#PBS -j oe\n")
-	jobFile.write("#PBS -N analyze-tasks-%s\n\n" %comp)
+	jobFile.write("#PBS -N analyze-tasks-%s\n\n" %i)
 
 	#Change to the current directory
 	jobFile.write("cd %s\n" %os.path.abspath("."))
 
 	#Load the avida module
-	jobFile.write("module load avida\n")
+	jobFile.write("module load avida\n\n")
+	
+	#now add up to total/10 run commands
+	chunk = len(runList)/10
 
-	#Run the analyze file
-	jobFile.write("avida -a -c avida_comp.cfg -set ENVIRONMENT_FILE environment.cfg -set EVENT_FILE events.cfg -set ANALYZE_FILE %s -set DATA_DIR %s\n" 
-		%(analyzeFile.name, outDir))
+	for run in range(runNum, runNum + chunk + 1):
+		if run < len(runList):
+			jobFile.write(runList[run] + "\n")
+			runNum += 1
 
 
 	jobFile.close()
 	jobFiles.append(jobFile.name)
 
 
+#Finally submit all the jobs
 for jobFile in jobFiles:
 	subprocess.call(("qsub %s" %jobFile).split())
 
