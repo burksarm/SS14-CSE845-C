@@ -81,7 +81,7 @@ def collectData(fName, collection, org, ab, column, isTasks=False):
 		gen += 5
 
 #Collects all the data and plots it
-def plotAvgData(column, yLabel, pngName, outDir, logScale, isTasks=False):
+def plotAvgData(column, yLabel, pngName, outDir, logScale, yRange, isTasks=False):
 	aAverages = {} #Holds the averages over all the replicates: mutRate -> gen -> [avg col data]
 	bAverages = {} #Holds the averages over all the replicates: mutRate -> gen -> [avg col data]
 
@@ -123,21 +123,6 @@ def plotAvgData(column, yLabel, pngName, outDir, logScale, isTasks=False):
 					aAverages[mutRate][gen][i] += allAData[gen][i]
 					bAverages[mutRate][gen][i] += allBData[gen][i]
 
-			#TESTING each line individually...
-			#plt.plot(GENS, [sum(allAData[gen])/len(allAData[gen]) for gen in GENS], color='b', label = 'A' if run == 1 else None)
-			#plt.plot(GENS, [sum(allBData[gen])/len(allBData[gen]) for gen in GENS], color='r', label = 'B' if run == 1 else None)
-
-		
-
-		'''if (logScale):
-			plt.yscale('log')
-
-		plt.xlabel("Generation")
-		plt.ylabel(yLabel)
-		plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-		plt.savefig(os.path.join(outDir, "%s-%s_multiLine.png" %(pngName, mutRate)), bbox_inches="tight")
-		plt.clf()'''
-
 
 	#Now we have the totals across all the runs, go through and divide by 10 to get the averages
 	for mutRate in MUT_RATES:
@@ -146,16 +131,32 @@ def plotAvgData(column, yLabel, pngName, outDir, logScale, isTasks=False):
 				aAverages[mutRate][gen][i] /= 10
 				bAverages[mutRate][gen][i] /= 10
 
+		#Calculate the std err or the mean among A and B for each gen
+		aSems = [stats.sem(aAverages[mutRate][gen]) for gen in GENS]
+		bSems = [stats.sem(bAverages[mutRate][gen]) for gen in GENS]
+
 
 		#Now we're finally ready to plot
 		if (logScale):
 			plt.yscale('log')
 
-		plt.plot(GENS, [sum(aAverages[mutRate][gen])/len(aAverages[mutRate][gen]) 
-			for gen in GENS], color='b', label="A")
+		aLine = [sum(aAverages[mutRate][gen])/len(aAverages[mutRate][gen])
+			for gen in GENS]
 
-		plt.plot(GENS, [sum(bAverages[mutRate][gen])/len(bAverages[mutRate][gen]) 
-			for gen in GENS], color='r', label="B")
+		bLine = [sum(bAverages[mutRate][gen])/len(bAverages[mutRate][gen]) 
+			for gen in GENS]
+
+		#Plot the lines for A and B
+		plt.plot(GENS, aLine, color='b', label="A")
+		plt.plot(GENS, bLine, color='r', label="B", ls="--")
+
+		#Add the errorbars in on top of the line
+		plt.errorbar(GENS, aLine, yerr=aSems, color="b", label=None)
+		plt.errorbar(GENS, bLine, yerr=bSems, color="r", ls="--", label=None)
+
+		#Set the x and y range to make comparing the mut rates easy
+		plt.xlim(GENS[0]-1, GENS[-1]+1) #So we can see the 1st and last error bars
+		plt.ylim(yRange[0], yRange[1])
 
 		plt.xlabel("Generation")
 		plt.ylabel(yLabel)
@@ -163,18 +164,18 @@ def plotAvgData(column, yLabel, pngName, outDir, logScale, isTasks=False):
 		plt.savefig(os.path.join(outDir, "%s-%s.png" %(pngName, mutRate)), bbox_inches="tight")
 		plt.clf()
 
-		#Calculate the change in merit between start & gen 50 for each A
-		aDeltas = [abs(aAverages[mutRate][50][i] - aAverages[mutRate][0][i]) 
+		#Get the ending value for each A and B
+		aEndValues = [abs(aAverages[mutRate][GENS[-1]][i]) 
 			for i in range(len(goodComps))]
 
-		bDeltas = [abs(bAverages[mutRate][50][i] - bAverages[mutRate][0][i]) 
+		bEndValues = [abs(bAverages[mutRate][GENS[-1]][i]) 
 			for i in range(len(goodComps))]
 
 		#Perform the Mann-Whitney on the mean delta in the data across A vs B for each generation
-		zStat, pVal = stats.ranksums(aDeltas, bDeltas)
+		zStat, pVal = stats.ranksums(aEndValues, bEndValues)
 
 
-		print "%s delta at mutation rate %s: Mann-Whitney p = %f" %(yLabel, mutRate, pVal)
+		print "Final %s at mutation rate %s: Mann-Whitney p = %f" %(yLabel, mutRate, pVal)
 
 	print "-" * 50
 
@@ -201,10 +202,10 @@ if __name__ == "__main__":
 	for line in inFile:
 		goodComps.append(line.strip())
 
-	plotAvgData(2, "Avg. Gestation Time", "avgGest_isolation", outDir, False)
-	plotAvgData(1, "Avg. Merit", "avgMerit_isolation", outDir, True)
-	plotAvgData(3, "Avg. Fitness", "avgFitness_isolation", outDir, True)
-	plotAvgData(1, "Avg. Tasks", "avgTasks_isolation", outDir, False, isTasks=True)
+	plotAvgData(2, "Avg. Gestation Time", "avgGest_isolation", outDir, False, (200, 1000))
+	plotAvgData(1, "Avg. Merit", "avgMerit_isolation", outDir, True,  (10000, pow(10, 10)))
+	plotAvgData(3, "Avg. Fitness", "avgFitness_isolation", outDir, True, (10, pow(10, 7)))
+	plotAvgData(1, "Avg. Tasks", "avgTasks_isolation", outDir, False, (0, 9), isTasks=True)
 	
 
 

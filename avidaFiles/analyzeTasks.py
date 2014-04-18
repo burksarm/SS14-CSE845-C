@@ -26,17 +26,17 @@ def getOrgMerit(fName):
 			return float(line.strip().split()[-1])
 
 argc = len(sys.argv)
-if argc < 2:
-	print "Usage analyzeTasks.py <OUTPUT_DIRECTORY> <MUT_RATES (optional. ex. '0.5,3.0')>"
+if argc < 3:
+	print "Usage analyzeTasks.py <OUTPUT_DIRECTORY> <NUM_GENS> <MUT_RATES (optional. ex. '0.5,3.0')>"
 	quit()
 
 MUT_RATES = [0.5, 3.0]
+NUM_GENS = sys.argv[2]
 
-if argc == 3:
+if argc == 4:
 	MUT_RATES = [float(rate) for rate in sys.argv[2].split(",")]
 
 #Get output directory
-#compDir = sys.argv[1]
 outDir = sys.argv[1]
 
 #Make sure the output path exists (and each competition directory)
@@ -75,13 +75,9 @@ for org in goodComps:
 	eventFileA.write("g 0:5 PrintAveNumTasks\n")
 	eventFileB.write("g 0:5 PrintAveNumTasks\n")
 
-	#Save the pop, just in case we need it later for something else...
-	eventFileA.write("g 0:5 SavePopulation\n")
-	eventFileB.write("g 0:5 SavePopulation\n")
-
-	#Stop after 50 generations
-	eventFileA.write("g 50 Exit\n")
-	eventFileB.write("g 50 Exit\n")
+	#Stop after NUM_GENS generations
+	eventFileA.write("g %s Exit\n" %NUM_GENS)
+	eventFileB.write("g %s Exit\n" %NUM_GENS)
 	
 	#Done
 	eventFileA.close()
