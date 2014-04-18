@@ -30,7 +30,7 @@ for i in range(1, 11):
 	jobScript.write("module load avida\n\n")
 
 	jobScript.write("#Change to your working directory\n")
-	jobScript.write("cd /mnt/home/burksarm/Documents/CSE845/SS14-CSE845-C/avidaFiles\n\n")
+	jobScript.write("cd %s\n" %os.path.abspath("."))
 
 	jobScript.write("#Run the analyze script\n")
 	jobScript.write("python analyze.py %s/comp%s  %s/comp%s\n" %(inputDir, i, outputDir, i))

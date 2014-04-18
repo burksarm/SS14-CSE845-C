@@ -81,14 +81,14 @@ for i in range(len(runList)):
 	runFile.write("module load avida\n")
 
 	runFile.write("#Change to your working directory\n")
-	runFile.write("cd /mnt/home/burksarm/Documents/CSE845/SS14-CSE845-C/avidaFiles\n")
+	runFile.write("cd %s\n" %(os.path.abspath(".")))
 
 	runFile.write("#For each ancestor, run avida with mutation rate 0.5 and 2.0\n")
 	runFile.write("%s\n" %runList[i])
 
 	runFile.close();
 
-	#subprocess.call(["qsub", runFile.name])
+	subprocess.call(["qsub", runFile.name])
 
 
 
