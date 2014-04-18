@@ -1,0 +1,12 @@
+Final Avg. Gestation Time at mutation rate 0.5: Mann-Whitney p = 0.000137
+Final Avg. Gestation Time at mutation rate 3.0: Mann-Whitney p = 0.001781
+--------------------------------------------------
+Final Avg. Merit at mutation rate 0.5: Mann-Whitney p = 0.141474
+Final Avg. Merit at mutation rate 3.0: Mann-Whitney p = 0.003795
+--------------------------------------------------
+Final Avg. Fitness at mutation rate 0.5: Mann-Whitney p = 0.038673
+Final Avg. Fitness at mutation rate 3.0: Mann-Whitney p = 0.005066
+--------------------------------------------------
+Final Avg. Tasks at mutation rate 0.5: Mann-Whitney p = 0.034550
+Final Avg. Tasks at mutation rate 3.0: Mann-Whitney p = 0.000094
+--------------------------------------------------

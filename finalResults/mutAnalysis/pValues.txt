@@ -1,0 +1,4 @@
+Percent Lethal mutations p=0.0024
+Percent Detrimental Mutations p=0.0001
+Percent Neutral Mutations p=0.0000
+Percent Beneficial Mutations p=0.0001

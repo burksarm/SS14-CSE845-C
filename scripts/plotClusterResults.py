@@ -27,7 +27,7 @@ if len(sys.argv) < 3:
 	quit()
 
 #Figure out the columns of interest to plot
-COLS_TO_PLOT = [3, 5, 6, 7]
+COLS_TO_PLOT = [5, 6, 7]
 
 if len(sys.argv) == 4:
 	COLS_TO_PLOT = [int(col.strip()) for col in sys.argv[3].split(",")]
@@ -77,9 +77,14 @@ for column in COLS_TO_PLOT:
 for i in range(len(COLS_TO_PLOT)):
 	column = COLS_TO_PLOT[i]
 
+	#Make the proportions from 0 to 1
+	if (COLS_TO_PLOT[i] == 6 or COLS_TO_PLOT[i] == 7):
+		plt.ylim(0, 1)
+
 	plt.boxplot([[data[column] for data in aPoints], [data[column] for data in bPoints]], notch=True)
 	plt.xlabel("Ancestor Group")
-	plt.ylabel(labels[column] + " (p=%.4f)" %pValues[i])
+	plt.ylabel(labels[column])
+	plt.figtext(0.75, 0.8, " p=%.4f" %pValues[i])
 	plt.xticks([1,2], ["A", "B"])
 	plt.savefig(os.path.join(outDir, getFigName(labels[column])), bbox_inches="tight")
 	plt.clf()

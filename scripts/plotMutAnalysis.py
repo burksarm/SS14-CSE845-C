@@ -14,6 +14,8 @@ if not len(sys.argv) == 2:
 	print "Usage: python mutAnalysis.py <OUTPUT_DIR>"
 	quit()
 
+labels = ["Percent Lethal mutations", "Percent Detrimental Mutations", "Percent Neutral Mutations", "Percent Beneficial Mutations"]
+
 #Convenience method to generate a file name for the figure, based on the label
 def getFigName(label):
 	return ''.join(c for c in label.title() if not c.isspace())
@@ -43,6 +45,7 @@ aStdErrs = []
 
 bMeans = []
 bStdErrs = []
+pVals = []
 
 for i in range(4):
 	#Get the data and convert to percentages
@@ -56,11 +59,16 @@ for i in range(4):
 	bMeans.append(np.mean(bVals))
 	bStdErrs.append(scipy.stats.sem(bVals))
 
+	#Get the Mann-Whitney p-value
+	zStat, pVal = scipy.stats.ranksums(aVals, bVals)
+	pVals.append(pVal)
+	print "%s p=%.4f" %(labels[i], pVal)
+
 #Setup some needed vars for the plots
 width = 0.25
 index = np.arange(1)
 errorConfig = {'ecolor': '0.3'}
-labels = ["Percent Lethal mutations", "Percent Detrimental Mutations", "Percent Neutral Mutations", "Percent Beneficial Mutations"]
+
 
 #Plot each metric in a separate figure
 for i in range(4):
@@ -70,8 +78,8 @@ for i in range(4):
 	plt.ylabel(labels[i])
 	plt.xlabel("Ancestor Group")
 	plt.xticks([1,2], ["A", "B"])
-	plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-	plt.savefig(os.path.join(outDir, getFigName(labels[i]) + ".png"))
+	plt.figtext(0.75, 0.8, " p=%.4f" %pVals[i])
+	plt.savefig(os.path.join(outDir, getFigName(labels[i]) + ".png"), bbox_inches="tight")
 
 	#Clear the plot for the next figure
 	plt.clf()
