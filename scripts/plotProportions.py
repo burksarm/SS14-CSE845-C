@@ -57,10 +57,10 @@ def plotCompetitions(org, resultsDir, mutRate, doLabel, clearPlot=False):
 	#Now we have the proportions tallied up for the current mutation rate. Plot the data.
 	if doLabel == True: #Since we have 10 lines for each ancestor, only add the legend label once.
 		plt.plot(generations, [aProportions[gen]/popSizes[gen] for gen in generations], "b-", label="A")
-		plt.plot(generations, [bProportions[gen]/popSizes[gen] for gen in generations], "r-", label="B")
+		plt.plot(generations, [bProportions[gen]/popSizes[gen] for gen in generations], "r-", label="B", ls="--")
 	else:
 		plt.plot(generations, [aProportions[gen]/popSizes[gen] for gen in generations], "b-")
-		plt.plot(generations, [bProportions[gen]/popSizes[gen] for gen in generations], "r-")
+		plt.plot(generations, [bProportions[gen]/popSizes[gen] for gen in generations], "r-", ls="--")
 
 		
 #Plots all 10 competition lines for the given ancestor organism
