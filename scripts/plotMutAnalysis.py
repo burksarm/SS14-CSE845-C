@@ -77,6 +77,7 @@ for i in range(4):
 	#Set the labels/legend and save the figure
 	plt.ylabel(labels[i])
 	plt.xlabel("Ancestor Group")
+	plt.ylim(0, 100)
 	plt.xticks([1,2], ["A", "B"])
 	plt.figtext(0.75, 0.8, " p=%.4f" %pVals[i])
 	plt.savefig(os.path.join(outDir, getFigName(labels[i]) + ".png"), bbox_inches="tight")
