@@ -67,6 +67,10 @@ if __name__ == "__main__":
 	#Get the good comps
 	goodComps = getGoodComps()
 
+	#Figure out the range of the ratios across all the competition pairs
+	minMax = [min(ratio for ratio in ratios.values()), max(ratio for ratio in ratios.values())]
+	print "Range of A/B Fitness Ratios = %s\n" %(minMax)
+
 	#Show the ratios for the good comps
 	print "A/B fitness ratios for good competition pairs:"
 
