@@ -42,9 +42,11 @@ for line in open("../results/mutAnalysis/mutMap-B.dat"):
 
 #Calulate the means and stdevs (in case we want to plot error bars)
 aMeans = []
+aMedians = []
 aStdErrs = []
 
 bMeans = []
+bMedians = []
 bStdErrs = []
 pVals = []
 
@@ -53,17 +55,20 @@ for i in range(4):
 	aVals = [data[i] for data in aData]
 	bVals = [data[i] for data in bData]
 
-	#Calculate the means & stdevs
+	#Calculate the medians, means & sems for reporting
 	aMeans.append(np.mean(aVals))
+	aMedians.append(np.median(aVals))
 	aStdErrs.append(scipy.stats.sem(aVals))
 
 	bMeans.append(np.mean(bVals))
+	bMedians.append(np.median(bVals))
 	bStdErrs.append(scipy.stats.sem(bVals))
 
 	#Get the Mann-Whitney p-value
 	zStat, pVal = scipy.stats.ranksums(aVals, bVals)
 	pVals.append(pVal)
-	print "%s p=%.4f" %(labels[i], pVal)
+
+	print "%s Mann-Whitney p=%f, fast replicator median = %f, SEM = %f, slow replicator median = %f, SEM = %f" %(labels[i], pVal, aMedians[i], aStdErrs[i], bMedians[i], bStdErrs[i])
 
 #Setup some needed vars for the plots
 width = 0.25

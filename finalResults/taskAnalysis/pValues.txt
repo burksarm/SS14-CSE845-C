@@ -1,12 +1,12 @@
-Final Avg. Gestation Time at mutation rate 0.5: Mann-Whitney p = 0.000137
-Final Avg. Gestation Time at mutation rate 3.0: Mann-Whitney p = 0.001781
+Final Avg. Gestation Time at mutation rate 0.5: Mann-Whitney p = 0.000137, fast replicator median = 257.344600, fast replicator SEM = 15.204481 slow replicator median = 480.097250, slow replicator SEM = 75.587999
+Final Avg. Gestation Time at mutation rate 3.0: Mann-Whitney p = 0.001781, fast replicator median = 312.242900, fast replicator SEM = 74.238420 slow replicator median = 719.293950, slow replicator SEM = 112.486561
 --------------------------------------------------
-Final Avg. Merit at mutation rate 0.5: Mann-Whitney p = 0.141474
-Final Avg. Merit at mutation rate 3.0: Mann-Whitney p = 0.003795
+Final Avg. Merit at mutation rate 0.5: Mann-Whitney p = 0.141474, fast replicator median = 65893140.000000, fast replicator SEM = 325577120.358184 slow replicator median = 11459314.500000, slow replicator SEM = 192461299.139716
+Final Avg. Merit at mutation rate 3.0: Mann-Whitney p = 0.003795, fast replicator median = 9035.418400, fast replicator SEM = 54120.019995 slow replicator median = 44750.650000, slow replicator SEM = 77237.159492
 --------------------------------------------------
-Final Avg. Fitness at mutation rate 0.5: Mann-Whitney p = 0.038673
-Final Avg. Fitness at mutation rate 3.0: Mann-Whitney p = 0.005066
+Final Avg. Fitness at mutation rate 0.5: Mann-Whitney p = 0.038673, fast replicator median = 205439.400000, fast replicator SEM = 1157591.471552 slow replicator median = 16820.090000, slow replicator SEM = 219850.083475
+Final Avg. Fitness at mutation rate 3.0: Mann-Whitney p = 0.005066, fast replicator median = 18.380375, fast replicator SEM = 22.111029 slow replicator median = 80.213615, slow replicator SEM = 54.027224
 --------------------------------------------------
-Final Avg. Tasks at mutation rate 0.5: Mann-Whitney p = 0.034550
-Final Avg. Tasks at mutation rate 3.0: Mann-Whitney p = 0.000094
+Final Avg. Tasks at mutation rate 0.5: Mann-Whitney p = 0.034550, fast replicator median = 6.653032, fast replicator SEM = 0.249112 slow replicator median = 6.071219, slow replicator SEM = 0.317031
+Final Avg. Tasks at mutation rate 3.0: Mann-Whitney p = 0.000094, fast replicator median = 1.548444, fast replicator SEM = 0.119969 slow replicator median = 2.487456, slow replicator SEM = 0.116885
 --------------------------------------------------

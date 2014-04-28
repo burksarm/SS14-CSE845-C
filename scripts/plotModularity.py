@@ -2,6 +2,7 @@
 import sys
 import os
 import matplotlib.pyplot as plt
+import numpy as np
 
 #Plots the results from the AVERAGE_MODULARITY command on the competitions
 if len(sys.argv) != 4:

@@ -1,4 +1,4 @@
-Percent Lethal mutations p=0.0024
-Percent Detrimental Mutations p=0.0001
-Percent Neutral Mutations p=0.0000
-Percent Beneficial Mutations p=0.0001
+(%) Lethal Mann-Whitney p=0.002425, fast replicator median = 23.151850, SEM = 1.580554, slow replicator median = 17.680050, SEM = 1.176213
+(%) Detrimental Mann-Whitney p=0.000094, fast replicator median = 53.864850, SEM = 1.783183, slow replicator median = 41.711500, SEM = 1.516269
+(%) Neutral Mann-Whitney p=0.000024, fast replicator median = 20.457900, SEM = 1.637485, slow replicator median = 32.238750, SEM = 1.110340
+(%) Beneficial Mann-Whitney p=0.000064, fast replicator median = 2.367530, SEM = 0.424307, slow replicator median = 6.542555, SEM = 0.787137

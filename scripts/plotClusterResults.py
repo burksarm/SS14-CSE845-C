@@ -73,6 +73,15 @@ for column in COLS_TO_PLOT:
 	zStat, pVal = stats.ranksums(a, b)
 	pValues.append(pVal)
 
+	#Also get the median and SEM for reporting...
+	aMedian = np.median(a)
+	aSem = stats.sem(a)
+
+	bMedian = np.median(b)
+	bSem = stats.sem(b)
+
+	print "%s Mann-Whitney U p=%f, fast replicator median = %f, sem = %f, slow replicator median = %f, sem = %f" %(labels[column], pVal, aMedian, aSem, bMedian, bSem)
+
 #Plot the data for each cluster (A and B)
 for i in range(len(COLS_TO_PLOT)):
 	column = COLS_TO_PLOT[i]

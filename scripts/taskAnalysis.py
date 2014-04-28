@@ -3,6 +3,7 @@ import os
 import sys
 import scipy.stats as stats
 import matplotlib.pyplot as plt
+import numpy as np
 import matplotlib
 import environments
 
@@ -166,17 +167,24 @@ def plotAvgData(column, yLabel, pngName, outDir, logScale, yRange, isTasks=False
 		plt.clf()
 
 		#Get the ending value for each A and B
-		aEndValues = [abs(aAverages[mutRate][GENS[-1]][i]) 
+		aEndValues = [aAverages[mutRate][GENS[-1]][i]
 			for i in range(len(goodComps))]
 
-		bEndValues = [abs(bAverages[mutRate][GENS[-1]][i]) 
+		bEndValues = [bAverages[mutRate][GENS[-1]][i]
 			for i in range(len(goodComps))]
+
+		#Get the median and sem of the ending values for reporting
+		aEndMedian = np.median(aEndValues)
+		aEndSem = stats.sem(aEndValues)
+		bEndMedian = np.median(bEndValues)
+		bEndSem = stats.sem(bEndValues)
+		
 
 		#Perform the Mann-Whitney on the mean delta in the data across A vs B for each generation
 		zStat, pVal = stats.ranksums(aEndValues, bEndValues)
 
 
-		print "Final %s at mutation rate %s: Mann-Whitney p = %f" %(yLabel, mutRate, pVal)
+		print "Final %s at mutation rate %s: Mann-Whitney p = %f, fast replicator median = %f, fast replicator SEM = %f slow replicator median = %f, slow replicator SEM = %f" %(yLabel, mutRate, pVal, aEndMedian, aEndSem, bEndMedian, bEndSem)
 
 	print "-" * 50
 

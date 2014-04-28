@@ -5,6 +5,7 @@ from PIL import Image, ImageFont, ImageDraw
 import re
 import matplotlib.pyplot as plt
 import scipy.stats as stats
+import numpy as np
 
 '''	Creates simplified figures from the genome mutations map. Also, analyzes the
 	total number of completely neutral sites in the genome.
@@ -92,6 +93,16 @@ def plotPercentNeutral(aNeutralPercentages, bNeutralPercentages, outPath):
 	#Calculate the Mann-Whitney U p-value
 	zStat, pVal = stats.ranksums(aNeutralPercentages, bNeutralPercentages)
 
+	#Calculate the median and sem for reporting...
+	aMedian = np.median(aNeutralPercentages)
+	bMedian = np.median(bNeutralPercentages)
+
+	aSem = stats.sem(aNeutralPercentages)
+	bSem = stats.sem(bNeutralPercentages)
+
+	print "Fast Replicator Percent Neutral Sites Median=%f, SEM=%f" %(aMedian, aSem)
+	print "Slow Replicator Percent Neutral Sites Median=%f, SEM=%f" %(bMedian, bSem)
+
 	#Now plot the percentages in a box plot
 	plt.boxplot([aNeutralPercentages, bNeutralPercentages], notch=True)
 	#plt.xlabel("Ancestor Group")
@@ -163,11 +174,6 @@ for dirname, dirs, filenames in os.walk(inDir):
 baseOrgs = neutralPercentages.keys()
 aNeutralPercentages = [neutralPercentages[baseOrg][0] for baseOrg in baseOrgs]
 bNeutralPercentages = [neutralPercentages[baseOrg][1] for baseOrg in baseOrgs]
-
-#Sanity check
-print "Base Ancestor,A,B"
-for baseOrg in baseOrgs:
-	print "%s,%s,%s" %(baseOrg,neutralPercentages[baseOrg][0], neutralPercentages[baseOrg][1])
 
 plotPercentNeutral(aNeutralPercentages, bNeutralPercentages, os.path.join(outDir, "percentNeutralSites.png"))
 
