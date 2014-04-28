@@ -94,9 +94,9 @@ def plotPercentNeutral(aNeutralPercentages, bNeutralPercentages, outPath):
 
 	#Now plot the percentages in a box plot
 	plt.boxplot([aNeutralPercentages, bNeutralPercentages], notch=True)
-	plt.xlabel("Ancestor Group")
+	#plt.xlabel("Ancestor Group")
 	plt.ylabel("Percent Neutral Sites")
-	plt.xticks([1,2], ["A", "B"])
+	plt.xticks([1,2], ["fast replicator", "slow replicator"])
 	plt.figtext(0.75, 0.8, " p=%.4f" %pVal)
 	plt.savefig(outPath, bbox_inches="tight")
 

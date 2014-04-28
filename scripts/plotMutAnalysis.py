@@ -2,6 +2,7 @@
 import sys
 import os
 import matplotlib.pyplot as plt
+import matplotlib
 import numpy as np
 from pylab import *
 import scipy.stats
@@ -14,7 +15,7 @@ if not len(sys.argv) == 2:
 	print "Usage: python mutAnalysis.py <OUTPUT_DIR>"
 	quit()
 
-labels = ["Percent Lethal mutations", "Percent Detrimental Mutations", "Percent Neutral Mutations", "Percent Beneficial Mutations"]
+labels = ["(%) Lethal", "(%) Detrimental", "(%) Neutral", "(%) Beneficial"]
 
 #Convenience method to generate a file name for the figure, based on the label
 def getFigName(label):
@@ -69,20 +70,66 @@ width = 0.25
 index = np.arange(1)
 errorConfig = {'ecolor': '0.3'}
 
+#Set font size (larger since we're combining figures...)
+font = {'size': '18'}
+matplotlib.rc('font', **font)
 
-#Plot each metric in a separate figure
+#Setup some layout stuff for the figure
+fig, axes = plt.subplots(nrows=2, ncols=2)
+fig.tight_layout()
+plt.subplots_adjust(right=1.25)
+
+#x and y starting point for the p-value text
+pXStart = 0.40
+pYStart = 0.85
+
+#subplot labels...
+subPlots = ["(a)", "(b)", "(c)", "(d)"]
+subXStart = 0.115
+subYStart = 0.88
+
+#Plot each metric in the multi-plot...
 for i in range(4):
+	plt.subplot(2, 2, i+1)
 	plt.boxplot([[data[i] for data in aData], [data[i] for data in bData]], notch=True)
-
+	
+	#Make a p-value text label
+	pText = pText = (" p=%.4f" %pVals[i]) if pVals[i] >= .0001 else "p < 0.0001"
+	
 	#Set the labels/legend and save the figure
 	plt.ylabel(labels[i])
-	plt.xlabel("Ancestor Group")
+
 	plt.ylim(0, 100)
-	plt.xticks([1,2], ["A", "B"])
-	plt.figtext(0.75, 0.8, " p=%.4f" %pVals[i])
-	plt.savefig(os.path.join(outDir, getFigName(labels[i]) + ".png"), bbox_inches="tight")
+	
+	#Only put the x-axis labels at the bottom
+	#if (i >= 2):
+	plt.xticks([1,2], ["fast replicator", "slow replicator"])
+	#else:
+	#	plt.xticks([1,2], ['', ''])
+	
+	#Show the p-values
+	plt.figtext(pXStart, pYStart, pText)
+	
+	#Add a sub-plot label
+	plt.figtext(subXStart, subYStart, subPlots[i])
+	
+	pXStart += 0.65
+	subXStart += 0.65
+	
+	if (i == 1):
+		pXStart = 0.40
+		pYStart -= 0.48
+		
+		subXStart = 0.115
+		subYStart -= 0.48
+		
 
 	#Clear the plot for the next figure
-	plt.clf()
+	#plt.clf()
+	
+
+
+
+plt.savefig(os.path.join(outDir, "mutatitonTypes.png"), bbox_inches="tight")	
 
 

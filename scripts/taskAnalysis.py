@@ -3,6 +3,7 @@ import os
 import sys
 import scipy.stats as stats
 import matplotlib.pyplot as plt
+import matplotlib
 import environments
 
 MUT_RATES = [0.5, 3.0]
@@ -147,8 +148,8 @@ def plotAvgData(column, yLabel, pngName, outDir, logScale, yRange, isTasks=False
 			for gen in GENS]
 
 		#Plot the lines for A and B
-		plt.plot(GENS, aLine, color='b', label="A")
-		plt.plot(GENS, bLine, color='r', label="B", ls="--")
+		plt.plot(GENS, aLine, color='b', label="fast replicator")
+		plt.plot(GENS, bLine, color='r', label="slow replicator", ls="--")
 
 		#Add the errorbars in on top of the line
 		plt.errorbar(GENS, aLine, yerr=aSems, color="b", label=None)
@@ -202,6 +203,11 @@ if __name__ == "__main__":
 	for line in inFile:
 		goodComps.append(line.strip())
 
+	
+	#Increase the font size since we're combining figures...
+	font = {'size': '18'}
+	matplotlib.rc('font', **font)
+	
 	plotAvgData(2, "Avg. Gestation Time", "avgGest_isolation", outDir, False, (200, 1000))
 	plotAvgData(1, "Avg. Merit", "avgMerit_isolation", outDir, True,  (10000, pow(10, 10)))
 	plotAvgData(3, "Avg. Fitness", "avgFitness_isolation", outDir, True, (10, pow(10, 7)))

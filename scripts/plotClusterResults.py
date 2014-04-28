@@ -81,11 +81,14 @@ for i in range(len(COLS_TO_PLOT)):
 	if (COLS_TO_PLOT[i] == 6 or COLS_TO_PLOT[i] == 7):
 		plt.ylim(0, 1)
 
+	#Make a p-value text label
+	pText = " p=%.4f" %pValues[i] if pValues[i] > .0001 else "p < .0001"
+	
 	plt.boxplot([[data[column] for data in aPoints], [data[column] for data in bPoints]], notch=True)
-	plt.xlabel("Ancestor Group")
+	#plt.xlabel("Ancestor Group")
 	plt.ylabel(labels[column])
-	plt.figtext(0.75, 0.8, " p=%.4f" %pValues[i])
-	plt.xticks([1,2], ["A", "B"])
+	plt.figtext(0.75, 0.8, pText)
+	plt.xticks([1,2], ["fast replicator", "slow replicator"])
 	plt.savefig(os.path.join(outDir, getFigName(labels[column])), bbox_inches="tight")
 	plt.clf()
 
