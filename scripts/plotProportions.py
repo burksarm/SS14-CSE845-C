@@ -7,6 +7,7 @@ import sys
 import os
 import re
 import matplotlib.pyplot as plt
+import matplotlib
 import compOrgs
 
 mutRates = ["0.5", "1.0", "1.5", "2.0", "2.5", "3.0"]
@@ -55,6 +56,11 @@ def plotCompetitions(org, resultsDir, mutRate, doLabel, clearPlot=False):
 		popSizes[gen] = popSize
 	
 	#Now we have the proportions tallied up for the current mutation rate. Plot the data.
+
+	#Increase the font size since we're combining figures...
+	font = {'size': '18'}
+	matplotlib.rc('font', **font)
+
 	if doLabel == True: #Since we have 10 lines for each ancestor, only add the legend label once.
 		plt.plot(generations, [aProportions[gen]/popSizes[gen] for gen in generations], "b-", label="fast replicator")
 		plt.plot(generations, [bProportions[gen]/popSizes[gen] for gen in generations], "r-", label="slow replicator", ls="--")
